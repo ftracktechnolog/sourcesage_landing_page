@@ -1,113 +1,116 @@
-
-import base64
 import os
-import google.generativeai as genai
-from google.genai import types
+import ssl
 import imaplib
+import smtplib
+import base64
+
 import email
 from email.header import decode_header
-import ssl
+from email.mime.text import MIMEText
 
+import google.generativeai as genai
+
+# --- Environment Variables ---
 EMAIL_ACCOUNT = os.environ.get('EMAIL_ACCOUNT')
 APP_PASSWORD = os.environ.get('APP_PASSWORD')
 
-# Gmail IMAP and SMTP servers
 IMAP_SERVER = os.environ.get('IMAP_SERVER', 'imap.gmail.com')
 IMAP_PORT = int(os.environ.get('IMAP_PORT', 993))
 SMTP_SERVER = os.environ.get('SMTP_SERVER', 'smtp.gmail.com')
 SMTP_PORT = int(os.environ.get('SMTP_PORT', 587))
 
 GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY')
-GEMINI_MODEL = os.environ.get('GEMINI_MODEL', 'gemini-2.5-flash-lite')
+GEMINI_MODEL = os.environ.get('GEMINI_MODEL', 'gemini-1.5-flash')  # or gemini-1.5-pro
 
+
+# --- Read Latest Email ---
 def read_latest_email():
-    # Connect to Gmail's IMAP server
-    mail = imaplib.IMAP4_SSL(IMAP_SERVER, IMAP_PORT)
-    mail.login(EMAIL_ACCOUNT, APP_PASSWORD)
-    mail.select('inbox')
+    try:
+        mail = imaplib.IMAP4_SSL(IMAP_SERVER, IMAP_PORT)
+        mail.login(EMAIL_ACCOUNT, APP_PASSWORD)
+        mail.select('inbox')
 
-    # Search all emails, get the latest
-    result, data = mail.search(None, 'ALL')
-    mail_ids = data[0].split()
-    latest_email_id = mail_ids[-1]
+        result, data = mail.search(None, 'ALL')
+        mail_ids = data[0].split()
 
-    # Fetch the email by ID
-    result, message_data = mail.fetch(latest_email_id, '(RFC822)')
-    raw_email = message_data[0][1]
+        if not mail_ids:
+            print("No emails found.")
+            return None
 
-    # Parse email content
-    msg = email.message_from_bytes(raw_email)
-    print('From:', msg['From'])
-    print('Subject:', msg['Subject'])
-    from_text=  msg['From']
-    subject = msg['Subject']
+        latest_email_id = mail_ids[-1]
+        result, message_data = mail.fetch(latest_email_id, '(RFC822)')
+        raw_email = message_data[0][1]
 
-    # Extract the email body
-    if msg.is_multipart():
-        for part in msg.walk():
-            content_type = part.get_content_type()
-            content_disposition = str(part.get("Content-Disposition"))
-            if content_type == 'text/plain' and 'attachment' not in content_disposition:
-                body = part.get_payload(decode=True).decode()
-                print('Body:', body)
-                break
-    else:
-        body = msg.get_payload(decode=True).decode()
-        print('Body:', body)
+        msg = email.message_from_bytes(raw_email)
+        from_text = msg['From']
+        subject = msg['Subject']
 
-    mail.logout()
-    return f'from:{from_text}, subject:{subject}, body:{body}'
+        # Extract the email body
+        body = ""
+        if msg.is_multipart():
+            for part in msg.walk():
+                content_type = part.get_content_type()
+                content_disposition = str(part.get("Content-Disposition"))
+                if content_type == 'text/plain' and 'attachment' not in content_disposition:
+                    body = part.get_payload(decode=True).decode(errors="ignore")
+                    break
+        else:
+            body = msg.get_payload(decode=True).decode(errors="ignore")
+
+        mail.logout()
+        return f'from: {from_text}\nsubject: {subject}\nbody:\n{body}'
+
+    except Exception as e:
+        print(f"Error reading email: {e}")
+        return None
+
+
+# --- Generate Gemini Response ---
 def generate(user_question):
-    client = genai.Client(
-        api_key=GEMINI_API_KEY,
-    )
+    genai.configure(api_key=GEMINI_API_KEY)
+    model = genai.GenerativeModel(GEMINI_MODEL)
 
-    model = GEMINI_MODEL
+    response = model.generate_content(user_question, stream=True)
 
-    contents = [
-        types.Content(
-            role="user",
-            parts=[
-                types.Part.from_text(text=user_question),
-            ],
-        ),
-    ]
-    tools = [
-        types.Tool(googleSearch=types.GoogleSearch(
-        )),
-    ]
-    generate_content_config = types.GenerateContentConfig(
-        thinking_config = types.ThinkingConfig(
-            thinking_budget=-1,
-        ),
-        tools=tools,
-    )
     total_text = ''
-    for chunk in client.models.generate_content_stream(
-        model=model,
-        contents=contents,
-        config=generate_content_config,
-    ):
-        print(chunk.text, end="")
-        total_text += chunk.text
+    for chunk in response:
+        if chunk.text:
+            print(chunk.text, end="")
+            total_text += chunk.text
+    print()  # newline after stream
     return total_text
 
+
+# --- Send Email ---
 def send_email(to_address, subject, body):
-    msg = MIMEText(body)
-    msg['From'] = EMAIL_ACCOUNT
-    msg['To'] = to_address
-    msg['Subject'] = subject
+    try:
+        msg = MIMEText(body)
+        msg['From'] = EMAIL_ACCOUNT
+        msg['To'] = to_address
+        msg['Subject'] = subject
 
-    # Connect to Gmail SMTP server and send email
-    server = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
-    server.starttls()
-    server.login(EMAIL_ACCOUNT, APP_PASSWORD)
-    server.sendmail(EMAIL_ACCOUNT, to_address, msg.as_string())
-    server.quit()
-    print(f'Email sent to {to_address}')
+        server = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
+        server.starttls()
+        server.login(EMAIL_ACCOUNT, APP_PASSWORD)
+        server.sendmail(EMAIL_ACCOUNT, to_address, msg.as_string())
+        server.quit()
+
+        print(f'✅ Email sent to {to_address}')
+
+    except Exception as e:
+        print(f"❌ Failed to send email: {e}")
 
 
+# --- Main Script ---
 if __name__ == "__main__":
-  print("Hello, World!")
-  email_body = read_latest_email()
-  send_email('nggimseng@gmail.com', 'Monday cool stuff', email_body)
+    print("📧 Reading latest email...\n")
+    email_body = read_latest_email()
+
+    if email_body:
+        print("\n🤖 Generating Gemini response...\n")
+        gemini_response = generate(email_body)
+
+        print("\n📤 Sending response via email...\n")
+        send_email('nggimseng@gmail.com', 'Monday cool stuff', gemini_response)
+    else:
+        print("No email to process.")
