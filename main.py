@@ -15,6 +15,28 @@ import logging
 # --- Logging Configuration ---
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', force=True)
 
+# Required environment variables
+required_env_vars = [
+    "EMAIL_ACCOUNT",
+    "APP_PASSWORD",
+    "IMAP_SERVER",
+    "IMAP_PORT",
+    "SMTP_SERVER",
+    "SMTP_PORT",
+    "GEMINI_API_KEY",
+    "GEMINI_MODEL"
+]
+
+# Validate that all required env vars are set
+missing = [var for var in required_env_vars if not os.getenv(var)]
+
+if missing:
+    print(f"❌ Missing required environment variables: {', '.join(missing)}")
+    sys.exit(1)
+else:
+    print("✅ All required environment variables are set.")
+
+
 # --- Environment Variables ---
 EMAIL_ACCOUNT = os.environ.get('EMAIL_ACCOUNT')
 APP_PASSWORD = os.environ.get('APP_PASSWORD')
