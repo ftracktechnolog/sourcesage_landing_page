@@ -34,11 +34,12 @@ jobs:
         env:
           EMAIL_ACCOUNT: ${{ secrets.EMAIL_ACCOUNT }}
           APP_PASSWORD: ${{ secrets.APP_PASSWORD }}
-          IMAP_SERVER: ${{ secrets.IMAP_SERVER }}
-          IMAP_PORT: ${{ secrets.IMAP_PORT }}
-          SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
-          SMTP_PORT: ${{ secrets.SMTP_PORT }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
+          IMAP_SERVER: ${{ vars.IMAP_SERVER }}
+          IMAP_PORT: ${{ vars.IMAP_PORT }}
+          SMTP_SERVER: ${{ vars.SMTP_SERVER }}
+          SMTP_PORT: ${{ vars.SMTP_PORT }}
+          TEST_ENV_VAR: ${{ vars.TEST_ENV_VAR}}
         run: python main.py
 
