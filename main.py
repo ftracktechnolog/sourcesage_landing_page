@@ -39,25 +39,25 @@ else:
 
 # --- Environment Variables ---
 EMAIL_ACCOUNT = os.environ.get('EMAIL_ACCOUNT')
+logging.info(f"EMAIL_ACCOUNT last 4: {EMAIL_ACCOUNT[-6:] if EMAIL_ACCOUNT else 'N/A'}")
 APP_PASSWORD = os.environ.get('APP_PASSWORD')
-
-IMAP_SERVER = os.environ.get('IMAP_SERVER', 'imap.gmail.com')
-IMAP_PORT = int(os.environ.get('IMAP_PORT', 993))
-SMTP_SERVER = os.environ.get('SMTP_SERVER', 'smtp.gmail.com')
-SMTP_PORT = int(os.environ.get('SMTP_PORT', 587))
+logging.info(f"APP_PASSWORD last 4: {APP_PASSWORD[-6:] if APP_PASSWORD else 'N/A'}")
 
 GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY')
+logging.info(f"GEMINI_API_KEY last 4: {GEMINI_API_KEY[-6:] if GEMINI_API_KEY else 'N/A'}")
 GEMINI_MODEL = os.environ.get('GEMINI_MODEL', 'gemini-2.5-flash-lite')  # or gemini-1.5-pro
+logging.info(f"GEMINI_MODEL: {GEMINI_MODEL}")
 
 # --- Logging Environment Variables ---
-logging.info(f"EMAIL_ACCOUNT last 4: {EMAIL_ACCOUNT[-6:] if EMAIL_ACCOUNT else 'N/A'}")
-logging.info(f"APP_PASSWORD last 4: {APP_PASSWORD[-6:] if APP_PASSWORD else 'N/A'}")
+IMAP_SERVER = os.environ.get('IMAP_SERVER', 'imap.gmail.com')
 logging.info(f"IMAP_SERVER last 4: {IMAP_SERVER[-6:] if IMAP_SERVER else 'N/A'}")
-logging.info(f"IMAP_PORT: {IMAP_PORT}")
+SMTP_SERVER = os.environ.get('SMTP_SERVER', 'smtp.gmail.com')
 logging.info(f"SMTP_SERVER last 4: {SMTP_SERVER[-6:] if SMTP_SERVER else 'N/A'}")
+
+IMAP_PORT = int(os.environ.get('IMAP_PORT', 993))
+logging.info(f"IMAP_PORT: {IMAP_PORT}")
+SMTP_PORT = int(os.environ.get('SMTP_PORT', 587))
 logging.info(f"SMTP_PORT: {SMTP_PORT}")
-logging.info(f"GEMINI_API_KEY last 4: {GEMINI_API_KEY[-6:] if GEMINI_API_KEY else 'N/A'}")
-logging.info(f"GEMINI_MODEL: {GEMINI_MODEL}")
 
 
 # --- Read Latest Email ---
