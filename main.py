@@ -32,7 +32,7 @@ missing = [var for var in required_env_vars if not os.getenv(var)]
 
 if missing:
     print(f"❌ Missing required environment variables: {', '.join(missing)}")
-    sys.exit(1)
+    quit()
 else:
     print("✅ All required environment variables are set.")
 
