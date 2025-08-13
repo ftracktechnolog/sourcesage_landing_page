@@ -10,12 +10,11 @@ from email.header import decode_header
 from email.mime.text import MIMEText
 
 import google.generativeai as genai
-import logging
 
 # --- Logging Configuration ---
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', force=True)
 
-# Required environment variables
+# --- Required Environment Variables ---
 required_env_vars = [
     "EMAIL_ACCOUNT",
     "APP_PASSWORD",
@@ -27,153 +26,100 @@ required_env_vars = [
     "GEMINI_MODEL"
 ]
 
-# Validate that all required env vars are set
 missing = [var for var in required_env_vars if not os.getenv(var)]
-
 if missing:
     print(f"❌ Missing required environment variables: {', '.join(missing)}")
     quit()
 else:
     print("✅ All required environment variables are set.")
 
-
 # --- Environment Variables ---
 EMAIL_ACCOUNT = os.environ.get('EMAIL_ACCOUNT')
-logging.info(f"EMAIL_ACCOUNT last 4: {EMAIL_ACCOUNT[-6:] if EMAIL_ACCOUNT else 'N/A'}")
 APP_PASSWORD = os.environ.get('APP_PASSWORD')
-logging.info(f"APP_PASSWORD last 4: {APP_PASSWORD[-6:] if APP_PASSWORD else 'N/A'}")
-
-GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY')
-logging.info(f"GEMINI_API_KEY last 4: {GEMINI_API_KEY[-6:] if GEMINI_API_KEY else 'N/A'}")
-GEMINI_MODEL = os.environ.get('GEMINI_MODEL', 'gemini-2.5-flash-lite')  # or gemini-1.5-pro
-logging.info(f"GEMINI_MODEL: {GEMINI_MODEL}")
-
-# --- Logging Environment Variables ---
 IMAP_SERVER = os.environ.get('IMAP_SERVER', 'imap.gmail.com')
-logging.info(f"IMAP_SERVER last 4: {IMAP_SERVER[-6:] if IMAP_SERVER else 'N/A'}")
 SMTP_SERVER = os.environ.get('SMTP_SERVER', 'smtp.gmail.com')
-logging.info(f"SMTP_SERVER last 4: {SMTP_SERVER[-6:] if SMTP_SERVER else 'N/A'}")
-
 IMAP_PORT = int(os.environ.get('IMAP_PORT', 993))
-logging.info(f"IMAP_PORT: {IMAP_PORT}")
 SMTP_PORT = int(os.environ.get('SMTP_PORT', 587))
-logging.info(f"SMTP_PORT: {SMTP_PORT}")
+GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY')
+GEMINI_MODEL = os.environ.get('GEMINI_MODEL', 'gemini-2.5-flash-lite')  # default fallback
 
-
-# --- Read Latest Email ---
+# --- Read Unread Email with 'Q-agent' in Subject ---
 def read_latest_email():
     mail = None
     try:
         logging.info(f"Connecting to IMAP server: {IMAP_SERVER} on port {IMAP_PORT}")
         mail = imaplib.IMAP4_SSL(IMAP_SERVER, IMAP_PORT)
-        logging.info("IMAP connection successful.")
-    except Exception as e:
-        logging.error(f"Error connecting to IMAP server: {e}")
-        return None
-
-    try:
-        logging.info(f"Logging in with account: {EMAIL_ACCOUNT}")
         mail.login(EMAIL_ACCOUNT, APP_PASSWORD)
-        logging.info("IMAP login successful.")
-    except Exception as e:
-        logging.error(f"Error logging into IMAP server: {e}")
-        if mail:
-            try:
-                mail.logout()
-            except Exception as logout_e:
-                logging.error(f"Error during logout after login failure: {logout_e}")
-        return None
+        mail.select("inbox")
 
-    try:
-        logging.info("Selecting inbox.")
-        mail.select('inbox')
-        logging.info("Inbox selected.")
-    except Exception as e:
-        logging.error(f"Error selecting inbox: {e}")
-        if mail:
-            try:
-                mail.logout()
-            except Exception as logout_e:
-                logging.error(f"Error during logout after select failure: {logout_e}")
-        return None
+        # ✅ Search for unread emails
+        logging.info("Searching for UNSEEN emails.")
+        result, data = mail.search(None, 'UNSEEN')
+        if result != 'OK':
+            logging.warning("Failed to search for unread emails.")
+            return None
 
-    try:
-        logging.info("Searching for all emails.")
-        result, data = mail.search(None, 'ALL')
         mail_ids = data[0].split()
-        logging.info(f"Found {len(mail_ids)} emails.")
-    except Exception as e:
-        logging.error(f"Error searching for emails: {e}")
-        if mail:
-            try:
-                mail.logout()
-            except Exception as logout_e:
-                logging.error(f"Error during logout after search failure: {logout_e}")
-        return None
+        logging.info(f"Found {len(mail_ids)} unread emails.")
 
+        if not mail_ids:
+            return None
 
-    if not mail_ids:
-        logging.info("No emails found.")
-        if mail:
-            try:
-                mail.logout()
-            except Exception as logout_e:
-                logging.error(f"Error during logout after no emails found: {logout_e}")
-        return None
+        # Process emails in reverse (latest first)
+        for email_id in reversed(mail_ids):
+            result, message_data = mail.fetch(email_id, '(RFC822)')
+            if result != 'OK':
+                continue
 
-    try:
-        latest_email_id = mail_ids[-1]
-        logging.info(f"Fetching latest email with ID: {latest_email_id}")
-        result, message_data = mail.fetch(latest_email_id, '(RFC822)')
-        raw_email = message_data[0][1]
-        logging.info("Latest email fetched.")
-    except Exception as e:
-        logging.error(f"Error fetching latest email: {e}")
-        if mail:
-            try:
-                mail.logout()
-            except Exception as logout_e:
-                logging.error(f"Error during logout after fetch failure: {logout_e}")
-        return None
+            raw_email = message_data[0][1]
+            msg = email.message_from_bytes(raw_email)
+            from_text = msg['From']
+            subject = msg['Subject'] or ""
 
-    try:
-        msg = email.message_from_bytes(raw_email)
-        from_text = msg['From']
-        subject = msg['Subject']
-        logging.info(f"Email Subject: {subject}")
-        logging.info(f"Email From: {from_text}")
+            decoded_subject, encoding = decode_header(subject)[0]
+            if isinstance(decoded_subject, bytes):
+                decoded_subject = decoded_subject.decode(encoding or 'utf-8', errors='ignore')
 
-        # Extract the email body
-        body = ""
-        if msg.is_multipart():
-            for part in msg.walk():
-                content_type = part.get_content_type()
-                content_disposition = str(part.get("Content-Disposition"))
-                if content_type == 'text/plain' and 'attachment' not in content_disposition:
-                    body = part.get_payload(decode=True).decode(errors="ignore")
-                    break
-        else:
-            body = msg.get_payload(decode=True).decode(errors="ignore")
-        logging.info("Email body extracted.")
+            logging.info(f"Email Subject: {decoded_subject}")
+            logging.info(f"Email From: {from_text}")
 
-    except Exception as e:
-        logging.error(f"Error parsing email or extracting body: {e}")
-        if mail:
-            try:
-                mail.logout()
-            except Exception as logout_e:
-                logging.error(f"Error during logout after parsing failure: {logout_e}")
-        return None
+            # ✅ Filter for 'Q-agent' in subject
+            if 'q-agent' not in decoded_subject.lower():
+                logging.info("Skipping email without 'Q-agent' in subject.")
+                continue
 
-    try:
+            # ✅ Extract body
+            body = ""
+            if msg.is_multipart():
+                for part in msg.walk():
+                    content_type = part.get_content_type()
+                    content_disposition = str(part.get("Content-Disposition"))
+                    if content_type == 'text/plain' and 'attachment' not in content_disposition:
+                        body = part.get_payload(decode=True).decode(errors="ignore")
+                        break
+            else:
+                body = msg.get_payload(decode=True).decode(errors="ignore")
+
+            logging.info("Relevant email found and body extracted.")
+            mail.logout()
+            return {
+                'from': from_text,
+                'subject': decoded_subject,
+                'body': body
+            }
+
+        logging.info("No unread emails with 'Q-agent' in subject.")
         mail.logout()
-        logging.info("IMAP logout successful.")
+        return None
+
     except Exception as e:
-        logging.error(f"Error during IMAP logout: {e}")
-
-
-    return f'from: {from_text}\nsubject: {subject}\nbody:\n{body}'
-
+        logging.error(f"Error: {e}")
+        if mail:
+            try:
+                mail.logout()
+            except:
+                pass
+        return None
 
 # --- Generate Gemini Response ---
 def generate(user_question):
@@ -187,7 +133,7 @@ def generate(user_question):
         total_text = ''
         for chunk in response:
             if chunk.text:
-                print(chunk.text, end="") # Keep print here for streaming output
+                print(chunk.text, end="")  # streaming output
                 total_text += chunk.text
         print()  # newline after stream
         logging.info("Gemini response generated.")
@@ -195,7 +141,6 @@ def generate(user_question):
     except Exception as e:
         logging.error(f"Error generating Gemini response: {e}")
         return None
-
 
 # --- Send Email ---
 def send_email(to_address, subject, body):
@@ -208,20 +153,12 @@ def send_email(to_address, subject, body):
 
         logging.info(f"Connecting to SMTP server: {SMTP_SERVER} on port {SMTP_PORT}")
         server = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
-        logging.info("SMTP connection successful.")
-
-        logging.info("Starting TLS.")
         server.starttls()
-        logging.info("TLS started.")
-
-        logging.info(f"Logging in with account: {EMAIL_ACCOUNT}")
         server.login(EMAIL_ACCOUNT, APP_PASSWORD)
-        logging.info("SMTP login successful.")
 
         logging.info(f'Sending email to {to_address} with subject "{subject}"')
         server.sendmail(EMAIL_ACCOUNT, to_address, msg.as_string())
         logging.info(f'✅ Email sent to {to_address}')
-
     except Exception as e:
         logging.error(f"❌ Failed to send email: {e}")
     finally:
@@ -232,20 +169,20 @@ def send_email(to_address, subject, body):
             except Exception as quit_e:
                 logging.error(f"Error quitting SMTP server: {quit_e}")
 
-
-# --- Main Script ---
+# --- Main ---
 if __name__ == "__main__":
-    logging.info("📧 Reading latest email...\n")
-    email_body = read_latest_email()
+    logging.info("📧 Reading latest matching email...\n")
+    email_data = read_latest_email()
 
-    if email_body:
+    if email_data:
+        combined_text = f"from: {email_data['from']}\nsubject: {email_data['subject']}\nbody:\n{email_data['body']}"
         logging.info("\n🤖 Generating Gemini response...\n")
-        gemini_response = generate(email_body)
+        gemini_response = generate(combined_text)
 
         if gemini_response:
             logging.info("\n📤 Sending response via email...\n")
-            send_email('nggimseng@gmail.com', 'Monday cool stuff', gemini_response)
+            send_email(email_data['from'], f"Re: {email_data['subject']}", gemini_response)
         else:
             logging.error("Gemini response generation failed.")
     else:
-        logging.info("No email to process.")
+        logging.info("No matching unread email found.")
