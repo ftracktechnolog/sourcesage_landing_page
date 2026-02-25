@@ -1,47 +1,46 @@
-name: run main.py
+name: Deploy to GitHub Pages
 
 on:
-  schedule:
-    - cron: '0 9,12,15,18 * * *'
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment: main_secrets 
-
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Checkout repo content
-        uses: actions/checkout@v3
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
         with:
-          python-version: '3.9'
+          node-version: 20
+          cache: npm
 
-      - name: Cache pip dependencies
-        uses: actions/cache@v3
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
+          path: dist
 
-      - name: Install Python packages
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: Execute Python script
-        env:
-          EMAIL_ACCOUNT: ${{ secrets.EMAIL_ACCOUNT }}
-          APP_PASSWORD: ${{ secrets.APP_PASSWORD }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
-          IMAP_SERVER: ${{ vars.IMAP_SERVER }}
-          IMAP_PORT: ${{ vars.IMAP_PORT }}
-          SMTP_SERVER: ${{ vars.SMTP_SERVER }}
-          SMTP_PORT: ${{ vars.SMTP_PORT }}
-          TEST_ENV_VAR: ${{ vars.TEST_ENV_VAR}}
-        run: python main.py
-
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
