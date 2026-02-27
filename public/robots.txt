@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://sourcesage.ai/sitemap.xml
