@@ -1,127 +1,330 @@
-🚨 SEO FIX DIRECTIVE – REQUIRED ARCHITECTURE CHANGE
-
-Current State:
-The site is a Vite + React SPA using 100% client-side rendering.
-The server returns only:
-
-  <div id="root"></div>
-
-All meaningful content is injected via JavaScript.
-
-This is unacceptable for SEO and organic discoverability.
+# VIBECODE AGENT — WEBSITE UPDATE SPEC (MALAYSIA-FOCUSED)
+# Project: SourceSage.ai
+# Positioning: Hard-to-Find Agricultural & Marine Engine Spare Parts (Malaysia)
+# Tone: Practical, reliable, locally grounded. No tech hype.
 
 ---
 
-OBJECTIVE
+# 0. CORE POSITIONING
 
-All public-facing pages must return fully rendered HTML
-from the server or at build time.
+We are a Malaysia-based parts sourcing specialist.
 
-Google must be able to read all primary content
-without executing JavaScript.
+We help:
+- Agricultural tractor dealers
+- Farm equipment workshops
+- Spare parts distributors
+- Marine engine repair workshops
 
----
+Find and source hard-to-find spare parts quickly.
 
-MANDATORY REQUIREMENTS
+Internally: AI + experienced staff.
+Externally: Human expertise + sourcing network.
 
-1. Rendering Strategy
-
-Choose ONE:
-
-A) Migrate to Next.js (Preferred)
-   - Use App Router
-   - SSR or Static Site Generation for all marketing pages
-   - Ensure each route returns full HTML
-
-OR
-
-B) Implement Static Pre-rendering in current Vite setup
-   - Pre-render each public route at build time
-   - Output static HTML files containing full content
-
-Pure CSR is NOT allowed for public pages.
+No AI messaging on homepage.
 
 ---
 
-2. Pages That Must Be Server-Rendered
+# 1. HOMEPAGE HERO (REWRITE)
 
-- Homepage
-- Features pages
-- Industry pages
-- Landing pages
-- Blog posts
-- All SEO-targeted pages
+HEADLINE:
+"Hard-to-Find Tractor & Marine Engine Parts — Sourced Fast in Malaysia."
 
-Authenticated dashboard/app pages may remain CSR.
+SUBHEAD:
+We help dealers and workshops across Malaysia find difficult, discontinued, and urgent spare parts for agricultural tractors and marine diesel engines.
 
----
+PRIMARY CTA:
+[Request a Part Now]
 
-3. Verification Rule (Non-Negotiable)
+SECONDARY CTA:
+[WhatsApp Our Team]
 
-When running:
-
-  curl https://domain.com/page
-
-The returned HTML MUST contain:
-
-- H1
-- Body text
-- Internal links
-- Structured content
-
-If response only contains <div id="root"></div>,
-implementation is considered failed.
-
-Also verify:
-- "View Page Source" shows full content
-- Google Search Console URL inspection renders correctly
+Supporting line:
+Covering Kubota, Yanmar, Massey Ferguson, John Deere, Zoomlion, and leading marine diesel brands.
 
 ---
 
-4. Metadata Requirements (Per Page)
+# 2. TARGET MARKET CLARITY
 
-Each indexable page must have:
+Add section immediately below hero:
 
-- Unique <title>
-- Unique meta description
-- Canonical tag
-- Open Graph tags
-- Structured data (JSON-LD where relevant)
+"Built for the Malaysian Market"
 
-No duplicate titles across pages.
+Content:
+- Supporting agricultural machinery dealers nationwide
+- Supplying workshops in Johor, Selangor, Perak, Sabah & Sarawak
+- Understanding local farming cycles and urgent harvest breakdowns
+- Fast coordination with regional and overseas suppliers
 
----
-
-5. Routing Rules
-
-- No hash routing (#/route)
-- Clean URLs (/features, /marine-ai)
-- Proper HTTP status codes (200, 301, 404)
-- Implement sitemap.xml
-- Implement robots.txt
+Make it clear: Malaysia-first focus.
 
 ---
 
-6. Performance Requirements
+# 3. AGRICULTURAL TRACTOR BRANDS WE SUPPORT
 
-- LCP < 2.5s
-- Minimize blocking JS
-- Optimize images
-- Lazy load non-critical components
+Create strong visual brand grid including:
+
+- Kubota
+- Yanmar
+- Massey Ferguson
+- John Deere
+- Zoomlion (new Chinese tractors)
+- Other China-made tractors used in Malaysia
+
+Add text:
+
+"We support both established Japanese brands and newer Chinese tractors increasingly used in Malaysian plantations and small farms."
+
+Important:
+Explicitly mention Zoomlion expansion in Malaysia.
+Position as knowledgeable about newer Chinese equipment where parts sourcing is often harder.
 
 ---
 
-ACCEPTANCE CRITERIA
+# 4. MARINE ENGINE NICHE SECTION
 
-The site is considered SEO-ready ONLY IF:
+Add dedicated homepage section:
 
-[ ] Raw HTML contains full page content
-[ ] No JS required to see primary content
-[ ] Metadata is unique per route
-[ ] Sitemap generated and accessible
-[ ] Pages successfully indexed by Google
+TITLE:
+"Marine Diesel Engine Parts — Coastal & River Support"
+
+CONTENT:
+We help marine workshops and boat operators source:
+- Yanmar marine engines
+- Kubota-based marine engines
+- Perkins marine engines
+- Isuzu marine diesel
+- Hino industrial/marine engines
+
+Parts covered:
+- Overhaul kits
+- Cylinder heads
+- Fuel injectors
+- Cooling system components
+- Gaskets and seal kits
+- Starter motors and alternators
+
+Emphasize:
+Fast turnaround for fishing boats, transport boats, and small marine operators.
 
 ---
 
-This is a required infrastructure correction.
-Do not ship additional marketing efforts until fixed.
+# 5. PROBLEM SECTION (LOCAL CONTEXT)
+
+TITLE:
+"When a Machine Stops, Income Stops."
+
+Agriculture angle:
+- Tractor down during planting or harvest
+- Irrigation pump failure
+- Engine overheating during peak season
+
+Marine angle:
+- Boat unable to operate
+- Missed fishing trips
+- Delayed transport routes
+
+Emphasize urgency:
+We prioritize breakdown cases.
+
+---
+
+# 6. WHAT WE DO (PROCESS)
+
+TITLE:
+"How It Works"
+
+Step 1:
+Send us:
+- Brand & model
+- Engine code
+- Existing part number (if any)
+- Photos (optional)
+- Urgency level
+
+Step 2:
+We verify compatibility.
+
+Step 3:
+We search:
+- Local distributors
+- Regional suppliers
+- Overseas OEM & aftermarket sources
+
+Step 4:
+We confirm:
+- Fitment
+- Lead time
+- Price
+- Availability
+
+Step 5:
+We coordinate delivery.
+
+Highlight:
+Real people checking specifications.
+Not guesswork.
+
+---
+
+# 7. TYPES OF PARTS (SEPARATE BY NICHE)
+
+## Agricultural Tractor Parts
+
+Engine:
+- Pistons
+- Liners
+- Crankshafts
+- Overhaul kits
+
+Hydraulic:
+- Pumps
+- Valves
+- Seals
+
+Transmission:
+- Clutch plates
+- Gear assemblies
+
+Electrical:
+- Starters
+- Alternators
+- Sensors
+
+## Marine Engine Parts
+
+- Cylinder head components
+- Injectors
+- Fuel pumps
+- Raw water pumps
+- Exhaust manifolds
+- Cooling system components
+
+Keep it specific and practical.
+
+---
+
+# 8. SEO PAGE STRUCTURE (MALAYSIA-FOCUSED)
+
+Create crawlable static pages:
+
+/kubota-spare-parts-malaysia
+/zoomlion-tractor-parts-malaysia
+/yanmar-engine-parts-malaysia
+/marine-engine-parts-malaysia
+/hard-to-find-tractor-parts-malaysia
+
+Each page:
+- 800–1200 words
+- Malaysia geographic references
+- Breakdown scenarios
+- Clear WhatsApp CTA
+- No AI mention
+
+Meta Title Example:
+Kubota & Zoomlion Tractor Spare Parts Malaysia | SourceSage
+
+Meta Description Example:
+Supplier of hard-to-find agricultural tractor and marine engine parts in Malaysia. Fast sourcing for urgent breakdowns.
+
+---
+
+# 9. TRUST & CREDIBILITY SECTION
+
+TITLE:
+"Why Workshops and Dealers Work With Us"
+
+Bullets:
+- We understand tractor and diesel engine systems
+- We verify before quoting
+- We respond quickly on WhatsApp
+- We support urgent breakdown cases
+- We source both OEM and quality aftermarket options
+
+Add testimonial if possible:
+"They helped us source a Zoomlion engine component that no local supplier had."
+
+Even anonymized is acceptable initially.
+
+---
+
+# 10. PRIMARY CONVERSION FLOW
+
+Every page must have:
+
+Sticky WhatsApp button:
+"Send Part Details"
+
+Simple Request Form:
+- Brand
+- Model
+- Engine code
+- Part description
+- Urgency (Routine / Urgent / Machine Down)
+- Upload photo
+
+Keep friction low.
+
+---
+
+# 11. ABOUT PAGE (REWRITE)
+
+Headline:
+"A Malaysian Parts Sourcing Partner"
+
+Content:
+- Focused on agricultural and marine diesel machinery
+- Serving dealers and workshops nationwide
+- Experienced in sourcing both Japanese and Chinese tractor brands
+- Combining industry knowledge with modern tools for faster verification and sourcing
+
+Avoid:
+Startup language.
+AI-heavy explanation.
+
+---
+
+# 12. TONE & VISUAL GUIDELINES
+
+Use:
+- Tractor field imagery
+- Marine engine repair visuals
+- Workshop scenes
+- Real machinery close-ups
+
+Avoid:
+- AI graphics
+- Abstract data visuals
+- Futuristic tech imagery
+
+Tone:
+Grounded.
+Responsive.
+Reliable.
+Operational.
+
+---
+
+# 13. POSITIONING SUMMARY
+
+We are:
+
+A Malaysia-focused agricultural and marine engine spare parts sourcing specialist.
+
+We help find:
+- Hard-to-find parts
+- Discontinued components
+- Urgent breakdown replacements
+- Parts for newer Chinese tractors (e.g., Zoomlion)
+- Parts for marine diesel engines
+
+The website should make visitors think:
+
+"These people understand my machine and can find the part fast."
+
+Not:
+
+"This is a software company."
+
+---
+
+END SPEC

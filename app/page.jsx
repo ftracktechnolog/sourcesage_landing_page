@@ -8,7 +8,7 @@ import {
 } from 'lucide-react';
 
 // TODO: Replace with your actual WhatsApp number e.g. 60123456789
-const WA_NUMBER = '601XXXXXXXXX';
+const WA_NUMBER = '447546185317';
 const WA_URL = `https://wa.me/${WA_NUMBER}?text=Hi%2C%20I%20need%20help%20sourcing%20a%20spare%20part.`;
 
 const Navbar = () => (
