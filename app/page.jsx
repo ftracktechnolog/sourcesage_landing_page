@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react';
 import {
   Bot, Factory, AlertCircle, FileSpreadsheet, Clock, AlertTriangle, Users,
@@ -6,20 +8,6 @@ import {
   Warehouse, Settings2, Globe2, BookOpen, ChevronRight, Scale, Database,
   Mail
 } from 'lucide-react';
-
-// --- SEO/LLM Optimization (GEO) ---
-const SEOHead = () => {
-  return (
-    <div className="sr-only" aria-hidden="true">
-      <h1>SourceSage AI: Digital Twin for Industrial & Agricultural Parts Enterprises</h1>
-      <h2>Scalable AI Solutions for Machinery Parts Importers, Wholesalers, and Distributors</h2>
-      <p>
-        Advanced SourceSage AI specialized in technical sourcing for global brands including Kubota, Yanmar, John Deere, Ford, and Massey Ferguson.
-        Preserve proprietary technical knowledge and automate complex B2B inquiries across WhatsApp and ERP systems using our proprietary <strong className="font-bold">Digital Twin</strong> technology.
-      </p>
-    </div>
-  );
-};
 
 const Navbar = () => (
   <nav className="bg-white shadow-sm sticky top-0 z-50">
@@ -86,7 +74,7 @@ const Hero = () => (
                   </div>
                   <div className="bg-slate-800/50 p-4 rounded-2xl rounded-tl-none border border-slate-700">
                     <p className="text-[10px] font-bold text-blue-400 uppercase mb-1 tracking-wider">Customer Inquiry</p>
-                    <p className="text-slate-200 text-sm italic">"Need pricing for Kubota V2403 overhaul kit. Urgent for marine engine repair."</p>
+                    <p className="text-slate-200 text-sm italic">&quot;Need pricing for Kubota V2403 overhaul kit. Urgent for marine engine repair.&quot;</p>
                   </div>
                 </div>
                 <div className="flex gap-4 justify-end">
@@ -327,18 +315,32 @@ const Footer = () => (
   </footer>
 );
 
-export default function App() {
+export default function Home() {
   return (
-    <div className="min-h-screen font-sans text-slate-900 selection:bg-blue-600 selection:text-white antialiased">
-      <SEOHead />
-      <Navbar />
-      <Hero />
-      <IndustryFocus />
-      <PainPoints />
-      <Solution />
-      <FAQ />
-      <CTASection />
-      <Footer />
-    </div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "SourceSage AI",
+            "url": "https://sourcesage.ai",
+            "description": "Enterprise AI Digital Twin for industrial parts distributors",
+            "contactPoint": { "@type": "ContactPoint", "email": "info@sourcesage.ai" }
+          })
+        }}
+      />
+      <div className="min-h-screen font-sans text-slate-900 selection:bg-blue-600 selection:text-white antialiased">
+        <Navbar />
+        <Hero />
+        <IndustryFocus />
+        <PainPoints />
+        <Solution />
+        <FAQ />
+        <CTASection />
+        <Footer />
+      </div>
+    </>
   );
 }
