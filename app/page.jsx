@@ -6,10 +6,7 @@ import {
   ChevronRight, CheckCircle, MapPin, Mail,
   ShieldCheck, Truck
 } from 'lucide-react';
-
-// TODO: Replace with your actual WhatsApp number e.g. 60123456789
-const WA_NUMBER = '447546185317';
-const WA_URL = `https://wa.me/${WA_NUMBER}?text=Hi%2C%20I%20need%20help%20sourcing%20a%20spare%20part.`;
+import WhatsappCTA from '../components/WhatsappCTA';
 
 const Navbar = () => (
   <nav className="bg-white shadow-sm sticky top-0 z-50">
@@ -25,14 +22,12 @@ const Navbar = () => (
         <a href="#request" className="hover:text-blue-600 transition-colors">Request a Part</a>
       </div>
       <div className="flex items-center gap-3">
-        <a
-          href={WA_URL}
-          target="_blank"
-          rel="noopener noreferrer"
+        <WhatsappCTA
+          label="navbar"
           className="bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-lg font-bold transition-all text-sm flex items-center gap-2"
         >
           <MessageCircle className="w-4 h-4" /> WhatsApp
-        </a>
+        </WhatsappCTA>
         <a href="#request" className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg font-bold transition-all text-sm hidden sm:block">
           Request a Part
         </a>
@@ -64,14 +59,12 @@ const Hero = () => (
             >
               Request a Part Now <ChevronRight className="w-5 h-5" />
             </a>
-            <a
-              href={WA_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <WhatsappCTA
+              label="hero_main"
               className="px-8 py-4 text-lg font-bold rounded-xl text-white bg-green-500 hover:bg-green-600 transition-all text-center flex items-center justify-center gap-2"
             >
               <MessageCircle className="w-5 h-5" /> WhatsApp Our Team
-            </a>
+            </WhatsappCTA>
           </div>
           <p className="mt-6 text-sm text-slate-500 font-medium">
             Covering Kubota, Yanmar, Massey Ferguson, John Deere, Zoomlion, and leading marine diesel brands.
@@ -95,14 +88,12 @@ const Hero = () => (
               <p className="text-sm text-slate-700 leading-relaxed mb-4">
                 We prioritize urgent breakdown cases. Contact us immediately for fast sourcing.
               </p>
-              <a
-                href={WA_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+              <WhatsappCTA
+                label="hero_machine_down"
                 className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-lg font-bold text-sm transition-all"
               >
                 <MessageCircle className="w-4 h-4" /> WhatsApp Now
-              </a>
+              </WhatsappCTA>
             </div>
           </div>
         </div>
@@ -225,14 +216,13 @@ const MarineSection = () => {
                 ))}
               </div>
               <div className="mt-6 pt-6 border-t border-slate-100">
-                <a
-                  href={WA_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <WhatsappCTA
+                  label="marine_section"
+                  message="Hi, I need help sourcing a marine engine part. (via sourcesage.ai)"
                   className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3.5 rounded-xl font-bold transition-all"
                 >
                   <MessageCircle className="w-5 h-5" /> WhatsApp for Marine Parts
-                </a>
+                </WhatsappCTA>
               </div>
             </div>
           </div>
@@ -287,14 +277,12 @@ const ProblemSection = () => (
       </div>
       <div className="text-center mt-12">
         <p className="text-white font-bold text-lg mb-6">We prioritize breakdown cases.</p>
-        <a
-          href={WA_URL}
-          target="_blank"
-          rel="noopener noreferrer"
+        <WhatsappCTA
+          label="problem_section"
           className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all"
         >
           <MessageCircle className="w-5 h-5" /> Contact Us Immediately
-        </a>
+        </WhatsappCTA>
       </div>
     </div>
   </section>
@@ -498,14 +486,12 @@ const RequestForm = () => {
             <CheckCircle className="w-16 h-16 text-green-400 mx-auto mb-6" />
             <h3 className="text-2xl font-bold mb-3">Request Sent</h3>
             <p className="text-slate-400 mb-6">We&apos;ll review your request and respond shortly. For urgent cases, WhatsApp us directly.</p>
-            <a
-              href={WA_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <WhatsappCTA
+              label="post_form_submit"
               className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl font-bold transition-all"
             >
               <MessageCircle className="w-5 h-5" /> WhatsApp for Urgent Parts
-            </a>
+            </WhatsappCTA>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="bg-white rounded-3xl p-10 shadow-2xl text-left">
@@ -576,9 +562,9 @@ const Footer = () => (
           <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors">
             <Mail className="w-4 h-4" /> info@sourcesage.ai
           </a>
-          <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="hover:text-green-600 flex items-center gap-2 transition-colors">
+          <WhatsappCTA label="footer" className="hover:text-green-600 flex items-center gap-2 transition-colors">
             <MessageCircle className="w-4 h-4" /> WhatsApp
-          </a>
+          </WhatsappCTA>
         </div>
       </div>
       <div className="text-center pt-6 border-t border-slate-100">
@@ -589,15 +575,12 @@ const Footer = () => (
 );
 
 const StickyWhatsApp = () => (
-  <a
-    href={WA_URL}
-    target="_blank"
-    rel="noopener noreferrer"
+  <WhatsappCTA
+    label="sticky_button"
     className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white px-5 py-3.5 rounded-full shadow-2xl font-bold text-sm flex items-center gap-2 transition-all hover:scale-105"
-    aria-label="WhatsApp our team"
   >
     <MessageCircle className="w-5 h-5" /> Send Part Details
-  </a>
+  </WhatsappCTA>
 );
 
 export default function Home() {
