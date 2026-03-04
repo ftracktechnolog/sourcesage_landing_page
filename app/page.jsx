@@ -19,6 +19,7 @@ const Navbar = () => (
         <a href="#brands" className="hover:text-blue-600 transition-colors">Brands</a>
         <a href="#marine" className="hover:text-blue-600 transition-colors">Marine</a>
         <a href="#how-it-works" className="hover:text-blue-600 transition-colors">How It Works</a>
+        <a href="/blog" className="hover:text-blue-600 transition-colors">Blog</a>
         <a href="#request" className="hover:text-blue-600 transition-colors">Request a Part</a>
       </div>
       <div className="flex items-center gap-3">
