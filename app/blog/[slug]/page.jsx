@@ -79,12 +79,17 @@ export default async function BlogPost({ params }) {
     <div className="min-h-screen font-sans text-slate-900 antialiased">
       <Navbar />
       <main>
-        {/* Hero image */}
-        {post.heroHtml && (
-          <div
-            className="w-full max-h-96 overflow-hidden bg-slate-100"
-            dangerouslySetInnerHTML={{ __html: post.heroHtml }}
-          />
+        {/* Hero image(s) */}
+        {post.heroHtmls.length > 0 && (
+          <div className={`w-full bg-slate-100 overflow-hidden ${post.heroHtmls.length === 2 ? 'grid grid-cols-2' : ''}`}>
+            {post.heroHtmls.map((html, i) => (
+              <div
+                key={i}
+                className="max-h-96 overflow-hidden"
+                dangerouslySetInnerHTML={{ __html: html }}
+              />
+            ))}
+          </div>
         )}
 
         {/* Post header */}

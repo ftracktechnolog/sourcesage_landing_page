@@ -4,20 +4,25 @@ slug: how-to-identify-your-kubota-tractor-model
 title: "How to Identify Your Kubota Tractor Model — and Find the Right Parts in Malaysia"
 meta_keywords: ["kubota tractor model identification malaysia", "kubota serial number parts", "how to find kubota tractor model number"]
 content_angle: "Informational how-to / problem-solving"
-publish_date: "2026-03-04"
-last_updated: "March 2026"
+publish_date: "2026-02-25"
+last_updated: "February 2026"
 whatsapp_label: "Chat with Us on WhatsApp"
 whatsapp_prefill: "Hi, I need help identifying my Kubota tractor model and finding parts."
 hero_image: "blog-01-hero-kubota-paddy-malaysia.webp"
 ---
 
 <!-- 🖼️ IMAGE: HERO
-search: "old kubota tractor paddy field malaysia kedah aerial"
-sources: Unsplash (https://unsplash.com/s/photos/tractor-rice-field) · Wikimedia Commons (https://commons.wikimedia.org/wiki/Category:Paddy_fields_in_Malaysia) · MADA official site (https://www.mada.gov.my)
+search: "kubota tractor product shot"
+alt: "Kubota tractor — a typical model seen on Malaysian farms"
+caption: ""
+filename: blog-01-hero-kubota-paddy-malaysia-v2.jpg
+-->
+
+<!-- 🖼️ IMAGE: HERO
+search: "old kubota tractor paddy field malaysia kedah"
 alt: "Aged Kubota tractor parked at the edge of a Malaysian paddy field"
 caption: "Tens of thousands of Kubota tractors are still working across Malaysian paddy states — many well past their 10th year."
-size: 1200×675px (16:9 hero)
-filename: blog-01-hero-kubota-paddy-malaysia.webp
+filename: blog-01-hero-kubota-paddy-malaysia.jpg
 -->
 
 You bought the tractor from a neighbour. Or inherited it from a relative who farmed paddy in Kedah for twenty years. Or you picked it up second-hand with no manual, a faded decal, and a persistent hydraulic leak that needs fixing. The first question is always the same: **what model is this exactly — and where do I find the parts?**
@@ -42,7 +47,7 @@ sources: Wikimedia Commons (https://commons.wikimedia.org/wiki/Category:Kubota_t
 alt: "Close-up of a Kubota tractor model and serial number plate mounted on the frame"
 caption: "The model plate is usually riveted to the main frame. On tractors over 15 years old, look carefully — surface rust often obscures the digits."
 size: 800×500px
-filename: blog-01-inline-kubota-model-plate.webp
+filename: blog-01-inline-kubota-model-plate.jpg
 -->
 
 > **Tip:** If the plate is missing or illegible — common on tractors over 15 years old — move to Step 2.
@@ -91,7 +96,7 @@ sources: Wikimedia Commons · YouTube thumbnails from "kubota engine serial numb
 alt: "Kubota engine block with serial number stamp visible near the valve cover"
 caption: "The engine serial number is stamped directly into the block — it survives long after stick-on labels have perished."
 size: 800×500px
-filename: blog-01-inline-kubota-engine-serial.webp
+filename: blog-01-inline-kubota-engine-serial.jpg
 -->
 
 With the engine code, we can usually cross-reference the full parts catalogue even without the model plate.
