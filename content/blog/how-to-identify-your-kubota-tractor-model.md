@@ -22,7 +22,7 @@ filename: blog-01-hero-kubota-paddy-malaysia-v2.jpg
 search: "old kubota tractor paddy field malaysia kedah"
 alt: "Aged Kubota tractor parked at the edge of a Malaysian paddy field"
 caption: "Tens of thousands of Kubota tractors are still working across Malaysian paddy states — many well past their 10th year."
-filename: blog-01-hero-kubota-paddy-malaysia.jpg
+filename: blog-01-hero-kubota-paddy-malaysia-v3.jpg
 -->
 
 You bought the tractor from a neighbour. Or inherited it from a relative who farmed paddy in Kedah for twenty years. Or you picked it up second-hand with no manual, a faded decal, and a persistent hydraulic leak that needs fixing. The first question is always the same: **what model is this exactly — and where do I find the parts?**

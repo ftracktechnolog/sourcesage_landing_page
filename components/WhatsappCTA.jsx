@@ -1,10 +1,11 @@
 'use client'
 
 const WA_NUMBER = '447546185317'
-const DEFAULT_MESSAGE = 'Hi, I need help sourcing a spare part. (via sourcesage.ai)'
+const DEFAULT_MESSAGE = 'Hi, I need help sourcing a spare part.'
+const SUFFIX = '\n\n(powered by sourcesage.ai)'
 
 export default function WhatsappCTA({ label, message, className, children }) {
-  const text = message || DEFAULT_MESSAGE
+  const text = (message || DEFAULT_MESSAGE) + SUFFIX
   const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`
 
   const handleClick = () => {
