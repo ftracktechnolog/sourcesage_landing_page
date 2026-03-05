@@ -2,10 +2,19 @@
 
 const WA_NUMBER = '447546185317'
 const DEFAULT_MESSAGE = 'Hi, I need help sourcing a spare part.'
-const SUFFIX = '\n\n(powered by sourcesage.ai)'
+
+function withAttribution(message) {
+  const m = message.match(/^([\s\S]*?[.!?])(\s*)/)
+  if (m) {
+    const first = m[1]
+    const rest = message.slice(m[0].length)
+    return rest ? `${first} (via sourcesage.ai). ${rest}` : `${first} (via sourcesage.ai)`
+  }
+  return `${message} (via sourcesage.ai)`
+}
 
 export default function WhatsappCTA({ label, message, className, children }) {
-  const text = (message || DEFAULT_MESSAGE) + SUFFIX
+  const text = withAttribution(message || DEFAULT_MESSAGE)
   const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`
 
   const handleClick = () => {
