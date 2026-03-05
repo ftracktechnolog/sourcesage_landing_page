@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+.blog-content h2 { font-size: 1.5rem; font-weight: 700; margin: 2rem 0 1rem; color: #0f172a; }
+.blog-content h3 { font-size: 1.25rem; font-weight: 600; margin: 1.5rem 0 0.75rem; color: #1e293b; }
+.blog-content p { margin-bottom: 1.25rem; color: #334155; line-height: 1.75; }
+.blog-content ul, .blog-content ol { margin: 1rem 0 1.25rem 1.5rem; color: #334155; }
+.blog-content li { margin-bottom: 0.5rem; line-height: 1.75; }
+.blog-content table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+.blog-content th, .blog-content td { padding: 0.75rem 1rem; border: 1px solid #e2e8f0; text-align: left; }
+.blog-content th { background: #f8fafc; font-weight: 600; }
+.blog-content blockquote { border-left: 4px solid #3b82f6; padding: 0.75rem 1.25rem; background: #eff6ff; margin: 1.5rem 0; border-radius: 0 0.5rem 0.5rem 0; color: #1e40af; }
+.blog-content code { background: #f1f5f9; padding: 0.1em 0.3em; border-radius: 0.25rem; font-size: 0.9em; }
+.blog-content hr { border: none; border-top: 1px solid #e2e8f0; margin: 2rem 0; }
+.blog-content figure { margin: 1.5rem 0; }
+.blog-content img { width: 100%; border-radius: 0.5rem; }
+.image-placeholder .placeholder-box { background: #f8fafc; border: 2px dashed #cbd5e1; border-radius: 0.5rem; padding: 2rem; text-align: center; color: #64748b; }
+figcaption { font-size: 0.875rem; color: #64748b; text-align: center; margin-top: 0.5rem; font-style: italic; }

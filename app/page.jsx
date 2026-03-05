@@ -1,12 +1,12 @@
-'use client'
-
-import React, { useState } from 'react';
+import Link from 'next/link'
 import {
   MessageCircle, Wrench, Clock, AlertTriangle,
   ChevronRight, CheckCircle, MapPin, Mail,
-  ShieldCheck, Truck
-} from 'lucide-react';
-import WhatsappCTA from '../components/WhatsappCTA';
+  ShieldCheck, Truck, BookOpen
+} from 'lucide-react'
+import WhatsappCTA from '../components/WhatsappCTA'
+import RequestForm from '../components/RequestForm'
+import { getAllPosts } from '../lib/blog'
 
 const Navbar = () => (
   <nav className="bg-white shadow-sm sticky top-0 z-50">
@@ -19,6 +19,7 @@ const Navbar = () => (
         <a href="#brands" className="hover:text-blue-600 transition-colors">Brands</a>
         <a href="#marine" className="hover:text-blue-600 transition-colors">Marine</a>
         <a href="#how-it-works" className="hover:text-blue-600 transition-colors">How It Works</a>
+        <a href="/blog" className="hover:text-blue-600 transition-colors">Blog</a>
         <a href="#request" className="hover:text-blue-600 transition-colors">Request a Part</a>
       </div>
       <div className="flex items-center gap-3">
@@ -34,7 +35,7 @@ const Navbar = () => (
       </div>
     </div>
   </nav>
-);
+)
 
 const Hero = () => (
   <header className="bg-white pt-16 pb-24 overflow-hidden border-b border-slate-100">
@@ -100,7 +101,7 @@ const Hero = () => (
       </div>
     </div>
   </header>
-);
+)
 
 const TargetMarket = () => (
   <section className="py-20 bg-blue-600 text-white">
@@ -125,7 +126,7 @@ const TargetMarket = () => (
       </div>
     </div>
   </section>
-);
+)
 
 const BrandGrid = () => {
   const brands = [
@@ -135,7 +136,7 @@ const BrandGrid = () => {
     { name: 'John Deere', origin: 'USA', note: 'Farm & construction equipment' },
     { name: 'Zoomlion', origin: 'China', note: 'Growing in Malaysian plantations' },
     { name: 'Chinese Tractors', origin: 'China', note: 'Various brands, plantation use' },
-  ];
+  ]
 
   return (
     <section id="brands" className="py-24 bg-white">
@@ -166,8 +167,8 @@ const BrandGrid = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
 const MarineSection = () => {
   const brands = [
@@ -176,7 +177,7 @@ const MarineSection = () => {
     'Perkins marine engines',
     'Isuzu marine diesel',
     'Hino industrial/marine engines',
-  ];
+  ]
   const parts = [
     'Overhaul kits',
     'Cylinder heads',
@@ -184,7 +185,7 @@ const MarineSection = () => {
     'Cooling system components',
     'Gaskets and seal kits',
     'Starter motors and alternators',
-  ];
+  ]
 
   return (
     <section id="marine" className="py-24 bg-slate-50 border-y border-slate-100">
@@ -229,8 +230,8 @@ const MarineSection = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
 const ProblemSection = () => (
   <section className="py-24 bg-slate-900 text-white">
@@ -286,7 +287,7 @@ const ProblemSection = () => (
       </div>
     </div>
   </section>
-);
+)
 
 const HowItWorks = () => {
   const steps = [
@@ -315,7 +316,7 @@ const HowItWorks = () => {
       title: 'We Coordinate Delivery',
       items: ['Direct to your workshop', 'Fast dispatch for urgent cases'],
     },
-  ];
+  ]
 
   return (
     <section id="how-it-works" className="py-24 bg-white">
@@ -344,8 +345,8 @@ const HowItWorks = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
 const PartsTypes = () => {
   const agricultural = [
@@ -353,7 +354,7 @@ const PartsTypes = () => {
     { category: 'Hydraulic', parts: ['Pumps', 'Valves', 'Seals'] },
     { category: 'Transmission', parts: ['Clutch plates', 'Gear assemblies'] },
     { category: 'Electrical', parts: ['Starters', 'Alternators', 'Sensors'] },
-  ];
+  ]
   const marine = [
     'Cylinder head components',
     'Injectors',
@@ -361,7 +362,7 @@ const PartsTypes = () => {
     'Raw water pumps',
     'Exhaust manifolds',
     'Cooling system components',
-  ];
+  ]
 
   return (
     <section className="py-24 bg-slate-50 border-y border-slate-100">
@@ -409,8 +410,8 @@ const PartsTypes = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
 const TrustSection = () => (
   <section className="py-24 bg-white">
@@ -451,103 +452,56 @@ const TrustSection = () => (
       </div>
     </div>
   </section>
-);
+)
 
-const RequestForm = () => {
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const f = new FormData(e.target);
-    const body = encodeURIComponent(
-      `Spare Part Request\n\n` +
-      `Brand: ${f.get('brand')}\n` +
-      `Model: ${f.get('model')}\n` +
-      `Engine Code: ${f.get('engine_code')}\n` +
-      `Part Description: ${f.get('part_description')}\n` +
-      `Urgency: ${f.get('urgency')}\n\n` +
-      `Name: ${f.get('name')}\n` +
-      `Phone / WhatsApp: ${f.get('contact')}\n\n` +
-      `Note: Photos can be sent via WhatsApp.`
-    );
-    window.location.href = `mailto:info@sourcesage.ai?subject=Part%20Request&body=${body}`;
-    setSubmitted(true);
-  };
-
-  return (
-    <section id="request" className="py-24 bg-slate-900 text-white">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Request a Part</h2>
-          <p className="text-slate-400 text-lg">Send us your part details and we&apos;ll get back to you quickly.</p>
+const BlogSection = ({ posts }) => (
+  <section id="blog" className="py-24 bg-slate-50 border-y border-slate-100">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="flex items-end justify-between mb-12">
+        <div>
+          <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">Knowledge Base</h2>
+          <h3 className="text-3xl font-bold text-slate-900">Owner Guides &amp; Tractor Reference</h3>
+          <p className="mt-3 text-slate-600 max-w-xl">Practical guides for Kubota owners in Malaysia — model identification, sourcing parts, and diagnosing common problems.</p>
         </div>
-        {submitted ? (
-          <div className="bg-white/5 rounded-2xl p-12 border border-white/10 text-center">
-            <CheckCircle className="w-16 h-16 text-green-400 mx-auto mb-6" />
-            <h3 className="text-2xl font-bold mb-3">Request Sent</h3>
-            <p className="text-slate-400 mb-6">We&apos;ll review your request and respond shortly. For urgent cases, WhatsApp us directly.</p>
-            <WhatsappCTA
-              label="post_form_submit"
-              className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl font-bold transition-all"
-            >
-              <MessageCircle className="w-5 h-5" /> WhatsApp for Urgent Parts
-            </WhatsappCTA>
-          </div>
-        ) : (
-          <form onSubmit={handleSubmit} className="bg-white rounded-3xl p-10 shadow-2xl text-left">
-            <div className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2">Brand *</label>
-                  <input name="brand" required type="text" placeholder="e.g. Kubota, Zoomlion" className="w-full border-b-2 border-slate-100 py-2 text-slate-900 outline-none focus:border-blue-600 transition-colors" />
-                </div>
-                <div>
-                  <label className="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2">Model *</label>
-                  <input name="model" required type="text" placeholder="e.g. L3408, RC504" className="w-full border-b-2 border-slate-100 py-2 text-slate-900 outline-none focus:border-blue-600 transition-colors" />
-                </div>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2">Engine Code</label>
-                  <input name="engine_code" type="text" placeholder="e.g. V2403, 4TNV98" className="w-full border-b-2 border-slate-100 py-2 text-slate-900 outline-none focus:border-blue-600 transition-colors" />
-                </div>
-                <div>
-                  <label className="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2">Urgency *</label>
-                  <select name="urgency" required className="w-full border-b-2 border-slate-100 py-2 text-slate-900 outline-none focus:border-blue-600 transition-colors bg-white">
-                    <option value="">Select urgency level</option>
-                    <option value="Routine">Routine</option>
-                    <option value="Urgent">Urgent</option>
-                    <option value="Machine Down">Machine Down — Priority</option>
-                  </select>
-                </div>
-              </div>
-              <div>
-                <label className="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2">Part Description *</label>
-                <input name="part_description" required type="text" placeholder="e.g. Overhaul kit, cylinder head, fuel injector" className="w-full border-b-2 border-slate-100 py-2 text-slate-900 outline-none focus:border-blue-600 transition-colors" />
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2">Your Name *</label>
-                  <input name="name" required type="text" placeholder="Name" className="w-full border-b-2 border-slate-100 py-2 text-slate-900 outline-none focus:border-blue-600 transition-colors" />
-                </div>
-                <div>
-                  <label className="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2">Phone / WhatsApp *</label>
-                  <input name="contact" required type="text" placeholder="+60 12-XXX XXXX" className="w-full border-b-2 border-slate-100 py-2 text-slate-900 outline-none focus:border-blue-600 transition-colors" />
-                </div>
-              </div>
-              <p className="text-xs text-slate-400 bg-slate-50 rounded-lg p-3">
-                📷 Have a photo of the part? Send it via WhatsApp after submitting this form.
-              </p>
-              <button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-5 rounded-2xl text-lg shadow-xl shadow-blue-100 transition-all">
-                Send Part Request
-              </button>
-            </div>
-          </form>
-        )}
+        <Link href="/blog" className="hidden md:flex items-center gap-2 text-sm font-bold text-blue-600 hover:text-blue-700 transition-colors shrink-0 ml-8">
+          All guides <ChevronRight className="w-4 h-4" />
+        </Link>
       </div>
-    </section>
-  );
-};
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {posts.map(post => (
+          <Link
+            key={post.slug}
+            href={`/blog/${post.slug}`}
+            className="group bg-white rounded-2xl border border-slate-200 p-7 hover:border-blue-300 hover:shadow-md transition-all flex flex-col"
+          >
+            <div className="flex items-center gap-3 mb-4">
+              <span className="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center shrink-0">
+                <BookOpen className="w-4 h-4 text-blue-600" />
+              </span>
+              <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">
+                {new Date(post.publish_date).toLocaleDateString('en-MY', { month: 'long', year: 'numeric' })}
+              </span>
+            </div>
+            <h4 className="text-lg font-bold text-slate-900 mb-3 group-hover:text-blue-700 transition-colors leading-snug">
+              {post.title}
+            </h4>
+            <p className="text-sm text-slate-600 leading-relaxed line-clamp-3 flex-1">
+              {post.meta_description}
+            </p>
+            <span className="mt-5 text-sm font-bold text-blue-600 group-hover:text-blue-700 flex items-center gap-1 transition-colors">
+              Read guide <ChevronRight className="w-4 h-4" />
+            </span>
+          </Link>
+        ))}
+      </div>
+      <div className="mt-8 text-center md:hidden">
+        <Link href="/blog" className="text-sm font-bold text-blue-600 hover:text-blue-700 transition-colors">
+          See all guides →
+        </Link>
+      </div>
+    </div>
+  </section>
+)
 
 const Footer = () => (
   <footer className="bg-white py-12 text-slate-500 border-t border-slate-100">
@@ -572,7 +526,7 @@ const Footer = () => (
       </div>
     </div>
   </footer>
-);
+)
 
 const StickyWhatsApp = () => (
   <WhatsappCTA
@@ -581,9 +535,11 @@ const StickyWhatsApp = () => (
   >
     <MessageCircle className="w-5 h-5" /> Send Part Details
   </WhatsappCTA>
-);
+)
 
 export default function Home() {
+  const posts = getAllPosts()
+
   return (
     <>
       <script
@@ -612,9 +568,10 @@ export default function Home() {
         <HowItWorks />
         <PartsTypes />
         <TrustSection />
+        {posts.length > 0 && <BlogSection posts={posts} />}
         <RequestForm />
         <Footer />
       </div>
     </>
-  );
+  )
 }
