@@ -381,6 +381,88 @@ const TrustSection = ({ t }) => (
   </section>
 )
 
+const EAST_MY_CITIES = [
+  { city: 'Kota Kinabalu', note: 'Fishing fleets & dive operators' },
+  { city: 'Sandakan', note: 'Commercial fishing & aquaculture' },
+  { city: 'Tawau', note: 'Palm oil & marine engines' },
+  { city: 'Miri', note: 'Offshore support vessels' },
+  { city: 'Sibu', note: 'River ferries & workboats' },
+  { city: 'Kuching', note: 'Pleasure craft & plantations' },
+]
+
+const EastMalaysiaSection = ({ t }) => (
+  <section className="py-24 bg-slate-900 text-white">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+      <div>
+        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-900 text-blue-300 text-xs font-bold uppercase tracking-widest mb-6">
+          <MapPin className="w-4 h-4" /> {t.eastMalaysia.label}
+        </div>
+        <h2 className="text-3xl font-bold mb-6">{t.eastMalaysia.heading}</h2>
+        <p className="text-slate-300 text-lg leading-relaxed mb-8">{t.eastMalaysia.body}</p>
+        <WhatsappCTA
+          label="east_malaysia"
+          message="Hi, I'm in Sabah/Sarawak and need help sourcing a spare part urgently. Equipment: ___ Part needed: ___ Location: ___"
+          className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3.5 rounded-xl font-bold transition-all"
+        >
+          <MessageCircle className="w-5 h-5" /> {t.eastMalaysia.cta}
+        </WhatsappCTA>
+      </div>
+      <div className="mt-12 lg:mt-0 grid grid-cols-2 gap-4">
+        {EAST_MY_CITIES.map(loc => (
+          <div key={loc.city} className="bg-slate-800 rounded-xl p-4 border border-slate-700">
+            <p className="font-bold text-white text-sm mb-1">{loc.city}</p>
+            <p className="text-slate-400 text-xs">{loc.note}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+)
+
+const RESCUE_STORIES = [
+  {
+    outcome: 'Sourced in 4 days',
+    label: 'Kubota Combine — Kedah',
+    story: 'Cutter bar main gear sheared mid-harvest. Local dealers quoted 3 weeks. We sourced the part from our Japan network and had it on-site in 4 working days — harvest completed before the rains.',
+  },
+  {
+    outcome: 'Sourced in 48 hours',
+    label: 'Yanmar 4JH — Sandakan',
+    story: 'Raw water pump seized on a commercial fishing vessel. Two local marine shops had nothing. We located the impeller kit and pump housing, and couriered to Sandakan — vessel back at sea in two days.',
+  },
+  {
+    outcome: 'Sourced in 5 days',
+    label: 'Massey Ferguson MF240 — Perak',
+    story: 'Bosch injection pump failed on a plantation tractor. The model was discontinued. We cross-referenced to a compatible reconditioned unit from our secondary network and delivered within the week.',
+  },
+  {
+    outcome: 'Same-day sourced',
+    label: 'Zoomlion RC60 — Kelantan',
+    story: 'Threshing chain snapped on day 2 of harvest season. No local Zoomlion dealer in the region. We located a compatible chain locally and arranged same-day delivery.',
+  },
+]
+
+const RescueStories = ({ t }) => (
+  <section className="py-24 bg-white border-t border-slate-100">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="text-center mb-12">
+        <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">{t.rescueStories.label}</h2>
+        <h3 className="text-3xl font-bold text-slate-900">{t.rescueStories.heading}</h3>
+        <p className="mt-4 text-slate-600 max-w-2xl mx-auto">{t.rescueStories.body}</p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {RESCUE_STORIES.map(s => (
+          <div key={s.label} className="bg-slate-50 rounded-2xl p-7 border border-slate-100 hover:border-blue-100 hover:shadow-md transition-all">
+            <span className="inline-block bg-green-100 text-green-800 text-xs font-black uppercase tracking-widest px-3 py-1 rounded-full mb-4">{s.outcome}</span>
+            <h4 className="font-bold text-slate-900 text-base mb-3">{s.label}</h4>
+            <p className="text-slate-600 leading-relaxed text-sm">{s.story}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+)
+
 const BlogSection = ({ t, posts }) => (
   <section id="blog" className="py-24 bg-slate-50 border-y border-slate-100">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -505,6 +587,8 @@ export default function HomePageContent({ t, lang }) {
         <HowItWorks t={t} />
         <PartsTypes t={t} />
         <TrustSection t={t} />
+        <EastMalaysiaSection t={t} />
+        <RescueStories t={t} />
         {posts.length > 0 && <BlogSection t={t} posts={posts} />}
         <RequestForm t={t.form} />
         <Footer t={t} />
