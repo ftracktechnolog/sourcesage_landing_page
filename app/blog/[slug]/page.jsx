@@ -10,15 +10,30 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { slug } = await params
   const post = await getPostBySlug(slug)
+  const ogImage = post.meta.hero_image
+    ? `https://sourcesage.ai/images/blog/${post.meta.hero_image}`
+    : 'https://sourcesage.ai/images/og-default.png'
   return {
     title: `${post.meta.title} | SourceSage`,
     description: post.meta.meta_description || post.meta.title,
     keywords: post.meta.meta_keywords,
+    authors: post.meta.author ? [{ name: post.meta.author }] : [{ name: 'SourceSage Editorial' }],
     alternates: { canonical: `/blog/${post.meta.slug}` },
     openGraph: {
       title: post.meta.title,
       description: post.meta.meta_description || post.meta.title,
       url: `https://sourcesage.ai/blog/${post.meta.slug}`,
+      type: 'article',
+      publishedTime: post.meta.publish_date,
+      modifiedTime: post.meta.last_updated,
+      authors: [post.meta.author || 'SourceSage Editorial'],
+      images: [{ url: ogImage, width: 1200, height: 675, alt: post.meta.title }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.meta.title,
+      description: post.meta.meta_description || post.meta.title,
+      images: [ogImage],
     },
   }
 }
@@ -75,8 +90,37 @@ export default async function BlogPost({ params }) {
   const { slug } = await params
   const post = await getPostBySlug(slug)
 
+  const ogImage = post.meta.hero_image
+    ? `https://sourcesage.ai/images/blog/${post.meta.hero_image}`
+    : 'https://sourcesage.ai/images/og-default.png'
+
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.meta.title,
+    description: post.meta.meta_description || post.meta.title,
+    image: ogImage,
+    datePublished: post.meta.publish_date,
+    dateModified: post.meta.last_updated || post.meta.publish_date,
+    author: { '@type': 'Organization', name: post.meta.author || 'SourceSage Editorial', url: 'https://sourcesage.ai' },
+    publisher: { '@type': 'Organization', name: 'SourceSage.ai', url: 'https://sourcesage.ai' },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `https://sourcesage.ai/blog/${post.meta.slug}` },
+  }
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sourcesage.ai/' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://sourcesage.ai/blog' },
+      { '@type': 'ListItem', position: 3, name: post.meta.title },
+    ],
+  }
+
   return (
     <div className="min-h-screen font-sans text-slate-900 antialiased">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Navbar />
       <main>
         {/* Hero image */}
@@ -95,9 +139,14 @@ export default async function BlogPost({ params }) {
           <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight mb-4">
             {post.meta.title}
           </h1>
-          <div className="flex items-center gap-3 text-sm text-slate-500">
+          <div className="flex items-center gap-3 text-sm text-slate-500 flex-wrap">
+            {post.meta.author && (
+              <span className="font-medium text-slate-600">By {post.meta.author}</span>
+            )}
             <span className="bg-slate-100 px-3 py-1 rounded-full font-medium">
-              Last updated: {post.lastUpdated}
+              Updated: {/^\d{4}-\d{2}-\d{2}$/.test(post.lastUpdated)
+                ? new Date(post.lastUpdated + 'T00:00:00').toLocaleDateString('en-MY', { month: 'long', year: 'numeric' })
+                : post.lastUpdated}
             </span>
           </div>
         </div>

@@ -1,11 +1,12 @@
 ---
 id: blog-05
 slug: kubota-serial-number-parts-lookup
-title: "How to Find Kubota Tractor Parts Using Only a Serial Number (Malaysia Guide)"
+title: "Find Kubota Tractor Parts by Serial Number — Malaysia Guide"
+author: "SourceSage Editorial"
 meta_keywords: ["kubota tractor serial number lookup parts", "identify kubota model serial number", "kubota parts by serial number malaysia"]
 content_angle: "How-to / Problem-solving — captures owners who've already lost the model plate"
-publish_date: "2026-03-11"
-last_updated: "March 2026"
+publish_date: "2026-02-26"
+last_updated: "2026-02-26"
 whatsapp_label: "Send Your Serial Number on WhatsApp"
 whatsapp_prefill: "Hi, I have an old Kubota tractor. Serial number: [X]. Engine number: [X]. I need help identifying the model and sourcing parts."
 hero_image: "blog-05-hero-kubota-serial-plate-rusted.webp"

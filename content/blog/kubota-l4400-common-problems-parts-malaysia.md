@@ -1,11 +1,12 @@
 ---
 id: blog-04
 slug: kubota-l4400-common-problems-parts-malaysia
-title: "Kubota L4400 Common Problems & Replacement Parts: What Every Malaysian Owner Needs to Know"
+title: "Kubota L4400 Common Problems & Replacement Parts Guide Malaysia"
+author: "SourceSage Editorial"
 meta_keywords: ["kubota l4400 parts malaysia", "kubota l4400 problems", "kubota l4400 spare parts list"]
 content_angle: "Problem/solution — captures owners actively experiencing issues"
-publish_date: "2026-04-01"
-last_updated: "March 2026"
+publish_date: "2026-04-08"
+last_updated: "2026-04-08"
 whatsapp_label: "Ask Us About L4400 Parts"
 whatsapp_prefill: "Hi, I need parts for my Kubota L4400. Variant: [DT/DV], Year: [X], Issue: [X]"
 hero_image: "blog-04-hero-kubota-l4400-paddy.webp"

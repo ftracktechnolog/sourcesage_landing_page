@@ -2,10 +2,11 @@
 id: blog-03
 slug: kubota-m9000-m9540-parts-malaysia
 title: "Kubota M9000 & M9540 Parts Malaysia: The Complete Owner's Guide"
+author: "SourceSage Editorial"
 meta_keywords: ["kubota m9000 parts malaysia", "kubota m9540 spare parts", "kubota m9540dt parts list"]
 content_angle: "Model-specific deep-dive — highest commercial intent"
-publish_date: "2026-04-08"
-last_updated: "March 2026"
+publish_date: "2026-04-26"
+last_updated: "2026-04-26"
 whatsapp_label: "Get a Parts Quote on WhatsApp"
 whatsapp_prefill: "Hi, I need parts for my Kubota M9000 / M9540. Model: [X], Serial: [X], Issue: [X]"
 hero_image: "blog-03-hero-kubota-m9540-paddy.webp"

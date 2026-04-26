@@ -552,7 +552,15 @@ export default function Home() {
             'url': 'https://sourcesage.ai',
             'description': 'Malaysia-based supplier of hard-to-find agricultural tractor and marine engine spare parts. Fast sourcing for urgent breakdowns.',
             'address': { '@type': 'PostalAddress', 'addressCountry': 'MY' },
-            'areaServed': 'Malaysia',
+            'areaServed': [
+              { '@type': 'State', 'name': 'Johor' },
+              { '@type': 'State', 'name': 'Selangor' },
+              { '@type': 'State', 'name': 'Perak' },
+              { '@type': 'State', 'name': 'Kedah' },
+              { '@type': 'State', 'name': 'Sabah' },
+              { '@type': 'State', 'name': 'Sarawak' },
+            ],
+            'knowsAbout': ['Kubota tractor parts', 'Yanmar marine diesel engine parts', 'Massey Ferguson tractor parts', 'John Deere parts Malaysia', 'vintage parts sourcing'],
             'contactPoint': { '@type': 'ContactPoint', 'email': 'info@sourcesage.ai', 'contactType': 'customer service' }
           })
         }}
