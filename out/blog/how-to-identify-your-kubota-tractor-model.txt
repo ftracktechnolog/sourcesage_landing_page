@@ -1,0 +1,146 @@
+1:"$Sreact.fragment"
+2:I[9766,[],""]
+3:I[8924,[],""]
+4:I[1402,["177","static/chunks/app/layout-dddda05db4841fe7.js"],""]
+6:I[4431,[],"OutletBoundary"]
+8:I[5278,[],"AsyncMetadataOutlet"]
+a:I[4431,[],"ViewportBoundary"]
+c:I[4431,[],"MetadataBoundary"]
+d:"$Sreact.suspense"
+f:I[7150,[],""]
+:HL["/_next/static/css/95abc96affed09c6.css","style"]
+0:{"P":null,"b":"b7zGLGSvLZs-bKGksinaU","p":"","c":["","blog","how-to-identify-your-kubota-tractor-model"],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","how-to-identify-your-kubota-tractor-model","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/95abc96affed09c6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"children":[["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L4",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-WQ8FKH8GY6","strategy":"afterInteractive"}],["$","$L4",null,{"id":"google-analytics","strategy":"afterInteractive","children":"\n          window.dataLayer = window.dataLayer || [];\n          function gtag(){dataLayer.push(arguments);}\n          gtag('js', new Date());\n          gtag('config', 'G-WQ8FKH8GY6');\n        "}]]}]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","how-to-identify-your-kubota-tractor-model","d"],["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L5",null,["$","$L6",null,{"children":["$L7",["$","$L8",null,{"promise":"$@9"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$La",null,{"children":"$Lb"}],null],["$","$Lc",null,{"children":["$","div",null,{"hidden":true,"children":["$","$d",null,{"fallback":null,"children":"$Le"}]}]}]]}],false]],"m":"$undefined","G":["$f",[]],"s":false,"S":true}
+10:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","953","static/chunks/app/blog/%5Bslug%5D/page-3df8a70d86e37abf.js"],""]
+11:I[8088,["619","static/chunks/619-ba102abea3e3d0e4.js","953","static/chunks/app/blog/%5Bslug%5D/page-3df8a70d86e37abf.js"],"default"]
+5:["$","div",null,{"className":"min-h-screen font-sans text-slate-900 antialiased","children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Identify Your Kubota Tractor Model & Find the Right Parts in Malaysia\",\"description\":\"You bought the tractor from a neighbour. Or inherited it from a relative who farmed paddy in Kedah for twenty years. Or you picked it up second-hand with n\",\"image\":\"https://sourcesage.ai/images/blog/blog-01-hero-kubota-paddy-malaysia.webp\",\"datePublished\":\"2026-01-15\",\"dateModified\":\"2026-01-15\",\"author\":{\"@type\":\"Organization\",\"name\":\"SourceSage Editorial\",\"url\":\"https://sourcesage.ai\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"SourceSage.ai\",\"url\":\"https://sourcesage.ai\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://sourcesage.ai/blog/how-to-identify-your-kubota-tractor-model\"}}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://sourcesage.ai/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://sourcesage.ai/blog\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Identify Your Kubota Tractor Model & Find the Right Parts in Malaysia\"}]}"}}],["$","nav",null,{"className":"bg-white shadow-sm sticky top-0 z-50","children":["$","div",null,{"className":"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center","children":[["$","$L10",null,{"href":"/","className":"flex items-center","children":[["$","span",null,{"className":"font-bold text-xl text-slate-900 tracking-tight","children":"SourceSage"}],["$","span",null,{"className":"text-blue-600 font-bold text-xl","children":".ai"}]]}],["$","div",null,{"className":"hidden md:flex gap-8 text-sm font-semibold text-slate-600","children":[["$","$L10",null,{"href":"/#brands","className":"hover:text-blue-600 transition-colors","children":"Brands"}],["$","$L10",null,{"href":"/#marine","className":"hover:text-blue-600 transition-colors","children":"Marine"}],["$","$L10",null,{"href":"/blog","className":"hover:text-blue-600 transition-colors","children":"Blog"}],["$","$L10",null,{"href":"/#request","className":"hover:text-blue-600 transition-colors","children":"Request a Part"}]]}],["$","$L11",null,{"label":"blog-post-navbar","message":"Hi SourceSage, I need help sourcing a spare part. Brand: ___ Model: ___ Part needed: ___","className":"bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-lg font-bold transition-all text-sm flex items-center gap-2","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-message-circle w-4 h-4","aria-hidden":"true","children":[["$","path","1sd12s",{"d":"M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"}],"$undefined"]}]," WhatsApp"]}]]}]}],["$","main",null,{"children":[["$","div",null,{"className":"w-full bg-slate-100 overflow-hidden [&_figure]:m-0 [&_img]:w-full [&_img]:h-96 [&_img]:object-cover [&_img]:rounded-none","dangerouslySetInnerHTML":{"__html":"<figure><img src=\"/images/blog/blog-01-hero-kubota-paddy-malaysia-v2.jpg\" alt=\"Kubota tractor — a typical model seen on Malaysian farms\" loading=\"lazy\" /><figcaption></figcaption></figure>"}}],["$","div",null,{"className":"max-w-3xl mx-auto px-4 sm:px-6 pt-10 pb-6","children":[["$","$L10",null,{"href":"/blog","className":"text-xs font-semibold text-blue-600 hover:text-blue-700 transition-colors mb-6 inline-block","children":"← Back to guides"}],"$L12","$L13"]}],"$L14","$L15","","$L16"]}],"$L17"]}]
+12:["$","h1",null,{"className":"text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight mb-4","children":"Identify Your Kubota Tractor Model & Find the Right Parts in Malaysia"}]
+13:["$","div",null,{"className":"flex items-center gap-3 text-sm text-slate-500 flex-wrap","children":[["$","span",null,{"className":"font-medium text-slate-600","children":["By ","SourceSage Editorial"]}],["$","span",null,{"className":"bg-slate-100 px-3 py-1 rounded-full font-medium","children":["Updated: ","January 2026"]}]]}]
+18:T1b22,<p>You bought the tractor from a neighbour. Or inherited it from a relative who farmed paddy in Kedah for twenty years. Or you picked it up second-hand with no manual, a faded decal, and a persistent hydraulic leak that needs fixing. The first question is always the same: <strong>what model is this exactly — and where do I find the parts?</strong></p>
+<p>This guide walks through the exact steps we use when we take in a customer call for an older Kubota. It sounds simple, but with a fleet of tens of thousands of Kubota tractors in Malaysia — many of them over 15 years old — the wrong part number is an expensive mistake.</p>
+<hr>
+<h2>Step 1: Find the Model Plate (or What's Left of It)</h2>
+<p>Every Kubota tractor has a <strong>model and serial number plate</strong>, usually located in one of three places depending on the series:</p>
+<ul>
+<li><strong>L series (compact/mid, 30–50HP):</strong> Left side of the main frame, just ahead of the front axle, or on the instrument panel housing.</li>
+<li><strong>M series (heavy-duty, 60–110HP):</strong> Right side of the chassis near the transmission housing, or on a plate under the bonnet near the engine.</li>
+<li><strong>B series (compact, under 30HP):</strong> Dashboard panel or near the front bonnet latch.</li>
+</ul>
+<p>The plate typically shows two things: the <strong>model code</strong> (e.g., <code>L4400DV</code>, <code>M9540DT</code>) and a <strong>serial number</strong> (a 5–7 digit number starting with the model prefix).</p>
+<figure><img src="/images/blog/blog-01-inline-kubota-model-plate.jpg" alt="Close-up of a Kubota tractor model and serial number plate mounted on the frame" loading="lazy" /><figcaption>The model plate is usually riveted to the main frame. On tractors over 15 years old, look carefully — surface rust often obscures the digits.</figcaption></figure>
+<blockquote>
+<p><strong>Tip:</strong> If the plate is missing or illegible — common on tractors over 15 years old — move to Step 2.</p>
+</blockquote>
+<hr>
+<h2>Step 2: Decode the Model Code Yourself</h2>
+<p>Kubota model codes follow a consistent pattern. Once you learn to read them, you can often identify the tractor from memory or a quick look.</p>
+<table>
+<thead>
+<tr>
+<th>Code element</th>
+<th>What it means</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Letter prefix</td>
+<td>Series (B = compact, L = utility, M = heavy)</td>
+<td><strong>L</strong>4400</td>
+</tr>
+<tr>
+<td>Number</td>
+<td>Approximate engine HP × 100</td>
+<td>L<strong>44</strong>00 = ~44HP</td>
+</tr>
+<tr>
+<td>Last two digits</td>
+<td>Model revision/generation</td>
+<td>L44<strong>00</strong></td>
+</tr>
+<tr>
+<td>Suffix letters</td>
+<td>Transmission/drive type</td>
+<td>L4400<strong>DV</strong> = dual-velocity 4WD</td>
+</tr>
+</tbody>
+</table>
+<p>Common suffixes you'll see in Malaysia:</p>
+<ul>
+<li><strong>DT</strong> = diesel, 4WD (dry-type clutch)</li>
+<li><strong>DV</strong> = dual-velocity transmission, 4WD</li>
+<li><strong>SU</strong> = shuttle transmission, utility</li>
+<li><strong>DHV</strong> = 4WD, high-clearance variant</li>
+</ul>
+<p>So <code>M9540DT</code> = M series, ~95HP, 4WD, 40th revision in that line.</p>
+<hr>
+<h2>Step 3: Use the Engine Number as a Backup</h2>
+<p>If the model plate is gone, the <strong>engine serial number</strong> is your next best option. It's stamped directly into the engine block (usually the top or right-hand side), and it will give you the <strong>engine model code</strong> — which is often enough to identify the tractor series and compatible parts.</p>
+<p>Common Kubota engine codes found in older Malaysian tractors:</p>
+<table>
+<thead>
+<tr>
+<th>Engine code</th>
+<th>Found in tractor models</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V3800-DI</td>
+<td>M9000, M9540 (older gen)</td>
+</tr>
+<tr>
+<td>V2403-M</td>
+<td>L4400, L4200, L3800</td>
+</tr>
+<tr>
+<td>V2203</td>
+<td>L3408, L3608, L3000</td>
+</tr>
+<tr>
+<td>D1503</td>
+<td>L3200, L2900, L3010</td>
+</tr>
+<tr>
+<td>D1105</td>
+<td>B2920, B3200, B2320</td>
+</tr>
+<tr>
+<td>V6108</td>
+<td>M108S, M110</td>
+</tr>
+</tbody>
+</table>
+<figure><img src="/images/blog/blog-01-inline-kubota-engine-serial.jpg" alt="Kubota engine block with serial number stamp visible near the valve cover" loading="lazy" /><figcaption>The engine serial number is stamped directly into the block — it survives long after stick-on labels have perished.</figcaption></figure>
+<p>With the engine code, we can usually cross-reference the full parts catalogue even without the model plate.</p>
+<hr>
+<h2>Step 4: Cross-Reference the Parts Number</h2>
+<p>Kubota uses a <strong>consistent parts numbering system</strong> across models. Many parts — gaskets, seals, bearings, hydraulic components — are shared across multiple generations and series. This is particularly useful for older models where genuine Kubota parts are discontinued.</p>
+<p>The general parts number format is:
+<code>XXXXX-YYYYY</code> where the first five digits often indicate the component family and the last five indicate the specific variant.</p>
+<p>For example:</p>
+<ul>
+<li><code>TC422-16800</code> (starter motor) fits: L3218, L3408, L4018, L4508, L5018 — five different models, one part.</li>
+<li><code>TD030-12010</code> (bevel gear) fits: L3408, L3608, L4018, L4400, L4508, L4708, L5018, M5000.</li>
+</ul>
+<p>This cross-compatibility is why we can still supply parts for tractors that are 20+ years old — the components often overlap with models that were made much more recently.</p>
+<hr>
+<h2>Step 5: When You Still Can't Figure It Out</h2>
+<p>If you've exhausted the above steps, here's what else works:</p>
+<ol>
+<li><strong>Measure the tractor.</strong> Kubota publishes dimensional specs for all models. Wheelbase, overall length, and the shape of the bonnet/hood are often enough to narrow it down to two or three candidates.</li>
+<li><strong>Check the hydraulic system.</strong> Older Kubota L series used an open-centre hydraulic system; newer ones shifted to closed-centre. This matters for parts compatibility.</li>
+<li><strong>WhatsApp us a photo.</strong> We keep records of the most common older Kubota models sold in Malaysia going back to the 1990s. Send us a photo of the engine and the left side of the frame — nine times out of ten we can identify it within a few minutes.</li>
+</ol>
+<hr>
+<h2>The Bottom Line</h2>
+<p>Identifying an old Kubota tractor in Malaysia doesn't have to be a guessing game. The model plate, serial number, and engine code are three independent ways to pin down exactly what you have. And once you know the model, the parts cross-reference system means you often have more options than you'd expect — including aftermarket alternatives that cost a fraction of genuine parts.</p>
+<p>We specialise in exactly this: sourcing parts for older and hard-to-find Kubota models that mainstream dealers no longer stock. Whether your tractor is a 2005 L3408, a 2000 M9000, or a 1995 B5200, we can help.</p>
+<hr>
+14:["$","article",null,{"className":"blog-content max-w-3xl mx-auto px-4 sm:px-6 pb-8","children":["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$18"}}]}]
+15:["$","div",null,{"className":"max-w-3xl mx-auto px-4 sm:px-6 py-8","children":["$","div",null,{"className":"bg-green-50 border border-green-100 rounded-2xl p-8 text-center","children":[["$","p",null,{"className":"text-slate-700 font-semibold mb-5 text-lg","children":"Need help identifying your Kubota or finding the right part?"}],["$","$L11",null,{"label":"blog_blog-01","message":"Hi, I need help identifying my Kubota tractor model and finding parts.","className":"inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-message-circle w-6 h-6","aria-hidden":"true","children":[["$","path","1sd12s",{"d":"M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"}],"$undefined"]}],"Chat with Us on WhatsApp"]}]]}]}]
+16:["$","div",null,{"className":"max-w-3xl mx-auto px-4 sm:px-6 pb-16","children":["$","p",null,{"className":"text-sm text-slate-400 italic","children":["Last updated: ","2026-01-15"]}]}]
+17:["$","footer",null,{"className":"bg-white py-12 text-slate-500 border-t border-slate-100","children":["$","div",null,{"className":"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8","children":[["$","div",null,{"className":"flex flex-col md:flex-row justify-between items-center gap-6 mb-8","children":[["$","div",null,{"children":[["$","span",null,{"className":"font-black text-xl tracking-tighter text-slate-900","children":"SourceSage"}],["$","span",null,{"className":"font-black text-xl text-blue-600","children":".ai"}],["$","p",null,{"className":"text-sm text-slate-500 mt-1","children":"Malaysia-Based Parts Sourcing Specialist"}]]}],["$","div",null,{"className":"flex gap-6 text-sm font-semibold","children":[["$","a",null,{"href":"mailto:info@sourcesage.ai","className":"hover:text-blue-600 flex items-center gap-2 transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-mail w-4 h-4","aria-hidden":"true","children":[["$","path","132q7q",{"d":"m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"}],["$","rect","izxlao",{"x":"2","y":"4","width":"20","height":"16","rx":"2"}],"$undefined"]}]," info@sourcesage.ai"]}],["$","$L11",null,{"label":"blog-post-footer","message":"Hi SourceSage, I need help sourcing a spare part. Brand: ___ Model: ___ Part needed: ___","className":"hover:text-green-600 flex items-center gap-2 transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-message-circle w-4 h-4","aria-hidden":"true","children":[["$","path","1sd12s",{"d":"M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"}],"$undefined"]}]," WhatsApp"]}]]}]]}],["$","div",null,{"className":"text-center pt-6 border-t border-slate-100","children":["$","p",null,{"className":"text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400","children":"© 2024 SourceSage.ai. Agricultural & Marine Parts Sourcing, Malaysia."}]}]]}]}]
+b:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+7:null
+9:{"metadata":[["$","title","0",{"children":"Identify Your Kubota Tractor Model & Find the Right Parts in Malaysia | SourceSage"}],["$","meta","1",{"name":"description","content":"You bought the tractor from a neighbour. Or inherited it from a relative who farmed paddy in Kedah for twenty years. Or you picked it up second-hand with n"}],["$","meta","2",{"name":"author","content":"SourceSage Editorial"}],["$","meta","3",{"name":"keywords","content":"kubota tractor model identification malaysia,kubota serial number parts,how to find kubota tractor model number"}],["$","meta","4",{"name":"robots","content":"index, follow"}],["$","link","5",{"rel":"canonical","href":"https://sourcesage.ai/blog/how-to-identify-your-kubota-tractor-model"}],["$","meta","6",{"property":"og:title","content":"Identify Your Kubota Tractor Model & Find the Right Parts in Malaysia"}],["$","meta","7",{"property":"og:description","content":"You bought the tractor from a neighbour. Or inherited it from a relative who farmed paddy in Kedah for twenty years. Or you picked it up second-hand with n"}],["$","meta","8",{"property":"og:url","content":"https://sourcesage.ai/blog/how-to-identify-your-kubota-tractor-model"}],["$","meta","9",{"property":"og:image","content":"https://sourcesage.ai/images/blog/blog-01-hero-kubota-paddy-malaysia.webp"}],["$","meta","10",{"property":"og:image:width","content":"1200"}],["$","meta","11",{"property":"og:image:height","content":"675"}],["$","meta","12",{"property":"og:image:alt","content":"Identify Your Kubota Tractor Model & Find the Right Parts in Malaysia"}],["$","meta","13",{"property":"og:type","content":"article"}],["$","meta","14",{"property":"article:published_time","content":"2026-01-15"}],["$","meta","15",{"property":"article:modified_time","content":"2026-01-15"}],["$","meta","16",{"property":"article:author","content":"SourceSage Editorial"}],["$","meta","17",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","18",{"name":"twitter:title","content":"Identify Your Kubota Tractor Model & Find the Right Parts in Malaysia"}],["$","meta","19",{"name":"twitter:description","content":"You bought the tractor from a neighbour. Or inherited it from a relative who farmed paddy in Kedah for twenty years. Or you picked it up second-hand with n"}],["$","meta","20",{"name":"twitter:image","content":"https://sourcesage.ai/images/blog/blog-01-hero-kubota-paddy-malaysia.webp"}]],"error":null,"digest":"$undefined"}
+e:"$9:metadata"
