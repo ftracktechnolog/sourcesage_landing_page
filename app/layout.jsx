@@ -3,15 +3,30 @@ import Script from 'next/script'
 
 export const metadata = {
   title: 'Hard-to-Find Tractor & Marine Engine Parts Malaysia | SourceSage',
-  description: 'Supplier of hard-to-find agricultural tractor and marine engine parts in Malaysia. Fast sourcing for urgent breakdowns. Kubota, Yanmar, Massey Ferguson, John Deere, Zoomlion.',
+  description: 'Hard-to-find tractor & marine engine parts in Malaysia. Fast sourcing for urgent breakdowns — Kubota, Yanmar, Massey Ferguson, Perkins, Isuzu & more.',
   metadataBase: new URL('https://sourcesage.ai'),
-  alternates: { canonical: '/' },
+  alternates: {
+    canonical: '/',
+    languages: {
+      en: 'https://sourcesage.ai/',
+      ms: 'https://sourcesage.ai/ms/',
+      zh: 'https://sourcesage.ai/zh/',
+      'x-default': 'https://sourcesage.ai/',
+    },
+  },
   openGraph: {
     title: 'Hard-to-Find Tractor & Marine Engine Parts Malaysia | SourceSage',
-    description: 'Supplier of hard-to-find agricultural tractor and marine engine parts in Malaysia. Fast sourcing for urgent breakdowns.',
+    description: 'Hard-to-find tractor & marine engine parts in Malaysia. Fast sourcing for urgent breakdowns — Kubota, Yanmar, Massey Ferguson, Perkins & more.',
     url: 'https://sourcesage.ai',
     siteName: 'SourceSage.ai',
     type: 'website',
+    images: [{ url: 'https://sourcesage.ai/images/og-home.png', width: 1200, height: 630, alt: 'SourceSage — Malaysian Tractor & Marine Engine Parts Sourcing' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Hard-to-Find Tractor & Marine Engine Parts Malaysia | SourceSage',
+    description: 'Hard-to-find tractor & marine engine parts in Malaysia. Fast sourcing for urgent breakdowns.',
+    images: ['https://sourcesage.ai/images/og-home.png'],
   },
   robots: { index: true, follow: true }
 }

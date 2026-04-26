@@ -1,11 +1,12 @@
 ---
 id: blog-06
 slug: kubota-l3408-l3608-parts-malaysia
-title: "Kubota L3408 & L3608: Parts Compatibility, Common Failures, and What's Still Findable in Malaysia"
+title: "Kubota L3408 & L3608 Parts: Compatibility & Common Failures Malaysia"
+author: "SourceSage Editorial"
 meta_keywords: ["kubota l3408 parts malaysia", "kubota l3608 spare parts", "l3408 l3608 parts compatible"]
 content_angle: "Technical model-specific deep-dive; niche but high-intent"
-publish_date: "2026-03-25"
-last_updated: "March 2026"
+publish_date: "2026-03-18"
+last_updated: "2026-03-18"
 whatsapp_label: "Get L3408 / L3608 Parts on WhatsApp"
 whatsapp_prefill: "Hi, I need parts for my Kubota L3408 / L3608. Variant: [2WD/4WD], Year: [X], Issue: [X]"
 hero_image: "blog-06-hero-kubota-l3408-paddy.webp"
