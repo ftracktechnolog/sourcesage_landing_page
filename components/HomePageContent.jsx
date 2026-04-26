@@ -40,6 +40,7 @@ const Navbar = ({ t, lang }) => (
         </div>
         <WhatsappCTA
           label="navbar"
+          message="Hi SourceSage, I need help sourcing a spare part. Brand: ___ Model: ___ Part needed: ___"
           className="bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-lg font-bold transition-all text-sm flex items-center gap-2"
         >
           <MessageCircle className="w-4 h-4" /> {t.nav.whatsapp}
@@ -77,6 +78,7 @@ const Hero = ({ t }) => (
             </a>
             <WhatsappCTA
               label="hero_main"
+              message="Hi SourceSage, I need a spare part. Brand: ___ Model: ___ Part needed: ___"
               className="px-8 py-4 text-lg font-bold rounded-xl text-white bg-green-500 hover:bg-green-600 transition-all text-center flex items-center justify-center gap-2"
             >
               <MessageCircle className="w-5 h-5" /> {t.hero.cta2}
@@ -106,6 +108,7 @@ const Hero = ({ t }) => (
               </p>
               <WhatsappCTA
                 label="hero_machine_down"
+                message="Hi SourceSage, my machine is DOWN and I need urgent help! Brand: ___ Model: ___ Part needed: ___"
                 className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-lg font-bold text-sm transition-all"
               >
                 <MessageCircle className="w-4 h-4" /> {t.hero.machineCta}
@@ -204,7 +207,7 @@ const MarineSection = ({ t }) => (
             <div className="mt-6 pt-6 border-t border-slate-100">
               <WhatsappCTA
                 label="marine_section"
-                message="Hi, I need help sourcing a marine engine part. (via sourcesage.ai)"
+                message="Hi SourceSage, I need a marine engine part. Engine brand: ___ Model: ___ Part needed: ___"
                 className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3.5 rounded-xl font-bold transition-all"
               >
                 <MessageCircle className="w-5 h-5" /> {t.marine.cta}
@@ -256,6 +259,7 @@ const ProblemSection = ({ t }) => (
         <p className="text-white font-bold text-lg mb-6">{t.problem.priority}</p>
         <WhatsappCTA
           label="problem_section"
+          message="Hi SourceSage, I need urgent help finding a hard-to-source spare part. Brand: ___ Model: ___ Part needed: ___"
           className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all"
         >
           <MessageCircle className="w-5 h-5" /> {t.problem.cta}
@@ -439,7 +443,7 @@ const Footer = ({ t }) => (
           <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors">
             <Mail className="w-4 h-4" /> info@sourcesage.ai
           </a>
-          <WhatsappCTA label="footer" className="hover:text-green-600 flex items-center gap-2 transition-colors">
+          <WhatsappCTA label="footer" message="Hi SourceSage, I need help sourcing a spare part. Brand: ___ Model: ___ Part needed: ___" className="hover:text-green-600 flex items-center gap-2 transition-colors">
             <MessageCircle className="w-4 h-4" /> {t.footer.whatsapp}
           </WhatsappCTA>
         </div>
@@ -454,6 +458,7 @@ const Footer = ({ t }) => (
 const StickyWhatsApp = ({ t }) => (
   <WhatsappCTA
     label="sticky_button"
+    message="Hi SourceSage, my machine is down and I need urgent help sourcing a spare part. Brand: ___ Model: ___ Part needed: ___"
     className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white px-5 py-3.5 rounded-full shadow-2xl font-bold text-sm flex items-center gap-2 transition-all hover:scale-105"
   >
     <MessageCircle className="w-5 h-5" /> {t.sticky.cta}

@@ -24,6 +24,7 @@ const Navbar = () => (
       </div>
       <WhatsappCTA
         label="blog-navbar"
+        message="Hi SourceSage, I need help sourcing a spare part. Brand: ___ Model: ___ Part needed: ___"
         className="bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-lg font-bold transition-all text-sm flex items-center gap-2"
       >
         <MessageCircle className="w-4 h-4" /> WhatsApp
@@ -45,7 +46,7 @@ const Footer = () => (
           <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors">
             <Mail className="w-4 h-4" /> info@sourcesage.ai
           </a>
-          <WhatsappCTA label="blog-footer" className="hover:text-green-600 flex items-center gap-2 transition-colors">
+          <WhatsappCTA label="blog-footer" message="Hi SourceSage, I need help sourcing a spare part. Brand: ___ Model: ___ Part needed: ___" className="hover:text-green-600 flex items-center gap-2 transition-colors">
             <MessageCircle className="w-4 h-4" /> WhatsApp
           </WhatsappCTA>
         </div>
