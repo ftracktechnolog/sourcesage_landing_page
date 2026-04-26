@@ -1,18 +1,11 @@
 'use client'
 
 const WA_NUMBER = '447546185317'
-const DEFAULT_MESSAGE = 'Hi, I need help sourcing a spare part.'
+const DEFAULT_MESSAGE = 'Hi, I need help sourcing a spare part. Brand: ___ Model: ___ Part needed: ___'
+const SIGNATURE = '\n\nPowered by SourceSage AI'
 
 function withAttribution(message) {
-  const m = message.match(/^([\s\S]*?)([.!?])(\s*)/)
-  if (m) {
-    const firstWithoutPunct = m[1]
-    const rest = message.slice(m[0].length)
-    return rest
-      ? `${firstWithoutPunct} (via https://sourcesage.ai). ${rest}`
-      : `${firstWithoutPunct} (via https://sourcesage.ai).`
-  }
-  return `${message} (via https://sourcesage.ai).`
+  return message + SIGNATURE
 }
 
 export default function WhatsappCTA({ label, message, className, children }) {
