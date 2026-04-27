@@ -12,6 +12,15 @@ whatsapp_label: "Chat with Us on WhatsApp"
 whatsapp_prefill: "Hi, I need help identifying my Kubota tractor model and finding parts."
 hero_image: "blog-01-hero-kubota-paddy-malaysia-v2.jpg"
 related_page: "/kubota-tractor-parts-malaysia"
+faqs:
+  - q: "Where is the model number on a Kubota tractor?"
+    a: "The main model/serial plate is usually on the right side of the engine block or on the frame rail near the front axle. Older models often have it stamped directly into the frame. A second plate with the engine number is found on the engine block itself, typically near the injection pump or alternator."
+  - q: "What is the difference between the Kubota model number and serial number?"
+    a: "The model number identifies the tractor type and specification (e.g. L4400DT — L series, 44hp, 4WD). The serial number is a unique identifier for the individual unit, encoding the production date and sequence. For parts ordering, both are useful: the model confirms the specification; the serial confirms the exact variant for that production run."
+  - q: "My Kubota model plate is damaged or missing — how do I identify the model?"
+    a: "Send a photo of the tractor from the side, the engine bay, and any remaining stamped numbers on the frame or block. An experienced parts specialist can usually identify the model from the engine number alone, or from the tractor's visual configuration — wheelbase, cab style, three-point hitch type, and tyre size all carry identifying information."
+  - q: "How do I use my Kubota model number to find the right parts?"
+    a: "The model number maps directly to a Kubota parts catalogue specific to that variant. Parts suppliers use this to pull up exploded diagrams and part numbers. If you know the system that's failing (e.g. hydraulics, clutch, engine cooling), sharing your model number lets a supplier identify the exact component and cross-check availability immediately."
 ---
 
 <!-- 🖼️ IMAGE: HERO

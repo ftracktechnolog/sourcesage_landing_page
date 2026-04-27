@@ -550,6 +550,7 @@ const Footer = ({ t }) => (
             <li><Link href="/massey-ferguson-parts-malaysia" className="hover:text-blue-600 transition-colors">Massey Ferguson Parts</Link></li>
             <li><Link href="/zoomlion-parts-malaysia" className="hover:text-blue-600 transition-colors">Zoomlion Parts</Link></li>
             <li><Link href="/john-deere-parts-malaysia" className="hover:text-blue-600 transition-colors">John Deere Parts</Link></li>
+            <li><Link href="/perkins-engine-parts-malaysia" className="hover:text-blue-600 transition-colors">Perkins Engine Parts</Link></li>
           </ul>
         </div>
         <div className="flex flex-col gap-3 text-sm font-semibold">
@@ -602,7 +603,7 @@ export default function HomePageContent({ t, lang }) {
               { '@type': 'State', 'name': 'Sabah' },
               { '@type': 'State', 'name': 'Sarawak' },
             ],
-            'knowsAbout': ['Kubota tractor parts', 'Yanmar marine diesel engine parts', 'Massey Ferguson tractor parts', 'John Deere parts Malaysia', 'vintage parts sourcing'],
+            'knowsAbout': ['Kubota tractor parts', 'Yanmar marine diesel engine parts', 'Massey Ferguson tractor parts', 'John Deere parts Malaysia', 'Zoomlion combine harvester parts', 'vintage parts sourcing Malaysia', 'OEM engine parts cross-reference'],
             'contactPoint': { '@type': 'ContactPoint', 'email': 'info@sourcesage.ai', 'contactType': 'customer service' }
           })
         }}

@@ -12,6 +12,15 @@ whatsapp_label: "Get L3408 / L3608 Parts on WhatsApp"
 whatsapp_prefill: "Hi, I need parts for my Kubota L3408 / L3608. Variant: [2WD/4WD], Year: [X], Issue: [X]"
 hero_image: "blog-06-hero-kubota-l3408-paddy.webp"
 related_page: "/kubota-tractor-parts-malaysia"
+faqs:
+  - q: "Are Kubota L3408 and L3608 parts interchangeable?"
+    a: "Many are. The L3408 (34hp) and L3608 (36hp) share the same basic platform, and most drivetrain components — clutch disc, PTO seals, rear axle seals, hydraulic cylinder seals — are cross-compatible. Engine parts differ because the L3608 uses a larger displacement engine; always confirm by model before ordering injectors, overhaul kits, or cylinder heads."
+  - q: "What is the difference between the Kubota L3408 and L3608?"
+    a: "The L3608 is a higher-output variant with a slightly larger engine (36hp vs 34hp) and improved hydraulic lift capacity. The chassis, transmission layout, and external dimensions are essentially identical. For most practical purposes in parts ordering, they are treated as the same tractor except for engine-specific components."
+  - q: "Are L3408 and L3608 parts still available in Malaysia?"
+    a: "These models were produced from the late 1990s through the 2000s and are still common in Malaysian paddy states. Kubota dealer support is patchy for units over 15 years old, but specialist sourcing covers most items — through Japan's secondary market, OEM-compatible suppliers, and cross-model compatibility with currently-produced Kubota models."
+  - q: "Which other Kubota models share parts with the L3408 and L3608?"
+    a: "The L3408 and L3608 share many components with the L4018, L4400, L4508, L4708, L5018, and M5000 due to Kubota's platform strategy. Cross-model compatible parts include bevel gears, certain hydraulic seals, PTO components, and transmission bearings. A parts specialist with access to the cross-reference database can identify applicable substitutes when your specific part number is discontinued."
 ---
 
 <!-- 🖼️ IMAGE: HERO
