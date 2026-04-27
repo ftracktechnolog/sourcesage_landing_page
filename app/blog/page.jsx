@@ -6,7 +6,7 @@ import WhatsappCTA from '../../components/WhatsappCTA'
 export const metadata = {
   title: 'Kubota Tractor Parts Blog | SourceSage Malaysia',
   description: 'Guides on identifying Kubota tractor models, finding spare parts, and sourcing hard-to-find components in Malaysia.',
-  alternates: { canonical: '/blog' },
+  alternates: { canonical: '/blog/' },
 }
 
 const Navbar = () => (
