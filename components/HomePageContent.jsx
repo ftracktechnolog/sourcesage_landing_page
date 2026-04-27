@@ -148,6 +148,13 @@ const TargetMarket = ({ t }) => (
   </section>
 )
 
+const BRAND_LINKS = {
+  'Kubota': '/kubota-tractor-parts-malaysia',
+  'Yanmar': '/yanmar-marine-parts-malaysia',
+  'Massey Ferguson': '/massey-ferguson-parts-malaysia',
+  'Zoomlion': '/zoomlion-parts-malaysia',
+}
+
 const BrandGrid = ({ t }) => (
   <section id="brands" className="py-24 bg-white">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -157,15 +164,28 @@ const BrandGrid = ({ t }) => (
         <p className="mt-4 text-slate-600 max-w-2xl mx-auto">{t.brandGrid.body}</p>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-        {t.brandGrid.brands.map((brand, i) => (
-          <div key={i} className="border border-slate-200 rounded-2xl p-6 hover:border-blue-400 hover:shadow-md transition-all">
-            <div className="flex items-start justify-between mb-3">
-              <h4 className="text-lg font-bold text-slate-900">{brand.name}</h4>
-              <span className="text-xs bg-slate-100 text-slate-500 px-2 py-1 rounded font-medium">{brand.origin}</span>
+        {t.brandGrid.brands.map((brand, i) => {
+          const href = BRAND_LINKS[brand.name]
+          const inner = (
+            <>
+              <div className="flex items-start justify-between mb-3">
+                <h4 className="text-lg font-bold text-slate-900">{brand.name}</h4>
+                <span className="text-xs bg-slate-100 text-slate-500 px-2 py-1 rounded font-medium">{brand.origin}</span>
+              </div>
+              <p className="text-sm text-slate-600">{brand.note}</p>
+              {href && <p className="text-xs font-bold text-blue-600 mt-3">View parts →</p>}
+            </>
+          )
+          return href ? (
+            <Link key={i} href={href} className="border border-slate-200 rounded-2xl p-6 hover:border-blue-400 hover:shadow-md transition-all block">
+              {inner}
+            </Link>
+          ) : (
+            <div key={i} className="border border-slate-200 rounded-2xl p-6 hover:border-blue-400 hover:shadow-md transition-all">
+              {inner}
             </div>
-            <p className="text-sm text-slate-600">{brand.note}</p>
-          </div>
-        ))}
+          )
+        })}
       </div>
       <div className="mt-10 bg-blue-50 border border-blue-100 rounded-2xl p-6 text-center">
         <p className="text-slate-700 font-medium">
