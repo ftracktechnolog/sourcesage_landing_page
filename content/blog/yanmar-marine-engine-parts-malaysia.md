@@ -11,7 +11,7 @@ last_updated: "2026-05-20"
 draft: true
 whatsapp_label: "Ask About Yanmar Marine Parts"
 whatsapp_prefill: "Hi, I need parts for my Yanmar marine engine. Model: [X], Serial: [X], Issue: [X]"
-hero_image: "blog-07-hero-yanmar-marine-engine.webp"
+hero_image: "blog-07-hero-yanmar-marine-engine.jpg"
 related_page: "/yanmar-marine-parts-malaysia"
 ---
 
@@ -19,7 +19,7 @@ related_page: "/yanmar-marine-parts-malaysia"
 search: "yanmar marine diesel engine fishing boat malaysia coastal"
 alt: "Yanmar marine diesel engine in a Malaysian fishing boat engine room"
 caption: "The Yanmar 3JH and 4JH series engines power thousands of Malaysian fishing vessels and work boats."
-filename: blog-07-hero-yanmar-marine-engine.webp
+filename: blog-07-hero-yanmar-marine-engine.jpg
 size: 1200x675
 -->
 

@@ -11,7 +11,7 @@ last_updated: "2026-06-12"
 draft: true
 whatsapp_label: "Ask About Massey Ferguson Parts"
 whatsapp_prefill: "Hi, I need parts for my Massey Ferguson tractor. Model: [X], Engine: [X], Issue: [X]"
-hero_image: "blog-08-hero-massey-ferguson-malaysia.webp"
+hero_image: "blog-08-hero-massey-ferguson-malaysia.jpg"
 related_page: "/massey-ferguson-parts-malaysia"
 ---
 
@@ -19,7 +19,7 @@ related_page: "/massey-ferguson-parts-malaysia"
 search: "massey ferguson tractor malaysia farm orchard plantation"
 alt: "Massey Ferguson tractor working on a Malaysian farm or plantation"
 caption: "Massey Ferguson tractors remain widely used in Malaysian oil palm and rubber plantations, despite the market shifting toward Kubota."
-filename: blog-08-hero-massey-ferguson-malaysia.webp
+filename: blog-08-hero-massey-ferguson-malaysia.jpg
 size: 1200x675
 -->
 
