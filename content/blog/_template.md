@@ -2,6 +2,7 @@
 id: blog-XX
 slug: your-post-slug-here
 title: "Post Title Here — Keep Under 65 Characters for SEO"
+meta_description: "145–160 char summary shown in Google results. Include main keyword and a clear value prop."
 author: "SourceSage Editorial"
 meta_keywords: ["primary keyword malaysia", "secondary keyword", "brand model parts"]
 content_angle: "Brief editorial angle: informational / how-to / model-specific / problem-solution"
@@ -10,7 +11,8 @@ last_updated: "2026-MM-DD"
 draft: true
 whatsapp_label: "Chat With Us on WhatsApp"
 whatsapp_prefill: "Hi, I need help with [topic]."
-hero_image: "blog-XX-hero-description.webp"
+hero_image: "blog-XX-hero-description.jpg"
+related_page: "/kubota-tractor-parts-malaysia"
 ---
 
 <!-- 🖼️ IMAGE: HERO
