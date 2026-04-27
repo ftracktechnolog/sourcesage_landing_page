@@ -26,13 +26,13 @@ const Navbar = ({ t, lang }) => (
         <a href="/blog" className="hover:text-blue-600 transition-colors">{t.nav.blog}</a>
         <a href="#request" className="hover:text-blue-600 transition-colors">{t.nav.requestPart}</a>
       </div>
-      <div className="flex items-center gap-3">
-        <div className="hidden sm:flex items-center gap-1 text-xs font-bold text-slate-400 border border-slate-200 rounded-lg overflow-hidden">
+      <div className="flex items-center gap-2">
+        <div className="flex items-center text-xs font-bold text-slate-400 border border-slate-200 rounded-lg overflow-hidden">
           {Object.entries(langLinks).map(([code, href]) => (
             <a
               key={code}
               href={href}
-              className={`px-2.5 py-1.5 transition-colors ${lang === code ? 'bg-blue-600 text-white' : 'hover:bg-slate-50 hover:text-slate-700'}`}
+              className={`px-2 py-1.5 sm:px-2.5 transition-colors ${lang === code ? 'bg-blue-600 text-white' : 'hover:bg-slate-50 hover:text-slate-700'}`}
             >
               {langLabels[code]}
             </a>
@@ -41,9 +41,9 @@ const Navbar = ({ t, lang }) => (
         <WhatsappCTA
           label="navbar"
           message="Hi, I need help sourcing a spare part. Brand: ___ Model: ___ Part needed: ___"
-          className="bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-lg font-bold transition-all text-sm flex items-center gap-2"
+          className="bg-green-500 hover:bg-green-600 text-white px-3 py-2.5 sm:px-4 rounded-lg font-bold transition-all text-sm flex items-center gap-2"
         >
-          <MessageCircle className="w-4 h-4" /> {t.nav.whatsapp}
+          <MessageCircle className="w-4 h-4" /> <span className="hidden sm:inline">{t.nav.whatsapp}</span>
         </WhatsappCTA>
         <a href="#request" className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg font-bold transition-all text-sm hidden sm:block">
           {t.nav.requestPart}
