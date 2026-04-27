@@ -10,6 +10,7 @@ last_updated: "2026-02-26"
 whatsapp_label: "Send Your Serial Number on WhatsApp"
 whatsapp_prefill: "Hi, I have an old Kubota tractor. Serial number: [X]. Engine number: [X]. I need help identifying the model and sourcing parts."
 hero_image: "blog-05-hero-kubota-serial-plate-rusted.webp"
+related_page: "/kubota-tractor-parts-malaysia"
 ---
 
 <!-- 🖼️ IMAGE: HERO

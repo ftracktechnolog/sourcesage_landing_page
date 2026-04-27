@@ -10,6 +10,7 @@ last_updated: "2026-01-15"
 whatsapp_label: "Chat with Us on WhatsApp"
 whatsapp_prefill: "Hi, I need help identifying my Kubota tractor model and finding parts."
 hero_image: "blog-01-hero-kubota-paddy-malaysia-v2.jpg"
+related_page: "/kubota-tractor-parts-malaysia"
 ---
 
 <!-- 🖼️ IMAGE: HERO

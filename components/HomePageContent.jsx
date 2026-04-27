@@ -535,13 +535,22 @@ const BlogSection = ({ t, posts }) => (
 const Footer = ({ t }) => (
   <footer className="bg-white py-12 text-slate-500 border-t border-slate-100">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
         <div>
           <span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span>
           <span className="font-black text-xl text-blue-600">.ai</span>
           <p className="text-sm text-slate-500 mt-1">{t.footer.tagline}</p>
         </div>
-        <div className="flex gap-6 text-sm font-semibold">
+        <div>
+          <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Parts Pages</p>
+          <ul className="space-y-2 text-sm font-semibold">
+            <li><Link href="/kubota-tractor-parts-malaysia" className="hover:text-blue-600 transition-colors">Kubota Tractor Parts</Link></li>
+            <li><Link href="/yanmar-marine-parts-malaysia" className="hover:text-blue-600 transition-colors">Yanmar Marine Parts</Link></li>
+            <li><Link href="/massey-ferguson-parts-malaysia" className="hover:text-blue-600 transition-colors">Massey Ferguson Parts</Link></li>
+            <li><Link href="/zoomlion-parts-malaysia" className="hover:text-blue-600 transition-colors">Zoomlion Parts</Link></li>
+          </ul>
+        </div>
+        <div className="flex flex-col gap-3 text-sm font-semibold">
           <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors">
             <Mail className="w-4 h-4" /> info@sourcesage.ai
           </a>

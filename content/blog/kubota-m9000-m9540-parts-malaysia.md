@@ -10,6 +10,7 @@ last_updated: "2026-04-26"
 whatsapp_label: "Get a Parts Quote on WhatsApp"
 whatsapp_prefill: "Hi, I need parts for my Kubota M9000 / M9540. Model: [X], Serial: [X], Issue: [X]"
 hero_image: "blog-03-hero-kubota-m9540-paddy.webp"
+related_page: "/kubota-tractor-parts-malaysia"
 ---
 
 <!-- 🖼️ IMAGE: HERO

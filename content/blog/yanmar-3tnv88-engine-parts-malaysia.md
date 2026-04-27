@@ -12,6 +12,7 @@ draft: true
 whatsapp_label: "Get a 3TNV88 Parts Quote"
 whatsapp_prefill: "Hi, I need parts for my Yanmar 3TNV88 engine. Machine: [X] Part needed: [X]"
 hero_image: ""
+related_page: "/yanmar-marine-parts-malaysia"
 ---
 
 <!-- 🖼️ IMAGE: HERO
