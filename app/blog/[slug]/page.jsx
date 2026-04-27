@@ -92,7 +92,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="text-center pt-6 border-t border-slate-100">
-        <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">© 2024 SourceSage.ai. Agricultural &amp; Marine Parts Sourcing, Malaysia.</p>
+        <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">© 2026 SourceSage.ai. Agricultural &amp; Marine Parts Sourcing, Malaysia.</p>
       </div>
     </div>
   </footer>
