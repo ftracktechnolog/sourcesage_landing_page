@@ -12,6 +12,15 @@ whatsapp_label: "Send Us a Photo on WhatsApp"
 whatsapp_prefill: "Hi, I have an old Kubota and need help sourcing parts. Here's a photo:"
 hero_image: "blog-02-hero-parts-warehouse.jpg"
 related_page: "/kubota-tractor-parts-malaysia"
+faqs:
+  - q: "How long does it take to source vintage Kubota parts in Malaysia?"
+    a: "For parts we have in stock or can source locally, typically 1–3 business days. For items sourced from Japan's secondary market, expect 10–21 days by air freight. We confirm availability and lead time before you commit — there are no surprises on timing."
+  - q: "Are used parts from Japan reliable for an older Kubota tractor?"
+    a: "Japanese used farm machinery is among the most well-maintained in the world. Parts from dismantled Japanese tractors are often in better condition than locally-used equivalents — especially for items like clutch assemblies, PTO shafts, and hydraulic components. Every used part we sell is inspected and tested before dispatch."
+  - q: "What is the difference between genuine, OEM-compatible, and aftermarket Kubota parts?"
+    a: "Genuine parts are made by Kubota. OEM-compatible parts are made by the same factories that supply Kubota (or to equivalent specification) — often the right choice for wear items at lower cost. Aftermarket covers a wide quality range; we only use suppliers with tracked field failure rates under 2%. For critical engine components, we recommend genuine or verified OEM-compatible."
+  - q: "My Kubota tractor is over 15 years old — is it still worth sourcing parts for?"
+    a: "In most cases, yes. A well-maintained older Kubota has significant remaining service life. The economics depend on the repair: if the parts cost is less than 30–40% of the tractor's working value, repair almost always makes sense. We can advise on parts cost before you make that decision."
 ---
 
 <!-- 🖼️ IMAGE: HERO
