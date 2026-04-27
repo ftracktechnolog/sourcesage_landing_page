@@ -1,5 +1,5 @@
 ---
-id: blog-07
+id: blog-09
 slug: yanmar-marine-engine-parts-malaysia
 title: "Yanmar Marine Engine Parts in Malaysia: What's Available & How to Find Them"
 author: "SourceSage Editorial"
