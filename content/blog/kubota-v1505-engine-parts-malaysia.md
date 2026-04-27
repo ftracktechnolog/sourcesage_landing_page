@@ -16,6 +16,7 @@ related_page: "/kubota-tractor-parts-malaysia"
 ---
 
 <!-- 🖼️ IMAGE: HERO
+filename: blog-09-hero-kubota-v1505-engine.jpg
 search: "kubota V1505 engine block diesel Malaysia"
 alt: "Kubota V1505 four-cylinder diesel engine showing valve cover and injection system"
 caption: "The Kubota V1505 — a four-cylinder workhorse used in tractors, generators, and compact machinery across Malaysia."

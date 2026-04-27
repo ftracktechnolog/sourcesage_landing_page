@@ -16,6 +16,7 @@ related_page: "/yanmar-marine-parts-malaysia"
 ---
 
 <!-- 🖼️ IMAGE: HERO
+filename: blog-10-hero-yanmar-3tnv88-engine.jpg
 search: "Yanmar 3TNV88 engine mini excavator compact machinery"
 alt: "Yanmar 3TNV88 three-cylinder diesel engine in a compact excavator engine bay"
 caption: "The Yanmar 3TNV88 — a compact three-cylinder diesel found in mini excavators, compact loaders, and light machinery across Malaysia."
