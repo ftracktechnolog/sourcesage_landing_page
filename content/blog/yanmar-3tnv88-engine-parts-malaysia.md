@@ -1,5 +1,5 @@
 ---
-id: blog-08
+id: blog-10
 slug: yanmar-3tnv88-engine-parts-malaysia
 title: "Yanmar 3TNV88 Engine Parts Malaysia: Overhaul Kits, Injectors & Sourcing Guide"
 author: "SourceSage Editorial"
