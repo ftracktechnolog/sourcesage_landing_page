@@ -68,11 +68,31 @@ const Footer = () => (
   </footer>
 )
 
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'SourceSage.ai',
+  url: 'https://sourcesage.ai',
+  description: 'Malaysia-based tractor and marine engine parts sourcing specialist.',
+  publisher: { '@type': 'Organization', name: 'SourceSage.ai', url: 'https://sourcesage.ai' },
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sourcesage.ai/' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://sourcesage.ai/blog' },
+  ],
+}
+
 export default function BlogIndex() {
   const posts = getAllPosts()
 
   return (
     <div className="min-h-screen font-sans text-slate-900 antialiased">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Navbar />
       <main>
         <section className="bg-white border-b border-slate-100 py-16">

@@ -12,6 +12,15 @@ whatsapp_label: "Ask Us About L4400 Parts"
 whatsapp_prefill: "Hi, I need parts for my Kubota L4400. Variant: [DT/DV], Year: [X], Issue: [X]"
 hero_image: "blog-04-hero-kubota-l4400-paddy.webp"
 related_page: "/kubota-tractor-parts-malaysia"
+faqs:
+  - q: "What are the most common problems with the Kubota L4400?"
+    a: "The most frequent issues are hydraulic lift weakness (usually worn pump or lift cylinder seals), clutch slippage (worn friction disc), overheating (blocked radiator or failing thermostat), and PTO engagement problems (worn PTO clutch pack). Most are straightforward to fix with the correct parts."
+  - q: "Are Kubota L4400 and L4200 parts interchangeable?"
+    a: "Many are. The L4400 replaced the L4200 around 2002 and shares the same basic drivetrain layout. Clutch discs, PTO seals, rear axle seals, and hydraulic filter elements are commonly compatible. Engine parts (the L4400 uses an updated V1902 / E-TVCS engine variant) should be verified by engine serial number."
+  - q: "What is the difference between the L4400DT and L4400DV?"
+    a: "DT denotes 4-wheel drive (dual traction); DV denotes 2-wheel drive. The front axle, front wheel hubs, and 4WD engagement components differ. All rear-end and engine parts are shared between the two variants."
+  - q: "Where can I find Kubota L4400 hydraulic parts in Malaysia?"
+    a: "For newer L4400s (post-2005), authorised Kubota dealers carry most hydraulic parts. For older units or discontinued items, specialist sourcing through SourceSage covers lift cylinder seals, hydraulic pump repair kits, and control valve O-ring sets — usually within 24 hours of enquiry."
 ---
 
 <!-- 🖼️ IMAGE: HERO

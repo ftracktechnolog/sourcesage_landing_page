@@ -12,6 +12,15 @@ whatsapp_label: "Send Your Serial Number on WhatsApp"
 whatsapp_prefill: "Hi, I have an old Kubota tractor. Serial number: [X]. Engine number: [X]. I need help identifying the model and sourcing parts."
 hero_image: "blog-05-hero-kubota-serial-plate-rusted.webp"
 related_page: "/kubota-tractor-parts-malaysia"
+faqs:
+  - q: "Where is the serial number on a Kubota tractor?"
+    a: "The main serial plate is usually mounted on the right side of the engine block or on the frame rail near the front axle. Older models (pre-2000) often have it stamped directly into the frame. The engine serial number is separate — stamped on the engine block near the injection pump or alternator."
+  - q: "Can I order Kubota parts using just the serial number?"
+    a: "Yes. The serial number encodes the model, production year, and build variant. A parts supplier who knows the Kubota catalogue can decode it and cross-reference to the correct part numbers — even without the model plate."
+  - q: "My Kubota serial plate is rusted and unreadable. What can I do?"
+    a: "Send a photo of the plate (even partially readable), the engine number, and any other markings you can find. A specialist can often identify the model from the engine number alone, or from the tractor's physical configuration (wheelbase, cab style, hitch type). WhatsApp photos work well for this."
+  - q: "What do the letters in a Kubota model number mean?"
+    a: "In Kubota model codes: L = utility tractor (mid-range), M = large agricultural tractor, B = compact/sub-compact. The numbers indicate approximate engine displacement or horsepower class. Suffixes like DT = 4WD, GST = glide shift transmission, HST = hydrostatic transmission."
 ---
 
 <!-- 🖼️ IMAGE: HERO
