@@ -10,7 +10,7 @@ publish_date: "2026-04-08"
 last_updated: "2026-04-08"
 whatsapp_label: "Ask Us About L4400 Parts"
 whatsapp_prefill: "Hi, I need parts for my Kubota L4400. Variant: [DT/DV], Year: [X], Issue: [X]"
-hero_image: "blog-04-hero-kubota-l4400-paddy.webp"
+hero_image: "blog-04-hero-kubota-l4400-paddy.jpg"
 related_page: "/kubota-tractor-parts-malaysia"
 faqs:
   - q: "What are the most common problems with the Kubota L4400?"
@@ -29,7 +29,7 @@ sources: Wikimedia Commons (https://commons.wikimedia.org/wiki/Category:Kubota_t
 alt: "Kubota L4400DV 4WD tractor in a Malaysian paddy field, distinctive dual-velocity gear selector visible in cab"
 caption: "The Kubota L4400DV — 45HP, 4WD, and the go-to tractor for small-to-medium paddy farms across Malaysia through the 2000s."
 size: 1200×675px (16:9 hero)
-filename: blog-04-hero-kubota-l4400-paddy.webp
+filename: blog-04-hero-kubota-l4400-paddy.jpg
 -->
 
 The Kubota L4400 was one of the best-selling mid-range tractors in Malaysia through the 2000s and early 2010s. At 45 horsepower, 4WD, and with a dual-velocity transmission that worked well in both field and transport conditions, it hit a sweet spot for small and medium paddy farms that needed more power than a compact but couldn't justify an M-series.

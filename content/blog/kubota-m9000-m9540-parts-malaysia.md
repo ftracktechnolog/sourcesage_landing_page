@@ -10,7 +10,7 @@ publish_date: "2026-04-26"
 last_updated: "2026-04-26"
 whatsapp_label: "Get a Parts Quote on WhatsApp"
 whatsapp_prefill: "Hi, I need parts for my Kubota M9000 / M9540. Model: [X], Serial: [X], Issue: [X]"
-hero_image: "blog-03-hero-kubota-m9540-paddy.webp"
+hero_image: "blog-03-hero-kubota-m9540-paddy.jpg"
 related_page: "/kubota-tractor-parts-malaysia"
 faqs:
   - q: "What is the difference between the Kubota M9000 and M9540?"
@@ -29,7 +29,7 @@ sources: Wikimedia Commons (https://commons.wikimedia.org/wiki/Category:Kubota_t
 alt: "Kubota M9540 tractor working in a Malaysian paddy field, mud-caked tyres, green rice crop visible in background"
 caption: "The Kubota M9540 — still one of the most common sights in Malaysian paddy farming more than a decade after its peak sales years."
 size: 1200×675px (16:9 hero)
-filename: blog-03-hero-kubota-m9540-paddy.webp
+filename: blog-03-hero-kubota-m9540-paddy.jpg
 -->
 
 If you own a Kubota M9000 or the older-generation M9540, you own one of the most successful high-horsepower tractors ever sold in Malaysia. Between 2000 and 2014, these models dominated the heavy-duty paddy farming segment. They pulled transplanting rigs, ran rotary tillers, and handled combines in conditions that would sideline lesser machines.

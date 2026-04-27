@@ -10,7 +10,7 @@ publish_date: "2026-02-26"
 last_updated: "2026-02-26"
 whatsapp_label: "Send Your Serial Number on WhatsApp"
 whatsapp_prefill: "Hi, I have an old Kubota tractor. Serial number: [X]. Engine number: [X]. I need help identifying the model and sourcing parts."
-hero_image: "blog-05-hero-kubota-serial-plate-rusted.webp"
+hero_image: "blog-05-hero-kubota-serial-plate-rusted.jpg"
 related_page: "/kubota-tractor-parts-malaysia"
 faqs:
   - q: "Where is the serial number on a Kubota tractor?"
@@ -29,7 +29,7 @@ sources: TractorByNet forum photos (https://www.tractorbynet.com/forums/kubota/)
 alt: "Partially legible Kubota tractor serial number plate, surface rust making digits difficult to read"
 caption: "A faded or missing serial plate is one of the most common challenges for owners of older Kubota tractors. There are still ways to identify the model."
 size: 1200×675px (16:9 hero)
-filename: blog-05-hero-kubota-serial-plate-rusted.webp
+filename: blog-05-hero-kubota-serial-plate-rusted.jpg
 -->
 
 The serial number plate is gone. Or it's there but the digits are worn smooth. Or someone has spray-painted over it at some point in the tractor's 20-year history. It happens all the time with older equipment, and it leaves owners stuck: how do you order parts for a tractor you can't definitively name?

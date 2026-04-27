@@ -10,7 +10,7 @@ publish_date: "2026-03-18"
 last_updated: "2026-03-18"
 whatsapp_label: "Get L3408 / L3608 Parts on WhatsApp"
 whatsapp_prefill: "Hi, I need parts for my Kubota L3408 / L3608. Variant: [2WD/4WD], Year: [X], Issue: [X]"
-hero_image: "blog-06-hero-kubota-l3408-paddy.webp"
+hero_image: "blog-06-hero-kubota-l3408-paddy.jpg"
 related_page: "/kubota-tractor-parts-malaysia"
 faqs:
   - q: "Are Kubota L3408 and L3608 parts interchangeable?"
@@ -29,7 +29,7 @@ sources: Wikimedia Commons (https://commons.wikimedia.org/wiki/Category:Kubota_t
 alt: "Kubota L3408 DT 4WD compact tractor working a small paddy plot, narrow access track visible alongside field"
 caption: "The Kubota L3408 and L3608 — the classic village tractor of 2000s Malaysia. Millions sold across Southeast Asia, thousands still working."
 size: 1200×675px (16:9 hero)
-filename: blog-06-hero-kubota-l3408-paddy.webp
+filename: blog-06-hero-kubota-l3408-paddy.jpg
 -->
 
 The Kubota L3408 and L3608 are among the most widely distributed Kubota tractor models in Southeast Asia. While official Malaysia sales figures for these models are hard to come by — they predate the era of detailed local tracking — regional estimates suggest millions of units of the L34xx/L36xx family were sold across Malaysia, Thailand, the Philippines, Indonesia, and Vietnam through the 1990s and 2000s.
