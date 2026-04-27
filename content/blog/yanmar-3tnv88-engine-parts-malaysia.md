@@ -11,7 +11,7 @@ last_updated: "2026-04-26"
 draft: true
 whatsapp_label: "Get a 3TNV88 Parts Quote"
 whatsapp_prefill: "Hi, I need parts for my Yanmar 3TNV88 engine. Machine: [X] Part needed: [X]"
-hero_image: ""
+hero_image: "blog-10-hero-yanmar-3tnv88-engine.jpg"
 related_page: "/yanmar-marine-parts-malaysia"
 ---
 
