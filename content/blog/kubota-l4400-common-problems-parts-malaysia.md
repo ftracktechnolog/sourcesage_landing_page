@@ -10,6 +10,7 @@ last_updated: "2026-04-08"
 whatsapp_label: "Ask Us About L4400 Parts"
 whatsapp_prefill: "Hi, I need parts for my Kubota L4400. Variant: [DT/DV], Year: [X], Issue: [X]"
 hero_image: "blog-04-hero-kubota-l4400-paddy.webp"
+related_page: "/kubota-tractor-parts-malaysia"
 ---
 
 <!-- 🖼️ IMAGE: HERO

@@ -11,6 +11,7 @@ draft: true
 whatsapp_label: "Ask About Massey Ferguson Parts"
 whatsapp_prefill: "Hi, I need parts for my Massey Ferguson tractor. Model: [X], Engine: [X], Issue: [X]"
 hero_image: "blog-08-hero-massey-ferguson-malaysia.webp"
+related_page: "/massey-ferguson-parts-malaysia"
 ---
 
 <!-- 🖼️ IMAGE: HERO

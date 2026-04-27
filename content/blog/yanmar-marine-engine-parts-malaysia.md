@@ -11,6 +11,7 @@ draft: true
 whatsapp_label: "Ask About Yanmar Marine Parts"
 whatsapp_prefill: "Hi, I need parts for my Yanmar marine engine. Model: [X], Serial: [X], Issue: [X]"
 hero_image: "blog-07-hero-yanmar-marine-engine.webp"
+related_page: "/yanmar-marine-parts-malaysia"
 ---
 
 <!-- 🖼️ IMAGE: HERO

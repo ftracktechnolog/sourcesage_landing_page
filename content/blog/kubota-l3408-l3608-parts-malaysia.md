@@ -10,6 +10,7 @@ last_updated: "2026-03-18"
 whatsapp_label: "Get L3408 / L3608 Parts on WhatsApp"
 whatsapp_prefill: "Hi, I need parts for my Kubota L3408 / L3608. Variant: [2WD/4WD], Year: [X], Issue: [X]"
 hero_image: "blog-06-hero-kubota-l3408-paddy.webp"
+related_page: "/kubota-tractor-parts-malaysia"
 ---
 
 <!-- 🖼️ IMAGE: HERO
