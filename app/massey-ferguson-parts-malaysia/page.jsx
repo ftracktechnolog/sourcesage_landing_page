@@ -9,7 +9,7 @@ export const metadata = {
   openGraph: {
     title: 'Massey Ferguson Spare Parts Malaysia | SourceSage',
     description: 'Hard-to-find Massey Ferguson tractor spare parts in Malaysia. MF240, MF350, MF375 with Perkins engines. Fast sourcing nationwide.',
-    url: 'https://sourcesage.ai/massey-ferguson-parts-malaysia',
+    url: 'https://sourcesage.ai/massey-ferguson-parts-malaysia/',
     siteName: 'SourceSage.ai',
     type: 'website',
     images: [{ url: 'https://sourcesage.ai/images/og-home.png', width: 1200, height: 630, alt: 'Massey Ferguson Spare Parts Malaysia — SourceSage' }],

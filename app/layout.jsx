@@ -17,7 +17,7 @@ export const metadata = {
   openGraph: {
     title: 'Hard-to-Find Tractor & Marine Engine Parts Malaysia | SourceSage',
     description: 'Hard-to-find tractor & marine engine parts in Malaysia. Fast sourcing for urgent breakdowns — Kubota, Yanmar, Massey Ferguson, Perkins & more.',
-    url: 'https://sourcesage.ai',
+    url: 'https://sourcesage.ai/',
     siteName: 'SourceSage.ai',
     type: 'website',
     images: [{ url: 'https://sourcesage.ai/images/og-home.png', width: 1200, height: 630, alt: 'SourceSage — Malaysian Tractor & Marine Engine Parts Sourcing' }],

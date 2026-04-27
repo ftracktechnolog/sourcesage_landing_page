@@ -9,7 +9,7 @@ export const metadata = {
   openGraph: {
     title: 'Yanmar Marine Engine Parts Malaysia | SourceSage',
     description: 'Hard-to-find Yanmar marine diesel engine parts in Malaysia. 3JH, 4JH, 2GM, 3GM series. Fast sourcing for fishing boats & workboats.',
-    url: 'https://sourcesage.ai/yanmar-marine-parts-malaysia',
+    url: 'https://sourcesage.ai/yanmar-marine-parts-malaysia/',
     siteName: 'SourceSage.ai',
     type: 'website',
     images: [{ url: 'https://sourcesage.ai/images/og-home.png', width: 1200, height: 630, alt: 'Yanmar Marine Engine Parts Malaysia — SourceSage' }],

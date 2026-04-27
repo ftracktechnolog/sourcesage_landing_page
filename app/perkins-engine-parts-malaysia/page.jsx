@@ -9,7 +9,7 @@ export const metadata = {
   openGraph: {
     title: 'Perkins Engine Parts Malaysia | SourceSage',
     description: 'Perkins diesel engine parts in Malaysia — A4.248, AD4.203, 1004 series for Massey Ferguson, JCB and more. Fast sourcing nationwide.',
-    url: 'https://sourcesage.ai/perkins-engine-parts-malaysia',
+    url: 'https://sourcesage.ai/perkins-engine-parts-malaysia/',
     siteName: 'SourceSage.ai',
     type: 'website',
     images: [{ url: 'https://sourcesage.ai/images/og-home.png', width: 1200, height: 630, alt: 'Perkins Engine Parts Malaysia — SourceSage' }],

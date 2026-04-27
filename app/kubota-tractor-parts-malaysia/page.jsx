@@ -9,7 +9,7 @@ export const metadata = {
   openGraph: {
     title: 'Kubota Tractor Parts Malaysia | SourceSage',
     description: 'Hard-to-find Kubota tractor spare parts in Malaysia. L-series, M-series, B-series. Overhaul kits, injectors, hydraulics. Fast sourcing nationwide.',
-    url: 'https://sourcesage.ai/kubota-tractor-parts-malaysia',
+    url: 'https://sourcesage.ai/kubota-tractor-parts-malaysia/',
     siteName: 'SourceSage.ai',
     type: 'website',
     images: [{ url: 'https://sourcesage.ai/images/og-home.png', width: 1200, height: 630, alt: 'Kubota Tractor Parts Malaysia — SourceSage' }],

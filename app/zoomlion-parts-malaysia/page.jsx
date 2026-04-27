@@ -9,7 +9,7 @@ export const metadata = {
   openGraph: {
     title: 'Zoomlion Spare Parts Malaysia | SourceSage',
     description: 'Hard-to-find Zoomlion spare parts in Malaysia. Combine harvesters, paddy planters & construction equipment. Fast sourcing nationwide.',
-    url: 'https://sourcesage.ai/zoomlion-parts-malaysia',
+    url: 'https://sourcesage.ai/zoomlion-parts-malaysia/',
     siteName: 'SourceSage.ai',
     type: 'website',
     images: [{ url: 'https://sourcesage.ai/images/og-home.png', width: 1200, height: 630, alt: 'Zoomlion Spare Parts Malaysia — SourceSage' }],
