@@ -58,7 +58,7 @@ sources: Wikimedia Commons (https://commons.wikimedia.org/wiki/Category:Paddy_fi
 alt: "Smallholder paddy plot in Kelantan with a compact tractor working between narrow field bunds"
 caption: "Kelantan and Kedah smallholder plots — 2–8 acres, tight access tracks — were exactly the environment the L3408 and L3608 were built for."
 size: 800×450px
-filename: blog-06-inline-kelantan-paddy-smallholder.webp
+filename: blog-06-inline-kelantan-paddy-smallholder.jpg
 -->
 
 ---
@@ -84,7 +84,7 @@ sources: Wikimedia Commons (https://commons.wikimedia.org/wiki/Category:Kubota_e
 alt: "Kubota V2203 4-cylinder diesel engine as found in the L3408 and L3608 — identical block, different injection calibration"
 caption: "The V2203 engine is the key to sourcing parts for both models. It's still used in Kubota generators and construction equipment today, keeping the supply chain alive."
 size: 800×500px
-filename: blog-06-inline-kubota-v2203-engine.webp
+filename: blog-06-inline-kubota-v2203-engine.jpg
 -->
 
 ---

@@ -80,7 +80,7 @@ sources: Wikimedia Commons (https://commons.wikimedia.org/wiki/Category:Kubota_e
 alt: "Kubota V2403 4-cylinder diesel engine, clean and well-maintained, showing valve cover and injection pump"
 caption: "The Kubota V2403 — one of the most reliable agricultural diesels ever built. Shared across the L3800, L4400, and several L4740 variants."
 size: 800×500px
-filename: blog-04-inline-kubota-v2403-engine.webp
+filename: blog-04-inline-kubota-v2403-engine.jpg
 -->
 
 ---
@@ -103,7 +103,7 @@ sources: Unsplash "hydraulic repair" · Pexels "tractor hydraulic" · eBay/Aliba
 alt: "Kubota tractor hydraulic control valve O-ring and seal kit components laid out for inspection"
 caption: "Before ordering a new hydraulic pump, always check the control valve O-ring seal first — it's the most common cause of slow or failing lift, and costs a fraction of a pump replacement."
 size: 800×500px
-filename: blog-04-inline-hydraulic-seal-kit.webp
+filename: blog-04-inline-hydraulic-seal-kit.jpg
 -->
 
 **Diagnosis first:** Check oil level and condition. Drain and refill with fresh Kubota UDT fluid before assuming anything is mechanically wrong — contaminated oil causes pressure loss that mimics pump failure.

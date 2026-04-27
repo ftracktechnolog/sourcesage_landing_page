@@ -85,7 +85,7 @@ sources: TractorByNet (https://www.tractorbynet.com/forums/kubota/) · YouTube: 
 alt: "Kubota engine block with arrow pointing to serial number stamp location near the valve cover"
 caption: "The engine serial number is stamped into the block itself — far more durable than any adhesive plate, and often the fastest route to identifying an old Kubota."
 size: 800×500px
-filename: blog-05-inline-engine-serial-location.webp
+filename: blog-05-inline-engine-serial-location.jpg
 -->
 
 The **engine serial number** is separate from the chassis serial and is often more durable. It's stamped directly into the engine block — usually on the top or right-hand side near the valve cover.
@@ -145,7 +145,7 @@ sources: Unsplash (https://unsplash.com/s/photos/whatsapp-mechanic) · Pexels "p
 alt: "Farmer photographing the engine serial number plate of an old tractor with a smartphone"
 caption: "Four photos — left frame, right transmission, engine stamp, and overall front view — is usually all we need to identify an unknown Kubota and find the right parts."
 size: 800×500px
-filename: blog-05-inline-photo-identification-process.webp
+filename: blog-05-inline-photo-identification-process.jpg
 -->
 
 One more thing worth saying: many customers come to us with a specific part name in mind — "I need a new hydraulic pump" or "I need injectors." Half the time, the actual diagnosis is something different and cheaper.

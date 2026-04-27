@@ -79,7 +79,7 @@ sources: Wikimedia Commons (https://commons.wikimedia.org/wiki/Category:Rice_pad
 alt: "Aerial view of Kedah's paddy fields — flat green plains divided by irrigation channels"
 caption: "Kedah and Perlis account for the highest concentration of working M-series Kubota tractors in Malaysia, serving the MADA irrigation scheme."
 size: 800×450px
-filename: blog-03-inline-kedah-paddy-aerial.webp
+filename: blog-03-inline-kedah-paddy-aerial.jpg
 -->
 
 ---
@@ -102,7 +102,7 @@ sources: Unsplash "tractor clutch" · Pexels "clutch plate" · TractorByNet foru
 alt: "Worn Kubota M-series clutch disc (left) next to a new replacement unit — the friction material on the worn disc is glazed and thin"
 caption: "Clutch wear is the single most common repair on M9000/M9540 tractors used in Malaysian paddy conditions. Inspect both main clutch and PTO clutch together."
 size: 800×500px
-filename: blog-03-inline-kubota-clutch-worn-new.webp
+filename: blog-03-inline-kubota-clutch-worn-new.jpg
 -->
 
 ---
