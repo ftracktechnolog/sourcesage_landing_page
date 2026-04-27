@@ -12,6 +12,7 @@ export const metadata = {
     url: 'https://sourcesage.ai/perkins-engine-parts-malaysia/',
     siteName: 'SourceSage.ai',
     type: 'website',
+    locale: 'en',
     images: [{ url: 'https://sourcesage.ai/images/og-home.png', width: 1200, height: 630, alt: 'Perkins Engine Parts Malaysia — SourceSage' }],
   },
   twitter: {
