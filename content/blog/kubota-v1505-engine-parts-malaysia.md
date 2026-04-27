@@ -11,7 +11,7 @@ last_updated: "2026-04-26"
 draft: true
 whatsapp_label: "Get a V1505 Parts Quote"
 whatsapp_prefill: "Hi, I need parts for my Kubota V1505 engine. Machine model: [X] Part needed: [X]"
-hero_image: ""
+hero_image: "blog-09-hero-kubota-v1505-engine.jpg"
 related_page: "/kubota-tractor-parts-malaysia"
 ---
 
