@@ -19,6 +19,7 @@ export const metadata = {
     url: 'https://sourcesage.ai/ms/',
     siteName: 'SourceSage.ai',
     type: 'website',
+    locale: 'ms_MY',
     images: [{ url: 'https://sourcesage.ai/images/og-home.png', width: 1200, height: 630, alt: 'SourceSage — Perolehan Alat Ganti Traktor & Marin Malaysia' }],
   },
   twitter: {

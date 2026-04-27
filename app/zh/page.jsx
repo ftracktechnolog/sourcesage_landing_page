@@ -19,6 +19,7 @@ export const metadata = {
     url: 'https://sourcesage.ai/zh/',
     siteName: 'SourceSage.ai',
     type: 'website',
+    locale: 'zh_CN',
     images: [{ url: 'https://sourcesage.ai/images/og-home.png', width: 1200, height: 630, alt: 'SourceSage — 马来西亚拖拉机及船用配件采购' }],
   },
   twitter: {
