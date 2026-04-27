@@ -9,7 +9,7 @@ publish_date: "2026-02-05"
 last_updated: "2026-02-05"
 whatsapp_label: "Send Us a Photo on WhatsApp"
 whatsapp_prefill: "Hi, I have an old Kubota and need help sourcing parts. Here's a photo:"
-hero_image: "blog-02-hero-parts-warehouse.webp"
+hero_image: "blog-02-hero-parts-warehouse.jpg"
 ---
 
 <!-- 🖼️ IMAGE: HERO
