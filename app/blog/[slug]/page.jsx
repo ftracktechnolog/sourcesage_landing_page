@@ -78,6 +78,7 @@ const Footer = () => (
             <li><Link href="/yanmar-marine-parts-malaysia" className="hover:text-blue-600 transition-colors">Yanmar Marine Parts</Link></li>
             <li><Link href="/massey-ferguson-parts-malaysia" className="hover:text-blue-600 transition-colors">Massey Ferguson Parts</Link></li>
             <li><Link href="/zoomlion-parts-malaysia" className="hover:text-blue-600 transition-colors">Zoomlion Parts</Link></li>
+            <li><Link href="/john-deere-parts-malaysia" className="hover:text-blue-600 transition-colors">John Deere Parts</Link></li>
           </ul>
         </div>
         <div className="flex flex-col gap-3 text-sm font-semibold">
