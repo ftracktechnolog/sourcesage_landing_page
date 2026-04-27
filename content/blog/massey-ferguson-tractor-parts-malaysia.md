@@ -57,7 +57,7 @@ The step up from the 240 series. A 4-cylinder Perkins 4.248 engine, available in
 search: "perkins 3.152 engine parts components diesel agricultural"
 alt: "Perkins 3.152 three-cylinder diesel engine as used in Massey Ferguson 240 tractors"
 caption: "The Perkins AD3.152 is a robust but ageing engine. Parts availability varies dramatically depending on the supplier network."
-filename: blog-08-inline-perkins-3152-engine.webp
+filename: blog-08-inline-perkins-3152-engine.jpg
 size: 800x500
 -->
 
@@ -96,7 +96,7 @@ The Ferguson 3-point draft control system is robust but hydraulic seals and the 
 search: "massey ferguson tractor clutch replacement agricultural workshop"
 alt: "Massey Ferguson tractor clutch disc and pressure plate replacement"
 caption: "Clutch disc replacement is one of the most common repairs on MF240 and MF350 tractors in Malaysian plantation use."
-filename: blog-08-inline-mf-clutch-replacement.webp
+filename: blog-08-inline-mf-clutch-replacement.jpg
 size: 800x500
 -->
 

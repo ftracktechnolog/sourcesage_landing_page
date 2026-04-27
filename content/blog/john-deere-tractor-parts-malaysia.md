@@ -11,7 +11,7 @@ last_updated: "2026-04-27"
 draft: true
 whatsapp_label: "Ask About John Deere Parts"
 whatsapp_prefill: "Hi, I need parts for my John Deere tractor. Model: [X], Engine serial: [X], Part needed: [X]"
-hero_image: ""
+hero_image: "blog-12-hero-john-deere-malaysia.jpg"
 related_page: "/john-deere-parts-malaysia"
 faqs:
   - q: "Where can I find John Deere 5310 parts in Malaysia?"

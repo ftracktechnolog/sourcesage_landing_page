@@ -57,7 +57,7 @@ The 4JH is the step up for medium-sized fishing vessels. 4-cylinder, available i
 search: "yanmar 3JH engine parts breakdown diagram marine"
 alt: "Yanmar 3JH series marine diesel engine component diagram"
 caption: "Understanding the 3JH layout makes sourcing specific parts much faster."
-filename: blog-07-inline-yanmar-3jh-diagram.webp
+filename: blog-07-inline-yanmar-3jh-diagram.jpg
 size: 800x500
 -->
 
@@ -87,7 +87,7 @@ Based on the enquiries we handle from Malaysian boat owners and marine workshops
 search: "marine diesel engine raw water impeller pump replacement"
 alt: "Raw water pump impeller replacement in a marine diesel engine"
 caption: "The raw water impeller is the single most common Yanmar marine service part in Malaysia — replace it before it fails."
-filename: blog-07-inline-raw-water-impeller.webp
+filename: blog-07-inline-raw-water-impeller.jpg
 size: 800x500
 -->
 
