@@ -5,7 +5,7 @@ import WhatsappCTA from '../../components/WhatsappCTA'
 export const metadata = {
   title: 'John Deere Tractor Parts Malaysia | SourceSage',
   description: 'Hard-to-find John Deere tractor spare parts in Malaysia. 5E, 6J, 5075E, 5310 series and vintage models. Fast sourcing for paddy farms, plantations & construction nationwide.',
-  alternates: { canonical: '/john-deere-parts-malaysia/' },
+  alternates: { canonical: '/john-deere-parts-malaysia/', languages: { 'en': 'https://sourcesage.ai/john-deere-parts-malaysia/', 'x-default': 'https://sourcesage.ai/john-deere-parts-malaysia/' } },
   openGraph: {
     title: 'John Deere Tractor Parts Malaysia | SourceSage',
     description: 'Hard-to-find John Deere tractor spare parts in Malaysia. 5E, 6J series and vintage models. Fast sourcing nationwide.',

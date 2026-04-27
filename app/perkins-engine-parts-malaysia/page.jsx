@@ -5,7 +5,7 @@ import WhatsappCTA from '../../components/WhatsappCTA'
 export const metadata = {
   title: 'Perkins Engine Parts Malaysia | SourceSage',
   description: 'Perkins diesel engine parts in Malaysia — A3.152, A4.248, AD4.203, 1004 series. For Massey Ferguson tractors, JCB equipment and other Perkins-powered machines. Fast sourcing nationwide.',
-  alternates: { canonical: '/perkins-engine-parts-malaysia/' },
+  alternates: { canonical: '/perkins-engine-parts-malaysia/', languages: { 'en': 'https://sourcesage.ai/perkins-engine-parts-malaysia/', 'x-default': 'https://sourcesage.ai/perkins-engine-parts-malaysia/' } },
   openGraph: {
     title: 'Perkins Engine Parts Malaysia | SourceSage',
     description: 'Perkins diesel engine parts in Malaysia — A4.248, AD4.203, 1004 series for Massey Ferguson, JCB and more. Fast sourcing nationwide.',
