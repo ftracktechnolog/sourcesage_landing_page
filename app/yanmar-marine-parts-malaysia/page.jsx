@@ -5,7 +5,7 @@ import WhatsappCTA from '../../components/WhatsappCTA'
 export const metadata = {
   title: 'Yanmar Marine Engine Parts Malaysia | SourceSage',
   description: 'Hard-to-find Yanmar marine diesel engine parts in Malaysia. 3JH, 4JH, 2GM, 3GM series. Fast sourcing for fishing boats, workboats & pleasure craft — Sabah, Sarawak & Peninsular Malaysia.',
-  alternates: { canonical: '/yanmar-marine-parts-malaysia' },
+  alternates: { canonical: '/yanmar-marine-parts-malaysia/' },
   openGraph: {
     title: 'Yanmar Marine Engine Parts Malaysia | SourceSage',
     description: 'Hard-to-find Yanmar marine diesel engine parts in Malaysia. 3JH, 4JH, 2GM, 3GM series. Fast sourcing for fishing boats & workboats.',

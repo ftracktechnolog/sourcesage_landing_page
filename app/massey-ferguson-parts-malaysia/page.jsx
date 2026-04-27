@@ -5,7 +5,7 @@ import WhatsappCTA from '../../components/WhatsappCTA'
 export const metadata = {
   title: 'Massey Ferguson Spare Parts Malaysia | SourceSage',
   description: 'Hard-to-find Massey Ferguson tractor spare parts in Malaysia. MF240, MF350, MF375, MF385 with Perkins engines. Fast sourcing for plantations & paddy farms nationwide.',
-  alternates: { canonical: '/massey-ferguson-parts-malaysia' },
+  alternates: { canonical: '/massey-ferguson-parts-malaysia/' },
   openGraph: {
     title: 'Massey Ferguson Spare Parts Malaysia | SourceSage',
     description: 'Hard-to-find Massey Ferguson tractor spare parts in Malaysia. MF240, MF350, MF375 with Perkins engines. Fast sourcing nationwide.',

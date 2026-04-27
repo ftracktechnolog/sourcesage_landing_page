@@ -5,7 +5,7 @@ import WhatsappCTA from '../../components/WhatsappCTA'
 export const metadata = {
   title: 'Zoomlion Spare Parts Malaysia | SourceSage',
   description: 'Hard-to-find Zoomlion spare parts in Malaysia. Combine harvesters, paddy planters, transplanting machines & construction equipment. Fast sourcing — Peninsular & East Malaysia.',
-  alternates: { canonical: '/zoomlion-parts-malaysia' },
+  alternates: { canonical: '/zoomlion-parts-malaysia/' },
   openGraph: {
     title: 'Zoomlion Spare Parts Malaysia | SourceSage',
     description: 'Hard-to-find Zoomlion spare parts in Malaysia. Combine harvesters, paddy planters & construction equipment. Fast sourcing nationwide.',

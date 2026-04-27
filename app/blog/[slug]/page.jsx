@@ -18,7 +18,7 @@ export async function generateMetadata({ params }) {
     description: post.meta.meta_description || post.meta.title,
     keywords: post.meta.meta_keywords,
     authors: post.meta.author ? [{ name: post.meta.author }] : [{ name: 'SourceSage Editorial' }],
-    alternates: { canonical: `/blog/${post.meta.slug}` },
+    alternates: { canonical: `/blog/${post.meta.slug}/` },
     openGraph: {
       title: post.meta.title,
       description: post.meta.meta_description || post.meta.title,
