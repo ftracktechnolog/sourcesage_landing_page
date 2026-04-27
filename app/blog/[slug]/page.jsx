@@ -22,7 +22,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: post.meta.title,
       description: post.meta.meta_description || post.meta.title,
-      url: `https://sourcesage.ai/blog/${post.meta.slug}`,
+      url: `https://sourcesage.ai/blog/${post.meta.slug}/`,
       type: 'article',
       publishedTime: post.meta.publish_date,
       modifiedTime: post.meta.last_updated,
@@ -92,7 +92,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="text-center pt-6 border-t border-slate-100">
-        <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">© 2024 SourceSage.ai. Agricultural &amp; Marine Parts Sourcing, Malaysia.</p>
+        <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">© 2026 SourceSage.ai. Agricultural &amp; Marine Parts Sourcing, Malaysia.</p>
       </div>
     </div>
   </footer>

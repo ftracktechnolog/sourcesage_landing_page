@@ -9,9 +9,10 @@ export const metadata = {
   openGraph: {
     title: 'Zoomlion Spare Parts Malaysia | SourceSage',
     description: 'Hard-to-find Zoomlion spare parts in Malaysia. Combine harvesters, paddy planters & construction equipment. Fast sourcing nationwide.',
-    url: 'https://sourcesage.ai/zoomlion-parts-malaysia',
+    url: 'https://sourcesage.ai/zoomlion-parts-malaysia/',
     siteName: 'SourceSage.ai',
     type: 'website',
+    locale: 'en',
     images: [{ url: 'https://sourcesage.ai/images/og-home.png', width: 1200, height: 630, alt: 'Zoomlion Spare Parts Malaysia — SourceSage' }],
   },
   twitter: {
@@ -415,7 +416,7 @@ export default function ZoomlionPage() {
               </div>
             </div>
             <div className="text-center pt-6 border-t border-slate-100">
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">© 2024 SourceSage.ai. Agricultural &amp; Marine Parts Sourcing, Malaysia.</p>
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">© 2026 SourceSage.ai. Agricultural &amp; Marine Parts Sourcing, Malaysia.</p>
             </div>
           </div>
         </footer>

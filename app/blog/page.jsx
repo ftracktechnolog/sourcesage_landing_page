@@ -7,6 +7,14 @@ export const metadata = {
   title: 'Kubota Tractor Parts Blog | SourceSage Malaysia',
   description: 'Guides on identifying Kubota tractor models, finding spare parts, and sourcing hard-to-find components in Malaysia.',
   alternates: { canonical: '/blog/' },
+  openGraph: {
+    title: 'Tractor & Marine Parts Guides | SourceSage Malaysia',
+    description: 'Practical guides on identifying Kubota tractor models, finding spare parts, and sourcing hard-to-find components across Malaysia.',
+    url: 'https://sourcesage.ai/blog/',
+    siteName: 'SourceSage.ai',
+    type: 'website',
+    images: [{ url: 'https://sourcesage.ai/images/og-home.png', width: 1200, height: 630, alt: 'SourceSage Parts & Tractor Guides Malaysia' }],
+  },
 }
 
 const Navbar = () => (
@@ -63,7 +71,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="text-center pt-6 border-t border-slate-100">
-        <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">© 2024 SourceSage.ai. Agricultural &amp; Marine Parts Sourcing, Malaysia.</p>
+        <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">© 2026 SourceSage.ai. Agricultural &amp; Marine Parts Sourcing, Malaysia.</p>
       </div>
     </div>
   </footer>
