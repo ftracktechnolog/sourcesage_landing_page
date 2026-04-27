@@ -12,6 +12,15 @@ whatsapp_label: "Get a Parts Quote on WhatsApp"
 whatsapp_prefill: "Hi, I need parts for my Kubota M9000 / M9540. Model: [X], Serial: [X], Issue: [X]"
 hero_image: "blog-03-hero-kubota-m9540-paddy.webp"
 related_page: "/kubota-tractor-parts-malaysia"
+faqs:
+  - q: "What is the difference between the Kubota M9000 and M9540?"
+    a: "The M9000 is the earlier model (late 1990s–2003) with a V3800 4-cylinder engine producing 92hp. The M9540 replaced it from around 2003 with improved hydraulics, a more refined cab option, and slightly revised engine management. Many drivetrain parts are interchangeable, but engine and electrical components differ."
+  - q: "Are M9000 and M9540 parts interchangeable?"
+    a: "Yes, for many components — clutch plates, PTO seals, hydraulic cylinder seals, and most drivetrain bearings cross between the two models. Engine-specific parts (injectors, head gaskets, water pumps) are model-specific and should be ordered by engine serial number."
+  - q: "Where can I find Kubota M9000 and M9540 parts in Malaysia?"
+    a: "Authorised Kubota dealers in Malaysia carry parts for models within the standard service window. For older M9000 units (pre-2004), parts are increasingly sourced through specialist suppliers like SourceSage — via Japan's secondary market and OEM-compatible manufacturers."
+  - q: "How long does it take to get hard-to-find M9540 parts in Malaysia?"
+    a: "In-stock items ship within 1–3 business days. Parts sourced from Japan typically arrive in 10–21 days by air freight. We confirm availability and lead time before you commit to an order."
 ---
 
 <!-- 🖼️ IMAGE: HERO
