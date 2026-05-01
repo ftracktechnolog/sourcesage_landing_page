@@ -10,11 +10,27 @@ function withAttribution(message) {
   return message + SIGNATURE
 }
 
+function getDevice() {
+  if (typeof navigator === 'undefined') return 'unknown'
+  return /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent) ? 'mobile' : 'desktop'
+}
+
+function getUTM() {
+  if (typeof window === 'undefined') return 'none'
+  const p = new URLSearchParams(window.location.search)
+  const parts = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content']
+    .filter(k => p.get(k))
+    .map(k => `${k}=${p.get(k)}`)
+  return parts.length ? parts.join('&') : 'none'
+}
+
 function logClick(label) {
   try {
     const body = new FormData()
     body.append('entry.1554049717', typeof window !== 'undefined' ? window.location.href : '')
     body.append('entry.335722213', label || 'whatsapp_cta')
+    body.append('entry.2124462189', getDevice())
+    body.append('entry.93308425', getUTM())
     body.append('entry.757958076', typeof document !== 'undefined' ? document.referrer : '')
     fetch(FORM_URL, { method: 'POST', mode: 'no-cors', body })
   // eslint-disable-next-line no-empty
