@@ -13,10 +13,9 @@ function withAttribution(message) {
 function logClick(label) {
   try {
     const body = new FormData()
-    body.append('entry.757958076', new Date().toISOString())
-    body.append('entry.987702131', typeof window !== 'undefined' ? window.location.href : '')
-    body.append('entry.1554049717', label || 'whatsapp_cta')
-    body.append('entry.335722213', typeof document !== 'undefined' ? document.referrer : '')
+    body.append('entry.1554049717', typeof window !== 'undefined' ? window.location.href : '')
+    body.append('entry.335722213', label || 'whatsapp_cta')
+    body.append('entry.757958076', typeof document !== 'undefined' ? document.referrer : '')
     fetch(FORM_URL, { method: 'POST', mode: 'no-cors', body })
   // eslint-disable-next-line no-empty
   } catch { }
