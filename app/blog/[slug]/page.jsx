@@ -149,7 +149,7 @@ export default async function BlogPost({ params }) {
         {/* Hero image */}
         {post.heroHtmls.length > 0 && (
           <div
-            className="w-full bg-slate-100 overflow-hidden [&_figure]:m-0 [&_img]:w-full [&_img]:h-96 [&_img]:object-cover [&_img]:rounded-none"
+            className="w-full bg-slate-100 overflow-hidden [&_figure]:m-0 [&_img]:w-full [&_img]:h-auto [&_img]:rounded-none"
             dangerouslySetInnerHTML={{ __html: post.heroHtmls[0] }}
           />
         )}
