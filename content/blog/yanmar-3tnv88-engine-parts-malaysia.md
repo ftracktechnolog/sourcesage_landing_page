@@ -48,6 +48,12 @@ The 3TNV88 produces 24–30 horsepower depending on the application and is known
 
 This wide OEM deployment is why the 3TNV88 appears across so many different brands on Malaysian job sites and plantations — and why parts sourcing requires knowing what you're looking for beyond just the machine brand.
 
+<!-- 🖼️ IMAGE: INLINE
+alt: "Yanmar 3TNV88 three-cylinder diesel engine showing timing belt cover, cylinder head, block and oil pan with specifications"
+caption: "The Yanmar 3TNV88 — compact three-cylinder diesel (24–30 HP) found in John Deere, Case, Yanmar & Takeuchi mini excavators. Timing belt must be replaced every 2,000 hours."
+filename: blog-10-inline-3tnv88-engine.svg
+-->
+
 ---
 
 ## Common 3TNV88 Engine Problems
@@ -92,6 +98,12 @@ Common in high-hour machines and easy to overlook until oil consumption becomes 
 | Alternator | 12V, 40A |
 | Fuel Filter + Pre-filter | Service items |
 | Air Filter | Engine-specific; confirm machine model |
+
+<!-- 🖼️ IMAGE: INLINE
+alt: "Yanmar 3TNV88 parts catalog showing overhaul kit, injector nozzles, timing belt kit, water pump, injection pump, and crankshaft seal kit"
+caption: "SourceSage sources all 3TNV88 parts — OEM Yanmar and quality aftermarket. Availability confirmed within 24 hours."
+filename: blog-10-inline-3tnv88-parts.svg
+-->
 
 ---
 

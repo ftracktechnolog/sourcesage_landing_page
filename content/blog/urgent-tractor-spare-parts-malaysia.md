@@ -51,6 +51,12 @@ Any part that stops your tractor from operating — engine components, hydraulic
 
 Most local tractor dealerships in Malaysia stock only high-turnover consumables — oil filters, air filters, belts, blades. They do not carry discontinued parts, niche model parts, or components for older machinery. When a part is out of stock, they typically quote 2-6 weeks for factory orders. That timeline does not work when a tractor is sidelined mid-operation.
 
+<!-- 🖼️ IMAGE: INLINE
+alt: "Workshop counter with diesel injectors, pistons, gaskets and seals — urgent stock ready in Malaysia"
+caption: "SourceSage keeps urgent-stock parts ready across Malaysia — injectors, pistons, gaskets, and seals available for fast dispatch."
+filename: blog-08-inline-workshop-parts.svg
+-->
+
 ---
 
 ## How does SourceSage source urgent parts faster?
@@ -84,6 +90,12 @@ Air freight costs more than sea freight, but when you calculate the cost of trac
 - **Air freight:** 3-7 working days
 - **Sea freight:** 14-21 working days
 - **Local courier (Peninsula Malaysia):** 1-3 working days (if stock is held locally)
+
+<!-- 🖼️ IMAGE: INLINE
+alt: "Cargo plane on tarmac with air freight and sea freight shipping timelines — Malaysia delivery options"
+caption: "Air freight 3–7 working days · Sea freight 14–21 days · Local courier 1–3 days within Peninsula Malaysia."
+filename: blog-08-inline-air-freight.svg
+-->
 
 ---
 

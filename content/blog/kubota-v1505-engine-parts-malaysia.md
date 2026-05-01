@@ -51,6 +51,12 @@ The V1505 is installed in a wide range of equipment:
 
 This cross-application use means V1505 parts are in demand beyond just the tractor market — a major reason why they can be hard to find in Malaysia, where multi-brand supply chains are thin.
 
+<!-- 🖼️ IMAGE: INLINE
+alt: "Kubota V1505 four-cylinder diesel engine diagram showing cylinder head, block, oil pan, and intake/exhaust manifolds"
+caption: "The Kubota V1505 — a 1,499 cc four-cylinder diesel producing 27–33 HP, used in L-series tractors, generators, and compact machinery."
+filename: blog-07-inline-v1505-engine.svg
+-->
+
 ---
 
 ## Common V1505 Engine Problems
@@ -97,6 +103,12 @@ Loss of oil pressure at idle in a high-hour engine. Can sometimes be resolved wi
 | Timing Gear Set | Crankshaft + camshaft + idler gears |
 | Crankshaft Seal Kit | Front and rear |
 | Fuel Filter + Lift Pump | Service interval items |
+
+<!-- 🖼️ IMAGE: INLINE
+alt: "Kubota V1505 parts catalog grid showing overhaul kit, cylinder head, injectors, water pump, oil pump, timing gears, injection pump, gasket set, and starter motor"
+caption: "SourceSage sources all V1505 parts — OEM and quality aftermarket. Most enquiries confirmed within 24 hours."
+filename: blog-07-inline-v1505-parts.svg
+-->
 
 ---
 

@@ -1,49 +1,93 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e293b"/>
-      <stop offset="100%" style="stop-color:#0f172a"/>
+    <linearGradient id="bg12" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="50%" style="stop-color:#1e293b"/>
+      <stop offset="100%" style="stop-color:#0c1222"/>
     </linearGradient>
-    <linearGradient id="glow" x1="0%" y1="100%" x2="100%" y2="0%">
+    <linearGradient id="amberGlow" x1="0%" y1="100%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:0.15"/>
       <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0"/>
     </linearGradient>
+    <linearGradient id="blueGlow12" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="shadow12">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="glow12">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="300" cy="520" r="350" fill="url(#glow)"/>
-  <!-- Magnifying glass -->
-  <g transform="translate(280, 170)">
-    <circle cx="120" cy="120" r="95" fill="none" stroke="#f59e0b" stroke-width="8"/>
-    <circle cx="120" cy="120" r="90" fill="#f59e0b" opacity="0.08"/>
-    <line x1="190" y1="190" x2="280" y2="280" stroke="#f59e0b" stroke-width="12" stroke-linecap="round"/>
-    <!-- Gear inside magnifying glass -->
-    <circle cx="120" cy="120" r="40" fill="none" stroke="#60a5fa" stroke-width="4"/>
-    <circle cx="120" cy="120" r="8" fill="#60a5fa" opacity="0.6"/>
-    <g stroke="#60a5fa" stroke-width="4">
-      <line x1="120" y1="72" x2="120" y2="58"/>
-      <line x1="120" y1="168" x2="120" y2="182"/>
-      <line x1="72" y1="120" x2="58" y2="120"/>
-      <line x1="168" y1="120" x2="182" y2="120"/>
-      <line x1="86" y1="86" x2="76" y2="76"/>
-      <line x1="154" y1="154" x2="164" y2="164"/>
-      <line x1="86" y1="154" x2="76" y2="164"/>
-      <line x1="154" y1="86" x2="164" y2="76"/>
+  <rect width="1200" height="675" fill="url(#bg12)"/>
+  <circle cx="350" cy="400" r="380" fill="url(#amberGlow)"/>
+  <circle cx="900" cy="200" r="250" fill="url(#blueGlow12)"/>
+  <!-- Large vintage tractor silhouette — side profile -->
+  <g transform="translate(580, 260)" opacity="0.15" stroke="#94a3b8" stroke-width="2" fill="none">
+    <path d="M30,40 L30,110 L280,110 Q310,110 310,80 L310,40 Z"/>
+    <rect x="100" y="0" width="120" height="45" rx="6"/>
+    <rect x="95" y="-2" width="130" height="8" rx="3"/>
+    <rect x="30" y="50" width="70" height="55" rx="4"/>
+    <circle cx="140" cy="110" r="40"/>
+    <circle cx="290" cy="110" r="28"/>
+    <line x1="0" y1="120" x2="370" y2="120"/>
+  </g>
+  <!-- Magnifying glass — main visual -->
+  <g transform="translate(140, 140)" filter="url(#shadow12)">
+    <!-- Lens -->
+    <circle cx="160" cy="160" r="130" fill="#f59e0b" opacity="0.04"/>
+    <circle cx="160" cy="160" r="125" fill="none" stroke="#f59e0b" stroke-width="8"/>
+    <circle cx="160" cy="160" r="120" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.3"/>
+    <!-- Gear inside lens -->
+    <circle cx="160" cy="150" r="55" fill="none" stroke="#60a5fa" stroke-width="4"/>
+    <circle cx="160" cy="150" r="45" fill="none" stroke="#60a5fa" stroke-width="2" opacity="0.4"/>
+    <circle cx="160" cy="150" r="12" fill="#60a5fa" opacity="0.4"/>
+    <g stroke="#60a5fa" stroke-width="5" opacity="0.7">
+      <line x1="160" y1="85" x2="160" y2="65"/>
+      <line x1="160" y1="215" x2="160" y2="235"/>
+      <line x1="95" y1="150" x2="75" y2="150"/>
+      <line x1="225" y1="150" x2="245" y2="150"/>
+      <line x1="114" y1="104" x2="100" y2="90"/>
+      <line x1="206" y1="196" x2="220" y2="210"/>
+      <line x1="114" y1="196" x2="100" y2="210"/>
+      <line x1="206" y1="104" x2="220" y2="90"/>
     </g>
+    <!-- Small parts found inside lens -->
+    <rect x="240" y="220" width="22" height="14" rx="2" fill="#f59e0b" opacity="0.2" transform="rotate(15, 251, 227)"/>
+    <circle cx="130" cy="220" r="12" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.4"/>
+    <rect x="80" y="170" width="16" height="10" rx="2" fill="#3b82f6" opacity="0.2" transform="rotate(-10, 88, 175)"/>
+    <!-- Handle -->
+    <line x1="260" y1="260" x2="380" y2="380" stroke="#f59e0b" stroke-width="14" stroke-linecap="round"/>
+    <line x1="260" y1="260" x2="380" y2="380" stroke="#d97706" stroke-width="6" stroke-linecap="round" opacity="0.3"/>
   </g>
-  <!-- Parts scattered around -->
-  <g fill="#475569" opacity="0.6">
-    <rect x="650" y="200" width="50" height="30" rx="4" transform="rotate(-15, 675, 215)"/>
-    <rect x="750" y="280" width="40" height="20" rx="3" transform="rotate(25, 770, 290)"/>
-    <circle cx="700" cy="350" r="18"/>
-    <rect x="800" y="200" width="35" height="35" rx="5" transform="rotate(45, 817, 217)"/>
-    <circle cx="680" cy="250" r="10" fill="#3b82f6" opacity="0.3"/>
+  <!-- Scattered parts around right side -->
+  <g opacity="0.3">
+    <rect x="700" y="220" width="45" height="25" rx="4" fill="none" stroke="#64748b" stroke-width="2" transform="rotate(-8, 722, 232)"/>
+    <circle cx="780" cy="280" r="18" fill="none" stroke="#64748b" stroke-width="2"/>
+    <circle cx="780" cy="280" r="6" fill="#64748b"/>
+    <rect x="830" y="240" width="30" height="18" rx="3" fill="none" stroke="#64748b" stroke-width="2" transform="rotate(30, 845, 249)"/>
+    <circle cx="720" cy="180" r="8" fill="none" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="680" y="300" width="40" height="20" rx="3" fill="none" stroke="#f59e0b" stroke-width="2" transform="rotate(-20, 700, 310)"/>
   </g>
-  <!-- Checkmark -->
+  <!-- Checkmark badge -->
   <g transform="translate(760, 380)">
-    <circle cx="50" cy="50" r="40" fill="#22c55e" opacity="0.15"/>
-    <polyline points="30,50 45,65 70,35" fill="none" stroke="#22c55e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="50" cy="50" r="42" fill="#22c55e" opacity="0.08"/>
+    <circle cx="50" cy="50" r="36" fill="none" stroke="#22c55e" stroke-width="3"/>
+    <polyline points="28,50 43,65 72,35" fill="none" stroke="#22c55e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- Japanese sourcing connection -->
+  <g transform="translate(880, 160)" opacity="0.25">
+    <circle cx="30" cy="30" r="28" fill="none" stroke="#ef4444" stroke-width="2"/>
+    <circle cx="30" cy="30" r="4" fill="#ef4444"/>
+    <text x="30" y="35" text-anchor="middle" font-family="serif" font-size="16" fill="#ef4444">日</text>
   </g>
   <!-- Title text -->
-  <text x="600" y="550" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="800" font-size="38" fill="#ffffff">Hard-to-Find Tractor Parts Malaysia</text>
-  <text x="600" y="595" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="600" font-size="22" fill="#94a3b8">We Source What Local Dealers Can't — Discontinued, Vintage & Niche</text>
+  <text x="600" y="550" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="800" font-size="36" fill="#ffffff">Hard-to-Find Tractor Parts in Malaysia?</text>
+  <text x="600" y="590" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="600" font-size="20" fill="#fbbf24">We source discontinued, vintage &amp; niche parts that local dealers can't supply.</text>
+  <!-- Brand strip -->
+  <g transform="translate(250, 630)">
+    <text x="0" y="0" font-family="system-ui,sans-serif" font-size="12" fill="#64748b" text-anchor="middle">Kubota · Yanmar · Massey Ferguson · John Deere · Perkins · Zoomlion · Japanese secondary dealer network</text>
+  </g>
 </svg>

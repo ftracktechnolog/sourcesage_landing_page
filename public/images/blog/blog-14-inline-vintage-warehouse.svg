@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="warehouseBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b"/>
+      <stop offset="100%" style="stop-color:#0f172a"/>
+    </linearGradient>
+    <linearGradient id="floorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#334155"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="shelfWood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#92400e"/>
+      <stop offset="100%" style="stop-color:#78350f"/>
+    </linearGradient>
+    <filter id="shadowWh">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <radialGradient id="lampLight" cx="50%" cy="0%" r="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:0.08"/>
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <!-- Warehouse background -->
+  <rect width="800" height="500" fill="url(#warehouseBg)"/>
+  <!-- Warm light glow -->
+  <rect x="0" y="0" width="800" height="200" fill="url(#lampLight)"/>
+  <!-- Floor -->
+  <rect x="0" y="380" width="800" height="120" fill="url(#floorGrad)"/>
+  <rect x="0" y="380" width="800" height="3" fill="#475569" opacity="0.5"/>
+  <!-- Floor lines -->
+  <g stroke="#334155" stroke-width="1" opacity="0.3">
+    <line x1="0" y1="420" x2="800" y2="420"/>
+    <line x1="0" y1="460" x2="800" y2="460"/>
+  </g>
+  <!-- Tall shelving unit left -->
+  <g filter="url(#shadowWh)">
+    <rect x="40" y="80" width="200" height="300" rx="4" fill="#1e293b" opacity="0.6"/>
+    <rect x="40" y="80" width="200" height="4" fill="#475569"/>
+    <!-- Shelves -->
+    <rect x="40" y="160" width="200" height="4" fill="#475569"/>
+    <rect x="40" y="240" width="200" height="4" fill="#475569"/>
+    <rect x="40" y="320" width="200" height="4" fill="#475569"/>
+    <!-- Boxes on shelves -->
+    <g opacity="0.7">
+      <!-- Top shelf -->
+      <rect x="55" y="95" width="40" height="55" rx="2" fill="#92400e" opacity="0.6"/>
+      <rect x="105" y="100" width="35" height="50" rx="2" fill="#78350f" opacity="0.5"/>
+      <rect x="150" y="98" width="45" height="52" rx="2" fill="#b45309" opacity="0.4"/>
+      <!-- Middle shelf -->
+      <rect x="50" y="175" width="50" height="55" rx="2" fill="#1d4ed8" opacity="0.3"/>
+      <rect x="110" y="178" width="40" height="52" rx="2" fill="#1e40af" opacity="0.3"/>
+      <rect x="160" y="172" width="55" height="58" rx="2" fill="#2563eb" opacity="0.25"/>
+      <!-- Bottom shelf -->
+      <rect x="55" y="255" width="45" height="55" rx="2" fill="#064e3b" opacity="0.3"/>
+      <rect x="110" y="260" width="50" height="50" rx="2" fill="#065f46" opacity="0.25"/>
+      <rect x="170" y="258" width="35" height="52" rx="2" fill="#047857" opacity="0.2"/>
+    </g>
+  </g>
+  <!-- Tall shelving unit right -->
+  <g filter="url(#shadowWh)">
+    <rect x="560" y="60" width="200" height="320" rx="4" fill="#1e293b" opacity="0.6"/>
+    <rect x="560" y="60" width="200" height="4" fill="#475569"/>
+    <!-- Shelves -->
+    <rect x="560" y="140" width="200" height="4" fill="#475569"/>
+    <rect x="560" y="220" width="200" height="4" fill="#475569"/>
+    <rect x="560" y="300" width="200" height="4" fill="#475569"/>
+    <!-- Boxes -->
+    <g opacity="0.7">
+      <rect x="575" y="75" width="50" height="55" rx="2" fill="#78350f" opacity="0.5"/>
+      <rect x="635" y="78" width="40" height="52" rx="2" fill="#92400e" opacity="0.4"/>
+      <rect x="685" y="72" width="55" height="58" rx="2" fill="#b45309" opacity="0.35"/>
+      <rect x="570" y="155" width="60" height="55" rx="2" fill="#1e40af" opacity="0.3"/>
+      <rect x="640" y="160" width="45" height="50" rx="2" fill="#1d4ed8" opacity="0.25"/>
+      <rect x="695" y="152" width="40" height="58" rx="2" fill="#2563eb" opacity="0.2"/>
+      <rect x="575" y="235" width="55" height="55" rx="2" fill="#065f46" opacity="0.25"/>
+      <rect x="640" y="240" width="45" height="50" rx="2" fill="#064e3b" opacity="0.2"/>
+      <rect x="695" y="238" width="40" height="52" rx="2" fill="#047857" opacity="0.15"/>
+    </g>
+  </g>
+  <!-- Central work table -->
+  <g filter="url(#shadowWh)">
+    <rect x="320" y="280" width="160" height="18" rx="2" fill="#64748b"/>
+    <rect x="320" y="298" width="160" height="85" fill="#334155" opacity="0.8"/>
+    <rect x="330" y="310" width="30" height="65" rx="2" fill="#475569"/>
+    <rect x="440" y="310" width="30" height="65" rx="2" fill="#475569"/>
+    <!-- Parts on table -->
+    <rect x="340" y="260" width="25" height="18" rx="3" fill="#94a3b8" opacity="0.6"/>
+    <circle cx="400" cy="270" r="10" fill="#f59e0b" opacity="0.4"/>
+    <rect x="430" y="258" width="20" height="20" rx="2" fill="#3b82f6" opacity="0.4"/>
+    <!-- Lamp on table -->
+    <rect x="455" y="245" width="6" height="35" rx="2" fill="#64748b"/>
+    <path d="M445,240 Q458,230 471,240 Z" fill="#fbbf24" opacity="0.3"/>
+  </g>
+  <!-- Vintage/retro badge -->
+  <g transform="translate(330, 120)">
+    <rect width="140" height="32" rx="16" fill="#f59e0b" opacity="0.12"/>
+    <rect x="1" y="1" width="138" height="30" rx="15" fill="none" stroke="#f59e0b" stroke-width="1" stroke-dasharray="3,2"/>
+    <text x="70" y="21" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="700" font-size="12" fill="#fbbf24">VINTAGE &amp; DISCONTINUED</text>
+  </g>
+  <!-- Box label -->
+  <g transform="translate(60, 380)" opacity="0.5">
+    <text x="0" y="0" font-family="system-ui,sans-serif" font-size="9" fill="#94a3b8">Kubota L-series · 1990s</text>
+  </g>
+  <!-- Bottom text -->
+  <text x="400" y="475" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#64748b">Japanese secondary dealer network · Vintage Kubota, Yanmar, Massey Ferguson parts · No minimum order</text>
+</svg>

@@ -45,6 +45,12 @@ Three main reasons:
 
 3. **Single-distributor markets** — For brands like Massey Ferguson (All-Planters is sole distributor for Malaysia), you cannot shop around. If they don't have it, the part is effectively unavailable through official channels.
 
+<!-- 🖼️ IMAGE: INLINE
+alt: "Vintage tractor parts warehouse with shelving units, workbench, and storage boxes — vintage and discontinued parts inventory"
+caption: "SourceSage's Japanese secondary dealer network stocks vintage Kubota, Yanmar, and Massey Ferguson parts with no minimum order."
+filename: blog-14-inline-vintage-warehouse.svg
+-->
+
 ---
 
 ## What counts as a "hard to find" tractor part?
@@ -69,6 +75,12 @@ Any part that is not available through standard dealer channels in Malaysia:
 | Response time | 2-6 weeks for non-stock items | 24-48 hour availability check |
 | Brand coverage | Single brand | [Kubota](/kubota-tractor-parts-malaysia/), [Yanmar](/yanmar-marine-parts-malaysia/), [Massey Ferguson](/massey-ferguson-parts-malaysia/), [John Deere](/john-deere-parts-malaysia/), [Perkins](/perkins-engine-parts-malaysia/), [Zoomlion](/zoomlion-parts-malaysia/) |
 | Vintage support | Limited | Japanese secondary dealer network for vintage parts |
+
+<!-- 🖼️ IMAGE: INLINE
+alt: "Side-by-side comparison chart: Local Dealer vs SourceSage — stock, discontinued parts, response time, brand coverage, vintage support"
+caption: "Hard-to-find parts: Local dealers can't match SourceSage's multi-supplier network across Asia."
+filename: blog-14-inline-dealer-comparison.svg
+-->
 
 ---
 
