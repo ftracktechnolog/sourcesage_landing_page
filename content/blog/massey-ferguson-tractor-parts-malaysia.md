@@ -6,9 +6,8 @@ meta_description: "Massey Ferguson tractor parts Malaysia — MF240 to MF390 wit
 author: "SourceSage Editorial"
 meta_keywords: ["massey ferguson tractor parts malaysia", "mf240 parts malaysia", "mf350 spare parts", "perkins engine parts malaysia", "massey ferguson spare parts supplier"]
 content_angle: "Model-specific sourcing guide — captures MF owners who are struggling to find parts outside Kubota-dominated dealer networks"
-publish_date: "2026-06-12"
-last_updated: "2026-06-12"
-draft: true
+publish_date: "2026-03-01"
+last_updated: "2026-05-01"
 whatsapp_label: "Ask About Massey Ferguson Parts"
 whatsapp_prefill: "Hi, I need parts for my Massey Ferguson tractor. Model: [X], Engine: [X], Issue: [X]"
 hero_image: "blog-08-hero-massey-ferguson-malaysia.jpg"

@@ -5,11 +5,11 @@ import WhatsappCTA from '../../components/WhatsappCTA'
 
 export const metadata = {
   title: 'Kubota Tractor Parts Blog | SourceSage Malaysia',
-  description: 'Guides on identifying Kubota tractor models, finding spare parts, and sourcing hard-to-find components in Malaysia.',
+  description: 'Kubota tractor parts blog. Model identification guides, sourcing tips, common problems & solutions. Learn how to find the right parts for your Kubota tractor in Malaysia.',
   alternates: { canonical: '/blog/' },
   openGraph: {
     title: 'Tractor & Marine Parts Guides | SourceSage Malaysia',
-    description: 'Practical guides on identifying Kubota tractor models, finding spare parts, and sourcing hard-to-find components across Malaysia.',
+    description: 'Kubota tractor parts blog. Model identification guides, sourcing tips, common problems & solutions. Learn how to find the right parts for your Kubota tractor in Malaysia.',
     url: 'https://sourcesage.ai/blog/',
     siteName: 'SourceSage.ai',
     type: 'website',

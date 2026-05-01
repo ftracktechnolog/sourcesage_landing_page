@@ -3,7 +3,7 @@ import { ms } from '../../lib/translations/ms'
 
 export const metadata = {
   title: 'Alat Ganti Traktor & Enjin Marin Malaysia | SourceSage',
-  description: 'Pembekal alat ganti traktor pertanian dan enjin marin diesel yang sukar didapati di Malaysia. Perolehan pantas untuk kerosakan segera — Kubota, Yanmar, Massey Ferguson & lebih.',
+  description: 'Cari alat ganti traktor dan enjin marin yang sukar diperoleh di Malaysia. Jenama Kubota, Yanmar, Massey Ferguson, John Deere, Perkins & Zoomlion. Semak stok dalam 24 jam.',
   alternates: {
     canonical: '/ms/',
     languages: {
@@ -15,7 +15,7 @@ export const metadata = {
   },
   openGraph: {
     title: 'Alat Ganti Traktor & Enjin Marin Malaysia | SourceSage',
-    description: 'Pembekal alat ganti traktor pertanian dan enjin marin diesel yang sukar didapati di Malaysia.',
+    description: 'Cari alat ganti traktor dan enjin marin yang sukar diperoleh di Malaysia. Jenama Kubota, Yanmar, Massey Ferguson, John Deere, Perkins & Zoomlion. Semak stok dalam 24 jam.',
     url: 'https://sourcesage.ai/ms/',
     siteName: 'SourceSage.ai',
     type: 'website',
@@ -25,7 +25,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Alat Ganti Traktor & Enjin Marin Malaysia | SourceSage',
-    description: 'Pembekal alat ganti traktor pertanian dan enjin marin diesel yang sukar didapati di Malaysia.',
+    description: 'Cari alat ganti traktor dan enjin marin yang sukar diperoleh di Malaysia. Jenama Kubota, Yanmar, Massey Ferguson, John Deere, Perkins & Zoomlion. Semak stok dalam 24 jam.',
     images: ['https://sourcesage.ai/images/og-home.png'],
   },
 }

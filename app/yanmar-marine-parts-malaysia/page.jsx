@@ -4,11 +4,11 @@ import WhatsappCTA from '../../components/WhatsappCTA'
 
 export const metadata = {
   title: 'Yanmar Marine Engine Parts Malaysia | SourceSage',
-  description: 'Hard-to-find Yanmar marine diesel engine parts in Malaysia. 3JH, 4JH, 2GM, 3GM series. Fast sourcing for fishing boats, workboats & pleasure craft — Sabah, Sarawak & Peninsular Malaysia.',
+  description: 'Yanmar marine engine parts Malaysia. 1GM, 2GM, 3GM, 3JH, 4JH & 6LY series. Fuel injectors, gaskets, cylinder heads & more. Air freight available for urgent orders.',
   alternates: { canonical: '/yanmar-marine-parts-malaysia/', languages: { 'en': 'https://sourcesage.ai/yanmar-marine-parts-malaysia/', 'x-default': 'https://sourcesage.ai/yanmar-marine-parts-malaysia/' } },
   openGraph: {
     title: 'Yanmar Marine Engine Parts Malaysia | SourceSage',
-    description: 'Hard-to-find Yanmar marine diesel engine parts in Malaysia. 3JH, 4JH, 2GM, 3GM series. Fast sourcing for fishing boats & workboats.',
+    description: 'Yanmar marine engine parts Malaysia. 1GM, 2GM, 3GM, 3JH, 4JH & 6LY series. Fuel injectors, gaskets, cylinder heads & more. Air freight available for urgent orders.',
     url: 'https://sourcesage.ai/yanmar-marine-parts-malaysia/',
     siteName: 'SourceSage.ai',
     type: 'website',
@@ -18,7 +18,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Yanmar Marine Engine Parts Malaysia | SourceSage',
-    description: 'Hard-to-find Yanmar marine diesel engine parts in Malaysia. 3JH, 4JH, 2GM, 3GM series.',
+    description: 'Yanmar marine engine parts Malaysia. 1GM, 2GM, 3GM, 3JH, 4JH & 6LY series. Fuel injectors, gaskets, cylinder heads & more. Air freight available for urgent orders.',
     images: ['https://sourcesage.ai/images/og-home.png'],
   },
 }

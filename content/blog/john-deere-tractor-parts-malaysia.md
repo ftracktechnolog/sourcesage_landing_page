@@ -6,9 +6,8 @@ meta_description: "Sourcing John Deere tractor parts in Malaysia — 5075E, 5310
 author: "SourceSage Editorial"
 meta_keywords: ["john deere tractor parts malaysia", "john deere 5075e parts malaysia", "john deere 5310 spare parts", "jd parts malaysia", "john deere 6j parts malaysia"]
 content_angle: "Model-specific sourcing guide — captures JD owners who struggle outside the dealer network"
-publish_date: "2026-07-03"
-last_updated: "2026-04-27"
-draft: true
+publish_date: "2026-04-18"
+last_updated: "2026-05-01"
 whatsapp_label: "Ask About John Deere Parts"
 whatsapp_prefill: "Hi, I need parts for my John Deere tractor. Model: [X], Engine serial: [X], Part needed: [X]"
 hero_image: "blog-12-hero-john-deere-malaysia.jpg"

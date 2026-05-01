@@ -4,11 +4,11 @@ import WhatsappCTA from '../../components/WhatsappCTA'
 
 export const metadata = {
   title: 'John Deere Tractor Parts Malaysia | SourceSage',
-  description: 'Hard-to-find John Deere tractor spare parts in Malaysia. 5E, 6J, 5075E, 5310 series and vintage models. Fast sourcing for paddy farms, plantations & construction nationwide.',
+  description: 'John Deere tractor parts Malaysia. Hydraulic seals, electrical components, engine parts. Multi-supplier sourcing network for parts local dealers don\'t stock.',
   alternates: { canonical: '/john-deere-parts-malaysia/', languages: { 'en': 'https://sourcesage.ai/john-deere-parts-malaysia/', 'x-default': 'https://sourcesage.ai/john-deere-parts-malaysia/' } },
   openGraph: {
     title: 'John Deere Tractor Parts Malaysia | SourceSage',
-    description: 'Hard-to-find John Deere tractor spare parts in Malaysia. 5E, 6J series and vintage models. Fast sourcing nationwide.',
+    description: 'John Deere tractor parts Malaysia. Hydraulic seals, electrical components, engine parts. Multi-supplier sourcing network for parts local dealers don\'t stock.',
     url: 'https://sourcesage.ai/john-deere-parts-malaysia/',
     siteName: 'SourceSage.ai',
     type: 'website',
@@ -18,7 +18,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'John Deere Tractor Parts Malaysia | SourceSage',
-    description: 'Hard-to-find John Deere tractor spare parts in Malaysia. 5E, 6J series and vintage models.',
+    description: 'John Deere tractor parts Malaysia. Hydraulic seals, electrical components, engine parts. Multi-supplier sourcing network for parts local dealers don\'t stock.',
     images: ['https://sourcesage.ai/images/og-home.png'],
   },
 }

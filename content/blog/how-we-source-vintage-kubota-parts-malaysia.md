@@ -2,7 +2,7 @@
 id: blog-02
 slug: how-we-source-vintage-kubota-parts-malaysia
 title: "How We Source Vintage & Hard-to-Find Kubota Parts in Malaysia"
-meta_description: "How we source vintage Kubota tractor parts in Malaysia — Japan used market, OEM-compatible suppliers, and cross-model lookup. If the part exists, we can find it."
+meta_description: "How SourceSage sources vintage & discontinued Kubota tractor parts in Malaysia. Japanese secondary dealer network, multi-supplier search, fast turnaround."
 author: "SourceSage Editorial"
 meta_keywords: ["vintage kubota parts malaysia", "hard to find kubota spare parts", "kubota tractor parts supplier malaysia"]
 content_angle: "Authority / 'How we do it' — builds trust and brand differentiation"

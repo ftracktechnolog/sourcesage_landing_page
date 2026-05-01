@@ -2,7 +2,7 @@
 id: blog-03
 slug: kubota-m9000-m9540-parts-malaysia
 title: "Kubota M9000 & M9540 Parts Malaysia: The Complete Owner's Guide"
-meta_description: "Complete owner's guide to Kubota M9000 and M9540 parts in Malaysia — common failures, full parts list, and sourcing tips for Kedah and Perak paddy operators."
+meta_description: "Kubota M9000 & M9540 tractor parts guide. Fuel injectors, hydraulic pumps, PTO parts & more for these Kubota models. Find parts in Malaysia with 24hr sourcing."
 author: "SourceSage Editorial"
 meta_keywords: ["kubota m9000 parts malaysia", "kubota m9540 spare parts", "kubota m9540dt parts list"]
 content_angle: "Model-specific deep-dive — highest commercial intent"

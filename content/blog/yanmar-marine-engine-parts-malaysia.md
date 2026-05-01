@@ -6,9 +6,8 @@ meta_description: "Yanmar marine engine parts sourcing guide for Malaysia — 1G
 author: "SourceSage Editorial"
 meta_keywords: ["yanmar marine engine parts malaysia", "yanmar 3jh 4jh parts", "yanmar marine diesel spare parts", "yanmar marine engine supplier malaysia"]
 content_angle: "Model-specific sourcing guide — captures coastal fishing boat operators and marine workshops"
-publish_date: "2026-05-20"
-last_updated: "2026-05-20"
-draft: true
+publish_date: "2026-04-01"
+last_updated: "2026-05-01"
 whatsapp_label: "Ask About Yanmar Marine Parts"
 whatsapp_prefill: "Hi, I need parts for my Yanmar marine engine. Model: [X], Serial: [X], Issue: [X]"
 hero_image: "blog-07-hero-yanmar-marine-engine.jpg"

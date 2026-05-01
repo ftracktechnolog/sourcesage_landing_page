@@ -68,8 +68,14 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://sourcesage.ai/about/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://sourcesage.ai/blog/</loc>
-    <lastmod>2026-04-26</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -92,8 +98,26 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://sourcesage.ai/blog/massey-ferguson-tractor-parts-malaysia/</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sourcesage.ai/blog/kubota-v1505-engine-parts-malaysia/</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://sourcesage.ai/blog/kubota-l3408-l3608-parts-malaysia/</loc>
     <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sourcesage.ai/blog/yanmar-marine-engine-parts-malaysia/</loc>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -104,8 +128,38 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://sourcesage.ai/blog/kubota-engine-codes-other-brands-malaysia/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sourcesage.ai/blog/john-deere-tractor-parts-malaysia/</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sourcesage.ai/blog/yanmar-3tnv88-engine-parts-malaysia/</loc>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://sourcesage.ai/blog/kubota-m9000-m9540-parts-malaysia/</loc>
     <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sourcesage.ai/blog/urgent-tractor-spare-parts-malaysia/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sourcesage.ai/blog/hard-to-find-tractor-parts-malaysia/</loc>
+    <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
