@@ -27,3 +27,6 @@ out
 *.sln
 *.sw?
 blog_drafts/
+
+# Dev / local AI & agent notes (not for repo)
+dev/
