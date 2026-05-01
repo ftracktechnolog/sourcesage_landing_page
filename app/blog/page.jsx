@@ -4,16 +4,16 @@ import { getAllPosts } from '../../lib/blog'
 import WhatsappCTA from '../../components/WhatsappCTA'
 
 export const metadata = {
-  title: 'Kubota Tractor Parts Blog | SourceSage Malaysia',
-  description: 'Kubota tractor parts blog. Model identification guides, sourcing tips, common problems & solutions. Learn how to find the right parts for your Kubota tractor in Malaysia.',
+  title: 'Tractor & Marine Parts Guides — Malaysia | SourceSage',
+  description: 'Parts guides for Malaysian workshops and dealers. Kubota, Yanmar, Massey Ferguson, John Deere, Perkins & Zoomlion — model identification, sourcing tips, common problems.',
   alternates: { canonical: '/blog/' },
   openGraph: {
-    title: 'Tractor & Marine Parts Guides | SourceSage Malaysia',
-    description: 'Kubota tractor parts blog. Model identification guides, sourcing tips, common problems & solutions. Learn how to find the right parts for your Kubota tractor in Malaysia.',
+    title: 'Tractor & Marine Parts Guides — Malaysia | SourceSage',
+    description: 'Parts guides for Malaysian workshops and dealers. Kubota, Yanmar, Massey Ferguson, John Deere, Perkins & Zoomlion — model identification, sourcing tips, common problems.',
     url: 'https://sourcesage.ai/blog/',
     siteName: 'SourceSage.ai',
     type: 'website',
-    images: [{ url: 'https://sourcesage.ai/images/og-home.png', width: 1200, height: 630, alt: 'SourceSage Parts & Tractor Guides Malaysia' }],
+    images: [{ url: 'https://sourcesage.ai/images/og-home.png', width: 1200, height: 630, alt: 'SourceSage Tractor & Marine Parts Guides Malaysia' }],
   },
 }
 
