@@ -159,15 +159,15 @@ export default function YanmarMarinePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <Link href="/" className="flex items-center">
               <span className="font-bold text-xl text-slate-900 tracking-tight">SourceSage</span>
-              <span className="text-blue-600 font-bold text-xl">.ai</span>
+              <span className="text-accent font-bold text-xl">.ai</span>
             </Link>
             <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-              <Link href="/#brands" className="hover:text-blue-600 transition-colors">Brands</Link>
-              <Link href="/#marine" className="hover:text-blue-600 transition-colors">Marine</Link>
-              <Link href="/#how-it-works" className="hover:text-blue-600 transition-colors">How It Works</Link>
-              <Link href="/about" className="hover:text-blue-600 transition-colors">About</Link>
-              <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
-              <Link href="/#request" className="hover:text-blue-600 transition-colors">Request a Part</Link>
+              <Link href="/#brands" className="hover:text-accent transition-colors">Brands</Link>
+              <Link href="/#marine" className="hover:text-accent transition-colors">Marine</Link>
+              <Link href="/#how-it-works" className="hover:text-accent transition-colors">How It Works</Link>
+              <Link href="/about" className="hover:text-accent transition-colors">About</Link>
+              <Link href="/blog" className="hover:text-accent transition-colors">Blog</Link>
+              <Link href="/#request" className="hover:text-accent transition-colors">Request a Part</Link>
             </div>
             <LangSwitcher currentLang="en" />
             <WhatsappCTA
@@ -183,7 +183,7 @@ export default function YanmarMarinePage() {
         {/* Breadcrumb */}
         <div className="bg-slate-50 border-b border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-sm text-slate-500">
-            <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+            <Link href="/" className="hover:text-accent transition-colors">Home</Link>
             <span className="mx-2">/</span>
             <span className="text-slate-700 font-medium">Yanmar Marine Engine Parts Malaysia</span>
           </div>
@@ -193,12 +193,12 @@ export default function YanmarMarinePage() {
         <header className="bg-white pt-16 pb-20 border-b border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 text-blue-800 text-xs font-bold uppercase tracking-widest mb-6">
-                <MapPin className="w-4 h-4 text-blue-600" /> Malaysia — Peninsular, Sabah & Sarawak
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 text-accent text-xs font-bold uppercase tracking-widest mb-6">
+                <MapPin className="w-4 h-4 text-accent" /> Malaysia — Peninsular, Sabah & Sarawak
               </div>
               <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
                 Yanmar Marine Engine Parts<br />
-                <span className="text-blue-600">Hard to Find. Fast to Source.</span>
+                <span className="text-accent">Hard to Find. Fast to Source.</span>
               </h1>
               <p className="text-xl text-slate-600 leading-relaxed mb-8">
                 Injectors, impellers, heat exchangers, gasket sets and overhaul kits for Yanmar 1GM, 2GM, 3GM, 3JH, 4JH and 6LY series engines. When your local stockist is out of stock, we find it.
@@ -206,7 +206,7 @@ export default function YanmarMarinePage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/#request"
-                  className="px-8 py-4 text-lg font-bold rounded-xl text-white bg-blue-600 hover:bg-blue-700 shadow-xl shadow-blue-200 transition-all text-center flex items-center justify-center gap-2"
+                  className="px-8 py-4 text-lg font-bold rounded-xl text-white bg-accent hover:bg-accent-light shadow-xl shadow-accent/20 transition-all text-center flex items-center justify-center gap-2"
                 >
                   Request a Yanmar Part <ChevronRight className="w-5 h-5" />
                 </Link>
@@ -226,24 +226,24 @@ export default function YanmarMarinePage() {
         <section className="py-20 bg-slate-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">Engine Series</h2>
+              <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">Engine Series</h2>
               <h3 className="text-3xl font-bold text-slate-900">Yanmar Models We Cover</h3>
               <p className="mt-4 text-slate-600 max-w-2xl mx-auto">From single-cylinder sailboat auxiliaries to high-output commercial diesels — if it carries a Yanmar badge, we can source the part.</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
               {MODELS.map(m => (
-                <div key={m.series} className="bg-white rounded-2xl p-6 border border-slate-200 hover:border-blue-200 hover:shadow-md transition-all">
-                  <p className="text-xs font-black text-blue-600 uppercase tracking-widest mb-1">{m.hp}</p>
+                <div key={m.series} className="bg-white rounded-2xl p-6 border border-slate-200 hover:border-accent/40 hover:shadow-md transition-all">
+                  <p className="text-xs font-black text-accent uppercase tracking-widest mb-1">{m.hp}</p>
                   <h4 className="text-xl font-bold text-slate-900 mb-2">Yanmar {m.series}</h4>
                   <p className="text-sm text-slate-500">{m.use}</p>
                 </div>
               ))}
-              <div className="bg-blue-600 rounded-2xl p-6 text-white flex flex-col justify-between">
+              <div className="bg-accent rounded-2xl p-6 text-white flex flex-col justify-between">
                 <p className="text-sm font-semibold mb-3">Don't see your model?</p>
                 <WhatsappCTA
                   label="yanmar-model-not-listed"
                   message="Hi, I need a part for my Yanmar engine. Model: ___ Part needed: ___"
-                  className="inline-flex items-center gap-2 bg-white text-blue-700 px-4 py-2.5 rounded-xl font-bold text-sm transition-all hover:bg-blue-50"
+                  className="inline-flex items-center gap-2 bg-white text-accent px-4 py-2.5 rounded-xl font-bold text-sm transition-all hover:bg-accent/10"
                 >
                   <MessageCircle className="w-4 h-4" /> Ask Us
                 </WhatsappCTA>
@@ -256,14 +256,14 @@ export default function YanmarMarinePage() {
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">Parts Catalogue</h2>
+              <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">Parts Catalogue</h2>
               <h3 className="text-3xl font-bold text-slate-900">What We Source for Yanmar Marine</h3>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {PARTS.map(cat => (
                 <div key={cat.category} className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
                   <h4 className="font-bold text-slate-800 text-sm uppercase tracking-wide mb-4 flex items-center gap-2">
-                    <Wrench className="w-4 h-4 text-blue-500" /> {cat.category}
+                    <Wrench className="w-4 h-4 text-accent" /> {cat.category}
                   </h4>
                   <ul className="space-y-2">
                     {cat.items.map(item => (
@@ -283,7 +283,7 @@ export default function YanmarMarinePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
               <div>
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-900 text-blue-300 text-xs font-bold uppercase tracking-widest mb-6">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/80 text-accent/40 text-xs font-bold uppercase tracking-widest mb-6">
                   <MapPin className="w-4 h-4" /> East Malaysia Coverage
                 </div>
                 <h2 className="text-3xl font-bold mb-6">Serving Sabah & Sarawak Fishing Fleets</h2>
@@ -334,7 +334,7 @@ export default function YanmarMarinePage() {
                   body: 'Vessel out of service means lost revenue. We triage machine-down cases first and give you a confirmed timeline within hours, not days.',
                 },
                 {
-                  icon: <ShieldCheck className="w-6 h-6 text-blue-500" />,
+                  icon: <ShieldCheck className="w-6 h-6 text-accent" />,
                   title: 'OEM & Quality Aftermarket',
                   body: 'We source genuine Yanmar OEM parts and clearly labelled quality aftermarket alternatives. No grey-market surprises.',
                 },
@@ -374,14 +374,14 @@ export default function YanmarMarinePage() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-20 bg-blue-600 text-white">
+        <section className="py-20 bg-accent text-white">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold mb-4">Need a Yanmar Part Now?</h2>
             <p className="text-blue-100 text-lg mb-8">Tell us your engine series and the part you need. We'll come back with availability and pricing — usually within a few hours.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/#request"
-                className="px-8 py-4 text-lg font-bold rounded-xl bg-white text-blue-700 hover:bg-blue-50 transition-all text-center"
+                className="px-8 py-4 text-lg font-bold rounded-xl bg-white text-accent hover:bg-accent/10 transition-all text-center"
               >
                 Submit a Part Request
               </Link>
@@ -402,11 +402,11 @@ export default function YanmarMarinePage() {
             <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
               <div>
                 <span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span>
-                <span className="font-black text-xl text-blue-600">.ai</span>
+                <span className="font-black text-xl text-accent">.ai</span>
                 <p className="text-sm text-slate-500 mt-1">Malaysia-Based Parts Sourcing Specialist</p>
               </div>
               <div className="flex gap-6 text-sm font-semibold">
-                <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors">
+                <a href="mailto:info@sourcesage.ai" className="hover:text-accent flex items-center gap-2 transition-colors">
                   <Mail className="w-4 h-4" /> info@sourcesage.ai
                 </a>
                 <WhatsappCTA

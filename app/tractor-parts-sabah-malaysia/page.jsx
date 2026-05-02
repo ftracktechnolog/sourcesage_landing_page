@@ -128,15 +128,15 @@ export default function SabahPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <Link href="/" className="flex items-center">
               <span className="font-bold text-xl text-slate-900 tracking-tight">SourceSage</span>
-              <span className="text-blue-600 font-bold text-xl">.ai</span>
+              <span className="text-accent font-bold text-xl">.ai</span>
             </Link>
             <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-              <Link href="/#brands" className="hover:text-blue-600 transition-colors">Brands</Link>
-              <Link href="/#marine" className="hover:text-blue-600 transition-colors">Marine</Link>
-              <Link href="/#how-it-works" className="hover:text-blue-600 transition-colors">How It Works</Link>
-              <Link href="/about" className="hover:text-blue-600 transition-colors">About</Link>
-              <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
-              <Link href="/#request" className="hover:text-blue-600 transition-colors">Request a Part</Link>
+              <Link href="/#brands" className="hover:text-accent transition-colors">Brands</Link>
+              <Link href="/#marine" className="hover:text-accent transition-colors">Marine</Link>
+              <Link href="/#how-it-works" className="hover:text-accent transition-colors">How It Works</Link>
+              <Link href="/about" className="hover:text-accent transition-colors">About</Link>
+              <Link href="/blog" className="hover:text-accent transition-colors">Blog</Link>
+              <Link href="/#request" className="hover:text-accent transition-colors">Request a Part</Link>
             </div>
             <LangSwitcher currentLang="en" />
             <WhatsappCTA
@@ -151,7 +151,7 @@ export default function SabahPage() {
 
         <div className="bg-slate-50 border-b border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-sm text-slate-500">
-            <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+            <Link href="/" className="hover:text-accent transition-colors">Home</Link>
             <span className="mx-2">/</span>
             <span className="text-slate-700 font-medium">Tractor Parts — Sabah, Malaysia</span>
           </div>
@@ -159,7 +159,7 @@ export default function SabahPage() {
 
         <header className="bg-white pt-16 pb-20 border-b border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 text-blue-800 text-xs font-bold uppercase tracking-widest mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 text-accent text-xs font-bold uppercase tracking-widest mb-6">
               <MapPin className="w-4 h-4" /> Serving Sabah, East Malaysia
             </div>
             <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6 max-w-3xl">
@@ -178,7 +178,7 @@ export default function SabahPage() {
               {COVERAGE_AREAS.map(loc => (
                 <div key={loc.area} className="bg-slate-50 rounded-xl p-5 border border-slate-200">
                   <p className="font-bold text-slate-900 text-sm mb-2 flex items-center gap-2">
-                    <Truck className="w-4 h-4 text-blue-600 shrink-0" /> {loc.area}
+                    <Truck className="w-4 h-4 text-accent shrink-0" /> {loc.area}
                   </p>
                   <p className="text-slate-500 text-xs">{loc.note}</p>
                 </div>
@@ -193,7 +193,7 @@ export default function SabahPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-white rounded-2xl p-7 border border-slate-200">
                 <h3 className="font-bold text-lg text-slate-900 mb-4 flex items-center gap-3">
-                  <span className="w-8 h-8 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center text-sm"><Anchor className="w-4 h-4" /></span>
+                  <span className="w-8 h-8 bg-blue-100 text-accent rounded-lg flex items-center justify-center text-sm"><Anchor className="w-4 h-4" /></span>
                   Marine & Fishing — Sabah's Largest Industry
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed">
@@ -238,28 +238,28 @@ export default function SabahPage() {
                 <h2 className="text-2xl font-bold text-slate-900 mb-6">Why Sabah Workshops Choose SourceSage</h2>
                 <ul className="space-y-5">
                   <li className="flex items-start gap-4">
-                    <Anchor className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" />
+                    <Anchor className="w-6 h-6 text-accent shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900">Marine engine specialists</strong>
                       <p className="text-sm text-slate-600 mt-1">Sabah's fishing fleet depends on marine diesels. We understand Yanmar, Perkins, Isuzu, and Hino marine engines — and we know which parts fail most often in tropical saltwater conditions.</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-4">
-                    <ShieldCheck className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" />
+                    <ShieldCheck className="w-6 h-6 text-accent shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900">Tracked delivery, full visibility</strong>
                       <p className="text-sm text-slate-600 mt-1">Every shipment to Sabah comes with a tracking number. You'll know exactly where your parts are and when they arrive — no guessing, no waiting in the dark.</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-4">
-                    <Truck className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" />
+                    <Truck className="w-6 h-6 text-accent shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900">Air freight for emergencies</strong>
                       <p className="text-sm text-slate-600 mt-1">Vessel stuck in Sandakan port? Tractor down during harvest in Lahad Datu? We offer air freight priority shipping for machine-down cases — parts can arrive in 1–2 days.</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-4">
-                    <CheckCircle className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" />
+                    <CheckCircle className="w-6 h-6 text-accent shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900">Multi-brand, one contact</strong>
                       <p className="text-sm text-slate-600 mt-1">Sabah workshops often maintain mixed fleets — Kubota tractors, Yanmar marine engines, Perkins generators. We source across all these brands so you don't need multiple suppliers.</p>
@@ -268,32 +268,32 @@ export default function SabahPage() {
                 </ul>
               </div>
               <div className="mt-12 lg:mt-0">
-                <div className="bg-blue-50 rounded-2xl p-8 border border-blue-100">
+                <div className="bg-accent/10 rounded-2xl p-8 border border-blue-100">
                   <h3 className="font-bold text-lg text-slate-900 mb-4">Common Part Requests in Sabah</h3>
                   <ul className="space-y-3 text-sm text-slate-700">
                     <li className="flex items-center gap-2">
-                      <Wrench className="w-4 h-4 text-blue-600 shrink-0" /> Yanmar 6LY/4JH raw water pump kits
+                      <Wrench className="w-4 h-4 text-accent shrink-0" /> Yanmar 6LY/4JH raw water pump kits
                     </li>
                     <li className="flex items-center gap-2">
-                      <Wrench className="w-4 h-4 text-blue-600 shrink-0" /> Perkins M92B heat exchanger gaskets
+                      <Wrench className="w-4 h-4 text-accent shrink-0" /> Perkins M92B heat exchanger gaskets
                     </li>
                     <li className="flex items-center gap-2">
-                      <Wrench className="w-4 h-4 text-blue-600 shrink-0" /> Kubota M9000/M9540 overhaul kits
+                      <Wrench className="w-4 h-4 text-accent shrink-0" /> Kubota M9000/M9540 overhaul kits
                     </li>
                     <li className="flex items-center gap-2">
-                      <Wrench className="w-4 h-4 text-blue-600 shrink-0" /> Isuzu 6BG1/6HK1 marine injectors
+                      <Wrench className="w-4 h-4 text-accent shrink-0" /> Isuzu 6BG1/6HK1 marine injectors
                     </li>
                     <li className="flex items-center gap-2">
-                      <Wrench className="w-4 h-4 text-blue-600 shrink-0" /> John Deere 6068 marine head gaskets
+                      <Wrench className="w-4 h-4 text-accent shrink-0" /> John Deere 6068 marine head gaskets
                     </li>
                     <li className="flex items-center gap-2">
-                      <Wrench className="w-4 h-4 text-blue-600 shrink-0" /> Yanmar 3TNV88/4TNV88 engine bearings
+                      <Wrench className="w-4 h-4 text-accent shrink-0" /> Yanmar 3TNV88/4TNV88 engine bearings
                     </li>
                     <li className="flex items-center gap-2">
-                      <Wrench className="w-4 h-4 text-blue-600 shrink-0" /> Massey Ferguson MF240 clutch kits
+                      <Wrench className="w-4 h-4 text-accent shrink-0" /> Massey Ferguson MF240 clutch kits
                     </li>
                     <li className="flex items-center gap-2">
-                      <Wrench className="w-4 h-4 text-blue-600 shrink-0" /> Kubota L3408/L4400 hydraulic pumps
+                      <Wrench className="w-4 h-4 text-accent shrink-0" /> Kubota L3408/L4400 hydraulic pumps
                     </li>
                   </ul>
                   <div className="mt-6 pt-6 border-t border-blue-200">
@@ -332,11 +332,11 @@ export default function SabahPage() {
             <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
               <div>
                 <span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span>
-                <span className="font-black text-xl text-blue-600">.ai</span>
+                <span className="font-black text-xl text-accent">.ai</span>
                 <p className="text-sm text-slate-500 mt-1">Ipoh, Perak — Malaysia Parts Sourcing Specialist</p>
               </div>
               <div className="flex gap-6 text-sm font-semibold">
-                <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors">
+                <a href="mailto:info@sourcesage.ai" className="hover:text-accent flex items-center gap-2 transition-colors">
                   <Mail className="w-4 h-4" /> info@sourcesage.ai
                 </a>
                 <WhatsappCTA

@@ -171,15 +171,15 @@ export default function KubotaV1505Page() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <Link href="/" className="flex items-center">
               <span className="font-bold text-xl text-slate-900 tracking-tight">SourceSage</span>
-              <span className="text-blue-600 font-bold text-xl">.ai</span>
+              <span className="text-accent font-bold text-xl">.ai</span>
             </Link>
             <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-              <Link href="/#brands" className="hover:text-blue-600 transition-colors">Brands</Link>
-              <Link href="/#marine" className="hover:text-blue-600 transition-colors">Marine</Link>
-              <Link href="/#how-it-works" className="hover:text-blue-600 transition-colors">How It Works</Link>
-              <Link href="/about" className="hover:text-blue-600 transition-colors">About</Link>
-              <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
-              <Link href="/#request" className="hover:text-blue-600 transition-colors">Request a Part</Link>
+              <Link href="/#brands" className="hover:text-accent transition-colors">Brands</Link>
+              <Link href="/#marine" className="hover:text-accent transition-colors">Marine</Link>
+              <Link href="/#how-it-works" className="hover:text-accent transition-colors">How It Works</Link>
+              <Link href="/about" className="hover:text-accent transition-colors">About</Link>
+              <Link href="/blog" className="hover:text-accent transition-colors">Blog</Link>
+              <Link href="/#request" className="hover:text-accent transition-colors">Request a Part</Link>
             </div>
             <LangSwitcher currentLang="en" />
             <WhatsappCTA
@@ -195,7 +195,7 @@ export default function KubotaV1505Page() {
         {/* Breadcrumb */}
         <div className="bg-slate-50 border-b border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-sm text-slate-500">
-            <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+            <Link href="/" className="hover:text-accent transition-colors">Home</Link>
             <span className="mx-2">/</span>
             <span className="text-slate-700 font-medium">Kubota V1505 Engine Parts Malaysia</span>
           </div>
@@ -210,7 +210,7 @@ export default function KubotaV1505Page() {
               </div>
               <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
                 Kubota V1505 Engine Parts Malaysia<br />
-                <span className="text-blue-600">Mini-Excavators. Generators. Compact Tractors.</span>
+                <span className="text-accent">Mini-Excavators. Generators. Compact Tractors.</span>
               </h1>
               <p className="text-xl text-slate-600 leading-relaxed mb-8">
                 Overhaul kits, cylinder heads, injectors, water pumps and oil pumps for the Kubota V1505 — the 1.5L four-cylinder diesel powering KX41/KX71 mini-excavators, GL-series generators, and L/B-series tractors across Malaysia.
@@ -218,7 +218,7 @@ export default function KubotaV1505Page() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/kubota-tractor-parts-malaysia"
-                  className="px-8 py-4 text-lg font-bold rounded-xl text-white bg-blue-600 hover:bg-blue-700 shadow-xl shadow-blue-200 transition-all text-center flex items-center justify-center gap-2"
+                  className="px-8 py-4 text-lg font-bold rounded-xl text-white bg-accent hover:bg-accent-light shadow-xl shadow-accent/20 transition-all text-center flex items-center justify-center gap-2"
                 >
                   All Kubota Parts <ChevronRight className="w-5 h-5" />
                 </Link>
@@ -238,15 +238,15 @@ export default function KubotaV1505Page() {
         <section className="py-20 bg-slate-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">Applications</h2>
+              <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">Applications</h2>
               <h3 className="text-3xl font-bold text-slate-900">Where You'll Find the V1505</h3>
               <p className="mt-4 text-slate-600 max-w-2xl mx-auto">The V1505 is one of Kubota's most cross-deployed engines — from compact excavators to standby generators to compact tractors. Common parts across all applications.</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               {APPLICATIONS.map(a => (
-                <div key={a.category} className="bg-white rounded-2xl p-6 border border-slate-200 hover:border-blue-200 hover:shadow-md transition-all">
+                <div key={a.category} className="bg-white rounded-2xl p-6 border border-slate-200 hover:border-accent/40 hover:shadow-md transition-all">
                   <h4 className="text-lg font-bold text-slate-900 mb-1">{a.category}</h4>
-                  <p className="text-xs font-semibold text-blue-600 mb-3">{a.models}</p>
+                  <p className="text-xs font-semibold text-accent mb-3">{a.models}</p>
                   <p className="text-sm text-slate-500">{a.note}</p>
                 </div>
               ))}
@@ -275,14 +275,14 @@ export default function KubotaV1505Page() {
         <section className="py-20 bg-slate-50 border-t border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">Parts Catalogue</h2>
+              <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">Parts Catalogue</h2>
               <h3 className="text-3xl font-bold text-slate-900">V1505 Parts We Source</h3>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {V1505_PARTS.map(cat => (
                 <div key={cat.category} className="bg-white rounded-2xl p-6 border border-slate-200">
                   <h4 className="font-bold text-slate-800 text-sm uppercase tracking-wide mb-4 flex items-center gap-2">
-                    <Wrench className="w-4 h-4 text-blue-500" /> {cat.category}
+                    <Wrench className="w-4 h-4 text-accent" /> {cat.category}
                   </h4>
                   <ul className="space-y-2">
                     {cat.items.map(item => (
@@ -302,31 +302,31 @@ export default function KubotaV1505Page() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">OEM vs Aftermarket</h2>
+                <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">OEM vs Aftermarket</h2>
                 <h3 className="text-3xl font-bold text-slate-900">What We Recommend for the V1505</h3>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-slate-50 rounded-2xl p-7 border border-slate-200">
                   <h4 className="font-bold text-slate-900 text-lg mb-3 flex items-center gap-2">
-                    <ShieldCheck className="w-5 h-5 text-blue-500" /> Overhaul Kits
+                    <ShieldCheck className="w-5 h-5 text-accent" /> Overhaul Kits
                   </h4>
                   <p className="text-slate-600 leading-relaxed">Quality aftermarket (Tata, NPR or equivalent) is well-proven and 40–60% cheaper than OEM. Many workshops in Malaysia have run millions of hours on these kits.</p>
                 </div>
                 <div className="bg-slate-50 rounded-2xl p-7 border border-slate-200">
                   <h4 className="font-bold text-slate-900 text-lg mb-3 flex items-center gap-2">
-                    <ShieldCheck className="w-5 h-5 text-blue-500" /> Injectors
+                    <ShieldCheck className="w-5 h-5 text-accent" /> Injectors
                   </h4>
                   <p className="text-slate-600 leading-relaxed">Source OEM Denso where possible, especially at normal hours — spray pattern consistency matters. Aftermarket injectors are available but quality varies significantly.</p>
                 </div>
                 <div className="bg-slate-50 rounded-2xl p-7 border border-slate-200">
                   <h4 className="font-bold text-slate-900 text-lg mb-3 flex items-center gap-2">
-                    <ShieldCheck className="w-5 h-5 text-blue-500" /> Gaskets
+                    <ShieldCheck className="w-5 h-5 text-accent" /> Gaskets
                   </h4>
                   <p className="text-slate-600 leading-relaxed">Aftermarket is fine for most gaskets. Use OEM for the head gasket on rebuilt heads to ensure MLS (multi-layer steel) quality and proper sealing.</p>
                 </div>
                 <div className="bg-slate-50 rounded-2xl p-7 border border-slate-200">
                   <h4 className="font-bold text-slate-900 text-lg mb-3 flex items-center gap-2">
-                    <ShieldCheck className="w-5 h-5 text-blue-500" /> Water Pump
+                    <ShieldCheck className="w-5 h-5 text-accent" /> Water Pump
                   </h4>
                   <p className="text-slate-600 leading-relaxed">Either OEM or aftermarket is reliable — confirm the impeller diameter matches your specific variant (V1505 vs V1503 differ in impeller sizing) before ordering.</p>
                 </div>
@@ -344,7 +344,7 @@ export default function KubotaV1505Page() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  icon: <ShieldCheck className="w-6 h-6 text-blue-400" />,
+                  icon: <ShieldCheck className="w-6 h-6 text-accent/60" />,
                   title: 'Cross-Application Expertise',
                   body: 'The V1505 serves excavators, generators, tractors, and OEM equipment. We understand the part number cross-reference between these applications and can find stock faster than a single-dealer channel.',
                 },
@@ -400,7 +400,7 @@ export default function KubotaV1505Page() {
               ].map(g => (
                 <Link key={g.href} href={g.href} className="bg-slate-50 rounded-xl p-5 border border-slate-200 hover:border-blue-300 hover:shadow-sm transition-all">
                   <p className="font-bold text-slate-800 text-sm mb-1">{g.title}</p>
-                  <p className="text-xs font-semibold text-blue-600">Read guide →</p>
+                  <p className="text-xs font-semibold text-accent">Read guide →</p>
                 </Link>
               ))}
             </div>
@@ -408,12 +408,12 @@ export default function KubotaV1505Page() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-20 bg-blue-600 text-white">
+        <section className="py-20 bg-accent text-white">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold mb-4">Need a V1505 Part Now?</h2>
             <p className="text-blue-100 text-lg mb-8">Tell us your machine model, engine serial number, and what you need. We'll confirm availability and pricing — usually within 24 hours.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/#request" className="px-8 py-4 text-lg font-bold rounded-xl bg-white text-blue-700 hover:bg-blue-50 transition-all text-center">
+              <Link href="/#request" className="px-8 py-4 text-lg font-bold rounded-xl bg-white text-accent hover:bg-accent/10 transition-all text-center">
                 Submit a Part Request
               </Link>
               <WhatsappCTA
@@ -433,11 +433,11 @@ export default function KubotaV1505Page() {
             <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
               <div>
                 <span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span>
-                <span className="font-black text-xl text-blue-600">.ai</span>
+                <span className="font-black text-xl text-accent">.ai</span>
                 <p className="text-sm text-slate-500 mt-1">Malaysia-Based Parts Sourcing Specialist</p>
               </div>
               <div className="flex gap-6 text-sm font-semibold">
-                <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors">
+                <a href="mailto:info@sourcesage.ai" className="hover:text-accent flex items-center gap-2 transition-colors">
                   <Mail className="w-4 h-4" /> info@sourcesage.ai
                 </a>
                 <WhatsappCTA

@@ -150,15 +150,15 @@ export default function MsYanmarMarinePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <Link href="/ms" className="flex items-center">
               <span className="font-bold text-xl text-slate-900 tracking-tight">SourceSage</span>
-              <span className="text-blue-600 font-bold text-xl">.ai</span>
+              <span className="text-accent font-bold text-xl">.ai</span>
             </Link>
             <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-              <Link href="/ms/#brands" className="hover:text-blue-600 transition-colors">Jenama</Link>
-              <Link href="/ms/#marine" className="hover:text-blue-600 transition-colors">Marin</Link>
-              <Link href="/ms/#how-it-works" className="hover:text-blue-600 transition-colors">Cara Kerja</Link>
-              <Link href="/ms/about" className="hover:text-blue-600 transition-colors">Tentang</Link>
-              <Link href="/ms/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
-              <Link href="/ms/#request" className="hover:text-blue-600 transition-colors">Minta Sebut Harga</Link>
+              <Link href="/ms/#brands" className="hover:text-accent transition-colors">Jenama</Link>
+              <Link href="/ms/#marine" className="hover:text-accent transition-colors">Marin</Link>
+              <Link href="/ms/#how-it-works" className="hover:text-accent transition-colors">Cara Kerja</Link>
+              <Link href="/ms/about" className="hover:text-accent transition-colors">Tentang</Link>
+              <Link href="/ms/blog" className="hover:text-accent transition-colors">Blog</Link>
+              <Link href="/ms/#request" className="hover:text-accent transition-colors">Minta Sebut Harga</Link>
             </div>
             <LangSwitcher currentLang="ms" />
             <WhatsappCTA
@@ -173,7 +173,7 @@ export default function MsYanmarMarinePage() {
 
         <div className="bg-slate-50 border-b border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-sm text-slate-500">
-            <Link href="/ms" className="hover:text-blue-600 transition-colors">Laman Utama</Link>
+            <Link href="/ms" className="hover:text-accent transition-colors">Laman Utama</Link>
             <span className="mx-2">/</span>
             <span className="text-slate-700 font-medium">Alat Ganti Enjin Marin Yanmar Malaysia</span>
           </div>
@@ -182,12 +182,12 @@ export default function MsYanmarMarinePage() {
         <header className="bg-white pt-16 pb-20 border-b border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 text-blue-800 text-xs font-bold uppercase tracking-widest mb-6">
-                <MapPin className="w-4 h-4 text-blue-600" /> Malaysia — Semenanjung, Sabah & Sarawak
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 text-accent text-xs font-bold uppercase tracking-widest mb-6">
+                <MapPin className="w-4 h-4 text-accent" /> Malaysia — Semenanjung, Sabah & Sarawak
               </div>
               <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
                 Alat Ganti Enjin Marin Yanmar<br />
-                <span className="text-blue-600">Sukar Dicari. Pantas Diperoleh.</span>
+                <span className="text-accent">Sukar Dicari. Pantas Diperoleh.</span>
               </h1>
               <p className="text-xl text-slate-600 leading-relaxed mb-8">
                 Penyuntik, pendesak, penukar haba, set gasket dan kit overhaul untuk enjin Yanmar siri 1GM, 2GM, 3GM, 3JH, 4JH dan 6LY. Apabila stokis tempatan kehabisan stok, kami mencarinya.
@@ -195,7 +195,7 @@ export default function MsYanmarMarinePage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/ms/#request"
-                  className="px-8 py-4 text-lg font-bold rounded-xl text-white bg-blue-600 hover:bg-blue-700 shadow-xl shadow-blue-200 transition-all text-center flex items-center justify-center gap-2"
+                  className="px-8 py-4 text-lg font-bold rounded-xl text-white bg-accent hover:bg-accent-light shadow-xl shadow-accent/20 transition-all text-center flex items-center justify-center gap-2"
                 >
                   Minta Alat Ganti Yanmar <ChevronRight className="w-5 h-5" />
                 </Link>
@@ -214,24 +214,24 @@ export default function MsYanmarMarinePage() {
         <section className="py-20 bg-slate-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">Siri Enjin</h2>
+              <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">Siri Enjin</h2>
               <h3 className="text-3xl font-bold text-slate-900">Model Yanmar Yang Kami Liputi</h3>
               <p className="mt-4 text-slate-600 max-w-2xl mx-auto">Daripada alat bantu bot layar satu-silinder kepada diesel komersial berkuasa tinggi — jika ia membawa lencana Yanmar, kami boleh mendapatkan alat gantinya.</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
               {MODELS.map(m => (
-                <div key={m.series} className="bg-white rounded-2xl p-6 border border-slate-200 hover:border-blue-200 hover:shadow-md transition-all">
-                  <p className="text-xs font-black text-blue-600 uppercase tracking-widest mb-1">{m.hp}</p>
+                <div key={m.series} className="bg-white rounded-2xl p-6 border border-slate-200 hover:border-accent/40 hover:shadow-md transition-all">
+                  <p className="text-xs font-black text-accent uppercase tracking-widest mb-1">{m.hp}</p>
                   <h4 className="text-xl font-bold text-slate-900 mb-2">Yanmar {m.series}</h4>
                   <p className="text-sm text-slate-500">{m.use}</p>
                 </div>
               ))}
-              <div className="bg-blue-600 rounded-2xl p-6 text-white flex flex-col justify-between">
+              <div className="bg-accent rounded-2xl p-6 text-white flex flex-col justify-between">
                 <p className="text-sm font-semibold mb-3">Tidak nampak model anda?</p>
                 <WhatsappCTA
                   label="ms-yanmar-model-not-listed"
                   message="Hi, saya perlukan alat ganti untuk enjin Yanmar saya. Model: ___ Alat ganti diperlukan: ___"
-                  className="inline-flex items-center gap-2 bg-white text-blue-700 px-4 py-2.5 rounded-xl font-bold text-sm transition-all hover:bg-blue-50"
+                  className="inline-flex items-center gap-2 bg-white text-accent px-4 py-2.5 rounded-xl font-bold text-sm transition-all hover:bg-accent/10"
                 >
                   <MessageCircle className="w-4 h-4" /> Tanya Kami
                 </WhatsappCTA>
@@ -243,14 +243,14 @@ export default function MsYanmarMarinePage() {
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">Katalog Alat Ganti</h2>
+              <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">Katalog Alat Ganti</h2>
               <h3 className="text-3xl font-bold text-slate-900">Apa Yang Kami Sumberkan untuk Yanmar Marin</h3>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {PARTS.map(cat => (
                 <div key={cat.category} className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
                   <h4 className="font-bold text-slate-800 text-sm uppercase tracking-wide mb-4 flex items-center gap-2">
-                    <Wrench className="w-4 h-4 text-blue-500" /> {cat.category}
+                    <Wrench className="w-4 h-4 text-accent" /> {cat.category}
                   </h4>
                   <ul className="space-y-2">
                     {cat.items.map(item => (
@@ -269,7 +269,7 @@ export default function MsYanmarMarinePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
               <div>
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-900 text-blue-300 text-xs font-bold uppercase tracking-widest mb-6">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/80 text-accent/40 text-xs font-bold uppercase tracking-widest mb-6">
                   <MapPin className="w-4 h-4" /> Liputan Malaysia Timur
                 </div>
                 <h2 className="text-3xl font-bold mb-6">Menyajikan Armada Nelayan Sabah & Sarawak</h2>
@@ -319,7 +319,7 @@ export default function MsYanmarMarinePage() {
                   body: 'Kapal tidak beroperasi bermakna kehilangan pendapatan. Kami mengutamakan kes mesin rosak dan memberi anda garis masa yang disahkan dalam beberapa jam, bukan hari.',
                 },
                 {
-                  icon: <ShieldCheck className="w-6 h-6 text-blue-500" />,
+                  icon: <ShieldCheck className="w-6 h-6 text-accent" />,
                   title: 'OEM & Aftermarket Berkualiti',
                   body: 'Kami sumber alat ganti Yanmar OEM tulen dan alternatif aftermarket berkualiti yang dilabel dengan jelas. Tiada kejutan pasaran kelabu.',
                 },
@@ -357,14 +357,14 @@ export default function MsYanmarMarinePage() {
           </div>
         </section>
 
-        <section className="py-20 bg-blue-600 text-white">
+        <section className="py-20 bg-accent text-white">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold mb-4">Perlukan Alat Ganti Yanmar Sekarang?</h2>
             <p className="text-blue-100 text-lg mb-8">Beritahu kami siri enjin dan alat ganti yang anda perlukan. Kami akan kembali dengan ketersediaan dan harga — biasanya dalam beberapa jam.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/ms/#request"
-                className="px-8 py-4 text-lg font-bold rounded-xl bg-white text-blue-700 hover:bg-blue-50 transition-all text-center"
+                className="px-8 py-4 text-lg font-bold rounded-xl bg-white text-accent hover:bg-accent/10 transition-all text-center"
               >
                 Hantar Permintaan Alat Ganti
               </Link>
@@ -384,11 +384,11 @@ export default function MsYanmarMarinePage() {
             <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
               <div>
                 <span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span>
-                <span className="font-black text-xl text-blue-600">.ai</span>
+                <span className="font-black text-xl text-accent">.ai</span>
                 <p className="text-sm text-slate-500 mt-1">Pakar Perolehan Alat Ganti di Malaysia</p>
               </div>
               <div className="flex gap-6 text-sm font-semibold">
-                <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors">
+                <a href="mailto:info@sourcesage.ai" className="hover:text-accent flex items-center gap-2 transition-colors">
                   <Mail className="w-4 h-4" /> info@sourcesage.ai
                 </a>
                 <WhatsappCTA

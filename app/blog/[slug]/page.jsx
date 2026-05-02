@@ -44,15 +44,15 @@ const Navbar = () => (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
       <Link href="/" className="flex items-center">
         <span className="font-bold text-xl text-slate-900 tracking-tight">SourceSage</span>
-        <span className="text-blue-600 font-bold text-xl">.ai</span>
+        <span className="text-accent font-bold text-xl">.ai</span>
       </Link>
       <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-        <Link href="/#brands" className="hover:text-blue-600 transition-colors">Brands</Link>
-        <Link href="/#marine" className="hover:text-blue-600 transition-colors">Marine</Link>
-        <Link href="/#how-it-works" className="hover:text-blue-600 transition-colors">How It Works</Link>
-        <Link href="/about" className="hover:text-blue-600 transition-colors">About</Link>
-        <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
-        <Link href="/#request" className="hover:text-blue-600 transition-colors">Request a Part</Link>
+        <Link href="/#brands" className="hover:text-accent transition-colors">Brands</Link>
+        <Link href="/#marine" className="hover:text-accent transition-colors">Marine</Link>
+        <Link href="/#how-it-works" className="hover:text-accent transition-colors">How It Works</Link>
+        <Link href="/about" className="hover:text-accent transition-colors">About</Link>
+        <Link href="/blog" className="hover:text-accent transition-colors">Blog</Link>
+        <Link href="/#request" className="hover:text-accent transition-colors">Request a Part</Link>
       </div>
       <LangSwitcher currentLang="en" />
       <WhatsappCTA
@@ -72,22 +72,22 @@ const Footer = () => (
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
         <div>
           <span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span>
-          <span className="font-black text-xl text-blue-600">.ai</span>
+          <span className="font-black text-xl text-accent">.ai</span>
           <p className="text-sm text-slate-500 mt-1">Malaysia-Based Parts Sourcing Specialist</p>
         </div>
         <div>
           <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Parts Pages</p>
           <ul className="space-y-2 text-sm font-semibold">
-            <li><Link href="/kubota-tractor-parts-malaysia" className="hover:text-blue-600 transition-colors">Kubota Tractor Parts</Link></li>
-            <li><Link href="/yanmar-marine-parts-malaysia" className="hover:text-blue-600 transition-colors">Yanmar Marine Parts</Link></li>
-            <li><Link href="/massey-ferguson-parts-malaysia" className="hover:text-blue-600 transition-colors">Massey Ferguson Parts</Link></li>
-            <li><Link href="/zoomlion-parts-malaysia" className="hover:text-blue-600 transition-colors">Zoomlion Parts</Link></li>
-            <li><Link href="/john-deere-parts-malaysia" className="hover:text-blue-600 transition-colors">John Deere Parts</Link></li>
-            <li><Link href="/perkins-engine-parts-malaysia" className="hover:text-blue-600 transition-colors">Perkins Engine Parts</Link></li>
+            <li><Link href="/kubota-tractor-parts-malaysia" className="hover:text-accent transition-colors">Kubota Tractor Parts</Link></li>
+            <li><Link href="/yanmar-marine-parts-malaysia" className="hover:text-accent transition-colors">Yanmar Marine Parts</Link></li>
+            <li><Link href="/massey-ferguson-parts-malaysia" className="hover:text-accent transition-colors">Massey Ferguson Parts</Link></li>
+            <li><Link href="/zoomlion-parts-malaysia" className="hover:text-accent transition-colors">Zoomlion Parts</Link></li>
+            <li><Link href="/john-deere-parts-malaysia" className="hover:text-accent transition-colors">John Deere Parts</Link></li>
+            <li><Link href="/perkins-engine-parts-malaysia" className="hover:text-accent transition-colors">Perkins Engine Parts</Link></li>
           </ul>
         </div>
         <div className="flex flex-col gap-3 text-sm font-semibold">
-          <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors">
+          <a href="mailto:info@sourcesage.ai" className="hover:text-accent flex items-center gap-2 transition-colors">
             <Mail className="w-4 h-4" /> info@sourcesage.ai
           </a>
           <WhatsappCTA label="blog-post-footer" message="Hi, I need help sourcing a spare part. Brand: ___ Model: ___ Part needed: ___" className="hover:text-green-600 flex items-center gap-2 transition-colors">
@@ -163,7 +163,7 @@ export default async function BlogPost({ params }) {
 
         {/* Post header */}
         <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-10 pb-6">
-          <Link href="/blog" className="text-xs font-semibold text-blue-600 hover:text-blue-700 transition-colors mb-6 inline-block">
+          <Link href="/blog" className="text-xs font-semibold text-accent hover:text-accent transition-colors mb-6 inline-block">
             ← Back to guides
           </Link>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight mb-4">
@@ -215,15 +215,15 @@ export default async function BlogPost({ params }) {
           <div className="max-w-3xl mx-auto px-4 sm:px-6 pb-8">
             <Link
               href={post.meta.related_page}
-              className="flex items-center justify-between bg-blue-50 border border-blue-100 rounded-2xl p-6 hover:bg-blue-100 transition-colors group"
+              className="flex items-center justify-between bg-accent/10 border border-blue-100 rounded-2xl p-6 hover:bg-blue-100 transition-colors group"
             >
               <div>
-                <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-1">Parts Catalogue</p>
-                <p className="text-slate-800 font-bold text-lg group-hover:text-blue-700 transition-colors">
+                <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Parts Catalogue</p>
+                <p className="text-slate-800 font-bold text-lg group-hover:text-accent transition-colors">
                   View all available parts for this brand →
                 </p>
               </div>
-              <span className="bg-blue-600 group-hover:bg-blue-700 text-white px-5 py-2.5 rounded-xl font-bold text-sm transition-all whitespace-nowrap ml-4">
+              <span className="bg-accent group-hover:bg-accent-light text-white px-5 py-2.5 rounded-xl font-bold text-sm transition-all whitespace-nowrap ml-4">
                 View parts
               </span>
             </Link>

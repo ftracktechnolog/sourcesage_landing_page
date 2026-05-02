@@ -156,15 +156,15 @@ export default function MsPerkinsPartsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
           <Link href="/ms" className="flex items-center">
             <span className="font-bold text-xl text-slate-900 tracking-tight">SourceSage</span>
-            <span className="text-blue-600 font-bold text-xl">.ai</span>
+            <span className="text-accent font-bold text-xl">.ai</span>
           </Link>
           <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-            <Link href="/ms/#brands" className="hover:text-blue-600 transition-colors">Jenama</Link>
-            <Link href="/ms/#marine" className="hover:text-blue-600 transition-colors">Marin</Link>
-            <Link href="/ms/#how-it-works" className="hover:text-blue-600 transition-colors">Cara Kerja</Link>
-            <Link href="/ms/about" className="hover:text-blue-600 transition-colors">Tentang</Link>
-            <Link href="/ms/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
-            <Link href="/ms/#request" className="hover:text-blue-600 transition-colors">Minta Sebut Harga</Link>
+            <Link href="/ms/#brands" className="hover:text-accent transition-colors">Jenama</Link>
+            <Link href="/ms/#marine" className="hover:text-accent transition-colors">Marin</Link>
+            <Link href="/ms/#how-it-works" className="hover:text-accent transition-colors">Cara Kerja</Link>
+            <Link href="/ms/about" className="hover:text-accent transition-colors">Tentang</Link>
+            <Link href="/ms/blog" className="hover:text-accent transition-colors">Blog</Link>
+            <Link href="/ms/#request" className="hover:text-accent transition-colors">Minta Sebut Harga</Link>
           </div>
           <LangSwitcher currentLang="ms" />
           <WhatsappCTA
@@ -179,7 +179,7 @@ export default function MsPerkinsPartsPage() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
         <nav className="flex items-center gap-2 text-xs text-slate-400 font-medium">
-          <Link href="/ms" className="hover:text-blue-600 transition-colors">Laman Utama</Link>
+          <Link href="/ms" className="hover:text-accent transition-colors">Laman Utama</Link>
           <ChevronRight className="w-3 h-3" />
           <span className="text-slate-600">Alat Ganti Enjin Perkins Malaysia</span>
         </nav>
@@ -435,22 +435,22 @@ export default function MsPerkinsPartsPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>
               <span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span>
-              <span className="font-black text-xl text-blue-600">.ai</span>
+              <span className="font-black text-xl text-accent">.ai</span>
               <p className="text-sm text-slate-500 mt-1">Pakar Perolehan Alat Ganti di Malaysia</p>
             </div>
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Halaman Alat Ganti</p>
               <ul className="space-y-2 text-sm font-semibold">
-                <li><Link href="/ms/kubota-tractor-parts-malaysia" className="hover:text-blue-600 transition-colors">Alat Ganti Kubota</Link></li>
-                <li><Link href="/ms/yanmar-marine-parts-malaysia" className="hover:text-blue-600 transition-colors">Alat Ganti Marin Yanmar</Link></li>
-                <li><Link href="/ms/massey-ferguson-parts-malaysia" className="hover:text-blue-600 transition-colors">Alat Ganti Massey Ferguson</Link></li>
-                <li><Link href="/ms/zoomlion-parts-malaysia" className="hover:text-blue-600 transition-colors">Alat Ganti Zoomlion</Link></li>
-                <li><Link href="/ms/john-deere-parts-malaysia" className="hover:text-blue-600 transition-colors">Alat Ganti John Deere</Link></li>
-                <li><Link href="/ms/perkins-engine-parts-malaysia" className="hover:text-blue-600 transition-colors">Alat Ganti Enjin Perkins</Link></li>
+                <li><Link href="/ms/kubota-tractor-parts-malaysia" className="hover:text-accent transition-colors">Alat Ganti Kubota</Link></li>
+                <li><Link href="/ms/yanmar-marine-parts-malaysia" className="hover:text-accent transition-colors">Alat Ganti Marin Yanmar</Link></li>
+                <li><Link href="/ms/massey-ferguson-parts-malaysia" className="hover:text-accent transition-colors">Alat Ganti Massey Ferguson</Link></li>
+                <li><Link href="/ms/zoomlion-parts-malaysia" className="hover:text-accent transition-colors">Alat Ganti Zoomlion</Link></li>
+                <li><Link href="/ms/john-deere-parts-malaysia" className="hover:text-accent transition-colors">Alat Ganti John Deere</Link></li>
+                <li><Link href="/ms/perkins-engine-parts-malaysia" className="hover:text-accent transition-colors">Alat Ganti Enjin Perkins</Link></li>
               </ul>
             </div>
             <div className="flex flex-col gap-3 text-sm font-semibold">
-              <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors">
+              <a href="mailto:info@sourcesage.ai" className="hover:text-accent flex items-center gap-2 transition-colors">
                 <Mail className="w-4 h-4" /> info@sourcesage.ai
               </a>
               <WhatsappCTA label="ms-perkins-footer" message="Hi, saya perlukan bantuan mendapatkan alat ganti. Jenama: ___ Model: ___ Alat ganti diperlukan: ___" className="hover:text-green-600 flex items-center gap-2 transition-colors">

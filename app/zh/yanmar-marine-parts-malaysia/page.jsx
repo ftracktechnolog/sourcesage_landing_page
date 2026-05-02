@@ -150,15 +150,15 @@ export default function ZhYanmarMarinePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <Link href="/zh" className="flex items-center">
               <span className="font-bold text-xl text-slate-900 tracking-tight">SourceSage</span>
-              <span className="text-blue-600 font-bold text-xl">.ai</span>
+              <span className="text-accent font-bold text-xl">.ai</span>
             </Link>
             <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-              <Link href="/zh/#brands" className="hover:text-blue-600 transition-colors">品牌</Link>
-              <Link href="/zh/#marine" className="hover:text-blue-600 transition-colors">船用</Link>
-              <Link href="/zh/#how-it-works" className="hover:text-blue-600 transition-colors">流程</Link>
-              <Link href="/zh/about" className="hover:text-blue-600 transition-colors">关于</Link>
-              <Link href="/zh/blog" className="hover:text-blue-600 transition-colors">博客</Link>
-              <Link href="/zh/#request" className="hover:text-blue-600 transition-colors">提交请求</Link>
+              <Link href="/zh/#brands" className="hover:text-accent transition-colors">品牌</Link>
+              <Link href="/zh/#marine" className="hover:text-accent transition-colors">船用</Link>
+              <Link href="/zh/#how-it-works" className="hover:text-accent transition-colors">流程</Link>
+              <Link href="/zh/about" className="hover:text-accent transition-colors">关于</Link>
+              <Link href="/zh/blog" className="hover:text-accent transition-colors">博客</Link>
+              <Link href="/zh/#request" className="hover:text-accent transition-colors">提交请求</Link>
             </div>
             <LangSwitcher currentLang="zh-Hans" />
             <WhatsappCTA
@@ -173,7 +173,7 @@ export default function ZhYanmarMarinePage() {
 
         <div className="bg-slate-50 border-b border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-sm text-slate-500">
-            <Link href="/zh" className="hover:text-blue-600 transition-colors">首页</Link>
+            <Link href="/zh" className="hover:text-accent transition-colors">首页</Link>
             <span className="mx-2">/</span>
             <span className="text-slate-700 font-medium">洋马船用发动机零件马来西亚</span>
           </div>
@@ -182,12 +182,12 @@ export default function ZhYanmarMarinePage() {
         <header className="bg-white pt-16 pb-20 border-b border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 text-blue-800 text-xs font-bold uppercase tracking-widest mb-6">
-                <MapPin className="w-4 h-4 text-blue-600" /> 马来西亚 — 半岛、沙巴和砂拉越
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 text-accent text-xs font-bold uppercase tracking-widest mb-6">
+                <MapPin className="w-4 h-4 text-accent" /> 马来西亚 — 半岛、沙巴和砂拉越
               </div>
               <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
                 洋马船用发动机零件<br />
-                <span className="text-blue-600">难寻。快速采购。</span>
+                <span className="text-accent">难寻。快速采购。</span>
               </h1>
               <p className="text-xl text-slate-600 leading-relaxed mb-8">
                 为洋马 1GM、2GM、3GM、3JH、4JH 和 6LY 系列发动机提供喷油器、叶轮、热交换器、垫片组和大修套件。当本地经销商缺货时，我们帮您找到。
@@ -195,7 +195,7 @@ export default function ZhYanmarMarinePage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/zh/#request"
-                  className="px-8 py-4 text-lg font-bold rounded-xl text-white bg-blue-600 hover:bg-blue-700 shadow-xl shadow-blue-200 transition-all text-center flex items-center justify-center gap-2"
+                  className="px-8 py-4 text-lg font-bold rounded-xl text-white bg-accent hover:bg-accent-light shadow-xl shadow-accent/20 transition-all text-center flex items-center justify-center gap-2"
                 >
                   申请洋马零件 <ChevronRight className="w-5 h-5" />
                 </Link>
@@ -214,24 +214,24 @@ export default function ZhYanmarMarinePage() {
         <section className="py-20 bg-slate-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">发动机系列</h2>
+              <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">发动机系列</h2>
               <h3 className="text-3xl font-bold text-slate-900">我们覆盖的洋马型号</h3>
               <p className="mt-4 text-slate-600 max-w-2xl mx-auto">从单缸帆船辅机到高输出商用柴油机 — 只要带有洋马标志，我们就能采购到零件。</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
               {MODELS.map(m => (
-                <div key={m.series} className="bg-white rounded-2xl p-6 border border-slate-200 hover:border-blue-200 hover:shadow-md transition-all">
-                  <p className="text-xs font-black text-blue-600 uppercase tracking-widest mb-1">{m.hp}</p>
+                <div key={m.series} className="bg-white rounded-2xl p-6 border border-slate-200 hover:border-accent/40 hover:shadow-md transition-all">
+                  <p className="text-xs font-black text-accent uppercase tracking-widest mb-1">{m.hp}</p>
                   <h4 className="text-xl font-bold text-slate-900 mb-2">洋马 {m.series}</h4>
                   <p className="text-sm text-slate-500">{m.use}</p>
                 </div>
               ))}
-              <div className="bg-blue-600 rounded-2xl p-6 text-white flex flex-col justify-between">
+              <div className="bg-accent rounded-2xl p-6 text-white flex flex-col justify-between">
                 <p className="text-sm font-semibold mb-3">找不到您的型号？</p>
                 <WhatsappCTA
                   label="zh-yanmar-model-not-listed"
                   message="你好，我需要洋马发动机零件。型号：___ 所需零件：___"
-                  className="inline-flex items-center gap-2 bg-white text-blue-700 px-4 py-2.5 rounded-xl font-bold text-sm transition-all hover:bg-blue-50"
+                  className="inline-flex items-center gap-2 bg-white text-accent px-4 py-2.5 rounded-xl font-bold text-sm transition-all hover:bg-accent/10"
                 >
                   <MessageCircle className="w-4 h-4" /> 咨询我们
                 </WhatsappCTA>
@@ -243,14 +243,14 @@ export default function ZhYanmarMarinePage() {
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">零件目录</h2>
+              <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">零件目录</h2>
               <h3 className="text-3xl font-bold text-slate-900">我们为洋马船用发动机采购的零件</h3>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {PARTS.map(cat => (
                 <div key={cat.category} className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
                   <h4 className="font-bold text-slate-800 text-sm uppercase tracking-wide mb-4 flex items-center gap-2">
-                    <Wrench className="w-4 h-4 text-blue-500" /> {cat.category}
+                    <Wrench className="w-4 h-4 text-accent" /> {cat.category}
                   </h4>
                   <ul className="space-y-2">
                     {cat.items.map(item => (
@@ -269,7 +269,7 @@ export default function ZhYanmarMarinePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
               <div>
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-900 text-blue-300 text-xs font-bold uppercase tracking-widest mb-6">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/80 text-accent/40 text-xs font-bold uppercase tracking-widest mb-6">
                   <MapPin className="w-4 h-4" /> 东马覆盖范围
                 </div>
                 <h2 className="text-3xl font-bold mb-6">服务沙巴和砂拉越渔船队</h2>
@@ -319,7 +319,7 @@ export default function ZhYanmarMarinePage() {
                   body: '船舶停运意味着收入损失。我们优先处理停机案例，并在几小时内（而非几天）为您提供确认的时间表。',
                 },
                 {
-                  icon: <ShieldCheck className="w-6 h-6 text-blue-500" />,
+                  icon: <ShieldCheck className="w-6 h-6 text-accent" />,
                   title: '原厂与优质替换件',
                   body: '我们采购正品洋马原厂零件和明确标注的优质替换件。没有灰色市场惊喜。',
                 },
@@ -357,14 +357,14 @@ export default function ZhYanmarMarinePage() {
           </div>
         </section>
 
-        <section className="py-20 bg-blue-600 text-white">
+        <section className="py-20 bg-accent text-white">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold mb-4">现在需要洋马零件？</h2>
             <p className="text-blue-100 text-lg mb-8">告诉我们您的发动机系列和所需零件。我们将在几小时内回复供应情况和价格。</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/zh/#request"
-                className="px-8 py-4 text-lg font-bold rounded-xl bg-white text-blue-700 hover:bg-blue-50 transition-all text-center"
+                className="px-8 py-4 text-lg font-bold rounded-xl bg-white text-accent hover:bg-accent/10 transition-all text-center"
               >
                 提交零件请求
               </Link>
@@ -384,11 +384,11 @@ export default function ZhYanmarMarinePage() {
             <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
               <div>
                 <span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span>
-                <span className="font-black text-xl text-blue-600">.ai</span>
+                <span className="font-black text-xl text-accent">.ai</span>
                 <p className="text-sm text-slate-500 mt-1">马来西亚零配件采购专家</p>
               </div>
               <div className="flex gap-6 text-sm font-semibold">
-                <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors">
+                <a href="mailto:info@sourcesage.ai" className="hover:text-accent flex items-center gap-2 transition-colors">
                   <Mail className="w-4 h-4" /> info@sourcesage.ai
                 </a>
                 <WhatsappCTA

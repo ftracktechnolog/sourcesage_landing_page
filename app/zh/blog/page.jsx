@@ -30,15 +30,15 @@ const Navbar = () => (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
       <Link href="/zh" className="flex items-center">
         <span className="font-bold text-xl text-slate-900 tracking-tight">SourceSage</span>
-        <span className="text-blue-600 font-bold text-xl">.ai</span>
+        <span className="text-accent font-bold text-xl">.ai</span>
       </Link>
       <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-        <Link href="/zh/#brands" className="hover:text-blue-600 transition-colors">品牌</Link>
-        <Link href="/zh/#marine" className="hover:text-blue-600 transition-colors">船用</Link>
-        <Link href="/zh/#how-it-works" className="hover:text-blue-600 transition-colors">流程</Link>
-        <Link href="/zh/about" className="hover:text-blue-600 transition-colors">关于</Link>
-        <Link href="/zh/blog" className="text-blue-600">博客</Link>
-        <Link href="/zh/#request" className="hover:text-blue-600 transition-colors">提交请求</Link>
+        <Link href="/zh/#brands" className="hover:text-accent transition-colors">品牌</Link>
+        <Link href="/zh/#marine" className="hover:text-accent transition-colors">船用</Link>
+        <Link href="/zh/#how-it-works" className="hover:text-accent transition-colors">流程</Link>
+        <Link href="/zh/about" className="hover:text-accent transition-colors">关于</Link>
+        <Link href="/zh/blog" className="text-accent">博客</Link>
+        <Link href="/zh/#request" className="hover:text-accent transition-colors">提交请求</Link>
       </div>
       <LangSwitcher currentLang="zh-Hans" />
       <WhatsappCTA
@@ -58,23 +58,23 @@ const Footer = () => (
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
         <div>
           <span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span>
-          <span className="font-black text-xl text-blue-600">.ai</span>
+          <span className="font-black text-xl text-accent">.ai</span>
           <p className="text-sm text-slate-500 mt-1">霹雳州怡保 — 马来西亚零配件采购专家</p>
         </div>
         <div>
           <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">零件页面</p>
           <ul className="space-y-2 text-sm font-semibold">
-            <li><Link href="/zh/kubota-tractor-parts-malaysia" className="hover:text-blue-600 transition-colors">久保田零件</Link></li>
-            <li><Link href="/yanmar-marine-parts-malaysia" className="hover:text-blue-600 transition-colors">洋马船用零件</Link></li>
-            <li><Link href="/massey-ferguson-parts-malaysia" className="hover:text-blue-600 transition-colors">麦赛福格森零件</Link></li>
-            <li><Link href="/zoomlion-parts-malaysia" className="hover:text-blue-600 transition-colors">中联重科零件</Link></li>
-            <li><Link href="/john-deere-parts-malaysia" className="hover:text-blue-600 transition-colors">约翰迪尔零件</Link></li>
-            <li><Link href="/perkins-engine-parts-malaysia" className="hover:text-blue-600 transition-colors">珀金斯发动机零件</Link></li>
-            <li><Link href="/zh/about" className="hover:text-blue-600 transition-colors">关于SourceSage</Link></li>
+            <li><Link href="/zh/kubota-tractor-parts-malaysia" className="hover:text-accent transition-colors">久保田零件</Link></li>
+            <li><Link href="/yanmar-marine-parts-malaysia" className="hover:text-accent transition-colors">洋马船用零件</Link></li>
+            <li><Link href="/massey-ferguson-parts-malaysia" className="hover:text-accent transition-colors">麦赛福格森零件</Link></li>
+            <li><Link href="/zoomlion-parts-malaysia" className="hover:text-accent transition-colors">中联重科零件</Link></li>
+            <li><Link href="/john-deere-parts-malaysia" className="hover:text-accent transition-colors">约翰迪尔零件</Link></li>
+            <li><Link href="/perkins-engine-parts-malaysia" className="hover:text-accent transition-colors">珀金斯发动机零件</Link></li>
+            <li><Link href="/zh/about" className="hover:text-accent transition-colors">关于SourceSage</Link></li>
           </ul>
         </div>
         <div className="flex flex-col gap-3 text-sm font-semibold">
-          <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors">
+          <a href="mailto:info@sourcesage.ai" className="hover:text-accent flex items-center gap-2 transition-colors">
             <Mail className="w-4 h-4" /> info@sourcesage.ai
           </a>
           <WhatsappCTA label="zh-blog-footer" message="你好，我需要帮助采购零件。品牌：___ 型号：___ 所需零件：___" className="hover:text-green-600 flex items-center gap-2 transition-colors">
@@ -120,7 +120,7 @@ export default function ZhBlogIndex() {
       <main>
         <section className="bg-white border-b border-slate-100 py-16">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="mb-2 text-xs font-bold uppercase tracking-widest text-blue-600">指南与资源</div>
+            <div className="mb-2 text-xs font-bold uppercase tracking-widest text-accent">指南与资源</div>
             <h1 className="text-4xl font-extrabold text-slate-900 mb-4">零件与拖拉机指南</h1>
             <p className="text-lg text-slate-500 max-w-2xl">关于识别久保田拖拉机型号、寻找备件以及在马来西亚采购难以找到的组件的实用指南。</p>
           </div>
@@ -137,16 +137,16 @@ export default function ZhBlogIndex() {
                   className="group block bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden"
                 >
                   <div className="p-6">
-                    <div className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-3">
+                    <div className="text-xs font-semibold text-accent uppercase tracking-widest mb-3">
                       {new Date(post.publish_date).toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' })}
                     </div>
-                    <h2 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors leading-snug">
+                    <h2 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-accent transition-colors leading-snug">
                       {post.title}
                     </h2>
                     <p className="text-slate-500 text-sm line-clamp-3 leading-relaxed">
                       {post.meta_description}
                     </p>
-                    <div className="mt-4 text-sm font-semibold text-blue-600 group-hover:text-blue-700 transition-colors">
+                    <div className="mt-4 text-sm font-semibold text-accent group-hover:text-accent transition-colors">
                       阅读指南 →
                     </div>
                   </div>

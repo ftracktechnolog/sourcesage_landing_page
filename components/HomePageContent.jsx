@@ -2,7 +2,7 @@ import Link from 'next/link'
 import {
   MessageCircle, Wrench, Clock, AlertTriangle,
   ChevronRight, CheckCircle, MapPin, Mail,
-  ShieldCheck, Truck, BookOpen
+  ShieldCheck, Truck, BookOpen, Sprout, Anchor
 } from 'lucide-react'
 import WhatsappCTA from './WhatsappCTA'
 import RequestForm from './RequestForm'
@@ -247,7 +247,7 @@ const ProblemSection = ({ t }) => (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
         <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700">
           <h3 className="font-bold text-lg mb-5 text-white flex items-center gap-3">
-            <span className="w-8 h-8 bg-green-700 rounded-lg flex items-center justify-center">🌾</span>
+            <span className="w-8 h-8 bg-green-700 rounded-lg flex items-center justify-center"><Sprout className="w-4 h-4" /></span>
             {t.problem.agriculturalHeading}
           </h3>
           <ul className="space-y-3 text-slate-300">
@@ -260,7 +260,7 @@ const ProblemSection = ({ t }) => (
         </div>
         <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700">
           <h3 className="font-bold text-lg mb-5 text-white flex items-center gap-3">
-            <span className="w-8 h-8 bg-blue-700 rounded-lg flex items-center justify-center">⚓</span>
+            <span className="w-8 h-8 bg-blue-700 rounded-lg flex items-center justify-center"><Anchor className="w-4 h-4" /></span>
             {t.problem.marineHeading}
           </h3>
           <ul className="space-y-3 text-slate-300">
@@ -325,7 +325,7 @@ const PartsTypes = ({ t }) => (
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div>
           <h4 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-            <span className="w-8 h-8 bg-green-100 text-green-700 rounded-lg flex items-center justify-center text-sm">🌾</span>
+            <span className="w-8 h-8 bg-green-100 text-green-700 rounded-lg flex items-center justify-center text-sm"><Sprout className="w-4 h-4" /></span>
             {t.parts.agriculturalHeading}
           </h4>
           <div className="grid grid-cols-2 gap-4">
@@ -345,7 +345,7 @@ const PartsTypes = ({ t }) => (
         </div>
         <div>
           <h4 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-            <span className="w-8 h-8 bg-accent/15 text-accent rounded-lg flex items-center justify-center text-sm">⚓</span>
+            <span className="w-8 h-8 bg-accent/15 text-accent rounded-lg flex items-center justify-center text-sm"><Anchor className="w-4 h-4" /></span>
             {t.parts.marineHeading}
           </h4>
           <div className="bg-white rounded-2xl p-6 border border-border">

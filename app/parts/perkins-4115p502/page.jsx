@@ -128,15 +128,15 @@ export default function Perkins4115Page() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <Link href="/" className="flex items-center">
               <span className="font-bold text-xl text-slate-900 tracking-tight">SourceSage</span>
-              <span className="text-blue-600 font-bold text-xl">.ai</span>
+              <span className="text-accent font-bold text-xl">.ai</span>
             </Link>
             <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-              <Link href="/#brands" className="hover:text-blue-600 transition-colors">Brands</Link>
-              <Link href="/#marine" className="hover:text-blue-600 transition-colors">Marine</Link>
-              <Link href="/#how-it-works" className="hover:text-blue-600 transition-colors">How It Works</Link>
-              <Link href="/about" className="hover:text-blue-600 transition-colors">About</Link>
-              <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
-              <Link href="/#request" className="hover:text-blue-600 transition-colors">Request a Part</Link>
+              <Link href="/#brands" className="hover:text-accent transition-colors">Brands</Link>
+              <Link href="/#marine" className="hover:text-accent transition-colors">Marine</Link>
+              <Link href="/#how-it-works" className="hover:text-accent transition-colors">How It Works</Link>
+              <Link href="/about" className="hover:text-accent transition-colors">About</Link>
+              <Link href="/blog" className="hover:text-accent transition-colors">Blog</Link>
+              <Link href="/#request" className="hover:text-accent transition-colors">Request a Part</Link>
             </div>
             <LangSwitcher currentLang="en" />
             <WhatsappCTA
@@ -152,9 +152,9 @@ export default function Perkins4115Page() {
         {/* Breadcrumb */}
         <div className="bg-slate-50 border-b border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-sm text-slate-500">
-            <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+            <Link href="/" className="hover:text-accent transition-colors">Home</Link>
             <span className="mx-2">/</span>
-            <Link href="/parts/" className="hover:text-blue-600 transition-colors">Part Numbers</Link>
+            <Link href="/parts/" className="hover:text-accent transition-colors">Part Numbers</Link>
             <span className="mx-2">/</span>
             <span className="text-slate-700 font-medium">Perkins 4115P502</span>
           </div>
@@ -164,13 +164,13 @@ export default function Perkins4115Page() {
         <header className="bg-white pt-16 pb-20 border-b border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 text-blue-800 text-xs font-bold uppercase tracking-widest mb-6">
-                <Gauge className="w-4 h-4 text-blue-600" /> Perkins OEM Part — Head Gasket
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 text-accent text-xs font-bold uppercase tracking-widest mb-6">
+                <Gauge className="w-4 h-4 text-accent" /> Perkins OEM Part — Head Gasket
               </div>
               <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-4">
                 Perkins 4115P502
               </h1>
-              <p className="text-2xl font-bold text-blue-600 mb-4">MLS Cylinder Head Gasket — 1104C-44 Engine</p>
+              <p className="text-2xl font-bold text-accent mb-4">MLS Cylinder Head Gasket — 1104C-44 Engine</p>
               <p className="text-xl text-slate-600 leading-relaxed mb-6">
                 Multi-Layer Steel (MLS) cylinder head gasket for the Perkins 1104C-44 industrial diesel engine family. Fits naturally aspirated, turbo, and turbo-aftercooled variants.
               </p>
@@ -182,7 +182,7 @@ export default function Perkins4115Page() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/#request"
-                  className="px-8 py-4 text-lg font-bold rounded-xl text-white bg-blue-600 hover:bg-blue-700 shadow-xl shadow-blue-200 transition-all text-center flex items-center justify-center gap-2"
+                  className="px-8 py-4 text-lg font-bold rounded-xl text-white bg-accent hover:bg-accent-light shadow-xl shadow-accent/20 transition-all text-center flex items-center justify-center gap-2"
                 >
                   Request This Part <ChevronRight className="w-5 h-5" />
                 </Link>
@@ -202,7 +202,7 @@ export default function Perkins4115Page() {
         <section className="py-20 bg-slate-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto">
-              <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4 text-center">Part Overview</h2>
+              <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4 text-center">Part Overview</h2>
               <h3 className="text-3xl font-bold text-slate-900 mb-8 text-center">Perkins 4115P502 Cylinder Head Gasket</h3>
               <div className="bg-white rounded-2xl p-8 border border-slate-200">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -232,14 +232,14 @@ export default function Perkins4115Page() {
         <section className="py-20 bg-white border-t border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">Compatible Models</h2>
+              <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">Compatible Models</h2>
               <h3 className="text-3xl font-bold text-slate-900">Engines Using the 4115P502</h3>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-4xl mx-auto">
               {COMPATIBLE_MODELS.map(m => (
                 <div key={m.model} className="bg-slate-50 rounded-2xl p-6 border border-slate-200">
                   <h4 className="text-lg font-bold text-slate-900 mb-1">{m.model}</h4>
-                  <p className="text-xs font-bold text-blue-600 mb-2">Engine: {m.engine}</p>
+                  <p className="text-xs font-bold text-accent mb-2">Engine: {m.engine}</p>
                   <p className="text-sm text-slate-500">{m.note}</p>
                 </div>
               ))}
@@ -251,7 +251,7 @@ export default function Perkins4115Page() {
         <section className="py-20 bg-slate-50 border-t border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto">
-              <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">OEM Cross-Reference</h2>
+              <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">OEM Cross-Reference</h2>
               <h3 className="text-3xl font-bold text-slate-900 mb-8">Alternate Part Numbers</h3>
               <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden">
                 <table className="w-full text-sm">
@@ -271,7 +271,7 @@ export default function Perkins4115Page() {
                     ].map(row => (
                       <tr key={row.num} className="border-b border-slate-100">
                         <td className="px-6 py-4 font-semibold text-slate-800">{row.brand}</td>
-                        <td className="px-6 py-4 text-blue-700 font-bold">{row.num}</td>
+                        <td className="px-6 py-4 text-accent font-bold">{row.num}</td>
                         <td className="px-6 py-4"><span className="px-2 py-1 bg-slate-100 rounded text-xs font-bold text-slate-600">{row.type}</span></td>
                       </tr>
                     ))}
@@ -286,12 +286,12 @@ export default function Perkins4115Page() {
         <section className="py-20 bg-white border-t border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto">
-              <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">Where to Buy in Malaysia</h2>
+              <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">Where to Buy in Malaysia</h2>
               <h3 className="text-3xl font-bold text-slate-900 mb-8">Source the 4115P502 Through SourceSage</h3>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
                 {[
                   { icon: <MapPin className="w-6 h-6 text-green-500" />, title: 'Local Stock', body: '4115P502 stocked in Malaysia — ready for immediate dispatch to any state.' },
-                  { icon: <ShieldCheck className="w-6 h-6 text-blue-500" />, title: 'OEM Specification', body: 'All gaskets meet Perkins OEM specifications. Aftermarket options tested for equivalent performance.' },
+                  { icon: <ShieldCheck className="w-6 h-6 text-accent" />, title: 'OEM Specification', body: 'All gaskets meet Perkins OEM specifications. Aftermarket options tested for equivalent performance.' },
                   { icon: <Wrench className="w-6 h-6 text-orange-500" />, title: 'Workshop Pricing', body: 'Competitive pricing for workshops ordering multiple gasket sets. Bulk discounts available.' },
                 ].map(card => (
                   <div key={card.title} className="bg-slate-50 rounded-xl p-6 border border-slate-200 text-center">
@@ -323,12 +323,12 @@ export default function Perkins4115Page() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-20 bg-blue-600 text-white">
+        <section className="py-20 bg-accent text-white">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold mb-4">Need a Perkins 4115P502 Head Gasket?</h2>
             <p className="text-blue-100 text-lg mb-8">Tell us your engine model and serial number. We'll confirm compatibility and pricing — usually within 24 hours.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/#request" className="px-8 py-4 text-lg font-bold rounded-xl bg-white text-blue-700 hover:bg-blue-50 transition-all text-center">
+              <Link href="/#request" className="px-8 py-4 text-lg font-bold rounded-xl bg-white text-accent hover:bg-accent/10 transition-all text-center">
                 Submit a Part Request
               </Link>
               <WhatsappCTA
@@ -348,11 +348,11 @@ export default function Perkins4115Page() {
             <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
               <div>
                 <span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span>
-                <span className="font-black text-xl text-blue-600">.ai</span>
+                <span className="font-black text-xl text-accent">.ai</span>
                 <p className="text-sm text-slate-500 mt-1">Malaysia-Based Parts Sourcing Specialist</p>
               </div>
               <div className="flex gap-6 text-sm font-semibold">
-                <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors">
+                <a href="mailto:info@sourcesage.ai" className="hover:text-accent flex items-center gap-2 transition-colors">
                   <Mail className="w-4 h-4" /> info@sourcesage.ai
                 </a>
                 <WhatsappCTA

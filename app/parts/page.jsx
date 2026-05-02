@@ -113,15 +113,15 @@ export default function PartsIndexPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <Link href="/" className="flex items-center">
               <span className="font-bold text-xl text-slate-900 tracking-tight">SourceSage</span>
-              <span className="text-blue-600 font-bold text-xl">.ai</span>
+              <span className="text-accent font-bold text-xl">.ai</span>
             </Link>
             <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-              <Link href="/#brands" className="hover:text-blue-600 transition-colors">Brands</Link>
-              <Link href="/#marine" className="hover:text-blue-600 transition-colors">Marine</Link>
-              <Link href="/#how-it-works" className="hover:text-blue-600 transition-colors">How It Works</Link>
-              <Link href="/about" className="hover:text-blue-600 transition-colors">About</Link>
-              <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
-              <Link href="/#request" className="hover:text-blue-600 transition-colors">Request a Part</Link>
+              <Link href="/#brands" className="hover:text-accent transition-colors">Brands</Link>
+              <Link href="/#marine" className="hover:text-accent transition-colors">Marine</Link>
+              <Link href="/#how-it-works" className="hover:text-accent transition-colors">How It Works</Link>
+              <Link href="/about" className="hover:text-accent transition-colors">About</Link>
+              <Link href="/blog" className="hover:text-accent transition-colors">Blog</Link>
+              <Link href="/#request" className="hover:text-accent transition-colors">Request a Part</Link>
             </div>
             <LangSwitcher currentLang="en" />
             <WhatsappCTA
@@ -137,7 +137,7 @@ export default function PartsIndexPage() {
         {/* Breadcrumb */}
         <div className="bg-slate-50 border-b border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-sm text-slate-500">
-            <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+            <Link href="/" className="hover:text-accent transition-colors">Home</Link>
             <span className="mx-2">/</span>
             <span className="text-slate-700 font-medium">Tractor Part Numbers</span>
           </div>
@@ -147,12 +147,12 @@ export default function PartsIndexPage() {
         <header className="bg-white pt-16 pb-20 border-b border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 text-blue-800 text-xs font-bold uppercase tracking-widest mb-6">
-                <Search className="w-4 h-4 text-blue-600" /> OEM Part Number Directory
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 text-accent text-xs font-bold uppercase tracking-widest mb-6">
+                <Search className="w-4 h-4 text-accent" /> OEM Part Number Directory
               </div>
               <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
                 Tractor Part Numbers —<br />
-                <span className="text-blue-600">Cross-Reference & Sourcing</span>
+                <span className="text-accent">Cross-Reference & Sourcing</span>
               </h1>
               <p className="text-xl text-slate-600 leading-relaxed mb-8">
                 Every tractor part has a number. We help you decode it, cross-reference it across brands and engine models, then locate stock in Malaysia, Japan and Singapore. No guesswork, no wrong parts.
@@ -160,7 +160,7 @@ export default function PartsIndexPage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/#request"
-                  className="px-8 py-4 text-lg font-bold rounded-xl text-white bg-blue-600 hover:bg-blue-700 shadow-xl shadow-blue-200 transition-all text-center flex items-center justify-center gap-2"
+                  className="px-8 py-4 text-lg font-bold rounded-xl text-white bg-accent hover:bg-accent-light shadow-xl shadow-accent/20 transition-all text-center flex items-center justify-center gap-2"
                 >
                   Search a Part Number <ChevronRight className="w-5 h-5" />
                 </Link>
@@ -180,7 +180,7 @@ export default function PartsIndexPage() {
         <section className="py-20 bg-slate-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">Understanding Part Numbers</h2>
+              <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">Understanding Part Numbers</h2>
               <h3 className="text-3xl font-bold text-slate-900 mb-6">What Are OEM Part Numbers?</h3>
               <p className="text-slate-600 leading-relaxed text-lg">
                 Every tractor and engine manufacturer assigns a unique part number to each component they produce. These OEM (Original Equipment Manufacturer) numbers are the key to sourcing the exact correct replacement — whether you need a water pump for a Kubota L-series or a fuel injector for a Yanmar 3TNV engine.
@@ -191,12 +191,12 @@ export default function PartsIndexPage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-12">
               {[
-                { icon: <Search className="w-6 h-6 text-blue-600" />, title: 'Find the Number', body: 'Check the part itself, your parts manual, or our part-number pages below for the OEM number.' },
-                { icon: <BookOpen className="w-6 h-6 text-blue-600" />, title: 'Cross-Reference', body: 'We verify compatibility with your tractor model, engine code, and serial number against our database.' },
-                { icon: <ShoppingCart className="w-6 h-6 text-blue-600" />, title: 'Source & Ship', body: 'We locate stock across our network, quote you pricing, and ship to your workshop in Malaysia.' },
+                { icon: <Search className="w-6 h-6 text-accent" />, title: 'Find the Number', body: 'Check the part itself, your parts manual, or our part-number pages below for the OEM number.' },
+                { icon: <BookOpen className="w-6 h-6 text-accent" />, title: 'Cross-Reference', body: 'We verify compatibility with your tractor model, engine code, and serial number against our database.' },
+                { icon: <ShoppingCart className="w-6 h-6 text-accent" />, title: 'Source & Ship', body: 'We locate stock across our network, quote you pricing, and ship to your workshop in Malaysia.' },
               ].map(card => (
                 <div key={card.title} className="bg-white rounded-2xl p-6 border border-slate-200 text-center">
-                  <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mx-auto mb-4">{card.icon}</div>
+                  <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center mx-auto mb-4">{card.icon}</div>
                   <h4 className="font-bold text-slate-900 mb-2">{card.title}</h4>
                   <p className="text-sm text-slate-500">{card.body}</p>
                 </div>
@@ -209,7 +209,7 @@ export default function PartsIndexPage() {
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">Part Number Directory</h2>
+              <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">Part Number Directory</h2>
               <h3 className="text-3xl font-bold text-slate-900">Browse Available Part Numbers</h3>
               <p className="mt-4 text-slate-600 max-w-2xl mx-auto">Click any part number below for full specifications, compatible models, OEM cross-reference, and sourcing information.</p>
             </div>
@@ -226,13 +226,13 @@ export default function PartsIndexPage() {
                 </thead>
                 <tbody>
                   {PART_NUMBERS.map(p => (
-                    <tr key={p.part} className="border-b border-slate-100 hover:bg-blue-50/50 transition-colors">
-                      <td className="px-6 py-5 font-bold text-blue-700">{p.part}</td>
+                    <tr key={p.part} className="border-b border-slate-100 hover:bg-accent/10/50 transition-colors">
+                      <td className="px-6 py-5 font-bold text-accent">{p.part}</td>
                       <td className="px-6 py-5 text-slate-700">{p.brand}</td>
                       <td className="px-6 py-5 text-slate-700">{p.type}</td>
                       <td className="px-6 py-5 text-slate-600">{p.engines}</td>
                       <td className="px-6 py-5">
-                        <Link href={p.link} className="inline-flex items-center gap-1 text-blue-600 hover:text-blue-700 font-bold text-xs uppercase tracking-wider">
+                        <Link href={p.link} className="inline-flex items-center gap-1 text-accent hover:text-accent font-bold text-xs uppercase tracking-wider">
                           View Page <ChevronRight className="w-3.5 h-3.5" />
                         </Link>
                       </td>
@@ -248,7 +248,7 @@ export default function PartsIndexPage() {
         <section className="py-20 bg-slate-50 border-t border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto">
-              <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4 text-center">Why It Matters</h2>
+              <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4 text-center">Why It Matters</h2>
               <h3 className="text-3xl font-bold text-slate-900 mb-10 text-center">Using the Wrong Part Number Costs Time & Money</h3>
               <div className="space-y-6">
                 {[
@@ -284,12 +284,12 @@ export default function PartsIndexPage() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-20 bg-blue-600 text-white">
+        <section className="py-20 bg-accent text-white">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold mb-4">Can't Find Your Part Number?</h2>
             <p className="text-blue-100 text-lg mb-8">Send us the part number, your tractor model, and engine code. We'll cross-reference it and confirm availability — usually within 24 hours.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/#request" className="px-8 py-4 text-lg font-bold rounded-xl bg-white text-blue-700 hover:bg-blue-50 transition-all text-center">
+              <Link href="/#request" className="px-8 py-4 text-lg font-bold rounded-xl bg-white text-accent hover:bg-accent/10 transition-all text-center">
                 Submit a Part Request
               </Link>
               <WhatsappCTA
@@ -309,11 +309,11 @@ export default function PartsIndexPage() {
             <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
               <div>
                 <span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span>
-                <span className="font-black text-xl text-blue-600">.ai</span>
+                <span className="font-black text-xl text-accent">.ai</span>
                 <p className="text-sm text-slate-500 mt-1">Malaysia-Based Parts Sourcing Specialist</p>
               </div>
               <div className="flex gap-6 text-sm font-semibold">
-                <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors">
+                <a href="mailto:info@sourcesage.ai" className="hover:text-accent flex items-center gap-2 transition-colors">
                   <Mail className="w-4 h-4" /> info@sourcesage.ai
                 </a>
                 <WhatsappCTA

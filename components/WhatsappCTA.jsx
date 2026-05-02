@@ -58,6 +58,7 @@ export default function WhatsappCTA({ label, message, className, children }) {
       rel="noopener noreferrer"
       onClick={handleClick}
       className={className}
+      aria-label="Contact on WhatsApp"
     >
       {children}
     </a>

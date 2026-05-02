@@ -29,7 +29,7 @@ const CASES = [
   {
     title: 'Kubota M9000 Overhaul Kit for Perak Rice Farmer',
     tag: 'Agricultural Urgent',
-    icon: <Clock className="w-6 h-6 text-blue-500" />,
+    icon: <Clock className="w-6 h-6 text-accent" />,
     situation: 'A rice farmer in Perak had his Kubota M9000 tractor suffer a blown head gasket mid-harvest season. Local dealers quoted 3-week lead time for the overhaul kit.',
     solution: 'We sourced a genuine Kubota overhaul kit (gaskets, piston rings, bearings) from a Singapore distributor with whom we have a standing relationship. Parts were shipped via air freight to Penang within 24 hours.',
     outcome: 'Farmer received the kit in 4 days. Repair completed over a weekend. Harvest was completed on schedule. He saved an estimated RM 15,000 in lost crop value versus waiting for the dealer.',

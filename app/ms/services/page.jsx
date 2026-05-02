@@ -82,15 +82,15 @@ export default function MsServicesPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <Link href="/ms" className="flex items-center">
               <span className="font-bold text-xl text-slate-900 tracking-tight">SourceSage</span>
-              <span className="text-blue-600 font-bold text-xl">.ai</span>
+              <span className="text-accent font-bold text-xl">.ai</span>
             </Link>
             <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-              <Link href="/ms/#brands" className="hover:text-blue-600 transition-colors">Jenama</Link>
-              <Link href="/ms/#marine" className="hover:text-blue-600 transition-colors">Marin</Link>
-              <Link href="/ms/services" className="text-blue-600 transition-colors">Perkhidmatan</Link>
-              <Link href="/ms/about" className="hover:text-blue-600 transition-colors">Tentang</Link>
-              <Link href="/ms/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
-              <Link href="/ms/#request" className="hover:text-blue-600 transition-colors">Minta Sebut Harga</Link>
+              <Link href="/ms/#brands" className="hover:text-accent transition-colors">Jenama</Link>
+              <Link href="/ms/#marine" className="hover:text-accent transition-colors">Marin</Link>
+              <Link href="/ms/services" className="text-accent transition-colors">Perkhidmatan</Link>
+              <Link href="/ms/about" className="hover:text-accent transition-colors">Tentang</Link>
+              <Link href="/ms/blog" className="hover:text-accent transition-colors">Blog</Link>
+              <Link href="/ms/#request" className="hover:text-accent transition-colors">Minta Sebut Harga</Link>
             </div>
             <div className="flex items-center gap-2">
               <LangSwitcher currentLang="ms" />
@@ -102,14 +102,14 @@ export default function MsServicesPage() {
         </nav>
         <div className="bg-slate-50 border-b border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-sm text-slate-500">
-            <Link href="/ms" className="hover:text-blue-600 transition-colors">Laman Utama</Link>
+            <Link href="/ms" className="hover:text-accent transition-colors">Laman Utama</Link>
             <span className="mx-2">/</span>
             <span className="text-slate-700 font-medium">Perkhidmatan</span>
           </div>
         </div>
         <header className="bg-white pt-16 pb-20 border-b border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 text-blue-800 text-xs font-bold uppercase tracking-widest mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 text-accent text-xs font-bold uppercase tracking-widest mb-6">
               <Clock className="w-4 h-4" /> Perolehan Pantas, Seluruh Malaysia
             </div>
             <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6 max-w-3xl">Bagaimana Perkhidmatan Perolehan Alat Ganti Kami Berfungsi</h1>
@@ -120,11 +120,11 @@ export default function MsServicesPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
               {STEPS.map((step, i) => (
-                <div key={i} className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-blue-200 hover:shadow-md transition-all text-center">
-                  <div className="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center text-lg font-black mx-auto mb-4">{step.number}</div>
+                <div key={i} className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-accent/40 hover:shadow-md transition-all text-center">
+                  <div className="w-14 h-14 bg-accent text-white rounded-2xl flex items-center justify-center text-lg font-black mx-auto mb-4">{step.number}</div>
                   <h3 className="font-bold text-slate-900 mb-3 text-sm">{step.title}</h3>
                   <ul className="text-xs text-slate-500 space-y-1 text-left">
-                    {step.items.map((item, j) => (<li key={j} className="flex items-start gap-2"><span className="text-blue-400 mt-0.5">·</span> {item}</li>))}
+                    {step.items.map((item, j) => (<li key={j} className="flex items-start gap-2"><span className="text-accent/60 mt-0.5">·</span> {item}</li>))}
                   </ul>
                 </div>
               ))}
@@ -137,13 +137,13 @@ export default function MsServicesPage() {
               <div>
                 <h2 className="text-2xl font-bold text-slate-900 mb-6">Kenapa Pilih Perkhidmatan Perolehan Kami</h2>
                 <ul className="space-y-5">
-                  <li className="flex items-start gap-4"><Wrench className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" /><div><strong className="text-slate-900">Pelbagai jenama, bukan satu jenama</strong><p className="text-sm text-slate-600 mt-1">Kami mencari merentasi semua jenama pertanian dan marin utama serentak — anda tidak perlu menghubungi pelbagai pengedar.</p></div></li>
-                  <li className="flex items-start gap-4"><MapPin className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" /><div><strong className="text-slate-900">Berpangkalan di Ipoh, Perak</strong><p className="text-sm text-slate-600 mt-1">Kehadiran tempatan bermaksud komunikasi lebih pantas, pilihan kurier tempatan, dan pemahaman tentang pasaran pertanian dan marin Malaysia.</p></div></li>
-                  <li className="flex items-start gap-4"><Truck className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" /><div><strong className="text-slate-900">Pelbagai pilihan penghantaran</strong><p className="text-sm text-slate-600 mt-1">Kargo udara untuk segera (3-7 hari), kargo laut untuk bajet (14-21 hari), atau kurier tempatan untuk stok serantau (1-3 hari).</p></div></li>
-                  <li className="flex items-start gap-4"><ShieldCheck className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" /><div><strong className="text-slate-900">Pilihan OEM dan aftermarket</strong><p className="text-sm text-slate-600 mt-1">Kami bentangkan kedua-dua OEM tulen dan alternatif aftermarket berkualiti dengan pelabelan jelas dan terma jaminan.</p></div></li>
+                  <li className="flex items-start gap-4"><Wrench className="w-6 h-6 text-accent shrink-0 mt-0.5" /><div><strong className="text-slate-900">Pelbagai jenama, bukan satu jenama</strong><p className="text-sm text-slate-600 mt-1">Kami mencari merentasi semua jenama pertanian dan marin utama serentak — anda tidak perlu menghubungi pelbagai pengedar.</p></div></li>
+                  <li className="flex items-start gap-4"><MapPin className="w-6 h-6 text-accent shrink-0 mt-0.5" /><div><strong className="text-slate-900">Berpangkalan di Ipoh, Perak</strong><p className="text-sm text-slate-600 mt-1">Kehadiran tempatan bermaksud komunikasi lebih pantas, pilihan kurier tempatan, dan pemahaman tentang pasaran pertanian dan marin Malaysia.</p></div></li>
+                  <li className="flex items-start gap-4"><Truck className="w-6 h-6 text-accent shrink-0 mt-0.5" /><div><strong className="text-slate-900">Pelbagai pilihan penghantaran</strong><p className="text-sm text-slate-600 mt-1">Kargo udara untuk segera (3-7 hari), kargo laut untuk bajet (14-21 hari), atau kurier tempatan untuk stok serantau (1-3 hari).</p></div></li>
+                  <li className="flex items-start gap-4"><ShieldCheck className="w-6 h-6 text-accent shrink-0 mt-0.5" /><div><strong className="text-slate-900">Pilihan OEM dan aftermarket</strong><p className="text-sm text-slate-600 mt-1">Kami bentangkan kedua-dua OEM tulen dan alternatif aftermarket berkualiti dengan pelabelan jelas dan terma jaminan.</p></div></li>
                 </ul>
               </div>
-              <div className="mt-12 lg:mt-0 bg-blue-50 rounded-2xl p-8 border border-blue-100">
+              <div className="mt-12 lg:mt-0 bg-accent/10 rounded-2xl p-8 border border-blue-100">
                 <h3 className="font-bold text-lg text-slate-900 mb-4">Sedia Untuk Bermula?</h3>
                 <p className="text-slate-600 mb-6">Hantarkan butiran alat ganti anda. Kami akan sahkan ketersediaan dalam 24-48 jam — tiada kewajipan, tiada yuran pendahuluan.</p>
                 <WhatsappCTA label="ms-services-main-cta" message="Hi, saya perlukan bantuan mendapatkan alat ganti. Jenama: ___ Model: ___ Alat ganti diperlukan: ___" className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3.5 rounded-xl font-bold transition-all w-full">

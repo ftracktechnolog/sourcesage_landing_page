@@ -82,15 +82,15 @@ export default function ZhServicesPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <Link href="/zh" className="flex items-center">
               <span className="font-bold text-xl text-slate-900 tracking-tight">SourceSage</span>
-              <span className="text-blue-600 font-bold text-xl">.ai</span>
+              <span className="text-accent font-bold text-xl">.ai</span>
             </Link>
             <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-              <Link href="/zh/#brands" className="hover:text-blue-600 transition-colors">品牌</Link>
-              <Link href="/zh/#marine" className="hover:text-blue-600 transition-colors">船用</Link>
-              <Link href="/zh/services" className="text-blue-600 transition-colors">服务</Link>
-              <Link href="/zh/about" className="hover:text-blue-600 transition-colors">关于</Link>
-              <Link href="/zh/blog" className="hover:text-blue-600 transition-colors">博客</Link>
-              <Link href="/zh/#request" className="hover:text-blue-600 transition-colors">提交请求</Link>
+              <Link href="/zh/#brands" className="hover:text-accent transition-colors">品牌</Link>
+              <Link href="/zh/#marine" className="hover:text-accent transition-colors">船用</Link>
+              <Link href="/zh/services" className="text-accent transition-colors">服务</Link>
+              <Link href="/zh/about" className="hover:text-accent transition-colors">关于</Link>
+              <Link href="/zh/blog" className="hover:text-accent transition-colors">博客</Link>
+              <Link href="/zh/#request" className="hover:text-accent transition-colors">提交请求</Link>
             </div>
             <div className="flex items-center gap-2">
               <LangSwitcher currentLang="zh-Hans" />
@@ -102,14 +102,14 @@ export default function ZhServicesPage() {
         </nav>
         <div className="bg-slate-50 border-b border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-sm text-slate-500">
-            <Link href="/zh" className="hover:text-blue-600 transition-colors">首页</Link>
+            <Link href="/zh" className="hover:text-accent transition-colors">首页</Link>
             <span className="mx-2">/</span>
             <span className="text-slate-700 font-medium">服务</span>
           </div>
         </div>
         <header className="bg-white pt-16 pb-20 border-b border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 text-blue-800 text-xs font-bold uppercase tracking-widest mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 text-accent text-xs font-bold uppercase tracking-widest mb-6">
               <Clock className="w-4 h-4" /> 快速采购，全马来西亚
             </div>
             <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6 max-w-3xl">我们的零件采购服务如何运作</h1>
@@ -120,11 +120,11 @@ export default function ZhServicesPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
               {STEPS.map((step, i) => (
-                <div key={i} className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-blue-200 hover:shadow-md transition-all text-center">
-                  <div className="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center text-lg font-black mx-auto mb-4">{step.number}</div>
+                <div key={i} className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-accent/40 hover:shadow-md transition-all text-center">
+                  <div className="w-14 h-14 bg-accent text-white rounded-2xl flex items-center justify-center text-lg font-black mx-auto mb-4">{step.number}</div>
                   <h3 className="font-bold text-slate-900 mb-3 text-sm">{step.title}</h3>
                   <ul className="text-xs text-slate-500 space-y-1 text-left">
-                    {step.items.map((item, j) => (<li key={j} className="flex items-start gap-2"><span className="text-blue-400 mt-0.5">·</span> {item}</li>))}
+                    {step.items.map((item, j) => (<li key={j} className="flex items-start gap-2"><span className="text-accent/60 mt-0.5">·</span> {item}</li>))}
                   </ul>
                 </div>
               ))}
@@ -137,13 +137,13 @@ export default function ZhServicesPage() {
               <div>
                 <h2 className="text-2xl font-bold text-slate-900 mb-6">为什么选择我们的采购服务</h2>
                 <ul className="space-y-5">
-                  <li className="flex items-start gap-4"><Wrench className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" /><div><strong className="text-slate-900">多品牌，非单一品牌</strong><p className="text-sm text-slate-600 mt-1">我们同时搜索所有主要农业和船用品牌 — 您无需联系多个经销商。</p></div></li>
-                  <li className="flex items-start gap-4"><MapPin className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" /><div><strong className="text-slate-900">总部位于霹雳州怡保</strong><p className="text-sm text-slate-600 mt-1">本地化服务意味着更快的沟通、本地快递选项，以及对马来西亚农业和船用市场的深入了解。</p></div></li>
-                  <li className="flex items-start gap-4"><Truck className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" /><div><strong className="text-slate-900">多种配送选项</strong><p className="text-sm text-slate-600 mt-1">紧急件空运（3-7天），经济件海运（14-21天），区域库存本地快递（1-3天）。</p></div></li>
-                  <li className="flex items-start gap-4"><ShieldCheck className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" /><div><strong className="text-slate-900">OEM与替换件选项</strong><p className="text-sm text-slate-600 mt-1">我们提供原厂OEM和优质替换件，附带清晰的标注和保修条款。</p></div></li>
+                  <li className="flex items-start gap-4"><Wrench className="w-6 h-6 text-accent shrink-0 mt-0.5" /><div><strong className="text-slate-900">多品牌，非单一品牌</strong><p className="text-sm text-slate-600 mt-1">我们同时搜索所有主要农业和船用品牌 — 您无需联系多个经销商。</p></div></li>
+                  <li className="flex items-start gap-4"><MapPin className="w-6 h-6 text-accent shrink-0 mt-0.5" /><div><strong className="text-slate-900">总部位于霹雳州怡保</strong><p className="text-sm text-slate-600 mt-1">本地化服务意味着更快的沟通、本地快递选项，以及对马来西亚农业和船用市场的深入了解。</p></div></li>
+                  <li className="flex items-start gap-4"><Truck className="w-6 h-6 text-accent shrink-0 mt-0.5" /><div><strong className="text-slate-900">多种配送选项</strong><p className="text-sm text-slate-600 mt-1">紧急件空运（3-7天），经济件海运（14-21天），区域库存本地快递（1-3天）。</p></div></li>
+                  <li className="flex items-start gap-4"><ShieldCheck className="w-6 h-6 text-accent shrink-0 mt-0.5" /><div><strong className="text-slate-900">OEM与替换件选项</strong><p className="text-sm text-slate-600 mt-1">我们提供原厂OEM和优质替换件，附带清晰的标注和保修条款。</p></div></li>
                 </ul>
               </div>
-              <div className="mt-12 lg:mt-0 bg-blue-50 rounded-2xl p-8 border border-blue-100">
+              <div className="mt-12 lg:mt-0 bg-accent/10 rounded-2xl p-8 border border-blue-100">
                 <h3 className="font-bold text-lg text-slate-900 mb-4">准备开始？</h3>
                 <p className="text-slate-600 mb-6">发送您的零件详情。我们将在24-48小时内确认供应 — 无义务，无预付费用。</p>
                 <WhatsappCTA label="zh-services-main-cta" message="你好，我需要帮助采购零件。品牌：___ 型号：___ 所需零件：___" className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3.5 rounded-xl font-bold transition-all w-full">

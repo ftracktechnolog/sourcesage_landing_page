@@ -44,15 +44,15 @@ const Navbar = () => (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
       <Link href="/zh" className="flex items-center">
         <span className="font-bold text-xl text-slate-900 tracking-tight">SourceSage</span>
-        <span className="text-blue-600 font-bold text-xl">.ai</span>
+        <span className="text-accent font-bold text-xl">.ai</span>
       </Link>
       <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-        <Link href="/zh/#brands" className="hover:text-blue-600 transition-colors">品牌</Link>
-        <Link href="/zh/#marine" className="hover:text-blue-600 transition-colors">船用</Link>
-        <Link href="/zh/#how-it-works" className="hover:text-blue-600 transition-colors">流程</Link>
-        <Link href="/zh/about" className="hover:text-blue-600 transition-colors">关于</Link>
-        <Link href="/zh/blog" className="hover:text-blue-600 transition-colors">博客</Link>
-        <Link href="/zh/#request" className="hover:text-blue-600 transition-colors">提交请求</Link>
+        <Link href="/zh/#brands" className="hover:text-accent transition-colors">品牌</Link>
+        <Link href="/zh/#marine" className="hover:text-accent transition-colors">船用</Link>
+        <Link href="/zh/#how-it-works" className="hover:text-accent transition-colors">流程</Link>
+        <Link href="/zh/about" className="hover:text-accent transition-colors">关于</Link>
+        <Link href="/zh/blog" className="hover:text-accent transition-colors">博客</Link>
+        <Link href="/zh/#request" className="hover:text-accent transition-colors">提交请求</Link>
       </div>
       <LangSwitcher currentLang="zh-Hans" />
       <WhatsappCTA
@@ -124,9 +124,9 @@ export default async function ZhBlogPost({ params }) {
         )}
         <div className="bg-slate-50 border-b border-slate-100">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-sm text-slate-500">
-            <Link href="/zh" className="hover:text-blue-600 transition-colors">首页</Link>
+            <Link href="/zh" className="hover:text-accent transition-colors">首页</Link>
             <span className="mx-2">/</span>
-            <Link href="/zh/blog" className="hover:text-blue-600 transition-colors">博客</Link>
+            <Link href="/zh/blog" className="hover:text-accent transition-colors">博客</Link>
             <span className="mx-2">/</span>
             <span className="text-slate-700 font-medium">{post.meta.title}</span>
           </div>
@@ -135,7 +135,7 @@ export default async function ZhBlogPost({ params }) {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <header className="mb-10">
               <div className="flex items-center gap-3 mb-4">
-                <span className="text-xs font-bold text-blue-600 uppercase tracking-widest">
+                <span className="text-xs font-bold text-accent uppercase tracking-widest">
                   {new Date(post.meta.publish_date).toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' })}
                 </span>
                 {post.meta.author && <span className="text-xs text-slate-400">· {post.meta.author}</span>}
@@ -159,7 +159,7 @@ export default async function ZhBlogPost({ params }) {
             )}
             {post.meta.related_page && (
               <div className="mt-12 pt-8 border-t border-slate-100">
-                <Link href={post.meta.related_page} className="inline-flex items-center gap-2 text-sm font-bold text-blue-600 hover:text-blue-700 transition-colors">
+                <Link href={post.meta.related_page} className="inline-flex items-center gap-2 text-sm font-bold text-accent hover:text-accent transition-colors">
                   查看该品牌的零件 →
                 </Link>
               </div>
@@ -171,23 +171,23 @@ export default async function ZhBlogPost({ params }) {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
               <div>
                 <span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span>
-                <span className="font-black text-xl text-blue-600">.ai</span>
+                <span className="font-black text-xl text-accent">.ai</span>
                 <p className="text-sm text-slate-500 mt-1">霹雳州怡保 — 马来西亚零配件采购专家</p>
               </div>
               <div>
                 <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">零件页面</p>
                 <ul className="space-y-2 text-sm font-semibold">
-                  <li><Link href="/zh/kubota-tractor-parts-malaysia" className="hover:text-blue-600 transition-colors">久保田零件</Link></li>
-                  <li><Link href="/yanmar-marine-parts-malaysia" className="hover:text-blue-600 transition-colors">洋马船用零件</Link></li>
-                  <li><Link href="/massey-ferguson-parts-malaysia" className="hover:text-blue-600 transition-colors">麦赛福格森零件</Link></li>
-                  <li><Link href="/zoomlion-parts-malaysia" className="hover:text-blue-600 transition-colors">中联重科零件</Link></li>
-                  <li><Link href="/john-deere-parts-malaysia" className="hover:text-blue-600 transition-colors">约翰迪尔零件</Link></li>
-                  <li><Link href="/perkins-engine-parts-malaysia" className="hover:text-blue-600 transition-colors">珀金斯发动机零件</Link></li>
-                  <li className="pt-2 border-t border-slate-100"><Link href="/zh/about" className="hover:text-blue-600 transition-colors">关于SourceSage</Link></li>
+                  <li><Link href="/zh/kubota-tractor-parts-malaysia" className="hover:text-accent transition-colors">久保田零件</Link></li>
+                  <li><Link href="/yanmar-marine-parts-malaysia" className="hover:text-accent transition-colors">洋马船用零件</Link></li>
+                  <li><Link href="/massey-ferguson-parts-malaysia" className="hover:text-accent transition-colors">麦赛福格森零件</Link></li>
+                  <li><Link href="/zoomlion-parts-malaysia" className="hover:text-accent transition-colors">中联重科零件</Link></li>
+                  <li><Link href="/john-deere-parts-malaysia" className="hover:text-accent transition-colors">约翰迪尔零件</Link></li>
+                  <li><Link href="/perkins-engine-parts-malaysia" className="hover:text-accent transition-colors">珀金斯发动机零件</Link></li>
+                  <li className="pt-2 border-t border-slate-100"><Link href="/zh/about" className="hover:text-accent transition-colors">关于SourceSage</Link></li>
                 </ul>
               </div>
               <div className="flex flex-col gap-3 text-sm font-semibold">
-                <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors">
+                <a href="mailto:info@sourcesage.ai" className="hover:text-accent flex items-center gap-2 transition-colors">
                   <Mail className="w-4 h-4" /> info@sourcesage.ai
                 </a>
                 <WhatsappCTA label="blog-post-footer" message="Hi, I need help sourcing a spare part. Brand: ___ Model: ___ Part needed: ___" className="hover:text-green-600 flex items-center gap-2 transition-colors">

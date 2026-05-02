@@ -176,15 +176,15 @@ export default function MasseyFergusonPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <Link href="/" className="flex items-center">
               <span className="font-bold text-xl text-slate-900 tracking-tight">SourceSage</span>
-              <span className="text-blue-600 font-bold text-xl">.ai</span>
+              <span className="text-accent font-bold text-xl">.ai</span>
             </Link>
             <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-              <Link href="/#brands" className="hover:text-blue-600 transition-colors">Brands</Link>
-              <Link href="/#marine" className="hover:text-blue-600 transition-colors">Marine</Link>
-              <Link href="/#how-it-works" className="hover:text-blue-600 transition-colors">How It Works</Link>
-              <Link href="/about" className="hover:text-blue-600 transition-colors">About</Link>
-              <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
-              <Link href="/#request" className="hover:text-blue-600 transition-colors">Request a Part</Link>
+              <Link href="/#brands" className="hover:text-accent transition-colors">Brands</Link>
+              <Link href="/#marine" className="hover:text-accent transition-colors">Marine</Link>
+              <Link href="/#how-it-works" className="hover:text-accent transition-colors">How It Works</Link>
+              <Link href="/about" className="hover:text-accent transition-colors">About</Link>
+              <Link href="/blog" className="hover:text-accent transition-colors">Blog</Link>
+              <Link href="/#request" className="hover:text-accent transition-colors">Request a Part</Link>
             </div>
             <LangSwitcher currentLang="en" />
             <WhatsappCTA
@@ -200,7 +200,7 @@ export default function MasseyFergusonPage() {
         {/* Breadcrumb */}
         <div className="bg-slate-50 border-b border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-sm text-slate-500">
-            <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+            <Link href="/" className="hover:text-accent transition-colors">Home</Link>
             <span className="mx-2">/</span>
             <span className="text-slate-700 font-medium">Massey Ferguson Spare Parts Malaysia</span>
           </div>
@@ -215,7 +215,7 @@ export default function MasseyFergusonPage() {
               </div>
               <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
                 Massey Ferguson Spare Parts Malaysia<br />
-                <span className="text-blue-600">Perkins Engine Parts. Hard to Find. Fast to Source.</span>
+                <span className="text-accent">Perkins Engine Parts. Hard to Find. Fast to Source.</span>
               </h1>
               <p className="text-xl text-slate-600 leading-relaxed mb-8">
                 Overhaul kits, injection pumps, clutch assemblies, hydraulic seals, and Perkins engine parts for MF240, MF350, MF375, MF385 and classic MF tractors. When local AGCO dealers can't help, we find it.
@@ -223,7 +223,7 @@ export default function MasseyFergusonPage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/#request"
-                  className="px-8 py-4 text-lg font-bold rounded-xl text-white bg-blue-600 hover:bg-blue-700 shadow-xl shadow-blue-200 transition-all text-center flex items-center justify-center gap-2"
+                  className="px-8 py-4 text-lg font-bold rounded-xl text-white bg-accent hover:bg-accent-light shadow-xl shadow-accent/20 transition-all text-center flex items-center justify-center gap-2"
                 >
                   Request an MF Part <ChevronRight className="w-5 h-5" />
                 </Link>
@@ -243,15 +243,15 @@ export default function MasseyFergusonPage() {
         <section className="py-20 bg-slate-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">Models Covered</h2>
+              <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">Models Covered</h2>
               <h3 className="text-3xl font-bold text-slate-900">Massey Ferguson Tractors We Support</h3>
               <p className="mt-4 text-slate-600 max-w-2xl mx-auto">From the ubiquitous MF240 to classic vintage models — if it's a Massey Ferguson or carries a Perkins engine, we can source the part.</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {MODELS.map(m => (
-                <div key={m.model} className="bg-white rounded-2xl p-6 border border-slate-200 hover:border-blue-200 hover:shadow-md transition-all">
+                <div key={m.model} className="bg-white rounded-2xl p-6 border border-slate-200 hover:border-accent/40 hover:shadow-md transition-all">
                   <h4 className="text-xl font-bold text-slate-900 mb-1">{m.model}</h4>
-                  <p className="text-xs font-semibold text-blue-600 mb-3">{m.engine}</p>
+                  <p className="text-xs font-semibold text-accent mb-3">{m.engine}</p>
                   <p className="text-sm text-slate-500">{m.note}</p>
                 </div>
               ))}
@@ -261,7 +261,7 @@ export default function MasseyFergusonPage() {
               <WhatsappCTA
                 label="mf-model-unlisted"
                 message="Hi, I need a part for my Massey Ferguson tractor. Model: ___ Year: ___ Part needed: ___"
-                className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-bold text-sm transition-all"
+                className="inline-flex items-center gap-2 bg-accent hover:bg-accent-light text-white px-6 py-3 rounded-xl font-bold text-sm transition-all"
               >
                 <MessageCircle className="w-4 h-4" /> Ask Us About Your Model
               </WhatsappCTA>
@@ -291,14 +291,14 @@ export default function MasseyFergusonPage() {
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">Parts Catalogue</h2>
+              <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">Parts Catalogue</h2>
               <h3 className="text-3xl font-bold text-slate-900">What We Source for Massey Ferguson</h3>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {PARTS.map(cat => (
                 <div key={cat.category} className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
                   <h4 className="font-bold text-slate-800 text-sm uppercase tracking-wide mb-4 flex items-center gap-2">
-                    <Wrench className="w-4 h-4 text-blue-500" /> {cat.category}
+                    <Wrench className="w-4 h-4 text-accent" /> {cat.category}
                   </h4>
                   <ul className="space-y-2">
                     {cat.items.map(item => (
@@ -322,7 +322,7 @@ export default function MasseyFergusonPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  icon: <ShieldCheck className="w-6 h-6 text-blue-400" />,
+                  icon: <ShieldCheck className="w-6 h-6 text-accent/60" />,
                   title: 'Classic Model Expertise',
                   body: 'The MF135 and MF240 are decades old. We know which Perkins engine variants were fitted to which export-market MF models, and which aftermarket kits are genuinely compatible vs. incorrectly labelled.',
                 },
@@ -367,14 +367,14 @@ export default function MasseyFergusonPage() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-20 bg-blue-600 text-white">
+        <section className="py-20 bg-accent text-white">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold mb-4">Need a Massey Ferguson Part Now?</h2>
             <p className="text-blue-100 text-lg mb-8">Tell us your tractor model and what you need. We'll confirm availability and pricing — usually within 24 hours.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/#request"
-                className="px-8 py-4 text-lg font-bold rounded-xl bg-white text-blue-700 hover:bg-blue-50 transition-all text-center"
+                className="px-8 py-4 text-lg font-bold rounded-xl bg-white text-accent hover:bg-accent/10 transition-all text-center"
               >
                 Submit a Part Request
               </Link>
@@ -395,11 +395,11 @@ export default function MasseyFergusonPage() {
             <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
               <div>
                 <span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span>
-                <span className="font-black text-xl text-blue-600">.ai</span>
+                <span className="font-black text-xl text-accent">.ai</span>
                 <p className="text-sm text-slate-500 mt-1">Malaysia-Based Parts Sourcing Specialist</p>
               </div>
               <div className="flex gap-6 text-sm font-semibold">
-                <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors">
+                <a href="mailto:info@sourcesage.ai" className="hover:text-accent flex items-center gap-2 transition-colors">
                   <Mail className="w-4 h-4" /> info@sourcesage.ai
                 </a>
                 <WhatsappCTA

@@ -209,15 +209,15 @@ export default function KubotaPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <Link href="/" className="flex items-center">
               <span className="font-bold text-xl text-slate-900 tracking-tight">SourceSage</span>
-              <span className="text-blue-600 font-bold text-xl">.ai</span>
+              <span className="text-accent font-bold text-xl">.ai</span>
             </Link>
             <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-              <Link href="/#brands" className="hover:text-blue-600 transition-colors">Brands</Link>
-              <Link href="/#marine" className="hover:text-blue-600 transition-colors">Marine</Link>
-              <Link href="/#how-it-works" className="hover:text-blue-600 transition-colors">How It Works</Link>
-              <Link href="/about" className="hover:text-blue-600 transition-colors">About</Link>
-              <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
-              <Link href="/#request" className="hover:text-blue-600 transition-colors">Request a Part</Link>
+              <Link href="/#brands" className="hover:text-accent transition-colors">Brands</Link>
+              <Link href="/#marine" className="hover:text-accent transition-colors">Marine</Link>
+              <Link href="/#how-it-works" className="hover:text-accent transition-colors">How It Works</Link>
+              <Link href="/about" className="hover:text-accent transition-colors">About</Link>
+              <Link href="/blog" className="hover:text-accent transition-colors">Blog</Link>
+              <Link href="/#request" className="hover:text-accent transition-colors">Request a Part</Link>
             </div>
             <LangSwitcher currentLang="en" />
             <WhatsappCTA
@@ -233,7 +233,7 @@ export default function KubotaPage() {
         {/* Breadcrumb */}
         <div className="bg-slate-50 border-b border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-sm text-slate-500">
-            <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+            <Link href="/" className="hover:text-accent transition-colors">Home</Link>
             <span className="mx-2">/</span>
             <span className="text-slate-700 font-medium">Kubota Tractor Parts Malaysia</span>
           </div>
@@ -248,7 +248,7 @@ export default function KubotaPage() {
               </div>
               <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
                 Kubota Tractor Parts Malaysia<br />
-                <span className="text-blue-600">L-Series. M-Series. Vintage. All Sourced Fast.</span>
+                <span className="text-accent">L-Series. M-Series. Vintage. All Sourced Fast.</span>
               </h1>
               <p className="text-xl text-slate-600 leading-relaxed mb-8">
                 Overhaul kits, injection pumps, hydraulic seals, clutch assemblies and engine parts for the full Kubota range — including discontinued models that local dealers no longer support. When stock runs dry, we find it.
@@ -256,7 +256,7 @@ export default function KubotaPage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/#request"
-                  className="px-8 py-4 text-lg font-bold rounded-xl text-white bg-blue-600 hover:bg-blue-700 shadow-xl shadow-blue-200 transition-all text-center flex items-center justify-center gap-2"
+                  className="px-8 py-4 text-lg font-bold rounded-xl text-white bg-accent hover:bg-accent-light shadow-xl shadow-accent/20 transition-all text-center flex items-center justify-center gap-2"
                 >
                   Request a Kubota Part <ChevronRight className="w-5 h-5" />
                 </Link>
@@ -276,15 +276,15 @@ export default function KubotaPage() {
         <section className="py-20 bg-slate-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">Model Coverage</h2>
+              <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">Model Coverage</h2>
               <h3 className="text-3xl font-bold text-slate-900">Kubota Series We Support</h3>
               <p className="mt-4 text-slate-600 max-w-2xl mx-auto">From the ubiquitous L3408 to the M9540 plantation workhorse — including vintage models no longer in the Kubota parts catalogue.</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {MODEL_SERIES.map(s => (
-                <div key={s.series} className="bg-white rounded-2xl p-6 border border-slate-200 hover:border-blue-200 hover:shadow-md transition-all">
+                <div key={s.series} className="bg-white rounded-2xl p-6 border border-slate-200 hover:border-accent/40 hover:shadow-md transition-all">
                   <h4 className="text-lg font-bold text-slate-900 mb-1">{s.series}</h4>
-                  <p className="text-xs font-semibold text-blue-600 mb-3">{s.models}</p>
+                  <p className="text-xs font-semibold text-accent mb-3">{s.models}</p>
                   <p className="text-sm text-slate-500">{s.note}</p>
                 </div>
               ))}
@@ -296,20 +296,20 @@ export default function KubotaPage() {
         <section className="py-16 bg-white border-t border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-10">
-              <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">Engine Reference</h2>
+              <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">Engine Reference</h2>
               <h3 className="text-2xl font-bold text-slate-900">Common Kubota Engine Codes</h3>
               <p className="mt-3 text-slate-600 max-w-xl mx-auto">Knowing your engine code speeds up parts sourcing. Find it stamped on the block near the injection pump.</p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 max-w-5xl mx-auto">
               {ENGINES.map(e => (
                 <div key={e.code} className="bg-slate-50 rounded-xl p-4 border border-slate-200 text-center">
-                  <p className="font-black text-blue-700 text-lg mb-1">{e.code}</p>
+                  <p className="font-black text-accent text-lg mb-1">{e.code}</p>
                   <p className="text-xs text-slate-500 leading-snug">{e.use}</p>
                 </div>
               ))}
             </div>
             <div className="text-center mt-8">
-              <Link href="/blog/kubota-serial-number-parts-lookup" className="text-sm font-bold text-blue-600 hover:text-blue-700 transition-colors">
+              <Link href="/blog/kubota-serial-number-parts-lookup" className="text-sm font-bold text-accent hover:text-accent transition-colors">
                 How to read your Kubota serial number →
               </Link>
             </div>
@@ -320,14 +320,14 @@ export default function KubotaPage() {
         <section className="py-20 bg-slate-50 border-t border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">Parts Catalogue</h2>
+              <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">Parts Catalogue</h2>
               <h3 className="text-3xl font-bold text-slate-900">What We Source for Kubota</h3>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {PARTS.map(cat => (
                 <div key={cat.category} className="bg-white rounded-2xl p-6 border border-slate-200">
                   <h4 className="font-bold text-slate-800 text-sm uppercase tracking-wide mb-4 flex items-center gap-2">
-                    <Wrench className="w-4 h-4 text-blue-500" /> {cat.category}
+                    <Wrench className="w-4 h-4 text-accent" /> {cat.category}
                   </h4>
                   <ul className="space-y-2">
                     {cat.items.map(item => (
@@ -351,7 +351,7 @@ export default function KubotaPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  icon: <ShieldCheck className="w-6 h-6 text-blue-400" />,
+                  icon: <ShieldCheck className="w-6 h-6 text-accent/60" />,
                   title: 'Vintage & Discontinued Models',
                   body: 'The L260, L295, and early V-series are decades out of production. Kubota dealers stopped stocking parts years ago. We source through our Japan network and established aftermarket channels that still carry these parts.',
                 },
@@ -407,7 +407,7 @@ export default function KubotaPage() {
               ].map(g => (
                 <Link key={g.href} href={g.href} className="bg-slate-50 rounded-xl p-5 border border-slate-200 hover:border-blue-300 hover:shadow-sm transition-all">
                   <p className="font-bold text-slate-800 text-sm mb-1">{g.title}</p>
-                  <p className="text-xs font-semibold text-blue-600">Read guide →</p>
+                  <p className="text-xs font-semibold text-accent">Read guide →</p>
                 </Link>
               ))}
             </div>
@@ -415,12 +415,12 @@ export default function KubotaPage() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-20 bg-blue-600 text-white">
+        <section className="py-20 bg-accent text-white">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold mb-4">Need a Kubota Part Now?</h2>
             <p className="text-blue-100 text-lg mb-8">Tell us your tractor model, engine code, and what you need. We'll confirm availability and pricing — usually within 24 hours.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/#request" className="px-8 py-4 text-lg font-bold rounded-xl bg-white text-blue-700 hover:bg-blue-50 transition-all text-center">
+              <Link href="/#request" className="px-8 py-4 text-lg font-bold rounded-xl bg-white text-accent hover:bg-accent/10 transition-all text-center">
                 Submit a Part Request
               </Link>
               <WhatsappCTA
@@ -440,11 +440,11 @@ export default function KubotaPage() {
             <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
               <div>
                 <span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span>
-                <span className="font-black text-xl text-blue-600">.ai</span>
+                <span className="font-black text-xl text-accent">.ai</span>
                 <p className="text-sm text-slate-500 mt-1">Malaysia-Based Parts Sourcing Specialist</p>
               </div>
               <div className="flex gap-6 text-sm font-semibold">
-                <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors">
+                <a href="mailto:info@sourcesage.ai" className="hover:text-accent flex items-center gap-2 transition-colors">
                   <Mail className="w-4 h-4" /> info@sourcesage.ai
                 </a>
                 <WhatsappCTA

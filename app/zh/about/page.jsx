@@ -59,15 +59,15 @@ export default function ZhAboutPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <Link href="/zh" className="flex items-center">
               <span className="font-bold text-xl text-slate-900 tracking-tight">SourceSage</span>
-              <span className="text-blue-600 font-bold text-xl">.ai</span>
+              <span className="text-accent font-bold text-xl">.ai</span>
             </Link>
             <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-              <Link href="/zh/#brands" className="hover:text-blue-600 transition-colors">品牌</Link>
-              <Link href="/zh/#marine" className="hover:text-blue-600 transition-colors">船用</Link>
-              <Link href="/zh/#how-it-works" className="hover:text-blue-600 transition-colors">流程</Link>
-              <Link href="/zh/about" className="text-blue-600 transition-colors">关于</Link>
-              <Link href="/zh/blog" className="hover:text-blue-600 transition-colors">博客</Link>
-              <Link href="/zh/#request" className="hover:text-blue-600 transition-colors">提交请求</Link>
+              <Link href="/zh/#brands" className="hover:text-accent transition-colors">品牌</Link>
+              <Link href="/zh/#marine" className="hover:text-accent transition-colors">船用</Link>
+              <Link href="/zh/#how-it-works" className="hover:text-accent transition-colors">流程</Link>
+              <Link href="/zh/about" className="text-accent transition-colors">关于</Link>
+              <Link href="/zh/blog" className="hover:text-accent transition-colors">博客</Link>
+              <Link href="/zh/#request" className="hover:text-accent transition-colors">提交请求</Link>
             </div>
             <div className="flex items-center gap-2">
               <LangSwitcher currentLang="zh-Hans" />
@@ -79,7 +79,7 @@ export default function ZhAboutPage() {
         </nav>
         <div className="bg-slate-50 border-b border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-sm text-slate-500">
-            <Link href="/zh" className="hover:text-blue-600 transition-colors">首页</Link>
+            <Link href="/zh" className="hover:text-accent transition-colors">首页</Link>
             <span className="mx-2">/</span>
             <span className="text-slate-700 font-medium">关于</span>
           </div>
@@ -100,10 +100,10 @@ export default function ZhAboutPage() {
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-slate-900 mb-6">我们的客户</h2>
             <ul className="space-y-4 text-lg text-slate-600">
-              <li className="flex items-start gap-3"><ChevronRight className="w-5 h-5 text-blue-600 shrink-0 mt-1" /><span>需要可靠零件供应的车间和经销商</span></li>
-              <li className="flex items-start gap-3"><ChevronRight className="w-5 h-5 text-blue-600 shrink-0 mt-1" /><span>车队运营商和种植园经理</span></li>
-              <li className="flex items-start gap-3"><ChevronRight className="w-5 h-5 text-blue-600 shrink-0 mt-1" /><span>设备停机影响重大的农业企业</span></li>
-              <li className="flex items-start gap-3"><ChevronRight className="w-5 h-5 text-blue-600 shrink-0 mt-1" /><span>需要柴油发动机组件的船舶运营商</span></li>
+              <li className="flex items-start gap-3"><ChevronRight className="w-5 h-5 text-accent shrink-0 mt-1" /><span>需要可靠零件供应的车间和经销商</span></li>
+              <li className="flex items-start gap-3"><ChevronRight className="w-5 h-5 text-accent shrink-0 mt-1" /><span>车队运营商和种植园经理</span></li>
+              <li className="flex items-start gap-3"><ChevronRight className="w-5 h-5 text-accent shrink-0 mt-1" /><span>设备停机影响重大的农业企业</span></li>
+              <li className="flex items-start gap-3"><ChevronRight className="w-5 h-5 text-accent shrink-0 mt-1" /><span>需要柴油发动机组件的船舶运营商</span></li>
             </ul>
             <p className="text-lg text-slate-600 leading-relaxed mt-6">我们服务马来西亚半岛和东马（沙巴和砂拉越）的客户。</p>
           </div>
@@ -116,18 +116,18 @@ export default function ZhAboutPage() {
               <WhatsappCTA label="zh-about-contact-cta" message="你好，我需要帮助采购零件。品牌：___ 型号：___ 所需零件：___" className="px-8 py-4 text-lg font-bold rounded-xl text-white bg-green-500 hover:bg-green-600 transition-all text-center flex items-center justify-center gap-2">
                 <MessageCircle className="w-5 h-5" /> 通过 WhatsApp 联系 SourceSage
               </WhatsappCTA>
-              <a href="mailto:info@sourcesage.ai" className="px-8 py-4 text-lg font-bold rounded-xl text-blue-700 bg-blue-50 hover:bg-blue-100 transition-all text-center flex items-center justify-center gap-2 border border-blue-200">
+              <a href="mailto:info@sourcesage.ai" className="px-8 py-4 text-lg font-bold rounded-xl text-accent bg-accent/10 hover:bg-blue-100 transition-all text-center flex items-center justify-center gap-2 border border-blue-200">
                 <Mail className="w-5 h-5" /> 邮件 info@sourcesage.ai
               </a>
             </div>
           </div>
         </section>
-        <section className="py-20 bg-blue-600 text-white">
+        <section className="py-20 bg-accent text-white">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold mb-4">需要采购零件？</h2>
             <p className="text-blue-100 text-lg mb-8">发送您的零件详细信息，我们将检查供应情况。我们在24小时内回复。</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/zh/#request" className="px-8 py-4 text-lg font-bold rounded-xl bg-white text-blue-700 hover:bg-blue-50 transition-all text-center">提交零件请求</Link>
+              <Link href="/zh/#request" className="px-8 py-4 text-lg font-bold rounded-xl bg-white text-accent hover:bg-accent/10 transition-all text-center">提交零件请求</Link>
               <WhatsappCTA label="zh-about-final-cta" message="你好，我需要帮助采购零件。品牌：___ 型号：___ 所需零件：___" className="px-8 py-4 text-lg font-bold rounded-xl bg-green-500 hover:bg-green-600 text-white transition-all flex items-center justify-center gap-2">
                 <MessageCircle className="w-5 h-5" /> WhatsApp 联系我们的团队
               </WhatsappCTA>

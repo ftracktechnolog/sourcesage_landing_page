@@ -59,15 +59,15 @@ export default function MsAboutPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <Link href="/ms" className="flex items-center">
               <span className="font-bold text-xl text-slate-900 tracking-tight">SourceSage</span>
-              <span className="text-blue-600 font-bold text-xl">.ai</span>
+              <span className="text-accent font-bold text-xl">.ai</span>
             </Link>
             <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-              <Link href="/ms/#brands" className="hover:text-blue-600 transition-colors">Jenama</Link>
-              <Link href="/ms/#marine" className="hover:text-blue-600 transition-colors">Marin</Link>
-              <Link href="/ms/#how-it-works" className="hover:text-blue-600 transition-colors">Cara Kerja</Link>
-              <Link href="/ms/about" className="text-blue-600 transition-colors">Tentang</Link>
-              <Link href="/ms/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
-              <Link href="/ms/#request" className="hover:text-blue-600 transition-colors">Minta Sebut Harga</Link>
+              <Link href="/ms/#brands" className="hover:text-accent transition-colors">Jenama</Link>
+              <Link href="/ms/#marine" className="hover:text-accent transition-colors">Marin</Link>
+              <Link href="/ms/#how-it-works" className="hover:text-accent transition-colors">Cara Kerja</Link>
+              <Link href="/ms/about" className="text-accent transition-colors">Tentang</Link>
+              <Link href="/ms/blog" className="hover:text-accent transition-colors">Blog</Link>
+              <Link href="/ms/#request" className="hover:text-accent transition-colors">Minta Sebut Harga</Link>
             </div>
             <div className="flex items-center gap-2">
               <LangSwitcher currentLang="ms" />
@@ -79,7 +79,7 @@ export default function MsAboutPage() {
         </nav>
         <div className="bg-slate-50 border-b border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-sm text-slate-500">
-            <Link href="/ms" className="hover:text-blue-600 transition-colors">Laman Utama</Link>
+            <Link href="/ms" className="hover:text-accent transition-colors">Laman Utama</Link>
             <span className="mx-2">/</span>
             <span className="text-slate-700 font-medium">Tentang</span>
           </div>
@@ -100,10 +100,10 @@ export default function MsAboutPage() {
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-slate-900 mb-6">Siapa Yang Kami Bantu</h2>
             <ul className="space-y-4 text-lg text-slate-600">
-              <li className="flex items-start gap-3"><ChevronRight className="w-5 h-5 text-blue-600 shrink-0 mt-1" /><span>Bengkel dan pengedar yang memerlukan bekalan alat ganti yang boleh dipercayai</span></li>
-              <li className="flex items-start gap-3"><ChevronRight className="w-5 h-5 text-blue-600 shrink-0 mt-1" /><span>Pengendali armada dan pengurus ladang</span></li>
-              <li className="flex items-start gap-3"><ChevronRight className="w-5 h-5 text-blue-600 shrink-0 mt-1" /><span>Perniagaan pertanian di mana masa henti peralatan memberi kesan kewangan</span></li>
-              <li className="flex items-start gap-3"><ChevronRight className="w-5 h-5 text-blue-600 shrink-0 mt-1" /><span>Pengendali marin yang memerlukan komponen enjin diesel</span></li>
+              <li className="flex items-start gap-3"><ChevronRight className="w-5 h-5 text-accent shrink-0 mt-1" /><span>Bengkel dan pengedar yang memerlukan bekalan alat ganti yang boleh dipercayai</span></li>
+              <li className="flex items-start gap-3"><ChevronRight className="w-5 h-5 text-accent shrink-0 mt-1" /><span>Pengendali armada dan pengurus ladang</span></li>
+              <li className="flex items-start gap-3"><ChevronRight className="w-5 h-5 text-accent shrink-0 mt-1" /><span>Perniagaan pertanian di mana masa henti peralatan memberi kesan kewangan</span></li>
+              <li className="flex items-start gap-3"><ChevronRight className="w-5 h-5 text-accent shrink-0 mt-1" /><span>Pengendali marin yang memerlukan komponen enjin diesel</span></li>
             </ul>
             <p className="text-lg text-slate-600 leading-relaxed mt-6">Kami melayani pelanggan di seluruh Semenanjung Malaysia dan Malaysia Timur (Sabah dan Sarawak).</p>
           </div>
@@ -116,18 +116,18 @@ export default function MsAboutPage() {
               <WhatsappCTA label="ms-about-contact-cta" message="Hi, saya perlukan bantuan mencari alat ganti. Jenama: ___ Model: ___ Alat ganti diperlukan: ___" className="px-8 py-4 text-lg font-bold rounded-xl text-white bg-green-500 hover:bg-green-600 transition-all text-center flex items-center justify-center gap-2">
                 <MessageCircle className="w-5 h-5" /> Hubungi SourceSage di WhatsApp
               </WhatsappCTA>
-              <a href="mailto:info@sourcesage.ai" className="px-8 py-4 text-lg font-bold rounded-xl text-blue-700 bg-blue-50 hover:bg-blue-100 transition-all text-center flex items-center justify-center gap-2 border border-blue-200">
+              <a href="mailto:info@sourcesage.ai" className="px-8 py-4 text-lg font-bold rounded-xl text-accent bg-accent/10 hover:bg-blue-100 transition-all text-center flex items-center justify-center gap-2 border border-blue-200">
                 <Mail className="w-5 h-5" /> Emel info@sourcesage.ai
               </a>
             </div>
           </div>
         </section>
-        <section className="py-20 bg-blue-600 text-white">
+        <section className="py-20 bg-accent text-white">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold mb-4">Perlukan Alat Ganti Dicari?</h2>
             <p className="text-blue-100 text-lg mb-8">Hantarkan butiran alat ganti anda dan kami akan menyemak ketersediaan. Kami membalas dalam masa 24 jam.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/ms/#request" className="px-8 py-4 text-lg font-bold rounded-xl bg-white text-blue-700 hover:bg-blue-50 transition-all text-center">Hantar Permintaan Alat Ganti</Link>
+              <Link href="/ms/#request" className="px-8 py-4 text-lg font-bold rounded-xl bg-white text-accent hover:bg-accent/10 transition-all text-center">Hantar Permintaan Alat Ganti</Link>
               <WhatsappCTA label="ms-about-final-cta" message="Hi, saya perlukan bantuan mencari alat ganti. Jenama: ___ Model: ___ Alat ganti diperlukan: ___" className="px-8 py-4 text-lg font-bold rounded-xl bg-green-500 hover:bg-green-600 text-white transition-all flex items-center justify-center gap-2">
                 <MessageCircle className="w-5 h-5" /> WhatsApp Pasukan Kami
               </WhatsappCTA>

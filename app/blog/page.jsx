@@ -30,15 +30,15 @@ const Navbar = () => (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
       <Link href="/" className="flex items-center">
         <span className="font-bold text-xl text-slate-900 tracking-tight">SourceSage</span>
-        <span className="text-blue-600 font-bold text-xl">.ai</span>
+        <span className="text-accent font-bold text-xl">.ai</span>
       </Link>
       <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-        <Link href="/#brands" className="hover:text-blue-600 transition-colors">Brands</Link>
-        <Link href="/#marine" className="hover:text-blue-600 transition-colors">Marine</Link>
-        <Link href="/#how-it-works" className="hover:text-blue-600 transition-colors">How It Works</Link>
-        <Link href="/about" className="hover:text-blue-600 transition-colors">About</Link>
-        <Link href="/blog" className="text-blue-600">Blog</Link>
-        <Link href="/#request" className="hover:text-blue-600 transition-colors">Request a Part</Link>
+        <Link href="/#brands" className="hover:text-accent transition-colors">Brands</Link>
+        <Link href="/#marine" className="hover:text-accent transition-colors">Marine</Link>
+        <Link href="/#how-it-works" className="hover:text-accent transition-colors">How It Works</Link>
+        <Link href="/about" className="hover:text-accent transition-colors">About</Link>
+        <Link href="/blog" className="text-accent">Blog</Link>
+        <Link href="/#request" className="hover:text-accent transition-colors">Request a Part</Link>
       </div>
       <LangSwitcher currentLang="en" />
       <WhatsappCTA
@@ -58,23 +58,23 @@ const Footer = () => (
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
         <div>
           <span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span>
-          <span className="font-black text-xl text-blue-600">.ai</span>
+          <span className="font-black text-xl text-accent">.ai</span>
           <p className="text-sm text-slate-500 mt-1">Malaysia-Based Parts Sourcing Specialist</p>
         </div>
         <div>
           <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Parts Pages</p>
           <ul className="space-y-2 text-sm font-semibold">
-            <li><Link href="/kubota-tractor-parts-malaysia" className="hover:text-blue-600 transition-colors">Kubota Tractor Parts</Link></li>
-            <li><Link href="/yanmar-marine-parts-malaysia" className="hover:text-blue-600 transition-colors">Yanmar Marine Parts</Link></li>
-            <li><Link href="/massey-ferguson-parts-malaysia" className="hover:text-blue-600 transition-colors">Massey Ferguson Parts</Link></li>
-            <li><Link href="/zoomlion-parts-malaysia" className="hover:text-blue-600 transition-colors">Zoomlion Parts</Link></li>
-            <li><Link href="/john-deere-parts-malaysia" className="hover:text-blue-600 transition-colors">John Deere Parts</Link></li>
-            <li><Link href="/perkins-engine-parts-malaysia" className="hover:text-blue-600 transition-colors">Perkins Engine Parts</Link></li>
-            <li><Link href="/about" className="hover:text-blue-600 transition-colors">About SourceSage</Link></li>
+            <li><Link href="/kubota-tractor-parts-malaysia" className="hover:text-accent transition-colors">Kubota Tractor Parts</Link></li>
+            <li><Link href="/yanmar-marine-parts-malaysia" className="hover:text-accent transition-colors">Yanmar Marine Parts</Link></li>
+            <li><Link href="/massey-ferguson-parts-malaysia" className="hover:text-accent transition-colors">Massey Ferguson Parts</Link></li>
+            <li><Link href="/zoomlion-parts-malaysia" className="hover:text-accent transition-colors">Zoomlion Parts</Link></li>
+            <li><Link href="/john-deere-parts-malaysia" className="hover:text-accent transition-colors">John Deere Parts</Link></li>
+            <li><Link href="/perkins-engine-parts-malaysia" className="hover:text-accent transition-colors">Perkins Engine Parts</Link></li>
+            <li><Link href="/about" className="hover:text-accent transition-colors">About SourceSage</Link></li>
           </ul>
         </div>
         <div className="flex flex-col gap-3 text-sm font-semibold">
-          <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors">
+          <a href="mailto:info@sourcesage.ai" className="hover:text-accent flex items-center gap-2 transition-colors">
             <Mail className="w-4 h-4" /> info@sourcesage.ai
           </a>
           <WhatsappCTA label="blog-footer" message="Hi, I need help sourcing a spare part. Brand: ___ Model: ___ Part needed: ___" className="hover:text-green-600 flex items-center gap-2 transition-colors">
@@ -120,7 +120,7 @@ export default function BlogIndex() {
       <main>
         <section className="bg-white border-b border-slate-100 py-16">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="mb-2 text-xs font-bold uppercase tracking-widest text-blue-600">Guides &amp; Resources</div>
+            <div className="mb-2 text-xs font-bold uppercase tracking-widest text-accent">Guides &amp; Resources</div>
             <h1 className="text-4xl font-extrabold text-slate-900 mb-4">Parts &amp; Tractor Guides</h1>
             <p className="text-lg text-slate-500 max-w-2xl">Practical guides on identifying Kubota tractor models, finding spare parts, and sourcing hard-to-find components across Malaysia.</p>
           </div>
@@ -134,16 +134,16 @@ export default function BlogIndex() {
                 className="group block bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden"
               >
                 <div className="p-6">
-                  <div className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-3">
+                  <div className="text-xs font-semibold text-accent uppercase tracking-widest mb-3">
                     {new Date(post.publish_date).toLocaleDateString('en-MY', { year: 'numeric', month: 'long', day: 'numeric' })}
                   </div>
-                  <h2 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors leading-snug">
+                  <h2 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-accent transition-colors leading-snug">
                     {post.title}
                   </h2>
                   <p className="text-slate-500 text-sm line-clamp-3 leading-relaxed">
                     {post.meta_description}
                   </p>
-                  <div className="mt-4 text-sm font-semibold text-blue-600 group-hover:text-blue-700 transition-colors">
+                  <div className="mt-4 text-sm font-semibold text-accent group-hover:text-accent transition-colors">
                     Read guide →
                   </div>
                 </div>

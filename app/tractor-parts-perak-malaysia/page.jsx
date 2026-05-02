@@ -135,15 +135,15 @@ export default function PerakPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <Link href="/" className="flex items-center">
               <span className="font-bold text-xl text-slate-900 tracking-tight">SourceSage</span>
-              <span className="text-blue-600 font-bold text-xl">.ai</span>
+              <span className="text-accent font-bold text-xl">.ai</span>
             </Link>
             <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-              <Link href="/#brands" className="hover:text-blue-600 transition-colors">Brands</Link>
-              <Link href="/#marine" className="hover:text-blue-600 transition-colors">Marine</Link>
-              <Link href="/#how-it-works" className="hover:text-blue-600 transition-colors">How It Works</Link>
-              <Link href="/about" className="hover:text-blue-600 transition-colors">About</Link>
-              <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
-              <Link href="/#request" className="hover:text-blue-600 transition-colors">Request a Part</Link>
+              <Link href="/#brands" className="hover:text-accent transition-colors">Brands</Link>
+              <Link href="/#marine" className="hover:text-accent transition-colors">Marine</Link>
+              <Link href="/#how-it-works" className="hover:text-accent transition-colors">How It Works</Link>
+              <Link href="/about" className="hover:text-accent transition-colors">About</Link>
+              <Link href="/blog" className="hover:text-accent transition-colors">Blog</Link>
+              <Link href="/#request" className="hover:text-accent transition-colors">Request a Part</Link>
             </div>
             <LangSwitcher currentLang="en" />
             <WhatsappCTA
@@ -158,7 +158,7 @@ export default function PerakPage() {
 
         <div className="bg-slate-50 border-b border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-sm text-slate-500">
-            <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+            <Link href="/" className="hover:text-accent transition-colors">Home</Link>
             <span className="mx-2">/</span>
             <span className="text-slate-700 font-medium">Tractor Parts — Perak, Malaysia</span>
           </div>
@@ -166,7 +166,7 @@ export default function PerakPage() {
 
         <header className="bg-white pt-16 pb-20 border-b border-slate-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 text-blue-800 text-xs font-bold uppercase tracking-widest mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 text-accent text-xs font-bold uppercase tracking-widest mb-6">
               <MapPin className="w-4 h-4" /> Based in Ipoh, Perak
             </div>
             <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6 max-w-3xl">
@@ -185,7 +185,7 @@ export default function PerakPage() {
               {COVERAGE_AREAS.map(loc => (
                 <div key={loc.area} className="bg-slate-50 rounded-xl p-5 border border-slate-200">
                   <p className="font-bold text-slate-900 text-sm mb-2 flex items-center gap-2">
-                    <Truck className="w-4 h-4 text-blue-600 shrink-0" /> {loc.area}
+                    <Truck className="w-4 h-4 text-accent shrink-0" /> {loc.area}
                   </p>
                   <p className="text-slate-500 text-xs">{loc.note}</p>
                 </div>
@@ -218,7 +218,7 @@ export default function PerakPage() {
               </div>
               <div className="bg-white rounded-2xl p-7 border border-slate-200">
                 <h3 className="font-bold text-lg text-slate-900 mb-4 flex items-center gap-3">
-                  <span className="w-8 h-8 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center text-sm">⚓</span>
+                  <span className="w-8 h-8 bg-blue-100 text-accent rounded-lg flex items-center justify-center text-sm">⚓</span>
                   Manjung & Sitiawan — Marine
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed">
@@ -245,28 +245,28 @@ export default function PerakPage() {
                 <h2 className="text-2xl font-bold text-slate-900 mb-6">Why Perak Workshops Choose SourceSage</h2>
                 <ul className="space-y-5">
                   <li className="flex items-start gap-4">
-                    <MapPin className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" />
+                    <MapPin className="w-6 h-6 text-accent shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900">Local presence in Ipoh</strong>
                       <p className="text-sm text-slate-600 mt-1">We're based right here in Perak. You're not dealing with a KL or Johor supplier who doesn't know the Perak market.</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-4">
-                    <ShieldCheck className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" />
+                    <ShieldCheck className="w-6 h-6 text-accent shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900">Multi-brand, not single-brand</strong>
                       <p className="text-sm text-slate-600 mt-1">Perak farms often run mixed fleets — Kubota for paddy, Massey Ferguson for estates, Yanmar for marine. We cover all of them.</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-4">
-                    <Truck className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" />
+                    <Truck className="w-6 h-6 text-accent shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900">Fast courier to all Perak districts</strong>
                       <p className="text-sm text-slate-600 mt-1">Same-day delivery in Ipoh/Kinta. Next-day to Taiping, Kuala Kangsar, Kampar. 1–2 days to coastal and southern districts.</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-4">
-                    <CheckCircle className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" />
+                    <CheckCircle className="w-6 h-6 text-accent shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-slate-900">Older tractors are our specialty</strong>
                       <p className="text-sm text-slate-600 mt-1">Perak has thousands of 15–25 year-old tractors. We actively source discontinued and vintage parts that dealers have stopped carrying.</p>
@@ -275,32 +275,32 @@ export default function PerakPage() {
                 </ul>
               </div>
               <div className="mt-12 lg:mt-0">
-                <div className="bg-blue-50 rounded-2xl p-8 border border-blue-100">
+                <div className="bg-accent/10 rounded-2xl p-8 border border-blue-100">
                   <h3 className="font-bold text-lg text-slate-900 mb-4">Common Part Requests in Perak</h3>
                   <ul className="space-y-3 text-sm text-slate-700">
                     <li className="flex items-center gap-2">
-                      <Wrench className="w-4 h-4 text-blue-600 shrink-0" /> Kubota L-series overhaul gasket kits
+                      <Wrench className="w-4 h-4 text-accent shrink-0" /> Kubota L-series overhaul gasket kits
                     </li>
                     <li className="flex items-center gap-2">
-                      <Wrench className="w-4 h-4 text-blue-600 shrink-0" /> Yanmar 3TNV88 and 4TNV88 injectors
+                      <Wrench className="w-4 h-4 text-accent shrink-0" /> Yanmar 3TNV88 and 4TNV88 injectors
                     </li>
                     <li className="flex items-center gap-2">
-                      <Wrench className="w-4 h-4 text-blue-600 shrink-0" /> Massey Ferguson MF240 clutch kits
+                      <Wrench className="w-4 h-4 text-accent shrink-0" /> Massey Ferguson MF240 clutch kits
                     </li>
                     <li className="flex items-center gap-2">
-                      <Wrench className="w-4 h-4 text-blue-600 shrink-0" /> Perkins 1104C-44 cylinder heads & gaskets
+                      <Wrench className="w-4 h-4 text-accent shrink-0" /> Perkins 1104C-44 cylinder heads & gaskets
                     </li>
                     <li className="flex items-center gap-2">
-                      <Wrench className="w-4 h-4 text-blue-600 shrink-0" /> John Deere 5310 hydraulic seals
+                      <Wrench className="w-4 h-4 text-accent shrink-0" /> John Deere 5310 hydraulic seals
                     </li>
                     <li className="flex items-center gap-2">
-                      <Wrench className="w-4 h-4 text-blue-600 shrink-0" /> Zoomlion RC60 threshing chains
+                      <Wrench className="w-4 h-4 text-accent shrink-0" /> Zoomlion RC60 threshing chains
                     </li>
                     <li className="flex items-center gap-2">
-                      <Wrench className="w-4 h-4 text-blue-600 shrink-0" /> Yanmar marine engine raw water pumps
+                      <Wrench className="w-4 h-4 text-accent shrink-0" /> Yanmar marine engine raw water pumps
                     </li>
                     <li className="flex items-center gap-2">
-                      <Wrench className="w-4 h-4 text-blue-600 shrink-0" /> Kubota M9540 fuel injection pumps
+                      <Wrench className="w-4 h-4 text-accent shrink-0" /> Kubota M9540 fuel injection pumps
                     </li>
                   </ul>
                   <div className="mt-6 pt-6 border-t border-blue-200">
@@ -339,11 +339,11 @@ export default function PerakPage() {
             <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
               <div>
                 <span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span>
-                <span className="font-black text-xl text-blue-600">.ai</span>
+                <span className="font-black text-xl text-accent">.ai</span>
                 <p className="text-sm text-slate-500 mt-1">Ipoh, Perak — Malaysia Parts Sourcing Specialist</p>
               </div>
               <div className="flex gap-6 text-sm font-semibold">
-                <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors">
+                <a href="mailto:info@sourcesage.ai" className="hover:text-accent flex items-center gap-2 transition-colors">
                   <Mail className="w-4 h-4" /> info@sourcesage.ai
                 </a>
                 <WhatsappCTA
