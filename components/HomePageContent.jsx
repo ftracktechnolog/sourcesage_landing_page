@@ -12,7 +12,9 @@ import { getAllPosts } from '../lib/blog'
 const langLinks = { en: '/', ms: '/ms', 'zh-Hans': '/zh' }
 const langLabels = { en: 'EN', ms: 'BM', 'zh-Hans': '中文' }
 
-const Navbar = ({ t, lang }) => (
+const Navbar = ({ t, lang }) => {
+  const blogUrl = lang === 'ms' ? '/ms/blog' : lang === 'zh-Hans' ? '/zh/blog' : '/blog'
+  return (
   <nav className="bg-white shadow-sm sticky top-0 z-50">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
       <div className="flex items-center">
@@ -24,7 +26,7 @@ const Navbar = ({ t, lang }) => (
         <a href="#marine" className="hover:text-blue-600 transition-colors">{t.nav.marine}</a>
         <a href="#how-it-works" className="hover:text-blue-600 transition-colors">{t.nav.howItWorks}</a>
         <a href="/about" className="hover:text-blue-600 transition-colors">{t.nav.about || 'About'}</a>
-        <a href="/blog" className="hover:text-blue-600 transition-colors">{t.nav.blog}</a>
+        <a href={blogUrl} className="hover:text-blue-600 transition-colors">{t.nav.blog}</a>
         <a href="#request" className="hover:text-blue-600 transition-colors">{t.nav.requestPart}</a>
       </div>
       <div className="flex items-center gap-2">
@@ -52,7 +54,8 @@ const Navbar = ({ t, lang }) => (
       </div>
     </div>
   </nav>
-)
+  )
+}
 
 const Hero = ({ t }) => (
   <header className="bg-white pt-16 pb-24 overflow-hidden border-b border-slate-100">
@@ -485,7 +488,9 @@ const RescueStories = ({ t }) => (
   </section>
 )
 
-const BlogSection = ({ t, posts }) => (
+const BlogSection = ({ t, posts, lang }) => {
+  const blogBase = lang === 'ms' ? '/ms/blog' : lang === 'zh-Hans' ? '/zh/blog' : '/blog'
+  return (
   <section id="blog" className="py-24 bg-slate-50 border-y border-slate-100">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex items-end justify-between mb-12">
@@ -494,7 +499,7 @@ const BlogSection = ({ t, posts }) => (
           <h3 className="text-3xl font-bold text-slate-900">{t.blog.heading}</h3>
           <p className="mt-3 text-slate-600 max-w-xl">{t.blog.body}</p>
         </div>
-        <Link href="/blog" className="hidden md:flex items-center gap-2 text-sm font-bold text-blue-600 hover:text-blue-700 transition-colors shrink-0 ml-8">
+        <Link href={blogBase} className="hidden md:flex items-center gap-2 text-sm font-bold text-blue-600 hover:text-blue-700 transition-colors shrink-0 ml-8">
           {t.blog.allGuides} <ChevronRight className="w-4 h-4" />
         </Link>
       </div>
@@ -502,7 +507,7 @@ const BlogSection = ({ t, posts }) => (
         {posts.map(post => (
           <Link
             key={post.slug}
-            href={`/blog/${post.slug}`}
+            href={`${blogBase}/${post.slug}`}
             className="group bg-white rounded-2xl border border-slate-200 p-7 hover:border-blue-300 hover:shadow-md transition-all flex flex-col"
           >
             <div className="flex items-center gap-3 mb-4">
@@ -526,13 +531,14 @@ const BlogSection = ({ t, posts }) => (
         ))}
       </div>
       <div className="mt-8 text-center md:hidden">
-        <Link href="/blog" className="text-sm font-bold text-blue-600 hover:text-blue-700 transition-colors">
+        <Link href={blogBase} className="text-sm font-bold text-blue-600 hover:text-blue-700 transition-colors">
           {t.blog.seeAllGuides}
         </Link>
       </div>
     </div>
   </section>
-)
+  )
+}
 
 const Footer = ({ t }) => (
   <footer className="bg-white py-12 text-slate-500 border-t border-slate-100">
@@ -582,7 +588,7 @@ const StickyWhatsApp = ({ t }) => (
 )
 
 export default function HomePageContent({ t, lang }) {
-  const posts = getAllPosts()
+  const posts = getAllPosts(lang)
 
   return (
     <>
@@ -635,7 +641,7 @@ export default function HomePageContent({ t, lang }) {
         <TrustSection t={t} />
         <EastMalaysiaSection t={t} />
         <RescueStories t={t} />
-        {posts.length > 0 && <BlogSection t={t} posts={posts} />}
+        {posts.length > 0 && <BlogSection t={t} posts={posts} lang={lang} />}
         <RequestForm t={t.form} />
         <Footer t={t} />
       </div>

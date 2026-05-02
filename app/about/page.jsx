@@ -76,6 +76,7 @@ export default function AboutPage() {
             <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
               <Link href="/#brands" className="hover:text-blue-600 transition-colors">Brands</Link>
               <Link href="/#marine" className="hover:text-blue-600 transition-colors">Marine</Link>
+              <Link href="/#how-it-works" className="hover:text-blue-600 transition-colors">How It Works</Link>
               <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
               <Link href="/about" className="text-blue-600 transition-colors">About</Link>
               <Link href="/#request" className="hover:text-blue-600 transition-colors">Request a Part</Link>

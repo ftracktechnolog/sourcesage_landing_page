@@ -4,12 +4,12 @@ import { getAllPosts, getPostBySlug } from '../../../lib/blog'
 import WhatsappCTA from '../../../components/WhatsappCTA'
 
 export async function generateStaticParams() {
-  return getAllPosts().map(p => ({ slug: p.slug }))
+  return getAllPosts('en').map(p => ({ slug: p.slug }))
 }
 
 export async function generateMetadata({ params }) {
   const { slug } = await params
-  const post = await getPostBySlug(slug)
+  const post = await getPostBySlug(slug, 'en')
   const ogImage = post.meta.hero_image
     ? `https://sourcesage.ai/images/blog/${post.meta.hero_image}`
     : 'https://sourcesage.ai/images/og-default.png'
@@ -48,6 +48,7 @@ const Navbar = () => (
       <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
         <Link href="/#brands" className="hover:text-blue-600 transition-colors">Brands</Link>
         <Link href="/#marine" className="hover:text-blue-600 transition-colors">Marine</Link>
+        <Link href="/#how-it-works" className="hover:text-blue-600 transition-colors">How It Works</Link>
         <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
         <Link href="/about" className="hover:text-blue-600 transition-colors">About</Link>
         <Link href="/#request" className="hover:text-blue-600 transition-colors">Request a Part</Link>
@@ -101,7 +102,7 @@ const Footer = () => (
 
 export default async function BlogPost({ params }) {
   const { slug } = await params
-  const post = await getPostBySlug(slug)
+  const post = await getPostBySlug(slug, 'en')
 
   const ogImage = post.meta.hero_image
     ? `https://sourcesage.ai/images/blog/${post.meta.hero_image}`
