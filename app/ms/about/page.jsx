@@ -62,12 +62,12 @@ export default function MsAboutPage() {
               <span className="text-blue-600 font-bold text-xl">.ai</span>
             </Link>
             <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-              <Link href="/#brands" className="hover:text-blue-600 transition-colors">Jenama</Link>
-              <Link href="/#marine" className="hover:text-blue-600 transition-colors">Marin</Link>
-              <Link href="/#how-it-works" className="hover:text-blue-600 transition-colors">Cara Kerja</Link>
+              <Link href="/ms/#brands" className="hover:text-blue-600 transition-colors">Jenama</Link>
+              <Link href="/ms/#marine" className="hover:text-blue-600 transition-colors">Marin</Link>
+              <Link href="/ms/#how-it-works" className="hover:text-blue-600 transition-colors">Cara Kerja</Link>
               <Link href="/ms/about" className="text-blue-600 transition-colors">Tentang</Link>
               <Link href="/ms/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
-              <Link href="/#request" className="hover:text-blue-600 transition-colors">Minta Sebut Harga</Link>
+              <Link href="/ms/#request" className="hover:text-blue-600 transition-colors">Minta Sebut Harga</Link>
             </div>
             <div className="flex items-center gap-2">
               <WhatsappCTA label="ms-about-navbar" message="Hi, saya perlukan bantuan mencari alat ganti. Jenama: ___ Model: ___ Alat ganti diperlukan: ___" className="bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-lg font-bold transition-all text-sm flex items-center gap-2">
@@ -127,7 +127,7 @@ export default function MsAboutPage() {
             <h2 className="text-3xl font-bold mb-4">Perlukan Alat Ganti Dicari?</h2>
             <p className="text-blue-100 text-lg mb-8">Hantarkan butiran alat ganti anda dan kami akan menyemak ketersediaan. Kami membalas dalam masa 24 jam.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/#request" className="px-8 py-4 text-lg font-bold rounded-xl bg-white text-blue-700 hover:bg-blue-50 transition-all text-center">Hantar Permintaan Alat Ganti</Link>
+              <Link href="/ms/#request" className="px-8 py-4 text-lg font-bold rounded-xl bg-white text-blue-700 hover:bg-blue-50 transition-all text-center">Hantar Permintaan Alat Ganti</Link>
               <WhatsappCTA label="ms-about-final-cta" message="Hi, saya perlukan bantuan mencari alat ganti. Jenama: ___ Model: ___ Alat ganti diperlukan: ___" className="px-8 py-4 text-lg font-bold rounded-xl bg-green-500 hover:bg-green-600 text-white transition-all flex items-center justify-center gap-2">
                 <MessageCircle className="w-5 h-5" /> WhatsApp Pasukan Kami
               </WhatsappCTA>

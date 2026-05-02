@@ -62,12 +62,12 @@ export default function ZhAboutPage() {
               <span className="text-blue-600 font-bold text-xl">.ai</span>
             </Link>
             <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-              <Link href="/#brands" className="hover:text-blue-600 transition-colors">品牌</Link>
-              <Link href="/#marine" className="hover:text-blue-600 transition-colors">船用</Link>
-              <Link href="/#how-it-works" className="hover:text-blue-600 transition-colors">流程</Link>
+              <Link href="/zh/#brands" className="hover:text-blue-600 transition-colors">品牌</Link>
+              <Link href="/zh/#marine" className="hover:text-blue-600 transition-colors">船用</Link>
+              <Link href="/zh/#how-it-works" className="hover:text-blue-600 transition-colors">流程</Link>
               <Link href="/zh/about" className="text-blue-600 transition-colors">关于</Link>
               <Link href="/zh/blog" className="hover:text-blue-600 transition-colors">博客</Link>
-              <Link href="/#request" className="hover:text-blue-600 transition-colors">提交请求</Link>
+              <Link href="/zh/#request" className="hover:text-blue-600 transition-colors">提交请求</Link>
             </div>
             <div className="flex items-center gap-2">
               <WhatsappCTA label="zh-about-navbar" message="你好，我需要帮助采购零件。品牌：___ 型号：___ 所需零件：___" className="bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-lg font-bold transition-all text-sm flex items-center gap-2">
@@ -127,7 +127,7 @@ export default function ZhAboutPage() {
             <h2 className="text-3xl font-bold mb-4">需要采购零件？</h2>
             <p className="text-blue-100 text-lg mb-8">发送您的零件详细信息，我们将检查供应情况。我们在24小时内回复。</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/#request" className="px-8 py-4 text-lg font-bold rounded-xl bg-white text-blue-700 hover:bg-blue-50 transition-all text-center">提交零件请求</Link>
+              <Link href="/zh/#request" className="px-8 py-4 text-lg font-bold rounded-xl bg-white text-blue-700 hover:bg-blue-50 transition-all text-center">提交零件请求</Link>
               <WhatsappCTA label="zh-about-final-cta" message="你好，我需要帮助采购零件。品牌：___ 型号：___ 所需零件：___" className="px-8 py-4 text-lg font-bold rounded-xl bg-green-500 hover:bg-green-600 text-white transition-all flex items-center justify-center gap-2">
                 <MessageCircle className="w-5 h-5" /> WhatsApp 联系我们的团队
               </WhatsappCTA>

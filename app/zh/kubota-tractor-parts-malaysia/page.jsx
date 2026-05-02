@@ -54,12 +54,12 @@ export default function ZhKubotaPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <Link href="/zh" className="flex items-center"><span className="font-bold text-xl text-slate-900 tracking-tight">SourceSage</span><span className="text-blue-600 font-bold text-xl">.ai</span></Link>
             <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-              <Link href="/#brands" className="hover:text-blue-600 transition-colors">品牌</Link>
-              <Link href="/#marine" className="hover:text-blue-600 transition-colors">船用</Link>
-              <Link href="/#how-it-works" className="hover:text-blue-600 transition-colors">流程</Link>
+              <Link href="/zh/#brands" className="hover:text-blue-600 transition-colors">品牌</Link>
+              <Link href="/zh/#marine" className="hover:text-blue-600 transition-colors">船用</Link>
+              <Link href="/zh/#how-it-works" className="hover:text-blue-600 transition-colors">流程</Link>
               <Link href="/zh/about" className="hover:text-blue-600 transition-colors">关于</Link>
               <Link href="/zh/blog" className="hover:text-blue-600 transition-colors">博客</Link>
-              <Link href="/#request" className="hover:text-blue-600 transition-colors">提交请求</Link>
+              <Link href="/zh/#request" className="hover:text-blue-600 transition-colors">提交请求</Link>
             </div>
             <div className="flex items-center gap-2">
               <WhatsappCTA label="zh-kubota-navbar" message="你好，我需要久保田拖拉机零件。型号：___ 发动机代码：___ 所需零件：___" className="bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-lg font-bold transition-all text-sm flex items-center gap-2"><MessageCircle className="w-4 h-4" /> WhatsApp</WhatsappCTA>

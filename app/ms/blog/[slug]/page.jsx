@@ -47,12 +47,12 @@ const Navbar = () => (
         <span className="text-blue-600 font-bold text-xl">.ai</span>
       </Link>
       <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-        <Link href="/#brands" className="hover:text-blue-600 transition-colors">Jenama</Link>
-        <Link href="/#marine" className="hover:text-blue-600 transition-colors">Marin</Link>
-        <Link href="/#how-it-works" className="hover:text-blue-600 transition-colors">Cara Kerja</Link>
+        <Link href="/ms/#brands" className="hover:text-blue-600 transition-colors">Jenama</Link>
+        <Link href="/ms/#marine" className="hover:text-blue-600 transition-colors">Marin</Link>
+        <Link href="/ms/#how-it-works" className="hover:text-blue-600 transition-colors">Cara Kerja</Link>
         <Link href="/ms/about" className="hover:text-blue-600 transition-colors">Tentang</Link>
         <Link href="/ms/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
-        <Link href="/#request" className="hover:text-blue-600 transition-colors">Minta Sebut Harga</Link>
+        <Link href="/ms/#request" className="hover:text-blue-600 transition-colors">Minta Sebut Harga</Link>
       </div>
       <WhatsappCTA
         label="ms-post-navbar"
@@ -177,7 +177,7 @@ export default async function MsBlogPost({ params }) {
               <div>
                 <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Halaman Alat Ganti</p>
                 <ul className="space-y-2 text-sm font-semibold">
-                  <li><Link href="/kubota-tractor-parts-malaysia" className="hover:text-blue-600 transition-colors">Alat Ganti Kubota</Link></li>
+                  <li><Link href="/ms/kubota-tractor-parts-malaysia" className="hover:text-blue-600 transition-colors">Alat Ganti Kubota</Link></li>
                   <li><Link href="/yanmar-marine-parts-malaysia" className="hover:text-blue-600 transition-colors">Alat Ganti Yanmar Marin</Link></li>
                   <li><Link href="/massey-ferguson-parts-malaysia" className="hover:text-blue-600 transition-colors">Alat Ganti Massey Ferguson</Link></li>
                   <li><Link href="/zoomlion-parts-malaysia" className="hover:text-blue-600 transition-colors">Alat Ganti Zoomlion</Link></li>

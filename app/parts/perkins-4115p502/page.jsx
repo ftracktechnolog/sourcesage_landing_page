@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { MessageCircle, Mail, ChevronRight, CheckCircle, Wrench, Gauge, MapPin, ShieldCheck } from 'lucide-react'
 import WhatsappCTA from '../../../components/WhatsappCTA'
+import LangSwitcher from '../../../components/LangSwitcher'
 
 export const metadata = {
   title: 'Perkins 4115P502 — Cylinder Head Gasket for 1104C-44 | SourceSage',
@@ -144,6 +145,7 @@ export default function Perkins4115Page() {
             >
               <MessageCircle className="w-4 h-4" /> WhatsApp Us
             </WhatsappCTA>
+            <LangSwitcher currentLang="en" />
           </div>
         </nav>
 

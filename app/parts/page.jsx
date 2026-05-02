@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { MessageCircle, Mail, ChevronRight, Search, Wrench, BookOpen, ShoppingCart } from 'lucide-react'
 import WhatsappCTA from '../../components/WhatsappCTA'
+import LangSwitcher from '../../components/LangSwitcher'
 
 export const metadata = {
   title: 'Tractor Part Numbers — Cross-Reference & Sourcing | SourceSage',
@@ -129,6 +130,7 @@ export default function PartsIndexPage() {
             >
               <MessageCircle className="w-4 h-4" /> WhatsApp Us
             </WhatsappCTA>
+            <LangSwitcher currentLang="en" />
           </div>
         </nav>
 

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { MessageCircle, Mail, CheckCircle, Wrench, AlertTriangle, MapPin, ChevronRight, ShieldCheck } from 'lucide-react'
 import WhatsappCTA from '../../components/WhatsappCTA'
+import LangSwitcher from '../../components/LangSwitcher'
 
 export const metadata = {
   title: 'Kubota V1505 Engine Parts Malaysia — OEM & Aftermarket | SourceSage',
@@ -187,6 +188,7 @@ export default function KubotaV1505Page() {
             >
               <MessageCircle className="w-4 h-4" /> WhatsApp Us
             </WhatsappCTA>
+            <LangSwitcher currentLang="en" />
           </div>
         </nav>
 

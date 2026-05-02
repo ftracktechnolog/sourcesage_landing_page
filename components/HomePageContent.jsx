@@ -11,21 +11,23 @@ import { getAllPosts } from '../lib/blog'
 import LangSetter from './LangSetter'
 
 const Navbar = ({ t, lang }) => {
+  const homeUrl = lang === 'ms' ? '/ms' : lang === 'zh-Hans' ? '/zh' : '/'
   const blogUrl = lang === 'ms' ? '/ms/blog' : lang === 'zh-Hans' ? '/zh/blog' : '/blog'
+  const anchorPrefix = lang === 'ms' ? '/ms' : lang === 'zh-Hans' ? '/zh' : ''
   return (
   <nav className="bg-white shadow-sm sticky top-0 z-50">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-      <div className="flex items-center">
+      <Link href={homeUrl} className="flex items-center">
         <span className="font-bold text-xl text-slate-900 tracking-tight">SourceSage</span>
         <span className="text-blue-600 font-bold text-xl">.ai</span>
-      </div>
+      </Link>
       <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-        <a href="#brands" className="hover:text-blue-600 transition-colors">{t.nav.brands}</a>
-        <a href="#marine" className="hover:text-blue-600 transition-colors">{t.nav.marine}</a>
-        <a href="#how-it-works" className="hover:text-blue-600 transition-colors">{t.nav.howItWorks}</a>
+        <a href={`${anchorPrefix}/#brands`} className="hover:text-blue-600 transition-colors">{t.nav.brands}</a>
+        <a href={`${anchorPrefix}/#marine`} className="hover:text-blue-600 transition-colors">{t.nav.marine}</a>
+        <a href={`${anchorPrefix}/#how-it-works`} className="hover:text-blue-600 transition-colors">{t.nav.howItWorks}</a>
         <a href={lang === 'ms' ? '/ms/about' : lang === 'zh-Hans' ? '/zh/about' : '/about'} className="hover:text-blue-600 transition-colors">{t.nav.about || 'About'}</a>
         <a href={blogUrl} className="hover:text-blue-600 transition-colors">{t.nav.blog}</a>
-        <a href="#request" className="hover:text-blue-600 transition-colors">{t.nav.requestPart}</a>
+        <a href={`${anchorPrefix}/#request`} className="hover:text-blue-600 transition-colors">{t.nav.requestPart}</a>
       </div>
       <div className="flex items-center gap-2">
         <LangSwitcher currentLang={lang} />
@@ -605,7 +607,9 @@ const BlogSection = ({ t, posts, lang }) => {
   )
 }
 
-const Footer = ({ t }) => (
+const Footer = ({ t, lang }) => {
+  const aboutUrl = lang === 'ms' ? '/ms/about' : lang === 'zh-Hans' ? '/zh/about' : '/about'
+  return (
   <footer className="bg-white py-12 text-slate-500 border-t border-slate-100">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
@@ -620,7 +624,7 @@ const Footer = ({ t }) => (
             {(t.footer.brandLinks || []).map(link => (
               <li key={link.slug}><Link href={link.slug} className="hover:text-blue-600 transition-colors">{link.label}</Link></li>
             ))}
-            <li><Link href="/about" className="hover:text-blue-600 transition-colors">{t.footer.about}</Link></li>
+            <li><Link href={aboutUrl} className="hover:text-blue-600 transition-colors">{t.footer.about}</Link></li>
           </ul>
         </div>
         <div className="flex flex-col gap-3 text-sm font-semibold">
@@ -637,7 +641,8 @@ const Footer = ({ t }) => (
       </div>
     </div>
   </footer>
-)
+  )
+}
 
 const StickyWhatsApp = ({ t }) => (
   <WhatsappCTA
@@ -708,7 +713,7 @@ export default function HomePageContent({ t, lang }) {
         <RescueStories t={t} />
         {posts.length > 0 && <BlogSection t={t} posts={posts} lang={lang} />}
         <RequestForm t={t.form} />
-        <Footer t={t} />
+        <Footer t={t} lang={lang} />
       </div>
     </>
   )

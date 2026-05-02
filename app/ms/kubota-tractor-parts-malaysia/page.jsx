@@ -54,12 +54,12 @@ export default function MsKubotaPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <Link href="/ms" className="flex items-center"><span className="font-bold text-xl text-slate-900 tracking-tight">SourceSage</span><span className="text-blue-600 font-bold text-xl">.ai</span></Link>
             <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-              <Link href="/#brands" className="hover:text-blue-600 transition-colors">Jenama</Link>
-              <Link href="/#marine" className="hover:text-blue-600 transition-colors">Marin</Link>
-              <Link href="/#how-it-works" className="hover:text-blue-600 transition-colors">Cara Kerja</Link>
+              <Link href="/ms/#brands" className="hover:text-blue-600 transition-colors">Jenama</Link>
+              <Link href="/ms/#marine" className="hover:text-blue-600 transition-colors">Marin</Link>
+              <Link href="/ms/#how-it-works" className="hover:text-blue-600 transition-colors">Cara Kerja</Link>
               <Link href="/ms/about" className="hover:text-blue-600 transition-colors">Tentang</Link>
               <Link href="/ms/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
-              <Link href="/#request" className="hover:text-blue-600 transition-colors">Minta Sebut Harga</Link>
+              <Link href="/ms/#request" className="hover:text-blue-600 transition-colors">Minta Sebut Harga</Link>
             </div>
             <div className="flex items-center gap-2">
               <WhatsappCTA label="ms-kubota-navbar" message="Hi, saya perlukan alat ganti traktor Kubota. Model: ___ Kod enjin: ___ Alat ganti diperlukan: ___" className="bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-lg font-bold transition-all text-sm flex items-center gap-2"><MessageCircle className="w-4 h-4" /> WhatsApp Kami</WhatsappCTA>

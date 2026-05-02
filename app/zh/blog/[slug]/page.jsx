@@ -47,12 +47,12 @@ const Navbar = () => (
         <span className="text-blue-600 font-bold text-xl">.ai</span>
       </Link>
       <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-        <Link href="/#brands" className="hover:text-blue-600 transition-colors">品牌</Link>
-        <Link href="/#marine" className="hover:text-blue-600 transition-colors">船用</Link>
-        <Link href="/#how-it-works" className="hover:text-blue-600 transition-colors">流程</Link>
+        <Link href="/zh/#brands" className="hover:text-blue-600 transition-colors">品牌</Link>
+        <Link href="/zh/#marine" className="hover:text-blue-600 transition-colors">船用</Link>
+        <Link href="/zh/#how-it-works" className="hover:text-blue-600 transition-colors">流程</Link>
         <Link href="/zh/about" className="hover:text-blue-600 transition-colors">关于</Link>
         <Link href="/zh/blog" className="hover:text-blue-600 transition-colors">博客</Link>
-        <Link href="/#request" className="hover:text-blue-600 transition-colors">提交请求</Link>
+        <Link href="/zh/#request" className="hover:text-blue-600 transition-colors">提交请求</Link>
       </div>
       <WhatsappCTA
         label="zh-post-navbar"
@@ -177,7 +177,7 @@ export default async function ZhBlogPost({ params }) {
               <div>
                 <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">零件页面</p>
                 <ul className="space-y-2 text-sm font-semibold">
-                  <li><Link href="/kubota-tractor-parts-malaysia" className="hover:text-blue-600 transition-colors">久保田零件</Link></li>
+                  <li><Link href="/zh/kubota-tractor-parts-malaysia" className="hover:text-blue-600 transition-colors">久保田零件</Link></li>
                   <li><Link href="/yanmar-marine-parts-malaysia" className="hover:text-blue-600 transition-colors">洋马船用零件</Link></li>
                   <li><Link href="/massey-ferguson-parts-malaysia" className="hover:text-blue-600 transition-colors">麦赛福格森零件</Link></li>
                   <li><Link href="/zoomlion-parts-malaysia" className="hover:text-blue-600 transition-colors">中联重科零件</Link></li>
