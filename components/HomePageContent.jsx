@@ -611,6 +611,17 @@ export default function HomePageContent({ t, lang }) {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'SpeakableSpecification',
+            'inLanguage': lang,
+            xpath: ["/html/head/title", "/html/head/meta[@name='description']/@content"]
+          })
+        }}
+      />
       <StickyWhatsApp t={t} />
       <div className="min-h-screen font-sans text-slate-900 antialiased">
         <Navbar t={t} lang={lang} />

@@ -161,11 +161,38 @@ export default function KubotaPage() {
     })),
   }
 
+  const partsListSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    'inLanguage': 'en',
+    name: 'Kubota Tractor Parts Categories',
+    description: 'Kubota tractor spare parts available by system — engine, fuel, cooling, transmission, hydraulics, electrical.',
+    numberOfItems: PARTS.length,
+    itemListElement: PARTS.map((cat, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      item: {
+        '@type': 'Product',
+        name: `Kubota ${cat.category} Parts`,
+        description: `${cat.items.join(', ')}`,
+      },
+    })),
+  }
+
+  const speakableSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'SpeakableSpecification',
+    'inLanguage': 'en',
+    xpath: ["/html/head/title", "/html/head/meta[@name='description']/@content"],
+  }
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(partsListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
 
       <WhatsappCTA
         label="kubota-sticky"
