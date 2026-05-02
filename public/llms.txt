@@ -1,0 +1,24 @@
+# SourceSage.ai
+> Malaysia-based spare parts sourcing specialist for agricultural tractors and marine diesel engines. We source hard-to-find, discontinued, and urgent parts for Kubota, Yanmar, Massey Ferguson, John Deere, Perkins, and Zoomlion.
+
+## Core Pages
+- Home: https://sourcesage.ai/
+- About: https://sourcesage.ai/about/
+- MS (Bahasa Melayu): https://sourcesage.ai/ms/
+- ZH (Chinese): https://sourcesage.ai/zh/
+
+## Brand Pages
+- Kubota Tractor Parts: https://sourcesage.ai/kubota-tractor-parts-malaysia/
+- Yanmar Marine Parts: https://sourcesage.ai/yanmar-marine-parts-malaysia/
+- Massey Ferguson Parts: https://sourcesage.ai/massey-ferguson-parts-malaysia/
+- John Deere Parts: https://sourcesage.ai/john-deere-parts-malaysia/
+- Perkins Engine Parts: https://sourcesage.ai/perkins-engine-parts-malaysia/
+- Zoomlion Parts: https://sourcesage.ai/zoomlion-parts-malaysia/
+
+## Key Blog Posts
+- Urgent Tractor Spare Parts: https://sourcesage.ai/blog/urgent-tractor-spare-parts-malaysia/
+- Hard-to-Find Tractor Parts: https://sourcesage.ai/blog/hard-to-find-tractor-parts-malaysia/
+- Kubota M9000 Guide: https://sourcesage.ai/blog/kubota-m9000-m9540-parts-malaysia/
+- Yanmar Marine Guide: https://sourcesage.ai/blog/yanmar-marine-engine-parts-malaysia/
+- Massey Ferguson Guide: https://sourcesage.ai/blog/massey-ferguson-tractor-parts-malaysia/
+- John Deere Guide: https://sourcesage.ai/blog/john-deere-tractor-parts-malaysia/
