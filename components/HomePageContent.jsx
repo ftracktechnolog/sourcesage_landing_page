@@ -136,7 +136,7 @@ const TargetMarket = ({ t }) => (
             <div className="w-10 h-10 bg-accent-light rounded-xl flex items-center justify-center shrink-0">
               {targetIcons[i]}
             </div>
-            <p className="text-accent/30 font-medium leading-relaxed">{text}</p>
+            <p className="text-white/80 font-medium leading-relaxed">{text}</p>
           </div>
         ))}
       </div>

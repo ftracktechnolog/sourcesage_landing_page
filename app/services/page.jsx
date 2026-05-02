@@ -131,21 +131,21 @@ export default function ServicesPage() {
             </div>
           </div>
         </section>
-        <section className="py-16 bg-slate-50 border-y border-slate-100">
+        <section className="py-16 bg-bg-alt border-y border-border">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-start">
               <div>
                 <h2 className="text-2xl font-bold text-slate-900 mb-6">Why Choose Our Sourcing Service</h2>
                 <ul className="space-y-5">
-                  <li className="flex items-start gap-4"><Wrench className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" /><div><strong className="text-slate-900">Multi-brand, not single-brand</strong><p className="text-sm text-slate-600 mt-1">We search across all major agricultural and marine brands simultaneously — you don't need to contact multiple dealers.</p></div></li>
-                  <li className="flex items-start gap-4"><MapPin className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" /><div><strong className="text-slate-900">Based in Ipoh, Perak</strong><p className="text-sm text-slate-600 mt-1">Local presence means faster communication, local courier options, and understanding of Malaysian agricultural and marine markets.</p></div></li>
-                  <li className="flex items-start gap-4"><Truck className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" /><div><strong className="text-slate-900">Multiple shipping options</strong><p className="text-sm text-slate-600 mt-1">Air freight for urgency (3-7 days), sea freight for budget (14-21 days), or local courier for regional stock (1-3 days).</p></div></li>
-                  <li className="flex items-start gap-4"><ShieldCheck className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" /><div><strong className="text-slate-900">OEM and aftermarket options</strong><p className="text-sm text-slate-600 mt-1">We present both genuine OEM and quality aftermarket alternatives with clear labelling and warranty terms.</p></div></li>
+                  <li className="flex items-start gap-4"><Wrench className="w-6 h-6 text-accent shrink-0 mt-0.5" /><div><strong className="text-slate-900">Multi-brand, not single-brand</strong><p className="text-sm text-muted mt-1">We search across all major agricultural and marine brands simultaneously — you don't need to contact multiple dealers.</p></div></li>
+                  <li className="flex items-start gap-4"><MapPin className="w-6 h-6 text-accent shrink-0 mt-0.5" /><div><strong className="text-slate-900">Based in Ipoh, Perak</strong><p className="text-sm text-muted mt-1">Local presence means faster communication, local courier options, and understanding of Malaysian agricultural and marine markets.</p></div></li>
+                  <li className="flex items-start gap-4"><Truck className="w-6 h-6 text-accent shrink-0 mt-0.5" /><div><strong className="text-slate-900">Multiple shipping options</strong><p className="text-sm text-muted mt-1">Air freight for urgency (3-7 days), sea freight for budget (14-21 days), or local courier for regional stock (1-3 days).</p></div></li>
+                  <li className="flex items-start gap-4"><ShieldCheck className="w-6 h-6 text-accent shrink-0 mt-0.5" /><div><strong className="text-slate-900">OEM and aftermarket options</strong><p className="text-sm text-muted mt-1">We present both genuine OEM and quality aftermarket alternatives with clear labelling and warranty terms.</p></div></li>
                 </ul>
               </div>
-              <div className="mt-12 lg:mt-0 bg-blue-50 rounded-2xl p-8 border border-blue-100">
+              <div className="mt-12 lg:mt-0 bg-accent/10 border border-accent/20 rounded-2xl p-8">
                 <h3 className="font-bold text-lg text-slate-900 mb-4">Ready to Start?</h3>
-                <p className="text-slate-600 mb-6">Send us your part details. We'll confirm availability within 24-48 hours — no obligation, no upfront fee.</p>
+                <p className="text-muted mb-6">Send us your part details. We'll confirm availability within 24-48 hours — no obligation, no upfront fee.</p>
                 <WhatsappCTA label="services-main-cta" message="Hi, I need help sourcing a spare part. Brand: ___ Model: ___ Part needed: ___" className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3.5 rounded-xl font-bold transition-all w-full">
                   <MessageCircle className="w-5 h-5" /> Submit a Part Request
                 </WhatsappCTA>
@@ -153,16 +153,16 @@ export default function ServicesPage() {
             </div>
           </div>
         </section>
-        <footer className="bg-white py-12 text-slate-500 border-t border-slate-100">
+        <footer className="bg-bg-alt py-12 text-muted border-t border-border">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
-              <div><span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span><span className="font-black text-xl text-blue-600">.ai</span><p className="text-sm text-slate-500 mt-1">Ipoh, Perak — Malaysia Parts Sourcing Specialist</p></div>
+              <div><span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span><span className="font-black text-xl text-accent">.ai</span><p className="text-sm text-muted mt-1">Ipoh, Perak — Malaysia Parts Sourcing Specialist</p></div>
               <div className="flex gap-6 text-sm font-semibold">
-                <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors"><Mail className="w-4 h-4" /> info@sourcesage.ai</a>
+                <a href="mailto:info@sourcesage.ai" className="hover:text-accent flex items-center gap-2 transition-colors"><Mail className="w-4 h-4" /> info@sourcesage.ai</a>
                 <WhatsappCTA label="services-footer" message="Hi, I need help sourcing a spare part. Brand: ___ Model: ___ Part needed: ___" className="hover:text-green-600 flex items-center gap-2 transition-colors"><MessageCircle className="w-4 h-4" /> WhatsApp</WhatsappCTA>
               </div>
             </div>
-            <div className="text-center pt-6 border-t border-slate-100"><p className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">© 2026 SourceSage.ai. Parts Sourcing Service, Malaysia.</p></div>
+            <div className="text-center pt-6 border-t border-border"><p className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted">© 2026 SourceSage.ai. Parts Sourcing Service, Malaysia.</p></div>
           </div>
         </footer>
       </div>

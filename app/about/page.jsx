@@ -68,19 +68,19 @@ export default function AboutPage() {
       </WhatsappCTA>
 
       <div className="min-h-screen font-sans text-slate-900 antialiased">
-        <nav className="bg-white shadow-sm sticky top-0 z-40">
+        <nav className="bg-bg/95 backdrop-blur-sm border-b border-border sticky top-0 z-40">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <Link href="/" className="flex items-center">
               <span className="font-bold text-xl text-slate-900 tracking-tight">SourceSage</span>
-              <span className="text-blue-600 font-bold text-xl">.ai</span>
+              <span className="text-accent font-bold text-xl">.ai</span>
             </Link>
             <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-              <Link href="/#brands" className="hover:text-blue-600 transition-colors">Brands</Link>
-              <Link href="/#marine" className="hover:text-blue-600 transition-colors">Marine</Link>
-              <Link href="/#how-it-works" className="hover:text-blue-600 transition-colors">How It Works</Link>
-              <Link href="/about" className="text-blue-600 transition-colors">About</Link>
-              <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
-              <Link href="/#request" className="hover:text-blue-600 transition-colors">Request a Part</Link>
+              <Link href="/#brands" className="hover:text-accent transition-colors">Brands</Link>
+              <Link href="/#marine" className="hover:text-accent transition-colors">Marine</Link>
+              <Link href="/#how-it-works" className="hover:text-accent transition-colors">How It Works</Link>
+              <Link href="/about" className="text-accent transition-colors">About</Link>
+              <Link href="/blog" className="hover:text-accent transition-colors">Blog</Link>
+              <Link href="/#request" className="hover:text-accent transition-colors">Request a Part</Link>
             </div>
             <WhatsappCTA
               label="about-navbar"
@@ -93,15 +93,15 @@ export default function AboutPage() {
           </div>
         </nav>
 
-        <div className="bg-slate-50 border-b border-slate-100">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-sm text-slate-500">
-            <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+        <div className="bg-bg-alt border-b border-border">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-sm text-muted">
+            <Link href="/" className="hover:text-accent transition-colors">Home</Link>
             <span className="mx-2">/</span>
             <span className="text-slate-700 font-medium">About</span>
           </div>
         </div>
 
-        <header className="bg-white pt-16 pb-20 border-b border-slate-100">
+        <header className="bg-bg pt-16 pb-20 border-b border-border">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
               About SourceSage — Tractor & Marine Parts Sourcing Malaysia | SourceSage
@@ -109,49 +109,49 @@ export default function AboutPage() {
           </div>
         </header>
 
-        <section className="py-16 bg-white">
+        <section className="py-16 bg-bg">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl font-bold text-slate-900 mb-6">What We Do</h2>
-            <p className="text-lg text-slate-600 leading-relaxed mb-6">
+            <h2 className="text-2xl font-bold text-slate-900 mb-6 font-heading">What We Do</h2>
+            <p className="text-lg text-muted leading-relaxed mb-6">
               SourceSage helps businesses in Malaysia source spare parts for agricultural tractors and marine diesel engines — including parts that are hard to find through standard dealer channels. Based in Ipoh, Perak, we serve customers across Peninsula Malaysia and East Malaysia (Sabah and Sarawak).
             </p>
-            <p className="text-lg text-slate-600 leading-relaxed">
+            <p className="text-lg text-muted leading-relaxed">
               We cover a range of brands including Kubota, Yanmar, Massey Ferguson, John Deere, Perkins, and Zoomlion.
             </p>
           </div>
         </section>
 
-        <section className="py-16 bg-slate-50 border-y border-slate-100">
+        <section className="py-16 bg-bg-alt border-y border-border">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl font-bold text-slate-900 mb-6">Who We Help</h2>
-            <ul className="space-y-4 text-lg text-slate-600">
+            <h2 className="text-2xl font-bold text-slate-900 mb-6 font-heading">Who We Help</h2>
+            <ul className="space-y-4 text-lg text-muted">
               <li className="flex items-start gap-3">
-                <ChevronRight className="w-5 h-5 text-blue-600 shrink-0 mt-1" />
+                <ChevronRight className="w-5 h-5 text-accent shrink-0 mt-1" />
                 <span>Workshops and dealers needing reliable parts supply</span>
               </li>
               <li className="flex items-start gap-3">
-                <ChevronRight className="w-5 h-5 text-blue-600 shrink-0 mt-1" />
+                <ChevronRight className="w-5 h-5 text-accent shrink-0 mt-1" />
                 <span>Fleet operators and plantation managers</span>
               </li>
               <li className="flex items-start gap-3">
-                <ChevronRight className="w-5 h-5 text-blue-600 shrink-0 mt-1" />
+                <ChevronRight className="w-5 h-5 text-accent shrink-0 mt-1" />
                 <span>Agricultural businesses where equipment downtime matters</span>
               </li>
               <li className="flex items-start gap-3">
-                <ChevronRight className="w-5 h-5 text-blue-600 shrink-0 mt-1" />
+                <ChevronRight className="w-5 h-5 text-accent shrink-0 mt-1" />
                 <span>Marine operators requiring diesel engine components</span>
               </li>
             </ul>
-            <p className="text-lg text-slate-600 leading-relaxed mt-6">
+            <p className="text-lg text-muted leading-relaxed mt-6">
               We serve customers across Peninsula Malaysia and East Malaysia (Sabah and Sarawak).
             </p>
           </div>
         </section>
 
-        <section className="py-16 bg-white">
+        <section className="py-16 bg-bg">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl font-bold text-slate-900 mb-6">How to Work With Us</h2>
-            <p className="text-lg text-slate-600 leading-relaxed mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 mb-6 font-heading">How to Work With Us</h2>
+            <p className="text-lg text-muted leading-relaxed mb-8">
               Get in touch with your part details — model, description, or photos — and we will follow up with availability and pricing information.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -164,7 +164,7 @@ export default function AboutPage() {
               </WhatsappCTA>
               <a
                 href="mailto:info@sourcesage.ai"
-                className="px-8 py-4 text-lg font-bold rounded-xl text-blue-700 bg-blue-50 hover:bg-blue-100 transition-all text-center flex items-center justify-center gap-2 border border-blue-200"
+                className="px-8 py-4 text-lg font-bold rounded-xl text-accent bg-accent/10 hover:bg-accent/15 transition-all text-center flex items-center justify-center gap-2 border border-accent/20"
               >
                 <Mail className="w-5 h-5" /> Email info@sourcesage.ai
               </a>
@@ -172,14 +172,14 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="py-20 bg-blue-600 text-white">
+        <section className="py-20 bg-accent text-white">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold mb-4">Need a Part Sourced?</h2>
-            <p className="text-blue-100 text-lg mb-8">Send us your part details and we'll check availability. We respond within 24 hours.</p>
+            <p className="text-accent/30 text-lg mb-8">Send us your part details and we'll check availability. We respond within 24 hours.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/#request"
-                className="px-8 py-4 text-lg font-bold rounded-xl bg-white text-blue-700 hover:bg-blue-50 transition-all text-center"
+                className="px-8 py-4 text-lg font-bold rounded-xl bg-white text-accent hover:bg-accent/10 transition-all text-center"
               >
                 Submit a Part Request
               </Link>
@@ -194,16 +194,16 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <footer className="bg-white py-12 text-slate-500 border-t border-slate-100">
+        <footer className="bg-bg-alt py-12 text-muted border-t border-border">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
               <div>
                 <span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span>
-                <span className="font-black text-xl text-blue-600">.ai</span>
-                <p className="text-sm text-slate-500 mt-1">Ipoh, Perak — Malaysia Parts Sourcing Specialist</p>
+                <span className="font-black text-xl text-accent">.ai</span>
+                <p className="text-sm text-muted mt-1">Ipoh, Perak — Malaysia Parts Sourcing Specialist</p>
               </div>
               <div className="flex gap-6 text-sm font-semibold">
-                <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors">
+                <a href="mailto:info@sourcesage.ai" className="hover:text-accent flex items-center gap-2 transition-colors">
                   <Mail className="w-4 h-4" /> info@sourcesage.ai
                 </a>
                 <WhatsappCTA
@@ -215,8 +215,8 @@ export default function AboutPage() {
                 </WhatsappCTA>
               </div>
             </div>
-            <div className="text-center pt-6 border-t border-slate-100">
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">© 2026 SourceSage.ai. Agricultural &amp; Marine Parts Sourcing, Malaysia.</p>
+            <div className="text-center pt-6 border-t border-border">
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted">© 2026 SourceSage.ai. Agricultural &amp; Marine Parts Sourcing, Malaysia.</p>
             </div>
           </div>
         </footer>
