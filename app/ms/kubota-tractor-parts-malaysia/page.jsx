@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { MessageCircle, Mail, CheckCircle, Wrench, AlertTriangle, MapPin, ChevronRight, ShieldCheck } from 'lucide-react'
-import WhatsappCTA from '../../../../components/WhatsappCTA'
-import LangSwitcher from '../../../../components/LangSwitcher'
+import WhatsappCTA from '../../../components/WhatsappCTA'
+import LangSwitcher from '../../../components/LangSwitcher'
 
 export const metadata = {
   title: 'Alat Ganti Traktor Kubota Malaysia — Perolehan Pantas | SourceSage',

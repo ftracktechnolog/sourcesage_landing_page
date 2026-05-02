@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { MessageCircle, Mail, CheckCircle, Wrench, AlertTriangle, MapPin, ShieldCheck } from 'lucide-react'
-import WhatsappCTA from '../../../../components/WhatsappCTA'
-import LangSwitcher from '../../../../components/LangSwitcher'
+import WhatsappCTA from '../../../components/WhatsappCTA'
+import LangSwitcher from '../../../components/LangSwitcher'
 
 export const metadata = {
   title: '久保田拖拉机零件马来西亚 — 快速采购 | SourceSage',
