@@ -23,7 +23,7 @@ const Navbar = ({ t, lang }) => {
         <a href="#brands" className="hover:text-blue-600 transition-colors">{t.nav.brands}</a>
         <a href="#marine" className="hover:text-blue-600 transition-colors">{t.nav.marine}</a>
         <a href="#how-it-works" className="hover:text-blue-600 transition-colors">{t.nav.howItWorks}</a>
-        <a href="/about" className="hover:text-blue-600 transition-colors">{t.nav.about || 'About'}</a>
+        <a href={lang === 'ms' ? '/ms/about' : lang === 'zh-Hans' ? '/zh/about' : '/about'} className="hover:text-blue-600 transition-colors">{t.nav.about || 'About'}</a>
         <a href={blogUrl} className="hover:text-blue-600 transition-colors">{t.nav.blog}</a>
         <a href="#request" className="hover:text-blue-600 transition-colors">{t.nav.requestPart}</a>
       </div>
