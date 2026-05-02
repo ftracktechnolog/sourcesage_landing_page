@@ -78,19 +78,19 @@ export default function ServicesPage() {
         <MessageCircle className="w-5 h-5" /> WhatsApp Us
       </WhatsappCTA>
       <div className="min-h-screen font-sans text-slate-900 antialiased">
-        <nav className="bg-white shadow-sm sticky top-0 z-40">
+        <nav className="bg-bg/95 backdrop-blur-sm border-b border-border sticky top-0 z-40">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <Link href="/" className="flex items-center">
               <span className="font-bold text-xl text-slate-900 tracking-tight">SourceSage</span>
-              <span className="text-blue-600 font-bold text-xl">.ai</span>
+              <span className="text-accent font-bold text-xl">.ai</span>
             </Link>
             <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-              <Link href="/#brands" className="hover:text-blue-600 transition-colors">Brands</Link>
-              <Link href="/#marine" className="hover:text-blue-600 transition-colors">Marine</Link>
-              <Link href="/services" className="text-blue-600 transition-colors">Services</Link>
-              <Link href="/about" className="hover:text-blue-600 transition-colors">About</Link>
-              <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
-              <Link href="/#request" className="hover:text-blue-600 transition-colors">Request a Part</Link>
+              <Link href="/#brands" className="hover:text-accent transition-colors">Brands</Link>
+              <Link href="/#marine" className="hover:text-accent transition-colors">Marine</Link>
+              <Link href="/services" className="text-accent transition-colors">Services</Link>
+              <Link href="/about" className="hover:text-accent transition-colors">About</Link>
+              <Link href="/blog" className="hover:text-accent transition-colors">Blog</Link>
+              <Link href="/#request" className="hover:text-accent transition-colors">Request a Part</Link>
             </div>
             <div className="flex items-center gap-2">
               <WhatsappCTA label="services-navbar" message="Hi, I need help sourcing a spare part. Brand: ___ Model: ___ Part needed: ___" className="bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-lg font-bold transition-all text-sm flex items-center gap-2">
@@ -100,31 +100,31 @@ export default function ServicesPage() {
             </div>
           </div>
         </nav>
-        <div className="bg-slate-50 border-b border-slate-100">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-sm text-slate-500">
-            <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+        <div className="bg-bg-alt border-b border-border">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-sm text-muted">
+            <Link href="/" className="hover:text-accent transition-colors">Home</Link>
             <span className="mx-2">/</span>
             <span className="text-slate-700 font-medium">Services</span>
           </div>
         </div>
-        <header className="bg-white pt-16 pb-20 border-b border-slate-100">
+        <header className="bg-bg pt-16 pb-20 border-b border-border">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 text-blue-800 text-xs font-bold uppercase tracking-widest mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 text-accent text-xs font-bold uppercase tracking-widest mb-6">
               <Clock className="w-4 h-4" /> Fast Sourcing, Malaysia-Wide
             </div>
             <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6 max-w-3xl">How Our Parts Sourcing Service Works</h1>
-            <p className="text-lg text-slate-600 max-w-2xl leading-relaxed">A 5-step process that takes you from "I need this part" to "it's here" — with transparent pricing, multiple shipping options, and coverage across all Malaysian states.</p>
+            <p className="text-lg text-muted max-w-2xl leading-relaxed">A 5-step process that takes you from "I need this part" to "it's here" — with transparent pricing, multiple shipping options, and coverage across all Malaysian states.</p>
           </div>
         </header>
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-bg">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
               {STEPS.map((step, i) => (
-                <div key={i} className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-blue-200 hover:shadow-md transition-all text-center">
-                  <div className="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center text-lg font-black mx-auto mb-4">{step.number}</div>
-                  <h3 className="font-bold text-slate-900 mb-3 text-sm">{step.title}</h3>
-                  <ul className="text-xs text-slate-500 space-y-1 text-left">
-                    {step.items.map((item, j) => (<li key={j} className="flex items-start gap-2"><span className="text-blue-400 mt-0.5">·</span> {item}</li>))}
+                <div key={i} className="bg-white rounded-2xl p-8 shadow-sm border border-border hover:shadow-md transition-shadow text-center">
+                  <div className="w-14 h-14 bg-accent text-white rounded-2xl flex items-center justify-center text-lg font-black mx-auto mb-4">{step.number}</div>
+                  <h3 className="font-bold text-slate-900 mb-3 text-sm font-heading">{step.title}</h3>
+                  <ul className="text-xs text-muted space-y-1 text-left">
+                    {step.items.map((item, j) => (<li key={j} className="flex items-start gap-2"><span className="text-accent/60 mt-0.5">·</span> {item}</li>))}
                   </ul>
                 </div>
               ))}

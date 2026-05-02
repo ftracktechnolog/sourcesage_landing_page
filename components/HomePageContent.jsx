@@ -620,25 +620,25 @@ const BlogSection = ({ t, posts, lang }) => {
 const Footer = ({ t, lang }) => {
   const aboutUrl = lang === 'ms' ? '/ms/about' : lang === 'zh-Hans' ? '/zh/about' : '/about'
   return (
-  <footer className="bg-white py-12 text-slate-500 border-t border-slate-100">
+  <footer className="bg-bg-alt py-12 text-muted border-t border-border">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
         <div>
           <span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span>
-          <span className="font-black text-xl text-blue-600">.ai</span>
-          <p className="text-sm text-slate-500 mt-1">{t.footer.tagline}</p>
+          <span className="font-black text-xl text-accent">.ai</span>
+          <p className="text-sm text-muted mt-1">{t.footer.tagline}</p>
         </div>
         <div>
-          <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">{t.footer.partsHeading}</p>
+          <p className="text-xs font-bold uppercase tracking-widest text-muted mb-3">{t.footer.partsHeading}</p>
           <ul className="space-y-2 text-sm font-semibold">
             {(t.footer.brandLinks || []).map(link => (
-              <li key={link.slug}><Link href={link.slug} className="hover:text-blue-600 transition-colors">{link.label}</Link></li>
+              <li key={link.slug}><Link href={link.slug} className="hover:text-accent transition-colors">{link.label}</Link></li>
             ))}
-            <li><Link href={aboutUrl} className="hover:text-blue-600 transition-colors">{t.footer.about}</Link></li>
+            <li><Link href={aboutUrl} className="hover:text-accent transition-colors">{t.footer.about}</Link></li>
           </ul>
         </div>
         <div className="flex flex-col gap-3 text-sm font-semibold">
-          <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors">
+          <a href="mailto:info@sourcesage.ai" className="hover:text-accent flex items-center gap-2 transition-colors">
             <Mail className="w-4 h-4" /> info@sourcesage.ai
           </a>
           <WhatsappCTA label="footer" message="Hi, I need help sourcing a spare part. Brand: ___ Model: ___ Part needed: ___" className="hover:text-green-600 flex items-center gap-2 transition-colors">
@@ -646,8 +646,8 @@ const Footer = ({ t, lang }) => {
           </WhatsappCTA>
         </div>
       </div>
-      <div className="text-center pt-6 border-t border-slate-100">
-        <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">{t.footer.copyright}</p>
+      <div className="text-center pt-6 border-t border-border">
+        <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted">{t.footer.copyright}</p>
       </div>
     </div>
   </footer>
