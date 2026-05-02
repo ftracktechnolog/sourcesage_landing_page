@@ -145,6 +145,7 @@ export default function PerakPage() {
               <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
               <Link href="/#request" className="hover:text-blue-600 transition-colors">Request a Part</Link>
             </div>
+            <LangSwitcher currentLang="en" />
             <WhatsappCTA
               label="perak-navbar"
               message="Hi, I need tractor or marine parts in Perak. Location: ___ Part needed: ___"
@@ -152,7 +153,6 @@ export default function PerakPage() {
             >
               <MessageCircle className="w-4 h-4" /> WhatsApp Us
             </WhatsappCTA>
-            <LangSwitcher currentLang="en" />
           </div>
         </nav>
 

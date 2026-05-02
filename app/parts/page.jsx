@@ -123,6 +123,7 @@ export default function PartsIndexPage() {
               <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
               <Link href="/#request" className="hover:text-blue-600 transition-colors">Request a Part</Link>
             </div>
+            <LangSwitcher currentLang="en" />
             <WhatsappCTA
               label="parts-navbar"
               message="Hi, I need help finding a tractor part. Part number: ___ Tractor model: ___"
@@ -130,7 +131,6 @@ export default function PartsIndexPage() {
             >
               <MessageCircle className="w-4 h-4" /> WhatsApp Us
             </WhatsappCTA>
-            <LangSwitcher currentLang="en" />
           </div>
         </nav>
 

@@ -160,6 +160,7 @@ export default function MsYanmarMarinePage() {
               <Link href="/ms/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
               <Link href="/ms/#request" className="hover:text-blue-600 transition-colors">Minta Sebut Harga</Link>
             </div>
+            <LangSwitcher currentLang="ms" />
             <WhatsappCTA
               label="ms-yanmar-navbar"
               message="Hi, saya perlukan alat ganti enjin marin Yanmar. Model enjin: ___ Alat ganti diperlukan: ___"
@@ -167,7 +168,6 @@ export default function MsYanmarMarinePage() {
             >
               <MessageCircle className="w-4 h-4" /> WhatsApp Kami
             </WhatsappCTA>
-            <LangSwitcher currentLang="ms" />
           </div>
         </nav>
 

@@ -186,6 +186,7 @@ export default function MasseyFergusonPage() {
               <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
               <Link href="/#request" className="hover:text-blue-600 transition-colors">Request a Part</Link>
             </div>
+            <LangSwitcher currentLang="en" />
             <WhatsappCTA
               label="mf-navbar"
               message="Hi, I need a Massey Ferguson spare part. Tractor model: ___ Part needed: ___"
@@ -193,7 +194,6 @@ export default function MasseyFergusonPage() {
             >
               <MessageCircle className="w-4 h-4" /> WhatsApp Us
             </WhatsappCTA>
-            <LangSwitcher currentLang="en" />
           </div>
         </nav>
 

@@ -93,10 +93,10 @@ export default function ServicesPage() {
               <Link href="/#request" className="hover:text-accent transition-colors">Request a Part</Link>
             </div>
             <div className="flex items-center gap-2">
+              <LangSwitcher currentLang="en" />
               <WhatsappCTA label="services-navbar" message="Hi, I need help sourcing a spare part. Brand: ___ Model: ___ Part needed: ___" className="bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-lg font-bold transition-all text-sm flex items-center gap-2">
                 <MessageCircle className="w-4 h-4" /> WhatsApp
               </WhatsappCTA>
-              <LangSwitcher currentLang="en" />
             </div>
           </div>
         </nav>

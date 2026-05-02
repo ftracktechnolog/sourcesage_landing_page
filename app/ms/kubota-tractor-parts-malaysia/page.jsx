@@ -62,8 +62,8 @@ export default function MsKubotaPage() {
               <Link href="/ms/#request" className="hover:text-blue-600 transition-colors">Minta Sebut Harga</Link>
             </div>
             <div className="flex items-center gap-2">
-              <WhatsappCTA label="ms-kubota-navbar" message="Hi, saya perlukan alat ganti traktor Kubota. Model: ___ Kod enjin: ___ Alat ganti diperlukan: ___" className="bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-lg font-bold transition-all text-sm flex items-center gap-2"><MessageCircle className="w-4 h-4" /> WhatsApp Kami</WhatsappCTA>
               <LangSwitcher currentLang="ms" />
+              <WhatsappCTA label="ms-kubota-navbar" message="Hi, saya perlukan alat ganti traktor Kubota. Model: ___ Kod enjin: ___ Alat ganti diperlukan: ___" className="bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-lg font-bold transition-all text-sm flex items-center gap-2"><MessageCircle className="w-4 h-4" /> WhatsApp Kami</WhatsappCTA>
             </div>
           </div>
         </nav>

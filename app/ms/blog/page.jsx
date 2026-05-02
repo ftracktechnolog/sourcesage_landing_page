@@ -40,6 +40,7 @@ const Navbar = () => (
         <Link href="/ms/blog" className="text-blue-600">Blog</Link>
         <Link href="/ms/#request" className="hover:text-blue-600 transition-colors">Minta Sebut Harga</Link>
       </div>
+      <LangSwitcher currentLang="ms" />
       <WhatsappCTA
         label="ms-blog-navbar"
         message="Hi, saya perlukan bantuan mencari alat ganti. Jenama: ___ Model: ___ Alat ganti diperlukan: ___"
@@ -47,7 +48,6 @@ const Navbar = () => (
       >
         <MessageCircle className="w-4 h-4" /> WhatsApp
       </WhatsappCTA>
-      <LangSwitcher currentLang="ms" />
     </div>
   </nav>
 )

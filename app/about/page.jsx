@@ -82,6 +82,7 @@ export default function AboutPage() {
               <Link href="/blog" className="hover:text-accent transition-colors">Blog</Link>
               <Link href="/#request" className="hover:text-accent transition-colors">Request a Part</Link>
             </div>
+            <LangSwitcher currentLang="en" />
             <WhatsappCTA
               label="about-navbar"
               message="Hi, I need help sourcing a spare part. Brand: ___ Model: ___ Part needed: ___"
@@ -89,7 +90,6 @@ export default function AboutPage() {
             >
               <MessageCircle className="w-4 h-4" /> WhatsApp Us
             </WhatsappCTA>
-            <LangSwitcher currentLang="en" />
           </div>
         </nav>
 

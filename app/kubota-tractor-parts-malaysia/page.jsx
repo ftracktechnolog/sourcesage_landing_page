@@ -219,6 +219,7 @@ export default function KubotaPage() {
               <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
               <Link href="/#request" className="hover:text-blue-600 transition-colors">Request a Part</Link>
             </div>
+            <LangSwitcher currentLang="en" />
             <WhatsappCTA
               label="kubota-navbar"
               message="Hi, I need a Kubota tractor spare part. Model: ___ Engine code: ___ Part needed: ___"
@@ -226,7 +227,6 @@ export default function KubotaPage() {
             >
               <MessageCircle className="w-4 h-4" /> WhatsApp Us
             </WhatsappCTA>
-            <LangSwitcher currentLang="en" />
           </div>
         </nav>
 

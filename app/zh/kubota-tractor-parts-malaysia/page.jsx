@@ -62,8 +62,8 @@ export default function ZhKubotaPage() {
               <Link href="/zh/#request" className="hover:text-blue-600 transition-colors">提交请求</Link>
             </div>
             <div className="flex items-center gap-2">
-              <WhatsappCTA label="zh-kubota-navbar" message="你好，我需要久保田拖拉机零件。型号：___ 发动机代码：___ 所需零件：___" className="bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-lg font-bold transition-all text-sm flex items-center gap-2"><MessageCircle className="w-4 h-4" /> WhatsApp</WhatsappCTA>
               <LangSwitcher currentLang="zh-Hans" />
+              <WhatsappCTA label="zh-kubota-navbar" message="你好，我需要久保田拖拉机零件。型号：___ 发动机代码：___ 所需零件：___" className="bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-lg font-bold transition-all text-sm flex items-center gap-2"><MessageCircle className="w-4 h-4" /> WhatsApp</WhatsappCTA>
             </div>
           </div>
         </nav>

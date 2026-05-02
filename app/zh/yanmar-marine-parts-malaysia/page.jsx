@@ -160,6 +160,7 @@ export default function ZhYanmarMarinePage() {
               <Link href="/zh/blog" className="hover:text-blue-600 transition-colors">博客</Link>
               <Link href="/zh/#request" className="hover:text-blue-600 transition-colors">提交请求</Link>
             </div>
+            <LangSwitcher currentLang="zh-Hans" />
             <WhatsappCTA
               label="zh-yanmar-navbar"
               message="你好，我需要洋马船用发动机零件。发动机型号：___ 所需零件：___"
@@ -167,7 +168,6 @@ export default function ZhYanmarMarinePage() {
             >
               <MessageCircle className="w-4 h-4" /> WhatsApp
             </WhatsappCTA>
-            <LangSwitcher currentLang="zh-Hans" />
           </div>
         </nav>
 

@@ -165,6 +165,7 @@ export default function JohnDeerePartsPage() {
               <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
               <Link href="/#request" className="hover:text-blue-600 transition-colors">Request a Part</Link>
           </div>
+          <LangSwitcher currentLang="en" />
           <WhatsappCTA
             label="jd-navbar"
             message="Hi, I need help sourcing a John Deere tractor part. Model: ___ Part needed: ___"
@@ -172,7 +173,6 @@ export default function JohnDeerePartsPage() {
           >
               <MessageCircle className="w-4 h-4" /> WhatsApp Us
             </WhatsappCTA>
-            <LangSwitcher currentLang="en" />
         </div>
       </nav>
 

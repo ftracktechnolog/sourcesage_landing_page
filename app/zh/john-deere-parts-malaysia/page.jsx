@@ -71,8 +71,8 @@ export default function ZhJohnDeerePage() {
               <Link href="/zh/#request" className="hover:text-blue-600 transition-colors">提交请求</Link>
             </div>
             <div className="flex items-center gap-2">
-              <WhatsappCTA label="zh-jd-navbar" message="你好，我需要约翰迪尔拖拉机零件。型号：___ 所需零件：___" className="bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-lg font-bold transition-all text-sm flex items-center gap-2"><MessageCircle className="w-4 h-4" /> WhatsApp</WhatsappCTA>
               <LangSwitcher currentLang="zh-Hans" />
+              <WhatsappCTA label="zh-jd-navbar" message="你好，我需要约翰迪尔拖拉机零件。型号：___ 所需零件：___" className="bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-lg font-bold transition-all text-sm flex items-center gap-2"><MessageCircle className="w-4 h-4" /> WhatsApp</WhatsappCTA>
             </div>
           </div>
         </nav>

@@ -138,6 +138,7 @@ export default function SabahPage() {
               <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
               <Link href="/#request" className="hover:text-blue-600 transition-colors">Request a Part</Link>
             </div>
+            <LangSwitcher currentLang="en" />
             <WhatsappCTA
               label="sabah-navbar"
               message="Hi, I need tractor or marine parts in Sabah. Location: ___ Part needed: ___"
@@ -145,7 +146,6 @@ export default function SabahPage() {
             >
               <MessageCircle className="w-4 h-4" /> WhatsApp Us
             </WhatsappCTA>
-            <LangSwitcher currentLang="en" />
           </div>
         </nav>
 

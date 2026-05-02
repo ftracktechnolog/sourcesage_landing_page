@@ -202,6 +202,7 @@ export default function Perkins1104Page() {
               <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
               <Link href="/#request" className="hover:text-blue-600 transition-colors">Request a Part</Link>
             </div>
+            <LangSwitcher currentLang="en" />
             <WhatsappCTA
               label="perkins1104-navbar"
               message="Hi, I need a Perkins 1104 cylinder head or related parts. Engine model: ___ Machine: ___"
@@ -209,7 +210,6 @@ export default function Perkins1104Page() {
             >
               <MessageCircle className="w-4 h-4" /> WhatsApp Us
             </WhatsappCTA>
-            <LangSwitcher currentLang="en" />
           </div>
         </nav>
 

@@ -174,6 +174,7 @@ export default function PerkinsPartsPage() {
               <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
               <Link href="/#request" className="hover:text-blue-600 transition-colors">Request a Part</Link>
           </div>
+          <LangSwitcher currentLang="en" />
           <WhatsappCTA
             label="perkins-navbar"
             message="Hi, I need help sourcing a Perkins engine part. Engine model: ___ Machine: ___ Part needed: ___"
@@ -181,7 +182,6 @@ export default function PerkinsPartsPage() {
           >
               <MessageCircle className="w-4 h-4" /> WhatsApp Us
             </WhatsappCTA>
-            <LangSwitcher currentLang="en" />
         </div>
       </nav>
 

@@ -70,10 +70,10 @@ export default function ZhAboutPage() {
               <Link href="/zh/#request" className="hover:text-blue-600 transition-colors">提交请求</Link>
             </div>
             <div className="flex items-center gap-2">
+              <LangSwitcher currentLang="zh-Hans" />
               <WhatsappCTA label="zh-about-navbar" message="你好，我需要帮助采购零件。品牌：___ 型号：___ 所需零件：___" className="bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-lg font-bold transition-all text-sm flex items-center gap-2">
                 <MessageCircle className="w-4 h-4" /> WhatsApp 联系我们
               </WhatsappCTA>
-              <LangSwitcher currentLang="zh-Hans" />
             </div>
           </div>
         </nav>
@@ -134,23 +134,23 @@ export default function ZhAboutPage() {
             </div>
           </div>
         </section>
-        <footer className="bg-white py-12 text-slate-500 border-t border-slate-100">
+        <footer className="bg-bg-alt py-12 text-muted border-t border-border">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
               <div>
                 <span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span>
-                <span className="font-black text-xl text-blue-600">.ai</span>
-                <p className="text-sm text-slate-500 mt-1">霹雳州怡保 — 马来西亚零配件采购专家</p>
+                <span className="font-black text-xl text-accent">.ai</span>
+                <p className="text-sm text-muted mt-1">霹雳州怡保 — 马来西亚零配件采购专家</p>
               </div>
               <div className="flex gap-6 text-sm font-semibold">
-                <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors"><Mail className="w-4 h-4" /> info@sourcesage.ai</a>
+                <a href="mailto:info@sourcesage.ai" className="hover:text-accent flex items-center gap-2 transition-colors"><Mail className="w-4 h-4" /> info@sourcesage.ai</a>
                 <WhatsappCTA label="zh-about-footer" message="你好，我需要帮助采购零件。品牌：___ 型号：___ 所需零件：___" className="hover:text-green-600 flex items-center gap-2 transition-colors">
                   <MessageCircle className="w-4 h-4" /> WhatsApp
                 </WhatsappCTA>
               </div>
             </div>
-            <div className="text-center pt-6 border-t border-slate-100">
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">© 2026 SourceSage.ai. 农业与船用零件采购，马来西亚。</p>
+            <div className="text-center pt-6 border-t border-border">
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted">© 2026 SourceSage.ai. 农业与船用零件采购，马来西亚。</p>
             </div>
           </div>
         </footer>

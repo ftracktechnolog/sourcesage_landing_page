@@ -54,6 +54,7 @@ const Navbar = () => (
         <Link href="/zh/blog" className="hover:text-blue-600 transition-colors">博客</Link>
         <Link href="/zh/#request" className="hover:text-blue-600 transition-colors">提交请求</Link>
       </div>
+      <LangSwitcher currentLang="zh-Hans" />
       <WhatsappCTA
         label="zh-post-navbar"
         message="你好，我需要帮助采购零件。品牌：___ 型号：___ 所需零件：___"
@@ -61,7 +62,6 @@ const Navbar = () => (
       >
         <MessageCircle className="w-4 h-4" /> WhatsApp
       </WhatsappCTA>
-      <LangSwitcher currentLang="zh-Hans" />
     </div>
   </nav>
 )

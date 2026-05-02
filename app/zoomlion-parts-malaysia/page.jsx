@@ -185,6 +185,7 @@ export default function ZoomlionPage() {
               <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
               <Link href="/#request" className="hover:text-blue-600 transition-colors">Request a Part</Link>
             </div>
+            <LangSwitcher currentLang="en" />
             <WhatsappCTA
               label="zoomlion-navbar"
               message="Hi, I need a Zoomlion spare part. Machine model: ___ Part needed: ___"
@@ -192,7 +193,6 @@ export default function ZoomlionPage() {
             >
               <MessageCircle className="w-4 h-4" /> WhatsApp Us
             </WhatsappCTA>
-            <LangSwitcher currentLang="en" />
           </div>
         </nav>
 

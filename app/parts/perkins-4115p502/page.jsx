@@ -138,6 +138,7 @@ export default function Perkins4115Page() {
               <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
               <Link href="/#request" className="hover:text-blue-600 transition-colors">Request a Part</Link>
             </div>
+            <LangSwitcher currentLang="en" />
             <WhatsappCTA
               label="4115p502-navbar"
               message="Hi, I need a Perkins 4115P502 cylinder head gasket. My engine model: ___"
@@ -145,7 +146,6 @@ export default function Perkins4115Page() {
             >
               <MessageCircle className="w-4 h-4" /> WhatsApp Us
             </WhatsappCTA>
-            <LangSwitcher currentLang="en" />
           </div>
         </nav>
 

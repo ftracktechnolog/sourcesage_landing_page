@@ -40,6 +40,7 @@ const Navbar = () => (
         <Link href="/blog" className="text-blue-600">Blog</Link>
         <Link href="/#request" className="hover:text-blue-600 transition-colors">Request a Part</Link>
       </div>
+      <LangSwitcher currentLang="en" />
       <WhatsappCTA
         label="blog-navbar"
         message="Hi, I need help sourcing a spare part. Brand: ___ Model: ___ Part needed: ___"
@@ -47,7 +48,6 @@ const Navbar = () => (
       >
         <MessageCircle className="w-4 h-4" /> WhatsApp
       </WhatsappCTA>
-      <LangSwitcher currentLang="en" />
     </div>
   </nav>
 )

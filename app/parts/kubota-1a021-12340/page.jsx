@@ -108,6 +108,7 @@ export default function KubotaOilFilterPage() {
               <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
               <Link href="/#request" className="hover:text-blue-600 transition-colors">Request a Part</Link>
             </div>
+            <LangSwitcher currentLang="en" />
             <WhatsappCTA
               label="part-kubota-oil-filter-navbar"
               message="Hi, I need a Kubota 1A021-12340 oil filter."
@@ -115,7 +116,6 @@ export default function KubotaOilFilterPage() {
             >
               <MessageCircle className="w-4 h-4" /> WhatsApp Us
             </WhatsappCTA>
-            <LangSwitcher currentLang="en" />
           </div>
         </nav>
 

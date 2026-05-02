@@ -70,10 +70,10 @@ export default function MsAboutPage() {
               <Link href="/ms/#request" className="hover:text-blue-600 transition-colors">Minta Sebut Harga</Link>
             </div>
             <div className="flex items-center gap-2">
+              <LangSwitcher currentLang="ms" />
               <WhatsappCTA label="ms-about-navbar" message="Hi, saya perlukan bantuan mencari alat ganti. Jenama: ___ Model: ___ Alat ganti diperlukan: ___" className="bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-lg font-bold transition-all text-sm flex items-center gap-2">
                 <MessageCircle className="w-4 h-4" /> WhatsApp Kami
               </WhatsappCTA>
-              <LangSwitcher currentLang="ms" />
             </div>
           </div>
         </nav>
@@ -134,23 +134,23 @@ export default function MsAboutPage() {
             </div>
           </div>
         </section>
-        <footer className="bg-white py-12 text-slate-500 border-t border-slate-100">
+        <footer className="bg-bg-alt py-12 text-muted border-t border-border">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
               <div>
                 <span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span>
-                <span className="font-black text-xl text-blue-600">.ai</span>
-                <p className="text-sm text-slate-500 mt-1">Ipoh, Perak — Pakar Perolehan Alat Ganti di Malaysia</p>
+                <span className="font-black text-xl text-accent">.ai</span>
+                <p className="text-sm text-muted mt-1">Ipoh, Perak — Pakar Perolehan Alat Ganti di Malaysia</p>
               </div>
               <div className="flex gap-6 text-sm font-semibold">
-                <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors"><Mail className="w-4 h-4" /> info@sourcesage.ai</a>
+                <a href="mailto:info@sourcesage.ai" className="hover:text-accent flex items-center gap-2 transition-colors"><Mail className="w-4 h-4" /> info@sourcesage.ai</a>
                 <WhatsappCTA label="ms-about-footer" message="Hi, saya perlukan bantuan mencari alat ganti. Jenama: ___ Model: ___ Alat ganti diperlukan: ___" className="hover:text-green-600 flex items-center gap-2 transition-colors">
                   <MessageCircle className="w-4 h-4" /> WhatsApp
                 </WhatsappCTA>
               </div>
             </div>
-            <div className="text-center pt-6 border-t border-slate-100">
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">© 2026 SourceSage.ai. Perolehan Alat Ganti Pertanian &amp; Marin, Malaysia.</p>
+            <div className="text-center pt-6 border-t border-border">
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted">© 2026 SourceSage.ai. Perolehan Alat Ganti Pertanian &amp; Marin, Malaysia.</p>
             </div>
           </div>
         </footer>
