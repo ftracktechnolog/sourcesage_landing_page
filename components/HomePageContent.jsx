@@ -125,7 +125,7 @@ const targetIcons = [
 ]
 
 const TargetMarket = ({ t }) => (
-  <section className="py-20 bg-blue-600 text-white">
+  <section className="py-20 bg-accent text-white">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold">{t.targetMarket.heading}</h2>
@@ -133,10 +133,10 @@ const TargetMarket = ({ t }) => (
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {t.targetMarket.items.map((text, i) => (
           <div key={i} className="flex items-start gap-4">
-            <div className="w-10 h-10 bg-blue-500 rounded-xl flex items-center justify-center shrink-0">
+            <div className="w-10 h-10 bg-accent-light rounded-xl flex items-center justify-center shrink-0">
               {targetIcons[i]}
             </div>
-            <p className="text-blue-100 font-medium leading-relaxed">{text}</p>
+            <p className="text-accent/30 font-medium leading-relaxed">{text}</p>
           </div>
         ))}
       </div>
@@ -153,10 +153,10 @@ const BRAND_LINKS = {
 }
 
 const BrandGrid = ({ t }) => (
-  <section id="brands" className="py-24 bg-white">
+  <section id="brands" className="py-24 bg-bg">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-16">
-        <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">{t.brandGrid.label}</h2>
+        <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">{t.brandGrid.label}</h2>
         <h3 className="text-3xl font-bold text-slate-900">{t.brandGrid.heading}</h3>
         <p className="mt-4 text-slate-600 max-w-2xl mx-auto">{t.brandGrid.body}</p>
       </div>
@@ -170,23 +170,23 @@ const BrandGrid = ({ t }) => (
                 <span className="text-xs bg-slate-100 text-slate-500 px-2 py-1 rounded font-medium">{brand.origin}</span>
               </div>
               <p className="text-sm text-slate-600">{brand.note}</p>
-              {href && <p className="text-xs font-bold text-blue-600 mt-3">{t.brandGrid.viewParts}</p>}
+              {href && <p className="text-xs font-bold text-accent mt-3">{t.brandGrid.viewParts}</p>}
             </>
           )
           return href ? (
-            <Link key={i} href={href} className="border border-slate-200 rounded-2xl p-6 hover:border-blue-400 hover:shadow-md transition-all block">
+            <Link key={i} href={href} className="border border-border rounded-2xl p-6 hover:border-accent/40 hover:shadow-md transition-all block">
               {inner}
             </Link>
           ) : (
-            <div key={i} className="border border-slate-200 rounded-2xl p-6 hover:border-blue-400 hover:shadow-md transition-all">
+            <div key={i} className="border border-border rounded-2xl p-6 hover:border-accent/40 hover:shadow-md transition-all">
               {inner}
             </div>
           )
         })}
       </div>
-      <div className="mt-10 bg-blue-50 border border-blue-100 rounded-2xl p-6 text-center">
+      <div className="mt-10 bg-accent/10 border border-accent/20 rounded-2xl p-6 text-center">
         <p className="text-slate-700 font-medium">
-          <strong className="text-blue-700">{t.brandGrid.zoomlionNote}</strong>{' '}
+          <strong className="text-accent">{t.brandGrid.zoomlionNote}</strong>{' '}
           {t.brandGrid.zoomlionBody}
         </p>
       </div>
@@ -195,33 +195,33 @@ const BrandGrid = ({ t }) => (
 )
 
 const MarineSection = ({ t }) => (
-  <section id="marine" className="py-24 bg-slate-50 border-y border-slate-100">
+  <section id="marine" className="py-24 bg-bg-alt border-y border-border">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-start">
         <div>
-          <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">{t.marine.label}</h2>
+          <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">{t.marine.label}</h2>
           <h3 className="text-3xl font-bold text-slate-900 mb-6">{t.marine.heading}</h3>
           <p className="text-slate-600 mb-8 leading-relaxed">{t.marine.body}</p>
           <h4 className="font-bold text-slate-700 uppercase text-xs tracking-widest mb-4">{t.marine.brandsHeading}</h4>
           <ul className="space-y-3 mb-8">
             {t.marine.brands.map((b, i) => (
               <li key={i} className="flex items-center gap-3 text-slate-700 font-medium">
-                <CheckCircle className="w-5 h-5 text-blue-500 shrink-0" /> {b}
+                <CheckCircle className="w-5 h-5 text-accent shrink-0" /> {b}
               </li>
             ))}
           </ul>
         </div>
         <div>
-          <div className="bg-white rounded-2xl border border-slate-200 p-8 shadow-sm">
+          <div className="bg-white rounded-2xl border border-border p-8 shadow-sm">
             <h4 className="font-bold text-slate-700 uppercase text-xs tracking-widest mb-6">{t.marine.partsHeading}</h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {t.marine.parts.map((part, i) => (
-                <div key={i} className="flex items-center gap-3 bg-slate-50 rounded-xl p-4 text-sm font-medium text-slate-700">
-                  <Wrench className="w-4 h-4 text-blue-500 shrink-0" /> {part}
+                <div key={i} className="flex items-center gap-3 bg-white border-border rounded-xl p-4 text-sm font-medium text-slate-700">
+                  <Wrench className="w-4 h-4 text-accent shrink-0" /> {part}
                 </div>
               ))}
             </div>
-            <div className="mt-6 pt-6 border-t border-slate-100">
+            <div className="mt-6 pt-6 border-t border-border">
               <WhatsappCTA
                 label="marine_section"
                 message="Hi, I need a marine engine part. Engine brand: ___ Model: ___ Part needed: ___"
@@ -287,24 +287,24 @@ const ProblemSection = ({ t }) => (
 )
 
 const HowItWorks = ({ t }) => (
-  <section id="how-it-works" className="py-24 bg-white">
+  <section id="how-it-works" className="py-24 bg-bg">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-16">
-        <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">{t.howItWorks.label}</h2>
+        <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">{t.howItWorks.label}</h2>
         <h3 className="text-3xl font-bold text-slate-900">{t.howItWorks.heading}</h3>
-        <p className="mt-4 text-slate-600">{t.howItWorks.body}</p>
+        <p className="mt-4 text-muted">{t.howItWorks.body}</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
         {t.howItWorks.steps.map((step, i) => (
-          <div key={i} className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-blue-200 hover:shadow-md transition-all text-center">
-            <div className="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center text-lg font-black mx-auto mb-4">
+          <div key={i} className="bg-white rounded-2xl p-8 shadow-sm border border-border hover:shadow-md transition-shadow text-center">
+            <div className="w-14 h-14 bg-accent text-white rounded-2xl flex items-center justify-center text-lg font-black mx-auto mb-4">
               {step.number}
             </div>
-            <h4 className="font-bold text-slate-900 mb-3 text-sm">{step.title}</h4>
-            <ul className="text-xs text-slate-500 space-y-1 text-left">
+            <h4 className="font-bold text-slate-900 mb-3 text-sm font-heading">{step.title}</h4>
+            <ul className="text-xs text-muted space-y-1 text-left">
               {step.items.map((item, j) => (
                 <li key={j} className="flex items-start gap-2">
-                  <span className="text-blue-400 mt-0.5">·</span> {item}
+                  <span className="text-accent/60 mt-0.5">·</span> {item}
                 </li>
               ))}
             </ul>
@@ -316,10 +316,10 @@ const HowItWorks = ({ t }) => (
 )
 
 const PartsTypes = ({ t }) => (
-  <section className="py-24 bg-slate-50 border-y border-slate-100">
+  <section className="py-24 bg-bg-alt border-y border-border">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-16">
-        <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">{t.parts.label}</h2>
+        <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">{t.parts.label}</h2>
         <h3 className="text-3xl font-bold text-slate-900">{t.parts.heading}</h3>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -330,7 +330,7 @@ const PartsTypes = ({ t }) => (
           </h4>
           <div className="grid grid-cols-2 gap-4">
             {t.parts.agricultural.map((cat, i) => (
-              <div key={i} className="bg-white rounded-xl p-5 border border-slate-200">
+              <div key={i} className="bg-white rounded-xl p-5 border border-border">
                 <h5 className="font-bold text-slate-800 text-sm mb-3 uppercase tracking-wide">{cat.category}</h5>
                 <ul className="space-y-1.5">
                   {cat.parts.map((part, j) => (
@@ -345,14 +345,14 @@ const PartsTypes = ({ t }) => (
         </div>
         <div>
           <h4 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-            <span className="w-8 h-8 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center text-sm">⚓</span>
+            <span className="w-8 h-8 bg-accent/15 text-accent rounded-lg flex items-center justify-center text-sm">⚓</span>
             {t.parts.marineHeading}
           </h4>
-          <div className="bg-white rounded-2xl p-6 border border-slate-200">
+          <div className="bg-white rounded-2xl p-6 border border-border">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {t.parts.marine.map((part, i) => (
-                <div key={i} className="flex items-center gap-3 bg-slate-50 rounded-xl p-4 text-sm font-medium text-slate-700">
-                  <Wrench className="w-4 h-4 text-blue-500 shrink-0" /> {part}
+                <div key={i} className="flex items-center gap-3 bg-bg-alt rounded-xl p-4 text-sm font-medium text-slate-700">
+                  <Wrench className="w-4 h-4 text-accent shrink-0" /> {part}
                 </div>
               ))}
             </div>
@@ -364,17 +364,17 @@ const PartsTypes = ({ t }) => (
 )
 
 const SLA = ({ t }) => (
-  <section id="sla" className="py-24 bg-slate-50 border-y border-slate-100">
+  <section id="sla" className="py-24 bg-bg-alt border-y border-border">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-12">
-        <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">{t.sla.label}</h2>
+        <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">{t.sla.label}</h2>
         <h3 className="text-3xl font-bold text-slate-900">{t.sla.heading}</h3>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
         {t.sla.items.map((item, i) => (
-          <div key={i} className="bg-white rounded-2xl p-8 border border-slate-200 text-center hover:shadow-md transition-all">
-            <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-5">
-              {i === 0 ? <Clock className="w-8 h-8 text-blue-600" /> : i === 1 ? <AlertTriangle className="w-8 h-8 text-amber-500" /> : <ShieldCheck className="w-8 h-8 text-green-600" />}
+          <div key={i} className="bg-white rounded-2xl p-8 border border-border text-center hover:shadow-md transition-all">
+            <div className="w-16 h-16 bg-accent/15 rounded-2xl flex items-center justify-center mx-auto mb-5">
+              {i === 0 ? <Clock className="w-8 h-8 text-accent" /> : i === 1 ? <AlertTriangle className="w-8 h-8 text-amber-500" /> : <ShieldCheck className="w-8 h-8 text-green-600" />}
             </div>
             <p className="text-lg font-bold text-slate-900 mb-2">{item.metric}</p>
             <p className="text-sm text-slate-600 leading-relaxed">{item.body}</p>
@@ -386,17 +386,17 @@ const SLA = ({ t }) => (
 )
 
 const Logistics = ({ t }) => (
-  <section id="logistics" className="py-24 bg-white">
+  <section id="logistics" className="py-24 bg-bg">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-12">
-        <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">{t.logistics.label}</h2>
+        <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">{t.logistics.label}</h2>
         <h3 className="text-3xl font-bold text-slate-900">{t.logistics.heading}</h3>
-        <p className="mt-4 text-slate-600 max-w-2xl mx-auto">{t.logistics.body}</p>
+        <p className="mt-4 text-muted max-w-2xl mx-auto">{t.logistics.body}</p>
       </div>
-      <div className="max-w-4xl mx-auto overflow-hidden rounded-2xl border border-slate-200">
+      <div className="max-w-4xl mx-auto overflow-hidden rounded-2xl border border-border">
         <table className="w-full text-sm">
           <thead>
-            <tr className="bg-slate-50 text-left">
+            <tr className="bg-bg-alt text-left">
               <th className="px-6 py-4 font-bold text-slate-700">{t.logistics.thRegion}</th>
               <th className="px-6 py-4 font-bold text-slate-700">{t.logistics.thTime}</th>
               <th className="px-6 py-4 font-bold text-slate-700">{t.logistics.thMethod}</th>
@@ -405,10 +405,10 @@ const Logistics = ({ t }) => (
           </thead>
           <tbody className="divide-y divide-slate-100">
             {t.logistics.rows.map((row, i) => (
-              <tr key={i} className="hover:bg-slate-50">
+              <tr key={i} className="hover:bg-bg-alt">
                 <td className="px-6 py-4 font-semibold text-slate-900">{row.region}</td>
-                <td className="px-6 py-4 text-slate-600">{row.time}</td>
-                <td className="px-6 py-4 text-slate-600">{row.method}</td>
+                <td className="px-6 py-4 text-muted">{row.time}</td>
+                <td className="px-6 py-4 text-muted">{row.method}</td>
                 <td className="px-6 py-4"><span className="inline-flex items-center gap-1 text-green-600 font-semibold"><CheckCircle className="w-4 h-4" /> {t.logistics.trackingLabel}</span></td>
               </tr>
             ))}
@@ -420,16 +420,16 @@ const Logistics = ({ t }) => (
 )
 
 const RecentParts = ({ t }) => (
-  <section id="recent-parts" className="py-24 bg-slate-50 border-y border-slate-100">
+  <section id="recent-parts" className="py-24 bg-bg-alt border-y border-border">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-12">
-        <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">{t.recentParts.label}</h2>
+        <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">{t.recentParts.label}</h2>
         <h3 className="text-3xl font-bold text-slate-900">{t.recentParts.heading}</h3>
-        <p className="mt-4 text-slate-600 max-w-2xl mx-auto">{t.recentParts.body}</p>
+        <p className="mt-4 text-muted max-w-2xl mx-auto">{t.recentParts.body}</p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
         {t.recentParts.items.map((item, i) => (
-          <div key={i} className="bg-white rounded-2xl p-6 border border-slate-200 hover:border-blue-200 hover:shadow-md transition-all">
+          <div key={i} className="bg-white rounded-2xl p-6 border border-border hover:border-accent/30 hover:shadow-md transition-all">
             <p className="text-xs font-black text-green-600 uppercase tracking-widest mb-2">{item.time}</p>
             <p className="font-bold text-slate-900 text-sm mb-2">{item.part}</p>
             <p className="text-xs text-slate-500 flex items-center gap-1"><MapPin className="w-3 h-3" /> {item.location}</p>
@@ -441,7 +441,7 @@ const RecentParts = ({ t }) => (
 )
 
 const TrustSection = ({ t }) => (
-  <section className="py-24 bg-white">
+  <section className="py-24 bg-bg">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
         <div>
@@ -449,14 +449,14 @@ const TrustSection = ({ t }) => (
           <ul className="space-y-5">
             {t.trust.points.map((point, i) => (
               <li key={i} className="flex items-start gap-4">
-                <ShieldCheck className="w-6 h-6 text-blue-600 shrink-0 mt-0.5" />
+                <ShieldCheck className="w-6 h-6 text-accent shrink-0 mt-0.5" />
                 <span className="text-slate-700 font-medium">{point}</span>
               </li>
             ))}
           </ul>
         </div>
         <div className="mt-12 lg:mt-0">
-          <div className="bg-slate-50 rounded-2xl p-8 border border-slate-200">
+          <div className="bg-bg-alt rounded-2xl p-8 border border-border">
             <div className="flex gap-1 mb-4">
               {[...Array(5)].map((_, i) => (
                 <svg key={i} className="w-5 h-5 text-amber-400 fill-current" viewBox="0 0 20 20">
@@ -467,7 +467,7 @@ const TrustSection = ({ t }) => (
             <p className="text-slate-700 text-lg leading-relaxed italic mb-6">
               {t.trust.testimonial}
             </p>
-            <p className="text-sm font-bold text-slate-500 uppercase tracking-widest">{t.trust.testimonialSource}</p>
+            <p className="text-sm font-bold text-muted uppercase tracking-widest">{t.trust.testimonialSource}</p>
           </div>
         </div>
       </div>
@@ -496,11 +496,11 @@ const EastMalaysiaSection = ({ t }) => (
   <section className="py-24 bg-slate-900 text-white">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:grid lg:grid-cols-2 lg:gap-16 items-center">
       <div>
-        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-900 text-blue-300 text-xs font-bold uppercase tracking-widest mb-6">
+        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/80 text-accent/40 text-xs font-bold uppercase tracking-widest mb-6">
           <MapPin className="w-4 h-4" /> {t.eastMalaysia.label}
         </div>
         <h2 className="text-3xl font-bold mb-6">{t.eastMalaysia.heading}</h2>
-        <p className="text-slate-300 text-lg leading-relaxed mb-8">{t.eastMalaysia.body}</p>
+        <p className="text-muted text-lg leading-relaxed mb-8">{t.eastMalaysia.body}</p>
         <WhatsappCTA
           label="east_malaysia"
           message="Hi, I'm in Sabah/Sarawak and need help sourcing a spare part urgently. Equipment: ___ Part needed: ___ Location: ___"
@@ -513,7 +513,7 @@ const EastMalaysiaSection = ({ t }) => (
         {(t.eastMalaysia.cities || EAST_MY_CITIES).map(loc => (
           <div key={loc.city} className="bg-slate-800 rounded-xl p-4 border border-slate-700">
             <p className="font-bold text-white text-sm mb-1">{loc.city}</p>
-            <p className="text-slate-400 text-xs">{loc.note}</p>
+            <p className="text-muted text-xs">{loc.note}</p>
           </div>
         ))}
       </div>
@@ -545,19 +545,19 @@ const RESCUE_STORIES = [
 ]
 
 const RescueStories = ({ t }) => (
-  <section className="py-24 bg-white border-t border-slate-100">
+  <section className="py-24 bg-bg border-t border-border">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-12">
-        <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">{t.rescueStories.label}</h2>
+        <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">{t.rescueStories.label}</h2>
         <h3 className="text-3xl font-bold text-slate-900">{t.rescueStories.heading}</h3>
-        <p className="mt-4 text-slate-600 max-w-2xl mx-auto">{t.rescueStories.body}</p>
+        <p className="mt-4 text-muted max-w-2xl mx-auto">{t.rescueStories.body}</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {(t.rescueStories.stories || RESCUE_STORIES).map(s => (
-          <div key={s.label} className="bg-slate-50 rounded-2xl p-7 border border-slate-100 hover:border-blue-100 hover:shadow-md transition-all">
+          <div key={s.label} className="bg-white rounded-2xl p-7 border border-border hover:border-accent/20 hover:shadow-md transition-all">
             <span className="inline-block bg-green-100 text-green-800 text-xs font-black uppercase tracking-widest px-3 py-1 rounded-full mb-4">{s.outcome}</span>
             <h4 className="font-bold text-slate-900 text-base mb-3">{s.label}</h4>
-            <p className="text-slate-600 leading-relaxed text-sm">{s.story}</p>
+            <p className="text-muted leading-relaxed text-sm">{s.story}</p>
           </div>
         ))}
       </div>
@@ -568,15 +568,15 @@ const RescueStories = ({ t }) => (
 const BlogSection = ({ t, posts, lang }) => {
   const blogBase = lang === 'ms' ? '/ms/blog' : lang === 'zh-Hans' ? '/zh/blog' : '/blog'
   return (
-  <section id="blog" className="py-24 bg-slate-50 border-y border-slate-100">
+  <section id="blog" className="py-24 bg-bg-alt border-y border-border">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex items-end justify-between mb-12">
         <div>
-          <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">{t.blog.label}</h2>
+          <h2 className="text-sm font-black text-accent uppercase tracking-[0.3em] mb-4">{t.blog.label}</h2>
           <h3 className="text-3xl font-bold text-slate-900">{t.blog.heading}</h3>
-          <p className="mt-3 text-slate-600 max-w-xl">{t.blog.body}</p>
+          <p className="mt-3 text-muted max-w-xl">{t.blog.body}</p>
         </div>
-        <Link href={blogBase} className="hidden md:flex items-center gap-2 text-sm font-bold text-blue-600 hover:text-blue-700 transition-colors shrink-0 ml-8">
+        <Link href={blogBase} className="hidden md:flex items-center gap-2 text-sm font-bold text-accent hover:text-accent-light transition-colors shrink-0 ml-8">
           {t.blog.allGuides} <ChevronRight className="w-4 h-4" />
         </Link>
       </div>
@@ -585,30 +585,30 @@ const BlogSection = ({ t, posts, lang }) => {
           <Link
             key={post.slug}
             href={`${blogBase}/${post.slug}`}
-            className="group bg-white rounded-2xl border border-slate-200 p-7 hover:border-blue-300 hover:shadow-md transition-all flex flex-col"
+            className="group bg-white rounded-2xl border border-border p-7 hover:border-accent/40 hover:shadow-md transition-all flex flex-col"
           >
             <div className="flex items-center gap-3 mb-4">
-              <span className="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center shrink-0">
-                <BookOpen className="w-4 h-4 text-blue-600" />
+              <span className="w-8 h-8 bg-accent/10 rounded-lg flex items-center justify-center shrink-0">
+                <BookOpen className="w-4 h-4 text-accent" />
               </span>
               <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">
                 {new Date(post.publish_date).toLocaleDateString('en-MY', { month: 'long', year: 'numeric' })}
               </span>
             </div>
-            <h4 className="text-lg font-bold text-slate-900 mb-3 group-hover:text-blue-700 transition-colors leading-snug">
+            <h4 className="text-lg font-bold text-slate-900 mb-3 group-hover:text-accent transition-colors leading-snug">
               {post.title}
             </h4>
-            <p className="text-sm text-slate-600 leading-relaxed line-clamp-3 flex-1">
+            <p className="text-sm text-muted leading-relaxed line-clamp-3 flex-1">
               {post.meta_description}
             </p>
-            <span className="mt-5 text-sm font-bold text-blue-600 group-hover:text-blue-700 flex items-center gap-1 transition-colors">
+            <span className="mt-5 text-sm font-bold text-accent group-hover:text-accent flex items-center gap-1 transition-colors">
               {t.blog.readGuide} <ChevronRight className="w-4 h-4" />
             </span>
           </Link>
         ))}
       </div>
       <div className="mt-8 text-center md:hidden">
-        <Link href={blogBase} className="text-sm font-bold text-blue-600 hover:text-blue-700 transition-colors">
+        <Link href={blogBase} className="text-sm font-bold text-accent hover:text-accent-light transition-colors">
           {t.blog.seeAllGuides}
         </Link>
       </div>
