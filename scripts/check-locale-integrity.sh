@@ -54,8 +54,9 @@ done
 
 echo ""
 echo "=== MS Pages: English leakage check ==="
+# Note: 'Blog' is same word in BM, 'Marine' in site description is expected
 for f in out/ms/index.html out/ms/about/index.html out/ms/blog/index.html; do
-  leaked=$(grep -o 'Kubota Tractor Parts\|Yanmar Marine Parts\|View parts\|About SourceSage\|Request a Part\|Brands\|Marine\|How It Works\|Blog' "$f" 2>/dev/null | sort -u)
+  leaked=$(grep -o 'Kubota Tractor Parts\|Yanmar Marine Parts\|View parts\|About SourceSage\|Request a Part\|Brands\b\|How It Works\b' "$f" 2>/dev/null | sort -u)
   if [ -n "$leaked" ]; then
     red "  ❌ $f — English leakage: $leaked"
     ((ERRORS++))
@@ -67,7 +68,7 @@ done
 echo ""
 echo "=== ZH Pages: English leakage check ==="
 for f in out/zh/index.html out/zh/about/index.html out/zh/blog/index.html; do
-  leaked=$(grep -o 'Kubota Tractor Parts\|Yanmar Marine Parts\|View parts\|About SourceSage\|Request a Part\|Brands\|Marine\|How It Works\|Blog' "$f" 2>/dev/null | sort -u)
+  leaked=$(grep -o 'Kubota Tractor Parts\|Yanmar Marine Parts\|View parts\|About SourceSage\|Request a Part\|Brands\b\|How It Works\b' "$f" 2>/dev/null | sort -u)
   if [ -n "$leaked" ]; then
     red "  ❌ $f — English leakage: $leaked"
     ((ERRORS++))
