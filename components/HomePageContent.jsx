@@ -421,7 +421,7 @@ const EastMalaysiaSection = ({ t }) => (
         </WhatsappCTA>
       </div>
       <div className="mt-12 lg:mt-0 grid grid-cols-2 gap-4">
-        {EAST_MY_CITIES.map(loc => (
+        {(t.eastMalaysia.cities || EAST_MY_CITIES).map(loc => (
           <div key={loc.city} className="bg-slate-800 rounded-xl p-4 border border-slate-700">
             <p className="font-bold text-white text-sm mb-1">{loc.city}</p>
             <p className="text-slate-400 text-xs">{loc.note}</p>
@@ -464,7 +464,7 @@ const RescueStories = ({ t }) => (
         <p className="mt-4 text-slate-600 max-w-2xl mx-auto">{t.rescueStories.body}</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {RESCUE_STORIES.map(s => (
+        {(t.rescueStories.stories || RESCUE_STORIES).map(s => (
           <div key={s.label} className="bg-slate-50 rounded-2xl p-7 border border-slate-100 hover:border-blue-100 hover:shadow-md transition-all">
             <span className="inline-block bg-green-100 text-green-800 text-xs font-black uppercase tracking-widest px-3 py-1 rounded-full mb-4">{s.outcome}</span>
             <h4 className="font-bold text-slate-900 text-base mb-3">{s.label}</h4>
