@@ -6,11 +6,9 @@ import {
 } from 'lucide-react'
 import WhatsappCTA from './WhatsappCTA'
 import RequestForm from './RequestForm'
-import LangSetter from './LangSetter'
+import LangSwitcher from './LangSwitcher'
 import { getAllPosts } from '../lib/blog'
-
-const langLinks = { en: '/', ms: '/ms', 'zh-Hans': '/zh' }
-const langLabels = { en: 'EN', ms: 'BM', 'zh-Hans': '中文' }
+import LangSetter from './LangSetter'
 
 const Navbar = ({ t, lang }) => {
   const blogUrl = lang === 'ms' ? '/ms/blog' : lang === 'zh-Hans' ? '/zh/blog' : '/blog'
@@ -30,17 +28,7 @@ const Navbar = ({ t, lang }) => {
         <a href="#request" className="hover:text-blue-600 transition-colors">{t.nav.requestPart}</a>
       </div>
       <div className="flex items-center gap-2">
-        <div className="flex items-center text-xs font-bold text-slate-400 border border-slate-200 rounded-lg overflow-hidden">
-          {Object.entries(langLinks).map(([code, href]) => (
-            <a
-              key={code}
-              href={href}
-              className={`px-2 py-1.5 sm:px-2.5 transition-colors ${lang === code ? 'bg-blue-600 text-white' : 'hover:bg-slate-50 hover:text-slate-700'}`}
-            >
-              {langLabels[code]}
-            </a>
-          ))}
-        </div>
+        <LangSwitcher currentLang={lang} />
         <WhatsappCTA
           label="navbar"
           message="Hi, I need help sourcing a spare part. Brand: ___ Model: ___ Part needed: ___"
@@ -550,7 +538,7 @@ const Footer = ({ t }) => (
           <p className="text-sm text-slate-500 mt-1">{t.footer.tagline}</p>
         </div>
         <div>
-          <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Parts Pages</p>
+          <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">{t.footer.partsHeading}</p>
           <ul className="space-y-2 text-sm font-semibold">
             <li><Link href="/kubota-tractor-parts-malaysia" className="hover:text-blue-600 transition-colors">Kubota Tractor Parts</Link></li>
             <li><Link href="/yanmar-marine-parts-malaysia" className="hover:text-blue-600 transition-colors">Yanmar Marine Parts</Link></li>
@@ -558,7 +546,7 @@ const Footer = ({ t }) => (
             <li><Link href="/zoomlion-parts-malaysia" className="hover:text-blue-600 transition-colors">Zoomlion Parts</Link></li>
             <li><Link href="/john-deere-parts-malaysia" className="hover:text-blue-600 transition-colors">John Deere Parts</Link></li>
             <li><Link href="/perkins-engine-parts-malaysia" className="hover:text-blue-600 transition-colors">Perkins Engine Parts</Link></li>
-            <li><Link href="/about" className="hover:text-blue-600 transition-colors">About SourceSage</Link></li>
+            <li><Link href="/about" className="hover:text-blue-600 transition-colors">{t.footer.about}</Link></li>
           </ul>
         </div>
         <div className="flex flex-col gap-3 text-sm font-semibold">

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { MessageCircle, Mail, ChevronRight } from 'lucide-react'
 import WhatsappCTA from '../../components/WhatsappCTA'
+import LangSwitcher from '../../components/LangSwitcher'
 
 export const metadata = {
   title: 'About SourceSage — Tractor & Marine Parts Sourcing Malaysia | SourceSage',
@@ -88,6 +89,7 @@ export default function AboutPage() {
             >
               <MessageCircle className="w-4 h-4" /> WhatsApp Us
             </WhatsappCTA>
+            <LangSwitcher currentLang="en" />
           </div>
         </nav>
 
