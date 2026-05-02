@@ -38,12 +38,16 @@ export default function MsKubotaPage() {
   const serviceSchema = { '@context': 'https://schema.org', '@type': 'Service', 'inLanguage': 'ms', name: 'Perolehan Alat Ganti Traktor Kubota Malaysia', provider: { '@type': 'LocalBusiness', name: 'SourceSage.ai', url: 'https://sourcesage.ai', areaServed: { '@type': 'Country', name: 'Malaysia' } }, description: 'Perolehan alat ganti traktor Kubota yang sukar dicari di seluruh Malaysia — siri-L, siri-M, siri-B, vintaj dan mesin penuai.', serviceType: 'Perolehan Alat Ganti', areaServed: [{ '@type': 'State', name: 'Kedah' }, { '@type': 'State', name: 'Perak' }, { '@type': 'State', name: 'Selangor' }, { '@type': 'State', name: 'Johor' }, { '@type': 'State', name: 'Sabah' }, { '@type': 'State', name: 'Sarawak' }] }
   const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', 'inLanguage': 'ms', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Laman Utama', item: 'https://sourcesage.ai/ms/' }, { '@type': 'ListItem', position: 2, name: 'Alat Ganti Traktor Kubota Malaysia', item: 'https://sourcesage.ai/ms/kubota-tractor-parts-malaysia' }] }
   const faqSchema = { '@context': 'https://schema.org', '@type': 'FAQPage', 'inLanguage': 'ms', mainEntity: FAQS.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }
+  const partsListSchema = { '@context': 'https://schema.org', '@type': 'ItemList', 'inLanguage': 'ms', name: 'Kategori Alat Ganti Kubota', description: 'Alat ganti traktor Kubota yang tersedia mengikut sistem — enjin, bahan api, penyejukan, transmisi, hidraulik, elektrik.', numberOfItems: SECTIONS.length, itemListElement: SECTIONS.map((cat, i) => ({ '@type': 'ListItem', position: i + 1, item: { '@type': 'Product', name: `Kubota ${cat.title}`, description: `${cat.items.join(', ')}` } })) }
+  const speakableSchema = { '@context': 'https://schema.org', '@type': 'SpeakableSpecification', 'inLanguage': 'ms', xpath: ["/html/head/title", "/html/head/meta[@name='description']/@content"] }
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(partsListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
       <WhatsappCTA label="ms-kubota-sticky" message="Hi, saya perlukan alat ganti traktor Kubota. Model: ___ Kod enjin: ___ Alat ganti diperlukan: ___" className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white px-5 py-3.5 rounded-full shadow-2xl font-bold text-sm flex items-center gap-2 transition-all hover:scale-105"><MessageCircle className="w-5 h-5" /> WhatsApp Kami</WhatsappCTA>
       <div className="min-h-screen font-sans text-slate-900 antialiased">
         <nav className="bg-white shadow-sm sticky top-0 z-40">

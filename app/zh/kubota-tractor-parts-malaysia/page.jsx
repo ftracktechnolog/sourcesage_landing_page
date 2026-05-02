@@ -38,12 +38,16 @@ export default function ZhKubotaPage() {
   const serviceSchema = { '@context': 'https://schema.org', '@type': 'Service', 'inLanguage': 'zh-Hans', name: '久保田拖拉机零件采购马来西亚', provider: { '@type': 'LocalBusiness', name: 'SourceSage.ai', url: 'https://sourcesage.ai', areaServed: { '@type': 'Country', name: 'Malaysia' } }, description: '在马来西亚采购难以找到的久保田拖拉机零件 — L系列、M系列、B系列、老式及收割机。', serviceType: '零件采购', areaServed: [{ '@type': 'State', name: '吉打' }, { '@type': 'State', name: '霹雳' }, { '@type': 'State', name: '雪兰莪' }, { '@type': 'State', name: '柔佛' }, { '@type': 'State', name: '沙巴' }, { '@type': 'State', name: '砂拉越' }] }
   const breadcrumbSchema = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', 'inLanguage': 'zh-Hans', itemListElement: [{ '@type': 'ListItem', position: 1, name: '首页', item: 'https://sourcesage.ai/zh/' }, { '@type': 'ListItem', position: 2, name: '久保田拖拉机零件马来西亚', item: 'https://sourcesage.ai/zh/kubota-tractor-parts-malaysia' }] }
   const faqSchema = { '@context': 'https://schema.org', '@type': 'FAQPage', 'inLanguage': 'zh-Hans', mainEntity: FAQS.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }
+  const partsListSchema = { '@context': 'https://schema.org', '@type': 'ItemList', 'inLanguage': 'zh-Hans', name: '久保田零件分类', description: '久保田拖拉机零件按系统分类 — 发动机、燃油、冷却、变速箱、液压、电气。', numberOfItems: SECTIONS.length, itemListElement: SECTIONS.map((cat, i) => ({ '@type': 'ListItem', position: i + 1, item: { '@type': 'Product', name: `久保田 ${cat.title}`, description: `${cat.items.join(', ')}` } })) }
+  const speakableSchema = { '@context': 'https://schema.org', '@type': 'SpeakableSpecification', 'inLanguage': 'zh-Hans', xpath: ["/html/head/title", "/html/head/meta[@name='description']/@content"] }
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(partsListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
       <WhatsappCTA label="zh-kubota-sticky" message="你好，我需要久保田拖拉机零件。型号：___ 发动机代码：___ 所需零件：___" className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white px-5 py-3.5 rounded-full shadow-2xl font-bold text-sm flex items-center gap-2 transition-all hover:scale-105"><MessageCircle className="w-5 h-5" /> WhatsApp 联系我们</WhatsappCTA>
       <div className="min-h-screen font-sans text-slate-900 antialiased">
         <nav className="bg-white shadow-sm sticky top-0 z-40">
