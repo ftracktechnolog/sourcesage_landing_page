@@ -166,6 +166,21 @@ export default async function MsBlogPost({ params }) {
             )}
           </div>
         </article>
+        <footer className="bg-white py-12 text-slate-500 border-t border-slate-100">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+              <div>
+                <span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span>
+                <span className="font-black text-xl text-blue-600">.ai</span>
+                <p className="text-sm text-slate-500 mt-1">Ipoh, Perak — Pakar Perolehan Alat Ganti di Malaysia</p>
+              </div>
+              <div className="flex gap-6 text-sm font-semibold">
+                <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors"><Mail className="w-4 h-4" /> info@sourcesage.ai</a>
+                <Link href="/ms/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
+              </div>
+            </div>
+          </div>
+        </footer>
       </main>
     </div>
   )

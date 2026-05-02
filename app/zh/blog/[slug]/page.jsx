@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { MessageCircle } from 'lucide-react'
+import { MessageCircle, Mail } from 'lucide-react'
 import { getAllPosts, getPostBySlug } from '../../../../lib/blog'
 import WhatsappCTA from '../../../../components/WhatsappCTA'
 import LangSwitcher from '../../../../components/LangSwitcher'
@@ -166,6 +166,21 @@ export default async function ZhBlogPost({ params }) {
             )}
           </div>
         </article>
+        <footer className="bg-white py-12 text-slate-500 border-t border-slate-100">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+              <div>
+                <span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span>
+                <span className="font-black text-xl text-blue-600">.ai</span>
+                <p className="text-sm text-slate-500 mt-1">霹雳州怡保 — 马来西亚零配件采购专家</p>
+              </div>
+              <div className="flex gap-6 text-sm font-semibold">
+                <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors"><Mail className="w-4 h-4" /> info@sourcesage.ai</a>
+                <Link href="/zh/blog" className="hover:text-blue-600 transition-colors">博客</Link>
+              </div>
+            </div>
+          </div>
+        </footer>
       </main>
     </div>
   )
