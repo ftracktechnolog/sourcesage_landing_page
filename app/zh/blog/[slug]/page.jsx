@@ -43,8 +43,8 @@ const Navbar = () => (
   <nav className="bg-white shadow-sm sticky top-0 z-50">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
       <Link href="/zh" className="flex items-center">
-        <span className="font-bold text-xl text-slate-900 tracking-tight">SourceSage</span>
-        <span className="text-accent font-bold text-xl">.ai</span>
+        <span className="font-heading font-bold text-xl text-accent tracking-tight">SourceSage</span>
+        <span className="font-bold text-xl text-green-600">.ai</span>
       </Link>
       <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
         <Link href="/zh/#brands" className="hover:text-accent transition-colors">品牌</Link>
@@ -170,8 +170,8 @@ export default async function ZhBlogPost({ params }) {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
               <div>
-                <span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span>
-                <span className="font-black text-xl text-accent">.ai</span>
+                <span className="font-heading font-black text-xl tracking-tighter text-accent">SourceSage</span>
+                <span className="font-black text-xl text-green-600">.ai</span>
                 <p className="text-sm text-slate-500 mt-1">霹雳州怡保 — 马来西亚零配件采购专家</p>
               </div>
               <div>

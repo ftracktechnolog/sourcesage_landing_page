@@ -149,8 +149,8 @@ export default function ZhYanmarMarinePage() {
         <nav className="bg-white shadow-sm sticky top-0 z-40">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <Link href="/zh" className="flex items-center">
-              <span className="font-bold text-xl text-slate-900 tracking-tight">SourceSage</span>
-              <span className="text-accent font-bold text-xl">.ai</span>
+              <span className="font-heading font-bold text-xl text-accent tracking-tight">SourceSage</span>
+              <span className="font-bold text-xl text-green-600">.ai</span>
             </Link>
             <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
               <Link href="/zh/#brands" className="hover:text-accent transition-colors">品牌</Link>
@@ -383,8 +383,8 @@ export default function ZhYanmarMarinePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
               <div>
-                <span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span>
-                <span className="font-black text-xl text-accent">.ai</span>
+                <span className="font-heading font-black text-xl tracking-tighter text-accent">SourceSage</span>
+                <span className="font-black text-xl text-green-600">.ai</span>
                 <p className="text-sm text-slate-500 mt-1">马来西亚零配件采购专家</p>
               </div>
               <div className="flex gap-6 text-sm font-semibold">
