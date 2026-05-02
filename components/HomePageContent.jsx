@@ -85,7 +85,7 @@ const Hero = ({ t }) => (
           <div className="bg-slate-50 rounded-2xl p-8 border border-slate-200">
             <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-5">{t.hero.brandsLabel}</p>
             <div className="flex flex-wrap gap-2 mb-6">
-              {['Kubota', 'Yanmar', 'Massey Ferguson', 'John Deere', 'Zoomlion', 'Perkins', 'Isuzu', 'Hino'].map(brand => (
+              {(t.hero.brands || ['Kubota', 'Yanmar', 'Massey Ferguson', 'John Deere', 'Zoomlion', 'Perkins', 'Isuzu', 'Hino']).map(brand => (
                 <span key={brand} className="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-700 shadow-sm">
                   {brand}
                 </span>
@@ -158,7 +158,7 @@ const BrandGrid = ({ t }) => (
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
         {t.brandGrid.brands.map((brand, i) => {
-          const href = BRAND_LINKS[brand.name]
+          const href = brand.slug
           const inner = (
             <>
               <div className="flex items-start justify-between mb-3">
