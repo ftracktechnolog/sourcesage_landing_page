@@ -26,8 +26,9 @@ const Navbar = () => (
       </Link>
       <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
         <Link href="/#brands" className="hover:text-blue-600 transition-colors">Brands</Link>
-        <Link href="/#marine" className="hover:text-blue-600 transition-colors">Marine</Link>
+        <Link href="#marine" className="hover:text-blue-600 transition-colors">Marine</Link>
         <Link href="/blog" className="text-blue-600">Blog</Link>
+        <Link href="/about" className="hover:text-blue-600 transition-colors">About</Link>
         <Link href="/#request" className="hover:text-blue-600 transition-colors">Request a Part</Link>
       </div>
       <WhatsappCTA
@@ -59,6 +60,7 @@ const Footer = () => (
             <li><Link href="/zoomlion-parts-malaysia" className="hover:text-blue-600 transition-colors">Zoomlion Parts</Link></li>
             <li><Link href="/john-deere-parts-malaysia" className="hover:text-blue-600 transition-colors">John Deere Parts</Link></li>
             <li><Link href="/perkins-engine-parts-malaysia" className="hover:text-blue-600 transition-colors">Perkins Engine Parts</Link></li>
+            <li><Link href="/about" className="hover:text-blue-600 transition-colors">About SourceSage</Link></li>
           </ul>
         </div>
         <div className="flex flex-col gap-3 text-sm font-semibold">

@@ -23,6 +23,7 @@ const Navbar = ({ t, lang }) => (
         <a href="#brands" className="hover:text-blue-600 transition-colors">{t.nav.brands}</a>
         <a href="#marine" className="hover:text-blue-600 transition-colors">{t.nav.marine}</a>
         <a href="#how-it-works" className="hover:text-blue-600 transition-colors">{t.nav.howItWorks}</a>
+        <a href="/about" className="hover:text-blue-600 transition-colors">{t.nav.about || 'About'}</a>
         <a href="/blog" className="hover:text-blue-600 transition-colors">{t.nav.blog}</a>
         <a href="#request" className="hover:text-blue-600 transition-colors">{t.nav.requestPart}</a>
       </div>
@@ -551,6 +552,7 @@ const Footer = ({ t }) => (
             <li><Link href="/zoomlion-parts-malaysia" className="hover:text-blue-600 transition-colors">Zoomlion Parts</Link></li>
             <li><Link href="/john-deere-parts-malaysia" className="hover:text-blue-600 transition-colors">John Deere Parts</Link></li>
             <li><Link href="/perkins-engine-parts-malaysia" className="hover:text-blue-600 transition-colors">Perkins Engine Parts</Link></li>
+            <li><Link href="/about" className="hover:text-blue-600 transition-colors">About SourceSage</Link></li>
           </ul>
         </div>
         <div className="flex flex-col gap-3 text-sm font-semibold">
