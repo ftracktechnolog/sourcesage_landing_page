@@ -359,6 +359,83 @@ const PartsTypes = ({ t }) => (
   </section>
 )
 
+const SLA = ({ t }) => (
+  <section id="sla" className="py-24 bg-slate-50 border-y border-slate-100">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="text-center mb-12">
+        <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">{t.sla.label}</h2>
+        <h3 className="text-3xl font-bold text-slate-900">{t.sla.heading}</h3>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        {t.sla.items.map((item, i) => (
+          <div key={i} className="bg-white rounded-2xl p-8 border border-slate-200 text-center hover:shadow-md transition-all">
+            <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-5">
+              {i === 0 ? <Clock className="w-8 h-8 text-blue-600" /> : i === 1 ? <AlertTriangle className="w-8 h-8 text-amber-500" /> : <ShieldCheck className="w-8 h-8 text-green-600" />}
+            </div>
+            <p className="text-lg font-bold text-slate-900 mb-2">{item.metric}</p>
+            <p className="text-sm text-slate-600 leading-relaxed">{item.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+)
+
+const Logistics = ({ t }) => (
+  <section id="logistics" className="py-24 bg-white">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="text-center mb-12">
+        <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">{t.logistics.label}</h2>
+        <h3 className="text-3xl font-bold text-slate-900">{t.logistics.heading}</h3>
+        <p className="mt-4 text-slate-600 max-w-2xl mx-auto">{t.logistics.body}</p>
+      </div>
+      <div className="max-w-4xl mx-auto overflow-hidden rounded-2xl border border-slate-200">
+        <table className="w-full text-sm">
+          <thead>
+            <tr className="bg-slate-50 text-left">
+              <th className="px-6 py-4 font-bold text-slate-700">{t.logistics.thRegion}</th>
+              <th className="px-6 py-4 font-bold text-slate-700">{t.logistics.thTime}</th>
+              <th className="px-6 py-4 font-bold text-slate-700">{t.logistics.thMethod}</th>
+              <th className="px-6 py-4 font-bold text-slate-700">{t.logistics.thTracking}</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-slate-100">
+            {t.logistics.rows.map((row, i) => (
+              <tr key={i} className="hover:bg-slate-50">
+                <td className="px-6 py-4 font-semibold text-slate-900">{row.region}</td>
+                <td className="px-6 py-4 text-slate-600">{row.time}</td>
+                <td className="px-6 py-4 text-slate-600">{row.method}</td>
+                <td className="px-6 py-4"><span className="inline-flex items-center gap-1 text-green-600 font-semibold"><CheckCircle className="w-4 h-4" /> {t.logistics.trackingLabel}</span></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+)
+
+const RecentParts = ({ t }) => (
+  <section id="recent-parts" className="py-24 bg-slate-50 border-y border-slate-100">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="text-center mb-12">
+        <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-4">{t.recentParts.label}</h2>
+        <h3 className="text-3xl font-bold text-slate-900">{t.recentParts.heading}</h3>
+        <p className="mt-4 text-slate-600 max-w-2xl mx-auto">{t.recentParts.body}</p>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+        {t.recentParts.items.map((item, i) => (
+          <div key={i} className="bg-white rounded-2xl p-6 border border-slate-200 hover:border-blue-200 hover:shadow-md transition-all">
+            <p className="text-xs font-black text-green-600 uppercase tracking-widest mb-2">{item.time}</p>
+            <p className="font-bold text-slate-900 text-sm mb-2">{item.part}</p>
+            <p className="text-xs text-slate-500 flex items-center gap-1"><MapPin className="w-3 h-3" /> {item.location}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+)
+
 const TrustSection = ({ t }) => (
   <section className="py-24 bg-white">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -624,6 +701,9 @@ export default function HomePageContent({ t, lang }) {
         <HowItWorks t={t} />
         <PartsTypes t={t} />
         <TrustSection t={t} />
+        <SLA t={t} />
+        <Logistics t={t} />
+        <RecentParts t={t} />
         <EastMalaysiaSection t={t} />
         <RescueStories t={t} />
         {posts.length > 0 && <BlogSection t={t} posts={posts} lang={lang} />}

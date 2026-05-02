@@ -168,16 +168,35 @@ export default async function ZhBlogPost({ params }) {
         </article>
         <footer className="bg-white py-12 text-slate-500 border-t border-slate-100">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
               <div>
                 <span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span>
                 <span className="font-black text-xl text-blue-600">.ai</span>
                 <p className="text-sm text-slate-500 mt-1">霹雳州怡保 — 马来西亚零配件采购专家</p>
               </div>
-              <div className="flex gap-6 text-sm font-semibold">
-                <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors"><Mail className="w-4 h-4" /> info@sourcesage.ai</a>
-                <Link href="/zh/blog" className="hover:text-blue-600 transition-colors">博客</Link>
+              <div>
+                <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">零件页面</p>
+                <ul className="space-y-2 text-sm font-semibold">
+                  <li><Link href="/kubota-tractor-parts-malaysia" className="hover:text-blue-600 transition-colors">久保田零件</Link></li>
+                  <li><Link href="/yanmar-marine-parts-malaysia" className="hover:text-blue-600 transition-colors">洋马船用零件</Link></li>
+                  <li><Link href="/massey-ferguson-parts-malaysia" className="hover:text-blue-600 transition-colors">麦赛福格森零件</Link></li>
+                  <li><Link href="/zoomlion-parts-malaysia" className="hover:text-blue-600 transition-colors">中联重科零件</Link></li>
+                  <li><Link href="/john-deere-parts-malaysia" className="hover:text-blue-600 transition-colors">约翰迪尔零件</Link></li>
+                  <li><Link href="/perkins-engine-parts-malaysia" className="hover:text-blue-600 transition-colors">珀金斯发动机零件</Link></li>
+                  <li className="pt-2 border-t border-slate-100"><Link href="/zh/about" className="hover:text-blue-600 transition-colors">关于SourceSage</Link></li>
+                </ul>
               </div>
+              <div className="flex flex-col gap-3 text-sm font-semibold">
+                <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors">
+                  <Mail className="w-4 h-4" /> info@sourcesage.ai
+                </a>
+                <WhatsappCTA label="blog-post-footer" message="Hi, I need help sourcing a spare part. Brand: ___ Model: ___ Part needed: ___" className="hover:text-green-600 flex items-center gap-2 transition-colors">
+                  <MessageCircle className="w-4 h-4" /> WhatsApp
+                </WhatsappCTA>
+              </div>
+            </div>
+            <div className="text-center pt-6 border-t border-slate-100">
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">© 2026 SourceSage.ai. 农业与船用零件采购，马来西亚。</p>
             </div>
           </div>
         </footer>
