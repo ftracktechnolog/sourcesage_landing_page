@@ -7,6 +7,7 @@ import {
 import WhatsappCTA from './WhatsappCTA'
 import RequestForm from './RequestForm'
 import LangSwitcher from './LangSwitcher'
+import ScrollReveal from './ScrollReveal'
 import { getAllPosts } from '../lib/blog'
 import LangSetter from './LangSetter'
 
@@ -15,19 +16,19 @@ const Navbar = ({ t, lang }) => {
   const blogUrl = lang === 'ms' ? '/ms/blog' : lang === 'zh-Hans' ? '/zh/blog' : '/blog'
   const anchorPrefix = lang === 'ms' ? '/ms' : lang === 'zh-Hans' ? '/zh' : ''
   return (
-  <nav className="bg-white shadow-sm sticky top-0 z-50">
+  <nav className="bg-bg/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
       <Link href={homeUrl} className="flex items-center">
         <span className="font-bold text-xl text-slate-900 tracking-tight">SourceSage</span>
-        <span className="text-blue-600 font-bold text-xl">.ai</span>
+        <span className="text-accent font-bold text-xl">.ai</span>
       </Link>
       <div className="hidden md:flex gap-8 text-sm font-semibold text-slate-600">
-        <a href={`${anchorPrefix}/#brands`} className="hover:text-blue-600 transition-colors">{t.nav.brands}</a>
-        <a href={`${anchorPrefix}/#marine`} className="hover:text-blue-600 transition-colors">{t.nav.marine}</a>
-        <a href={`${anchorPrefix}/#how-it-works`} className="hover:text-blue-600 transition-colors">{t.nav.howItWorks}</a>
-        <a href={lang === 'ms' ? '/ms/about' : lang === 'zh-Hans' ? '/zh/about' : '/about'} className="hover:text-blue-600 transition-colors">{t.nav.about || 'About'}</a>
-        <a href={blogUrl} className="hover:text-blue-600 transition-colors">{t.nav.blog}</a>
-        <a href={`${anchorPrefix}/#request`} className="hover:text-blue-600 transition-colors">{t.nav.requestPart}</a>
+        <a href={`${anchorPrefix}/#brands`} className="hover:text-accent transition-colors">{t.nav.brands}</a>
+        <a href={`${anchorPrefix}/#marine`} className="hover:text-accent transition-colors">{t.nav.marine}</a>
+        <a href={`${anchorPrefix}/#how-it-works`} className="hover:text-accent transition-colors">{t.nav.howItWorks}</a>
+        <a href={lang === 'ms' ? '/ms/about' : lang === 'zh-Hans' ? '/zh/about' : '/about'} className="hover:text-accent transition-colors">{t.nav.about || 'About'}</a>
+        <a href={blogUrl} className="hover:text-accent transition-colors">{t.nav.blog}</a>
+        <a href={`${anchorPrefix}/#request`} className="hover:text-accent transition-colors">{t.nav.requestPart}</a>
       </div>
       <div className="flex items-center gap-2">
         <LangSwitcher currentLang={lang} />
@@ -38,7 +39,7 @@ const Navbar = ({ t, lang }) => {
         >
           <MessageCircle className="w-4 h-4" /> <span className="hidden sm:inline">{t.nav.whatsapp}</span>
         </WhatsappCTA>
-        <a href="#request" className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg font-bold transition-all text-sm hidden sm:block">
+        <a href="#request" className="bg-accent hover:bg-accent-light text-white px-5 py-2.5 rounded-lg font-bold transition-all text-sm hidden sm:block">
           {t.nav.requestPart}
         </a>
       </div>
@@ -48,25 +49,26 @@ const Navbar = ({ t, lang }) => {
 }
 
 const Hero = ({ t }) => (
-  <header className="bg-white pt-16 pb-24 overflow-hidden border-b border-slate-100">
+  <header className="bg-bg pt-20 pb-28 overflow-hidden border-b border-border">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
         <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-7 lg:text-left">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 text-blue-800 text-xs font-bold uppercase tracking-widest mb-8">
-            <MapPin className="w-4 h-4 text-blue-600" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 text-accent text-xs font-bold uppercase tracking-widest mb-6">
+            <MapPin className="w-4 h-4 text-accent" />
             <span>{t.hero.badge}</span>
           </div>
           <h1 className="text-4xl tracking-tight font-extrabold text-slate-900 sm:text-5xl md:text-6xl lg:leading-[1.1]">
             {t.hero.h1Line1}{' '}
-            <span className="text-blue-600">{t.hero.h1Line2}</span>
+            <span className="text-accent">{t.hero.h1Line2}</span>
           </h1>
-          <p className="mt-8 text-lg text-slate-600 md:text-xl leading-relaxed">
+          <div className="w-16 h-1 bg-accent mt-6 mb-6 sm:mx-auto lg:mx-0" />
+          <p className="text-lg text-muted md:text-xl leading-relaxed">
             {t.hero.body}
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a
               href="#request"
-              className="px-8 py-4 text-lg font-bold rounded-xl text-white bg-blue-600 hover:bg-blue-700 shadow-xl shadow-blue-200 transition-all text-center flex items-center justify-center gap-2"
+              className="px-8 py-4 text-lg font-bold rounded-xl text-white bg-accent hover:bg-accent-light transition-all text-center flex items-center justify-center gap-2"
             >
               {t.hero.cta1} <ChevronRight className="w-5 h-5" />
             </a>
@@ -78,17 +80,17 @@ const Hero = ({ t }) => (
               <MessageCircle className="w-5 h-5" /> {t.hero.cta2}
             </WhatsappCTA>
           </div>
-          <p className="mt-6 text-sm text-slate-500 font-medium">
+          <p className="mt-6 text-sm text-muted font-medium">
             {t.hero.brandsFootnote}
           </p>
         </div>
 
         <div className="mt-16 lg:mt-0 lg:col-span-5">
-          <div className="bg-slate-50 rounded-2xl p-8 border border-slate-200">
-            <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-5">{t.hero.brandsLabel}</p>
+          <div className="bg-white rounded-2xl p-8 border border-border shadow-sm">
+            <p className="text-xs font-bold uppercase tracking-widest text-muted mb-5">{t.hero.brandsLabel}</p>
             <div className="flex flex-wrap gap-2 mb-6">
               {(t.hero.brands || ['Kubota', 'Yanmar', 'Massey Ferguson', 'John Deere', 'Zoomlion', 'Perkins', 'Isuzu', 'Hino']).map(brand => (
-                <span key={brand} className="bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-700 shadow-sm">
+                <span key={brand} className="bg-white border border-border px-3 py-1.5 rounded-lg text-sm font-semibold text-slate-700 shadow-sm">
                   {brand}
                 </span>
               ))}
@@ -469,6 +471,14 @@ const TrustSection = ({ t }) => (
           </div>
         </div>
       </div>
+      <blockquote className="max-w-3xl mx-auto mt-16 border-l-[3px] border-accent pl-6 md:pl-8">
+        <p className="text-xl md:text-2xl font-heading text-slate-900 italic leading-relaxed">
+          {t.testimonial.quote}
+        </p>
+        <cite className="block mt-4 text-sm text-muted not-italic font-medium">
+          {t.testimonial.cite}
+        </cite>
+      </blockquote>
     </div>
   </section>
 )
@@ -604,7 +614,7 @@ const BlogSection = ({ t, posts, lang }) => {
       </div>
     </div>
   </section>
-  )
+)
 }
 
 const Footer = ({ t, lang }) => {
@@ -654,6 +664,23 @@ const StickyWhatsApp = ({ t }) => (
   </WhatsappCTA>
 )
 
+const StatsRow = ({ t }) => (
+  <section className="border-y border-border">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex justify-center gap-8 md:gap-16 flex-wrap">
+      {t.stats.items.map((item, i) => (
+        <div key={i} className="text-center">
+          <span className="block text-3xl md:text-4xl font-heading text-accent font-bold">
+            {item.number}
+          </span>
+          <span className="block text-xs text-muted uppercase tracking-widest mt-1">
+            {item.label}
+          </span>
+        </div>
+      ))}
+    </div>
+  </section>
+)
+
 export default function HomePageContent({ t, lang }) {
   const posts = getAllPosts(lang)
 
@@ -699,19 +726,20 @@ export default function HomePageContent({ t, lang }) {
       <div className="min-h-screen font-sans text-slate-900 antialiased">
         <Navbar t={t} lang={lang} />
         <Hero t={t} />
-        <TargetMarket t={t} />
-        <BrandGrid t={t} />
-        <MarineSection t={t} />
-        <ProblemSection t={t} />
-        <HowItWorks t={t} />
-        <PartsTypes t={t} />
-        <TrustSection t={t} />
-        <SLA t={t} />
-        <Logistics t={t} />
-        <RecentParts t={t} />
-        <EastMalaysiaSection t={t} />
-        <RescueStories t={t} />
-        {posts.length > 0 && <BlogSection t={t} posts={posts} lang={lang} />}
+        <StatsRow t={t} />
+        <ScrollReveal><TargetMarket t={t} /></ScrollReveal>
+        <ScrollReveal><BrandGrid t={t} /></ScrollReveal>
+        <ScrollReveal><MarineSection t={t} /></ScrollReveal>
+        <ScrollReveal><ProblemSection t={t} /></ScrollReveal>
+        <ScrollReveal><HowItWorks t={t} /></ScrollReveal>
+        <ScrollReveal><PartsTypes t={t} /></ScrollReveal>
+        <ScrollReveal><TrustSection t={t} /></ScrollReveal>
+        <ScrollReveal><SLA t={t} /></ScrollReveal>
+        <ScrollReveal><Logistics t={t} /></ScrollReveal>
+        <ScrollReveal><RecentParts t={t} /></ScrollReveal>
+        <ScrollReveal><EastMalaysiaSection t={t} /></ScrollReveal>
+        <ScrollReveal><RescueStories t={t} /></ScrollReveal>
+        {posts.length > 0 && <ScrollReveal><BlogSection t={t} posts={posts} lang={lang} /></ScrollReveal>}
         <RequestForm t={t.form} />
         <Footer t={t} lang={lang} />
       </div>
