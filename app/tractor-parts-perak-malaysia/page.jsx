@@ -108,11 +108,19 @@ export default function PerakPage() {
     })),
   }
 
+  const speakableSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'SpeakableSpecification',
+    'inLanguage': 'en',
+    xpath: ["/html/head/title", "/html/head/meta[@name='description']/@content"],
+  }
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
 
       <WhatsappCTA
         label="perak-sticky"

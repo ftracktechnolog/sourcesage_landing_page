@@ -111,11 +111,38 @@ export default function YanmarMarinePage() {
     })),
   }
 
+  const partsListSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    'inLanguage': 'en',
+    name: 'Yanmar Marine Parts Categories',
+    description: 'Yanmar marine engine spare parts available by system — cooling, fuel, engine seals, electrical, transmission, service kits.',
+    numberOfItems: PARTS.length,
+    itemListElement: PARTS.map((cat, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      item: {
+        '@type': 'Product',
+        name: `Yanmar Marine ${cat.category} Parts`,
+        description: `${cat.items.join(', ')}`,
+      },
+    })),
+  }
+
+  const speakableSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'SpeakableSpecification',
+    'inLanguage': 'en',
+    xpath: ["/html/head/title", "/html/head/meta[@name='description']/@content"],
+  }
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(partsListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
 
       {/* Sticky button */}
       <WhatsappCTA

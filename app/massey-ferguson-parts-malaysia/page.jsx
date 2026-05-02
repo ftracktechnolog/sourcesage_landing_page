@@ -129,11 +129,38 @@ export default function MasseyFergusonPage() {
     })),
   }
 
+  const partsListSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    'inLanguage': 'en',
+    name: 'Massey Ferguson Parts Categories',
+    description: 'Massey Ferguson tractor spare parts available by system — Perkins engine, transmission, hydraulics, steering & axle, electrical, filters & service.',
+    numberOfItems: PARTS.length,
+    itemListElement: PARTS.map((cat, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      item: {
+        '@type': 'Product',
+        name: `Massey Ferguson ${cat.category} Parts`,
+        description: `${cat.items.join(', ')}`,
+      },
+    })),
+  }
+
+  const speakableSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'SpeakableSpecification',
+    'inLanguage': 'en',
+    xpath: ["/html/head/title", "/html/head/meta[@name='description']/@content"],
+  }
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(partsListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
 
       <WhatsappCTA
         label="mf-sticky"

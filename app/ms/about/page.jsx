@@ -6,7 +6,7 @@ import LangSwitcher from '../../../components/LangSwitcher'
 export const metadata = {
   title: 'Tentang SourceSage — Perolehan Alat Ganti Traktor & Enjin Marin di Malaysia',
   description: 'Pakar perolehan alat ganti traktor pertanian dan enjin diesel marin di Malaysia, berpangkalan di Ipoh, Perak. Meliputi Kubota, Yanmar, Massey Ferguson, John Deere, Perkins, dan Zoomlion.',
-  alternates: { canonical: '/ms/about/' },
+  alternates: { canonical: '/ms/about/', languages: { 'en': 'https://sourcesage.ai/about/', 'ms': 'https://sourcesage.ai/ms/about/', 'zh-Hans': 'https://sourcesage.ai/zh/about/', 'x-default': 'https://sourcesage.ai/about/' } },
   openGraph: {
     title: 'Tentang SourceSage — Perolehan Alat Ganti Traktor & Enjin Marin di Malaysia',
     description: 'Pakar perolehan alat ganti traktor pertanian dan enjin diesel marin di Malaysia, berpangkalan di Ipoh, Perak.',

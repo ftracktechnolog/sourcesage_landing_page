@@ -117,11 +117,38 @@ const jsonLd = {
 }
 
 export default function JohnDeerePartsPage() {
+  const partsListSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    'inLanguage': 'en',
+    name: 'John Deere Parts Categories',
+    description: 'John Deere tractor spare parts available by system — engine, transmission, hydraulics, steering & axle, electrical, filters & service.',
+    numberOfItems: PARTS.length,
+    itemListElement: PARTS.map((cat, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      item: {
+        '@type': 'Product',
+        name: `John Deere ${cat.category} Parts`,
+        description: `${cat.items.join(', ')}`,
+      },
+    })),
+  }
+
+  const speakableSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'SpeakableSpecification',
+    'inLanguage': 'en',
+    xpath: ["/html/head/title", "/html/head/meta[@name='description']/@content"],
+  }
+
   return (
     <div className="min-h-screen font-sans text-slate-900 antialiased">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd.service) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd.faq) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd.breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(partsListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
 
       {/* Navbar */}
       <nav className="bg-white shadow-sm sticky top-0 z-50">

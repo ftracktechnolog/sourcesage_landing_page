@@ -6,7 +6,7 @@ import LangSwitcher from '../../../components/LangSwitcher'
 export const metadata = {
   title: 'Alat Ganti Traktor Kubota Malaysia — Perolehan Pantas | SourceSage',
   description: 'Perlukan alat ganti traktor Kubota di Malaysia? SourceSage membekalkan alat ganti tulen & aftermarket untuk Kubota M9000, L4400, L3408, L3608 & banyak lagi. Semakan ketersediaan 24 jam.',
-  alternates: { canonical: '/ms/kubota-tractor-parts-malaysia/', languages: { 'ms': 'https://sourcesage.ai/ms/kubota-tractor-parts-malaysia/', 'x-default': 'https://sourcesage.ai/kubota-tractor-parts-malaysia/' } },
+  alternates: { canonical: '/ms/kubota-tractor-parts-malaysia/', languages: { 'en': 'https://sourcesage.ai/kubota-tractor-parts-malaysia/', 'ms': 'https://sourcesage.ai/ms/kubota-tractor-parts-malaysia/', 'zh-Hans': 'https://sourcesage.ai/zh/kubota-tractor-parts-malaysia/', 'x-default': 'https://sourcesage.ai/kubota-tractor-parts-malaysia/' } },
   openGraph: {
     title: 'Alat Ganti Traktor Kubota Malaysia — Perolehan Pantas | SourceSage',
     description: 'Perlukan alat ganti traktor Kubota di Malaysia? SourceSage membekalkan alat ganti tulen & aftermarket untuk Kubota M9000, L4400, L3408, L3608 & banyak lagi.',

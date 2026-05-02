@@ -6,7 +6,7 @@ import LangSwitcher from '../../../components/LangSwitcher'
 export const metadata = {
   title: '关于SourceSage — 马来西亚拖拉机与船用发动机配件采购',
   description: '马来西亚农业拖拉机与船用柴油发动机配件采购专家，总部位于霹雳州怡保。覆盖久保田、洋马、麦赛福格森、约翰迪尔、珀金斯和中联重科品牌。',
-  alternates: { canonical: '/zh/about/' },
+  alternates: { canonical: '/zh/about/', languages: { 'en': 'https://sourcesage.ai/about/', 'ms': 'https://sourcesage.ai/ms/about/', 'zh-Hans': 'https://sourcesage.ai/zh/about/', 'x-default': 'https://sourcesage.ai/about/' } },
   openGraph: {
     title: '关于SourceSage — 马来西亚拖拉机与船用发动机配件采购',
     description: '马来西亚农业拖拉机与船用柴油发动机配件采购专家，总部位于霹雳州怡保。',

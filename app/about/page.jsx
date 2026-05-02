@@ -6,7 +6,7 @@ import LangSwitcher from '../../components/LangSwitcher'
 export const metadata = {
   title: 'About SourceSage — Tractor & Marine Parts Sourcing Malaysia | SourceSage',
   description: 'Malaysia-based spare parts sourcing for agricultural tractors and marine diesel engines. Covers Kubota, Yanmar, Massey Ferguson, John Deere, Perkins, and Zoomlion.',
-  alternates: { canonical: '/about/' },
+  alternates: { canonical: '/about/', languages: { 'en': 'https://sourcesage.ai/about/', 'ms': 'https://sourcesage.ai/ms/about/', 'zh-Hans': 'https://sourcesage.ai/zh/about/', 'x-default': 'https://sourcesage.ai/about/' } },
   openGraph: {
     title: 'About SourceSage — Tractor & Marine Parts Sourcing Malaysia | SourceSage',
     description: 'Malaysia-based spare parts sourcing for agricultural tractors and marine diesel engines. Covers Kubota, Yanmar, Massey Ferguson, John Deere, Perkins, and Zoomlion.',

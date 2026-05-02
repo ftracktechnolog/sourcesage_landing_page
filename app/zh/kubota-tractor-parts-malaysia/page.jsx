@@ -6,7 +6,7 @@ import LangSwitcher from '../../../components/LangSwitcher'
 export const metadata = {
   title: '久保田拖拉机零件马来西亚 — 快速采购 | SourceSage',
   description: '在马来西亚需要久保田拖拉机零件？SourceSage 供应 M9000、L4400、L3408、L3608 等型号的原厂及替换零件。24小时供应确认。',
-  alternates: { canonical: '/zh/kubota-tractor-parts-malaysia/', languages: { 'zh-Hans': 'https://sourcesage.ai/zh/kubota-tractor-parts-malaysia/', 'x-default': 'https://sourcesage.ai/kubota-tractor-parts-malaysia/' } },
+  alternates: { canonical: '/zh/kubota-tractor-parts-malaysia/', languages: { 'en': 'https://sourcesage.ai/kubota-tractor-parts-malaysia/', 'ms': 'https://sourcesage.ai/ms/kubota-tractor-parts-malaysia/', 'zh-Hans': 'https://sourcesage.ai/zh/kubota-tractor-parts-malaysia/', 'x-default': 'https://sourcesage.ai/kubota-tractor-parts-malaysia/' } },
   openGraph: {
     title: '久保田拖拉机零件马来西亚 — 快速采购 | SourceSage',
     description: '在马来西亚需要久保田拖拉机零件？SourceSage 供应 M9000、L4400、L3408、L3608 等型号的原厂及替换零件。',

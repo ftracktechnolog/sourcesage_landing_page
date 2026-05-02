@@ -6,7 +6,7 @@ import LangSwitcher from '../../components/LangSwitcher'
 export const metadata = {
   title: 'Kubota Tractor Parts Malaysia — Fast Sourcing | SourceSage',
   description: 'Need Kubota tractor parts in Malaysia? SourceSage supplies genuine & aftermarket parts for Kubota M9000, L4400, L3408, L3608 & more. 24hr availability check.',
-  alternates: { canonical: '/kubota-tractor-parts-malaysia/', languages: { 'en': 'https://sourcesage.ai/kubota-tractor-parts-malaysia/', 'x-default': 'https://sourcesage.ai/kubota-tractor-parts-malaysia/' } },
+  alternates: { canonical: '/kubota-tractor-parts-malaysia/', languages: { 'en': 'https://sourcesage.ai/kubota-tractor-parts-malaysia/', 'ms': 'https://sourcesage.ai/ms/kubota-tractor-parts-malaysia/', 'zh-Hans': 'https://sourcesage.ai/zh/kubota-tractor-parts-malaysia/', 'x-default': 'https://sourcesage.ai/kubota-tractor-parts-malaysia/' } },
   openGraph: {
     title: 'Kubota Tractor Parts Malaysia — Fast Sourcing | SourceSage',
     description: 'Need Kubota tractor parts in Malaysia? SourceSage supplies genuine & aftermarket parts for Kubota M9000, L4400, L3408, L3608 & more. 24hr availability check.',
