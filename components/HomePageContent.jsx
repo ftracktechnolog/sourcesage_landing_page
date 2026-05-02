@@ -9,8 +9,8 @@ import RequestForm from './RequestForm'
 import LangSetter from './LangSetter'
 import { getAllPosts } from '../lib/blog'
 
-const langLinks = { en: '/', ms: '/ms', zh: '/zh' }
-const langLabels = { en: 'EN', ms: 'BM', zh: '中文' }
+const langLinks = { en: '/', ms: '/ms', 'zh-Hans': '/zh' }
+const langLabels = { en: 'EN', ms: 'BM', 'zh-Hans': '中文' }
 
 const Navbar = ({ t, lang }) => (
   <nav className="bg-white shadow-sm sticky top-0 z-50">
@@ -593,10 +593,11 @@ export default function HomePageContent({ t, lang }) {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'LocalBusiness',
+            'inLanguage': lang,
             'name': 'SourceSage.ai',
             'url': 'https://sourcesage.ai',
-            'description': 'Malaysia-based supplier of hard-to-find agricultural tractor and marine engine spare parts. Fast sourcing for urgent breakdowns.',
-            'address': { '@type': 'PostalAddress', 'addressCountry': 'MY' },
+            'description': 'Malaysia-based supplier of hard-to-find agricultural tractor and marine engine spare parts. Fast sourcing for urgent breakdowns. Based in Ipoh, Perak.',
+            'address': { '@type': 'PostalAddress', 'addressLocality': 'Ipoh', 'addressRegion': 'Perak', 'addressCountry': 'MY' },
             'areaServed': [
               { '@type': 'State', 'name': 'Johor' },
               { '@type': 'State', 'name': 'Selangor' },

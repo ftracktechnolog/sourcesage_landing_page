@@ -110,6 +110,7 @@ export default async function BlogPost({ params }) {
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
+    'inLanguage': 'en',
     headline: post.meta.title,
     description: post.meta.meta_description || post.meta.title,
     image: ogImage,
@@ -123,6 +124,7 @@ export default async function BlogPost({ params }) {
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
+    'inLanguage': 'en',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sourcesage.ai/' },
       { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://sourcesage.ai/blog' },
@@ -133,6 +135,7 @@ export default async function BlogPost({ params }) {
   const faqSchema = post.meta.faqs?.length ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
+    'inLanguage': 'en',
     mainEntity: post.meta.faqs.map(({ q, a }) => ({
       '@type': 'Question',
       name: q,

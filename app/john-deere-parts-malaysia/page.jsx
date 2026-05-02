@@ -86,6 +86,7 @@ const jsonLd = {
   service: {
     '@context': 'https://schema.org',
     '@type': 'Service',
+    'inLanguage': 'en',
     name: 'John Deere Tractor Parts Sourcing Malaysia',
     serviceType: 'Agricultural Machinery Parts Supply',
     description: 'Sourcing hard-to-find John Deere tractor spare parts across Malaysia — 5E, 6J, 5310 series and vintage models.',
@@ -96,6 +97,7 @@ const jsonLd = {
   faq: {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
+    'inLanguage': 'en',
     mainEntity: FAQS.map(({ q, a }) => ({
       '@type': 'Question',
       name: q,
@@ -105,6 +107,7 @@ const jsonLd = {
   breadcrumb: {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
+    'inLanguage': 'en',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sourcesage.ai/' },
       { '@type': 'ListItem', position: 2, name: 'John Deere Parts Malaysia', item: 'https://sourcesage.ai/john-deere-parts-malaysia' },

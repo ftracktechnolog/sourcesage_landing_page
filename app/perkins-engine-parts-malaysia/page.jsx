@@ -95,6 +95,7 @@ const jsonLd = {
   service: {
     '@context': 'https://schema.org',
     '@type': 'Service',
+    'inLanguage': 'en',
     name: 'Perkins Engine Parts Sourcing Malaysia',
     serviceType: 'Diesel Engine Parts Supply',
     description: 'Sourcing Perkins diesel engine parts across Malaysia — A3.152, A4.248, AD4.203, 1004 and 403 series for Massey Ferguson, JCB and other Perkins-powered equipment.',
@@ -105,6 +106,7 @@ const jsonLd = {
   faq: {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
+    'inLanguage': 'en',
     mainEntity: FAQS.map(({ q, a }) => ({
       '@type': 'Question',
       name: q,
@@ -114,6 +116,7 @@ const jsonLd = {
   breadcrumb: {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
+    'inLanguage': 'en',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sourcesage.ai/' },
       { '@type': 'ListItem', position: 2, name: 'Perkins Engine Parts Malaysia', item: 'https://sourcesage.ai/perkins-engine-parts-malaysia' },

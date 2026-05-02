@@ -9,7 +9,7 @@ export const metadata = {
     languages: {
       en: 'https://sourcesage.ai/',
       ms: 'https://sourcesage.ai/ms/',
-      zh: 'https://sourcesage.ai/zh/',
+      'zh-Hans': 'https://sourcesage.ai/zh/',
       'x-default': 'https://sourcesage.ai/',
     },
   },

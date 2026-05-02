@@ -119,6 +119,7 @@ export default function KubotaPage() {
   const serviceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
+    'inLanguage': 'en',
     name: 'Kubota Tractor Parts Sourcing Malaysia',
     provider: {
       '@type': 'LocalBusiness',
@@ -142,6 +143,7 @@ export default function KubotaPage() {
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
+    'inLanguage': 'en',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sourcesage.ai/' },
       { '@type': 'ListItem', position: 2, name: 'Kubota Tractor Parts Malaysia', item: 'https://sourcesage.ai/kubota-tractor-parts-malaysia' },
@@ -151,6 +153,7 @@ export default function KubotaPage() {
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
+    'inLanguage': 'en',
     mainEntity: FAQS.map(f => ({
       '@type': 'Question',
       name: f.q,

@@ -29,6 +29,13 @@ const organizationSchema = {
     {
       '@type': 'Organization',
       '@id': 'https://sourcesage.ai/#organization',
+      'inLanguage': 'en',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Ipoh',
+        addressRegion: 'Perak',
+        addressCountry: 'MY',
+      },
       name: 'SourceSage',
       url: 'https://sourcesage.ai',
       logo: 'https://sourcesage.ai/logo.png',
@@ -103,7 +110,7 @@ export default function AboutPage() {
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-slate-900 mb-6">What We Do</h2>
             <p className="text-lg text-slate-600 leading-relaxed mb-6">
-              SourceSage helps businesses in Malaysia source spare parts for agricultural tractors and marine diesel engines — including parts that are hard to find through standard dealer channels.
+              SourceSage helps businesses in Malaysia source spare parts for agricultural tractors and marine diesel engines — including parts that are hard to find through standard dealer channels. Based in Ipoh, Perak, we serve customers across Peninsula Malaysia and East Malaysia (Sabah and Sarawak).
             </p>
             <p className="text-lg text-slate-600 leading-relaxed">
               We cover a range of brands including Kubota, Yanmar, Massey Ferguson, John Deere, Perkins, and Zoomlion.
@@ -190,7 +197,7 @@ export default function AboutPage() {
               <div>
                 <span className="font-black text-xl tracking-tighter text-slate-900">SourceSage</span>
                 <span className="font-black text-xl text-blue-600">.ai</span>
-                <p className="text-sm text-slate-500 mt-1">Malaysia-Based Parts Sourcing Specialist</p>
+                <p className="text-sm text-slate-500 mt-1">Ipoh, Perak — Malaysia Parts Sourcing Specialist</p>
               </div>
               <div className="flex gap-6 text-sm font-semibold">
                 <a href="mailto:info@sourcesage.ai" className="hover:text-blue-600 flex items-center gap-2 transition-colors">

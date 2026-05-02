@@ -82,6 +82,7 @@ const Footer = () => (
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
+  'inLanguage': 'en',
   name: 'SourceSage.ai',
   url: 'https://sourcesage.ai',
   description: 'Malaysia-based tractor and marine engine parts sourcing specialist.',
@@ -91,6 +92,7 @@ const websiteSchema = {
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
+  'inLanguage': 'en',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sourcesage.ai/' },
     { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://sourcesage.ai/blog' },
