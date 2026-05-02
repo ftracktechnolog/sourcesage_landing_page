@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { MessageCircle, Mail, CheckCircle, Wrench, AlertTriangle, MapPin, ChevronRight, ShieldCheck } from 'lucide-react'
 import WhatsappCTA from '../../components/WhatsappCTA'
+import LangSwitcher from '../../components/LangSwitcher'
 
 export const metadata = {
   title: 'John Deere Tractor Parts Malaysia — 5E, 5310 & 6J Series | SourceSage',
@@ -142,8 +143,9 @@ export default function JohnDeerePartsPage() {
             message="Hi, I need help sourcing a John Deere tractor part. Model: ___ Part needed: ___"
             className="bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-lg font-bold transition-all text-sm flex items-center gap-2"
           >
-            <MessageCircle className="w-4 h-4" /> WhatsApp Us
-          </WhatsappCTA>
+              <MessageCircle className="w-4 h-4" /> WhatsApp Us
+            </WhatsappCTA>
+            <LangSwitcher currentLang="en" />
         </div>
       </nav>
 

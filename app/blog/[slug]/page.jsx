@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { MessageCircle, Mail } from 'lucide-react'
 import { getAllPosts, getPostBySlug } from '../../../lib/blog'
 import WhatsappCTA from '../../../components/WhatsappCTA'
+import LangSwitcher from '../../../components/LangSwitcher'
 
 export async function generateStaticParams() {
   return getAllPosts('en').map(p => ({ slug: p.slug }))
@@ -60,6 +61,7 @@ const Navbar = () => (
       >
         <MessageCircle className="w-4 h-4" /> WhatsApp
       </WhatsappCTA>
+      <LangSwitcher currentLang="en" />
     </div>
   </nav>
 )

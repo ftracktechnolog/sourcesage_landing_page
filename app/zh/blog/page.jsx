@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { MessageCircle, Mail } from 'lucide-react'
 import { getAllPosts } from '../../../lib/blog'
 import WhatsappCTA from '../../../components/WhatsappCTA'
+import LangSwitcher from '../../../components/LangSwitcher'
 
 export const metadata = {
   title: '拖拉机与船用发动机零件指南 — 马来西亚 | SourceSage',
@@ -40,6 +41,7 @@ const Navbar = () => (
       >
         <MessageCircle className="w-4 h-4" /> WhatsApp
       </WhatsappCTA>
+      <LangSwitcher currentLang="zh-Hans" />
     </div>
   </nav>
 )
