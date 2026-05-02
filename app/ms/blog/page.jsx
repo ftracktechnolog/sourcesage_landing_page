@@ -30,7 +30,7 @@ const Navbar = () => (
         <Link href="/#brands" className="hover:text-blue-600 transition-colors">Jenama</Link>
         <Link href="/#marine" className="hover:text-blue-600 transition-colors">Marin</Link>
         <Link href="/#how-it-works" className="hover:text-blue-600 transition-colors">Cara Kerja</Link>
-        <Link href="/about" className="hover:text-blue-600 transition-colors">Tentang</Link>
+        <Link href="/ms/about" className="hover:text-blue-600 transition-colors">Tentang</Link>
         <Link href="/ms/blog" className="text-blue-600">Blog</Link>
         <Link href="/#request" className="hover:text-blue-600 transition-colors">Minta Sebut Harga</Link>
       </div>
