@@ -3,11 +3,11 @@ import { MessageCircle, Mail, CheckCircle, Wrench, AlertTriangle, MapPin, Chevro
 import WhatsappCTA from '../../components/WhatsappCTA'
 
 export const metadata = {
-  title: 'Yanmar Marine Engine Parts Malaysia | SourceSage',
+  title: 'Yanmar Marine Engine Parts Malaysia — Hard-to-Find Specialists | SourceSage',
   description: 'Yanmar marine engine parts Malaysia. 1GM, 2GM, 3GM, 3JH, 4JH & 6LY series. Fuel injectors, gaskets, cylinder heads & more. Air freight available for urgent orders.',
   alternates: { canonical: '/yanmar-marine-parts-malaysia/', languages: { 'en': 'https://sourcesage.ai/yanmar-marine-parts-malaysia/', 'x-default': 'https://sourcesage.ai/yanmar-marine-parts-malaysia/' } },
   openGraph: {
-    title: 'Yanmar Marine Engine Parts Malaysia | SourceSage',
+    title: 'Yanmar Marine Engine Parts Malaysia — Hard-to-Find Specialists | SourceSage',
     description: 'Yanmar marine engine parts Malaysia. 1GM, 2GM, 3GM, 3JH, 4JH & 6LY series. Fuel injectors, gaskets, cylinder heads & more. Air freight available for urgent orders.',
     url: 'https://sourcesage.ai/yanmar-marine-parts-malaysia/',
     siteName: 'SourceSage.ai',
@@ -17,7 +17,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Yanmar Marine Engine Parts Malaysia | SourceSage',
+    title: 'Yanmar Marine Engine Parts Malaysia — Hard-to-Find Specialists | SourceSage',
     description: 'Yanmar marine engine parts Malaysia. 1GM, 2GM, 3GM, 3JH, 4JH & 6LY series. Fuel injectors, gaskets, cylinder heads & more. Air freight available for urgent orders.',
     images: ['https://sourcesage.ai/images/og-home.png'],
   },

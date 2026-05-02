@@ -1,7 +1,7 @@
 ---
 id: blog-07
 slug: kubota-v1505-engine-parts-malaysia
-title: "Kubota V1505 Engine Parts Malaysia: Overhaul Kit, Injectors & More"
+title: "Kubota V1505 Engine Parts Malaysia: Overhaul Kit & Injectors"
 author: "SourceSage Editorial"
 meta_description: "Complete guide to sourcing Kubota V1505 engine parts in Malaysia — overhaul kits, injectors, cylinder heads, water pumps. Which machines use the V1505 and where to find parts fast."
 meta_keywords: ["kubota v1505 engine parts malaysia", "v1505 overhaul kit malaysia", "kubota v1505 injector price malaysia", "kubota v1505 cylinder head", "v1505 spare parts"]

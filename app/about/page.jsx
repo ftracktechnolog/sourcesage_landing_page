@@ -3,11 +3,11 @@ import { MessageCircle, Mail, ChevronRight } from 'lucide-react'
 import WhatsappCTA from '../../components/WhatsappCTA'
 
 export const metadata = {
-  title: 'About SourceSage — Spare Parts Sourcing for Tractor & Marine Engines in Malaysia',
+  title: 'About SourceSage — Tractor & Marine Parts Sourcing Malaysia | SourceSage',
   description: 'Malaysia-based spare parts sourcing for agricultural tractors and marine diesel engines. Covers Kubota, Yanmar, Massey Ferguson, John Deere, Perkins, and Zoomlion.',
   alternates: { canonical: '/about/' },
   openGraph: {
-    title: 'About SourceSage — Spare Parts Sourcing for Tractor & Marine Engines in Malaysia',
+    title: 'About SourceSage — Tractor & Marine Parts Sourcing Malaysia | SourceSage',
     description: 'Malaysia-based spare parts sourcing for agricultural tractors and marine diesel engines. Covers Kubota, Yanmar, Massey Ferguson, John Deere, Perkins, and Zoomlion.',
     url: 'https://sourcesage.ai/about/',
     siteName: 'SourceSage.ai',
@@ -17,7 +17,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About SourceSage — Spare Parts Sourcing for Tractor & Marine Engines in Malaysia',
+    title: 'About SourceSage — Tractor & Marine Parts Sourcing Malaysia | SourceSage',
     description: 'Malaysia-based spare parts sourcing for agricultural tractors and marine diesel engines. Covers Kubota, Yanmar, Massey Ferguson, John Deere, Perkins, and Zoomlion.',
     images: ['https://sourcesage.ai/images/og-home.png'],
   },
@@ -93,7 +93,7 @@ export default function AboutPage() {
         <header className="bg-white pt-16 pb-20 border-b border-slate-100">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
-              About SourceSage — Spare Parts Sourcing for Tractor & Marine Engines in Malaysia
+              About SourceSage — Tractor & Marine Parts Sourcing Malaysia | SourceSage
             </h1>
           </div>
         </header>

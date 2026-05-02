@@ -1,7 +1,7 @@
 ---
 id: blog-09
 slug: yanmar-marine-engine-parts-malaysia
-title: "Yanmar Marine Engine Parts in Malaysia: What's Available & How to Find Them"
+title: "Yanmar Marine Engine Parts Malaysia: Sourcing Guide"
 meta_description: "Yanmar marine engine parts sourcing guide for Malaysia — 1GM to 6LY series, what's in stock, how to find discontinued items, and East Malaysia coverage."
 author: "SourceSage Editorial"
 meta_keywords: ["yanmar marine engine parts malaysia", "yanmar 3jh 4jh parts", "yanmar marine diesel spare parts", "yanmar marine engine supplier malaysia"]

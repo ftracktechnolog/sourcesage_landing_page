@@ -1,7 +1,7 @@
 ---
 id: blog-12
 slug: john-deere-tractor-parts-malaysia
-title: "John Deere Tractor Parts in Malaysia: 5E, 5310 & 6J Series Guide"
+title: "John Deere Tractor Parts Malaysia: 5E, 5310 & 6J"
 meta_description: "Sourcing John Deere tractor parts in Malaysia — 5075E, 5310, 5403 and 6J series. Engine code guide, common failures, genuine vs aftermarket, and where to find parts fast."
 author: "SourceSage Editorial"
 meta_keywords: ["john deere tractor parts malaysia", "john deere 5075e parts malaysia", "john deere 5310 spare parts", "jd parts malaysia", "john deere 6j parts malaysia"]

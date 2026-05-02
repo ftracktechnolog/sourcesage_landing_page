@@ -1,7 +1,7 @@
 ---
 id: blog-10
 slug: yanmar-3tnv88-engine-parts-malaysia
-title: "Yanmar 3TNV88 Engine Parts Malaysia: Overhaul Kits, Injectors & Sourcing Guide"
+title: "Yanmar 3TNV88 Parts Malaysia: Overhaul Kits & Injectors"
 author: "SourceSage Editorial"
 meta_description: "Sourcing Yanmar 3TNV88 engine parts in Malaysia — overhaul kits, injector nozzles, timing belts, water pumps. Which machines use the 3TNV88 and how to find parts fast."
 meta_keywords: ["yanmar 3tnv88 parts malaysia", "3tnv88 overhaul kit malaysia", "yanmar 3tnv88 injector", "3tnv88 spare parts", "yanmar mini excavator engine parts malaysia"]

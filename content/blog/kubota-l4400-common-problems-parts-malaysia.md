@@ -1,7 +1,7 @@
 ---
 id: blog-04
 slug: kubota-l4400-common-problems-parts-malaysia
-title: "Kubota L4400 Common Problems & Replacement Parts Guide Malaysia"
+title: "Kubota L4400 Problems & Parts Malaysia: Replacement Guide"
 meta_description: "Common Kubota L4400 problems and how to fix them. Find L4400 engine, transmission & hydraulic parts in Malaysia. Troubleshooting guide from SourceSage."
 author: "SourceSage Editorial"
 meta_keywords: ["kubota l4400 parts malaysia", "kubota l4400 problems", "kubota l4400 spare parts list"]

@@ -2,7 +2,7 @@ import './globals.css'
 import Script from 'next/script'
 
 export const metadata = {
-  title: 'Hard-to-Find Tractor & Marine Engine Parts Malaysia | SourceSage',
+  title: 'Hard-to-Find Tractor & Marine Parts Malaysia | SourceSage',
   description: 'Hard-to-find tractor & marine engine parts in Malaysia. Fast sourcing for urgent breakdowns — Kubota, Yanmar, Massey Ferguson, Perkins, Isuzu & more.',
   metadataBase: new URL('https://sourcesage.ai'),
   alternates: {
@@ -15,7 +15,7 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: 'Hard-to-Find Tractor & Marine Engine Parts Malaysia | SourceSage',
+    title: 'Hard-to-Find Tractor & Marine Parts Malaysia | SourceSage',
     description: 'Hard-to-find tractor & marine engine parts in Malaysia. Fast sourcing for urgent breakdowns — Kubota, Yanmar, Massey Ferguson, Perkins & more.',
     url: 'https://sourcesage.ai/',
     siteName: 'SourceSage.ai',
@@ -25,7 +25,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hard-to-Find Tractor & Marine Engine Parts Malaysia | SourceSage',
+    title: 'Hard-to-Find Tractor & Marine Parts Malaysia | SourceSage',
     description: 'Hard-to-find tractor & marine engine parts in Malaysia. Fast sourcing for urgent breakdowns.',
     images: ['https://sourcesage.ai/images/og-home.png'],
   },

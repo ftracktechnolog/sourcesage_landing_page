@@ -1,7 +1,7 @@
 ---
 id: blog-01
 slug: how-to-identify-your-kubota-tractor-model
-title: "Identify Your Kubota Tractor Model & Find the Right Parts in Malaysia"
+title: "Identify Your Kubota Tractor Model: Malaysia Parts Guide"
 meta_description: "How to identify your Kubota tractor model in Malaysia. Check serial plate, engine code, model number. Quick identification guide for ordering correct parts."
 author: "SourceSage Editorial"
 meta_keywords: ["kubota tractor model identification malaysia", "kubota serial number parts", "how to find kubota tractor model number"]

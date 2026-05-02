@@ -1,7 +1,7 @@
 ---
 id: blog-13
 slug: kubota-engine-codes-other-brands-malaysia
-title: "Kubota & Yanmar Engines in Other Brands' Machines — Malaysia Parts Guide"
+title: "Kubota & Yanmar Engines in Other Brands: Malaysia Guide"
 meta_description: "Kubota and Yanmar diesel engines power equipment from Bobcat, Takeuchi, JCB, Manitou and more. If you know the engine code, you can source parts cheaper and faster in Malaysia."
 author: "SourceSage Editorial"
 meta_keywords: ["kubota engine other brands malaysia", "bobcat kubota engine parts malaysia", "takeuchi yanmar engine parts malaysia", "mini excavator engine parts malaysia", "oem engine cross reference malaysia"]

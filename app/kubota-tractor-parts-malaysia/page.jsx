@@ -3,11 +3,11 @@ import { MessageCircle, Mail, CheckCircle, Wrench, AlertTriangle, MapPin, Chevro
 import WhatsappCTA from '../../components/WhatsappCTA'
 
 export const metadata = {
-  title: 'Kubota Tractor Parts Malaysia | SourceSage',
+  title: 'Kubota Tractor Parts Malaysia — Fast Sourcing | SourceSage',
   description: 'Need Kubota tractor parts in Malaysia? SourceSage supplies genuine & aftermarket parts for Kubota M9000, L4400, L3408, L3608 & more. 24hr availability check.',
   alternates: { canonical: '/kubota-tractor-parts-malaysia/', languages: { 'en': 'https://sourcesage.ai/kubota-tractor-parts-malaysia/', 'x-default': 'https://sourcesage.ai/kubota-tractor-parts-malaysia/' } },
   openGraph: {
-    title: 'Kubota Tractor Parts Malaysia | SourceSage',
+    title: 'Kubota Tractor Parts Malaysia — Fast Sourcing | SourceSage',
     description: 'Need Kubota tractor parts in Malaysia? SourceSage supplies genuine & aftermarket parts for Kubota M9000, L4400, L3408, L3608 & more. 24hr availability check.',
     url: 'https://sourcesage.ai/kubota-tractor-parts-malaysia/',
     siteName: 'SourceSage.ai',
@@ -17,7 +17,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kubota Tractor Parts Malaysia | SourceSage',
+    title: 'Kubota Tractor Parts Malaysia — Fast Sourcing | SourceSage',
     description: 'Need Kubota tractor parts in Malaysia? SourceSage supplies genuine & aftermarket parts for Kubota M9000, L4400, L3408, L3608 & more. 24hr availability check.',
     images: ['https://sourcesage.ai/images/og-home.png'],
   },

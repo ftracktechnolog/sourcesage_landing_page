@@ -1,7 +1,7 @@
 ---
 id: blog-06
 slug: kubota-l3408-l3608-parts-malaysia
-title: "Kubota L3408 & L3608 Parts: Compatibility & Common Failures Malaysia"
+title: "Kubota L3408 & L3608 Parts Malaysia: Compatibility Guide"
 meta_description: "Kubota L3408 and L3608 tractor parts in Malaysia. Engine gaskets, fuel system components, hydraulic parts. Sourcing guide for these compact Kubota models."
 author: "SourceSage Editorial"
 meta_keywords: ["kubota l3408 parts malaysia", "kubota l3608 spare parts", "l3408 l3608 parts compatible"]

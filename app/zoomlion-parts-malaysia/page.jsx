@@ -3,11 +3,11 @@ import { MessageCircle, Mail, CheckCircle, Wrench, AlertTriangle, MapPin, Chevro
 import WhatsappCTA from '../../components/WhatsappCTA'
 
 export const metadata = {
-  title: 'Zoomlion Spare Parts Malaysia | SourceSage',
+  title: 'Zoomlion Spare Parts Malaysia — Heavy Equipment Sourcing | SourceSage',
   description: 'Zoomlion parts supplier Malaysia. Undercarriage parts, hydraulic fittings, engine components. Fast sourcing for Zoomlion agricultural & construction machinery.',
   alternates: { canonical: '/zoomlion-parts-malaysia/', languages: { 'en': 'https://sourcesage.ai/zoomlion-parts-malaysia/', 'x-default': 'https://sourcesage.ai/zoomlion-parts-malaysia/' } },
   openGraph: {
-    title: 'Zoomlion Spare Parts Malaysia | SourceSage',
+    title: 'Zoomlion Spare Parts Malaysia — Heavy Equipment Sourcing | SourceSage',
     description: 'Zoomlion parts supplier Malaysia. Undercarriage parts, hydraulic fittings, engine components. Fast sourcing for Zoomlion agricultural & construction machinery.',
     url: 'https://sourcesage.ai/zoomlion-parts-malaysia/',
     siteName: 'SourceSage.ai',
@@ -17,7 +17,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Zoomlion Spare Parts Malaysia | SourceSage',
+    title: 'Zoomlion Spare Parts Malaysia — Heavy Equipment Sourcing | SourceSage',
     description: 'Zoomlion parts supplier Malaysia. Undercarriage parts, hydraulic fittings, engine components. Fast sourcing for Zoomlion agricultural & construction machinery.',
     images: ['https://sourcesage.ai/images/og-home.png'],
   },

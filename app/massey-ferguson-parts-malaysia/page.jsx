@@ -3,11 +3,11 @@ import { MessageCircle, Mail, CheckCircle, Wrench, AlertTriangle, MapPin, Chevro
 import WhatsappCTA from '../../components/WhatsappCTA'
 
 export const metadata = {
-  title: 'Massey Ferguson Spare Parts Malaysia | SourceSage',
+  title: 'Massey Ferguson Parts Malaysia — Genuine + Aftermarket | SourceSage',
   description: 'Massey Ferguson tractor parts supplier Malaysia. Transmission seals, steering components, engine parts for MF models. Sourcing when sole distributor is out of stock.',
   alternates: { canonical: '/massey-ferguson-parts-malaysia/', languages: { 'en': 'https://sourcesage.ai/massey-ferguson-parts-malaysia/', 'x-default': 'https://sourcesage.ai/massey-ferguson-parts-malaysia/' } },
   openGraph: {
-    title: 'Massey Ferguson Spare Parts Malaysia | SourceSage',
+    title: 'Massey Ferguson Parts Malaysia — Genuine + Aftermarket | SourceSage',
     description: 'Massey Ferguson tractor parts supplier Malaysia. Transmission seals, steering components, engine parts for MF models. Sourcing when sole distributor is out of stock.',
     url: 'https://sourcesage.ai/massey-ferguson-parts-malaysia/',
     siteName: 'SourceSage.ai',
@@ -17,7 +17,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Massey Ferguson Spare Parts Malaysia | SourceSage',
+    title: 'Massey Ferguson Parts Malaysia — Genuine + Aftermarket | SourceSage',
     description: 'Massey Ferguson tractor parts supplier Malaysia. Transmission seals, steering components, engine parts for MF models. Sourcing when sole distributor is out of stock.',
     images: ['https://sourcesage.ai/images/og-home.png'],
   },

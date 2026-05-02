@@ -1,7 +1,7 @@
 ---
 id: blog-05
 slug: kubota-serial-number-parts-lookup
-title: "Find Kubota Tractor Parts by Serial Number — Malaysia Guide"
+title: "Kubota Parts by Serial Number: Malaysia Lookup Guide"
 meta_description: "How to use your Kubota serial number to find the right tractor parts. Step-by-step lookup guide for Kubota owners in Malaysia. Save time ordering correct parts."
 author: "SourceSage Editorial"
 meta_keywords: ["kubota tractor serial number lookup parts", "identify kubota model serial number", "kubota parts by serial number malaysia"]

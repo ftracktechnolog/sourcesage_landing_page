@@ -3,11 +3,11 @@ import { MessageCircle, Mail, CheckCircle, Wrench, AlertTriangle, MapPin, Chevro
 import WhatsappCTA from '../../components/WhatsappCTA'
 
 export const metadata = {
-  title: 'Perkins Engine Parts Malaysia | SourceSage',
+  title: 'Perkins Engine Parts Malaysia — 1104, 1000 Series Sourcing | SourceSage',
   description: 'Perkins engine parts Malaysia. Cylinder heads, fuel pumps, cooling system parts for Perkins 1104 & other series. Discontinued & current models supported.',
   alternates: { canonical: '/perkins-engine-parts-malaysia/', languages: { 'en': 'https://sourcesage.ai/perkins-engine-parts-malaysia/', 'x-default': 'https://sourcesage.ai/perkins-engine-parts-malaysia/' } },
   openGraph: {
-    title: 'Perkins Engine Parts Malaysia | SourceSage',
+    title: 'Perkins Engine Parts Malaysia — 1104, 1000 Series Sourcing | SourceSage',
     description: 'Perkins engine parts Malaysia. Cylinder heads, fuel pumps, cooling system parts for Perkins 1104 & other series. Discontinued & current models supported.',
     url: 'https://sourcesage.ai/perkins-engine-parts-malaysia/',
     siteName: 'SourceSage.ai',
@@ -17,7 +17,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Perkins Engine Parts Malaysia | SourceSage',
+    title: 'Perkins Engine Parts Malaysia — 1104, 1000 Series Sourcing | SourceSage',
     description: 'Perkins engine parts Malaysia. Cylinder heads, fuel pumps, cooling system parts for Perkins 1104 & other series. Discontinued & current models supported.',
     images: ['https://sourcesage.ai/images/og-home.png'],
   },
