@@ -6,7 +6,7 @@ import LangSwitcher from '../../components/LangSwitcher'
 export const metadata = {
   title: 'Spare Parts Sourcing Service Malaysia — How It Works | SourceSage',
   description: 'How our parts sourcing service works in Malaysia. 5-step process: submit request, availability check, quote & lead time, confirm order, delivery. Agricultural and marine diesel engine parts.',
-  alternates: { canonical: '/services/' },
+  alternates: { canonical: '/services/', languages: { 'en': 'https://sourcesage.ai/services/', 'x-default': 'https://sourcesage.ai/services/' } },
   openGraph: {
     title: 'Spare Parts Sourcing Service Malaysia — How It Works | SourceSage',
     description: 'How our parts sourcing service works in Malaysia. 5-step process from request to delivery.',

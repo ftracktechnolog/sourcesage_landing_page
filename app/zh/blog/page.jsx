@@ -7,7 +7,7 @@ import LangSwitcher from '../../../components/LangSwitcher'
 export const metadata = {
   title: '拖拉机与船用发动机零件指南 — 马来西亚 | SourceSage',
   description: '为马来西亚车间和经销商提供的零件指南。久保田、洋马、麦赛福格森、约翰迪尔、珀金斯和中联重科 — 型号识别、采购技巧、常见问题。',
-  alternates: { canonical: '/zh/blog/' },
+  alternates: { canonical: '/zh/blog/', languages: { 'en': 'https://sourcesage.ai/blog/', 'ms': 'https://sourcesage.ai/ms/blog/', 'zh-Hans': 'https://sourcesage.ai/zh/blog/', 'x-default': 'https://sourcesage.ai/blog/' } },
   openGraph: {
     title: '拖拉机与船用发动机零件指南 — 马来西亚 | SourceSage',
     description: '为马来西亚车间和经销商提供的零件指南。久保田、洋马、麦赛福格森、约翰迪尔、珀金斯和中联重科 — 型号识别、采购技巧、常见问题。',
@@ -16,6 +16,12 @@ export const metadata = {
     type: 'website',
     locale: 'zh_CN',
     images: [{ url: 'https://sourcesage.ai/images/og-home.png', width: 1200, height: 630, alt: 'SourceSage 拖拉机与船用发动机零件指南 马来西亚' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '拖拉机与船用发动机零件指南 — 马来西亚 | SourceSage',
+    description: '为马来西亚车间和经销商提供的零件指南。久保田、洋马、麦赛福格森、约翰迪尔、珀金斯和中联重科 — 型号识别、采购技巧、常见问题。',
+    images: ['https://sourcesage.ai/images/og-home.png'],
   },
 }
 
@@ -64,7 +70,7 @@ const Footer = () => (
             <li><Link href="/zoomlion-parts-malaysia" className="hover:text-blue-600 transition-colors">中联重科零件</Link></li>
             <li><Link href="/john-deere-parts-malaysia" className="hover:text-blue-600 transition-colors">约翰迪尔零件</Link></li>
             <li><Link href="/perkins-engine-parts-malaysia" className="hover:text-blue-600 transition-colors">珀金斯发动机零件</Link></li>
-            <li><Link href="/about" className="hover:text-blue-600 transition-colors">关于SourceSage</Link></li>
+            <li><Link href="/zh/about" className="hover:text-blue-600 transition-colors">关于SourceSage</Link></li>
           </ul>
         </div>
         <div className="flex flex-col gap-3 text-sm font-semibold">

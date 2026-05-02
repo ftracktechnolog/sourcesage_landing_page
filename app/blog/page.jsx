@@ -7,14 +7,21 @@ import LangSwitcher from '../../components/LangSwitcher'
 export const metadata = {
   title: 'Tractor & Marine Parts Guides — Malaysia | SourceSage',
   description: 'Parts guides for Malaysian workshops and dealers. Kubota, Yanmar, Massey Ferguson, John Deere, Perkins & Zoomlion — model identification, sourcing tips, common problems.',
-  alternates: { canonical: '/blog/' },
+  alternates: { canonical: '/blog/', languages: { 'en': 'https://sourcesage.ai/blog/', 'ms': 'https://sourcesage.ai/ms/blog/', 'zh-Hans': 'https://sourcesage.ai/zh/blog/', 'x-default': 'https://sourcesage.ai/blog/' } },
   openGraph: {
     title: 'Tractor & Marine Parts Guides — Malaysia | SourceSage',
     description: 'Parts guides for Malaysian workshops and dealers. Kubota, Yanmar, Massey Ferguson, John Deere, Perkins & Zoomlion — model identification, sourcing tips, common problems.',
     url: 'https://sourcesage.ai/blog/',
     siteName: 'SourceSage.ai',
     type: 'website',
+    locale: 'en',
     images: [{ url: 'https://sourcesage.ai/images/og-home.png', width: 1200, height: 630, alt: 'SourceSage Tractor & Marine Parts Guides Malaysia' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Tractor & Marine Parts Guides — Malaysia | SourceSage',
+    description: 'Parts guides for Malaysian workshops and dealers. Kubota, Yanmar, Massey Ferguson, John Deere, Perkins & Zoomlion — model identification, sourcing tips, common problems.',
+    images: ['https://sourcesage.ai/images/og-home.png'],
   },
 }
 

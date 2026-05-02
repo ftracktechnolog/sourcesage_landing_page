@@ -7,7 +7,7 @@ import LangSwitcher from '../../../components/LangSwitcher'
 export const metadata = {
   title: 'Panduan Alat Ganti Traktor & Enjin — Malaysia | SourceSage',
   description: 'Panduan alat ganti untuk bengkel dan pengedar Malaysia. Kubota, Yanmar, Massey Ferguson, John Deere, Perkins & Zoomlion — pengenalan model, tip perolehan, masalah biasa.',
-  alternates: { canonical: '/ms/blog/' },
+  alternates: { canonical: '/ms/blog/', languages: { 'en': 'https://sourcesage.ai/blog/', 'ms': 'https://sourcesage.ai/ms/blog/', 'zh-Hans': 'https://sourcesage.ai/zh/blog/', 'x-default': 'https://sourcesage.ai/blog/' } },
   openGraph: {
     title: 'Panduan Alat Ganti Traktor & Enjin — Malaysia | SourceSage',
     description: 'Panduan alat ganti untuk bengkel dan pengedar Malaysia. Kubota, Yanmar, Massey Ferguson, John Deere, Perkins & Zoomlion — pengenalan model, tip perolehan, masalah biasa.',
@@ -16,6 +16,12 @@ export const metadata = {
     type: 'website',
     locale: 'ms_MY',
     images: [{ url: 'https://sourcesage.ai/images/og-home.png', width: 1200, height: 630, alt: 'SourceSage Panduan Alat Ganti Traktor & Enjin Malaysia' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Panduan Alat Ganti Traktor & Enjin — Malaysia | SourceSage',
+    description: 'Panduan alat ganti untuk bengkel dan pengedar Malaysia. Kubota, Yanmar, Massey Ferguson, John Deere, Perkins & Zoomlion — pengenalan model, tip perolehan, masalah biasa.',
+    images: ['https://sourcesage.ai/images/og-home.png'],
   },
 }
 
@@ -64,7 +70,7 @@ const Footer = () => (
             <li><Link href="/zoomlion-parts-malaysia" className="hover:text-blue-600 transition-colors">Alat Ganti Zoomlion</Link></li>
             <li><Link href="/john-deere-parts-malaysia" className="hover:text-blue-600 transition-colors">Alat Ganti John Deere</Link></li>
             <li><Link href="/perkins-engine-parts-malaysia" className="hover:text-blue-600 transition-colors">Alat Ganti Enjin Perkins</Link></li>
-            <li><Link href="/about" className="hover:text-blue-600 transition-colors">Tentang SourceSage</Link></li>
+            <li><Link href="/ms/about" className="hover:text-blue-600 transition-colors">Tentang SourceSage</Link></li>
           </ul>
         </div>
         <div className="flex flex-col gap-3 text-sm font-semibold">
