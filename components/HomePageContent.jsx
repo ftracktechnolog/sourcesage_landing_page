@@ -166,7 +166,7 @@ const BrandGrid = ({ t }) => (
                 <span className="text-xs bg-slate-100 text-slate-500 px-2 py-1 rounded font-medium">{brand.origin}</span>
               </div>
               <p className="text-sm text-slate-600">{brand.note}</p>
-              {href && <p className="text-xs font-bold text-blue-600 mt-3">View parts →</p>}
+              {href && <p className="text-xs font-bold text-blue-600 mt-3">{t.brandGrid.viewParts}</p>}
             </>
           )
           return href ? (
@@ -540,12 +540,9 @@ const Footer = ({ t }) => (
         <div>
           <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">{t.footer.partsHeading}</p>
           <ul className="space-y-2 text-sm font-semibold">
-            <li><Link href="/kubota-tractor-parts-malaysia" className="hover:text-blue-600 transition-colors">Kubota Tractor Parts</Link></li>
-            <li><Link href="/yanmar-marine-parts-malaysia" className="hover:text-blue-600 transition-colors">Yanmar Marine Parts</Link></li>
-            <li><Link href="/massey-ferguson-parts-malaysia" className="hover:text-blue-600 transition-colors">Massey Ferguson Parts</Link></li>
-            <li><Link href="/zoomlion-parts-malaysia" className="hover:text-blue-600 transition-colors">Zoomlion Parts</Link></li>
-            <li><Link href="/john-deere-parts-malaysia" className="hover:text-blue-600 transition-colors">John Deere Parts</Link></li>
-            <li><Link href="/perkins-engine-parts-malaysia" className="hover:text-blue-600 transition-colors">Perkins Engine Parts</Link></li>
+            {(t.footer.brandLinks || []).map(link => (
+              <li key={link.slug}><Link href={link.slug} className="hover:text-blue-600 transition-colors">{link.label}</Link></li>
+            ))}
             <li><Link href="/about" className="hover:text-blue-600 transition-colors">{t.footer.about}</Link></li>
           </ul>
         </div>

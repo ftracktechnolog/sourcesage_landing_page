@@ -36,6 +36,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <Script id="lang-detect" strategy="beforeInteractive">{`
+          (function(){
+            var p=document.location.pathname;
+            document.documentElement.lang=p.indexOf('/zh')===0?'zh-Hans':p.indexOf('/ms')===0?'ms':'en';
+          })();
+        `}</Script>
         {children}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-WQ8FKH8GY6"
