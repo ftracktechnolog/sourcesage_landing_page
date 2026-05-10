@@ -7,21 +7,26 @@ import WhatsappCTA from './WhatsappCTA'
 export default function RequestForm({ t }) {
   const [submitted, setSubmitted] = useState(false)
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     const f = new FormData(e.target)
-    const body = encodeURIComponent(
-      `Spare Part Request\n\n` +
-      `Brand: ${f.get('brand')}\n` +
-      `Model: ${f.get('model')}\n` +
-      `Engine Code: ${f.get('engine_code')}\n` +
-      `Part Description: ${f.get('part_description')}\n` +
-      `Urgency: ${f.get('urgency')}\n\n` +
-      `Name: ${f.get('name')}\n` +
-      `Phone / WhatsApp: ${f.get('contact')}\n\n` +
-      `Note: Photos can be sent via WhatsApp.`
-    )
-    window.location.href = `mailto:info@sourcesage.ai?subject=Part%20Request&body=${body}`
+    try {
+      const googleFormData = new FormData()
+      googleFormData.append("entry.244041970", f.get("brand"))
+      googleFormData.append("entry.179230630", f.get("model"))
+      googleFormData.append("entry.1368113295", f.get("engine_code"))
+      googleFormData.append("entry.919619953", f.get("part_description"))
+      googleFormData.append("entry.1275915522", f.get("urgency"))
+      googleFormData.append("entry.1254283853", f.get("name"))
+      googleFormData.append("entry.2017618621", f.get("contact"))
+      await fetch("https://docs.google.com/forms/d/e/1FAIpQLScPFOtc0Ao7-na0uIyZZszkfedhVd99cOIxAzbn53InYVD50A/formResponse", {
+        method: "POST",
+        mode: "no-cors",
+        body: googleFormData
+      })
+    } catch {
+      // Google Forms no-cors silently swallows errors — proceed to show success
+    }
     setSubmitted(true)
   }
 
